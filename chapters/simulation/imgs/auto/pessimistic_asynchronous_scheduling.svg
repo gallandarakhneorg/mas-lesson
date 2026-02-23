@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="600.18359"
+   height="380.34476"
+   font-family="Arial, sans-serif"
+   font-size="13px"
+   version="1.1"
+   id="svg233"
+   sodipodi:docname="pessimistic_asynchronous_scheduling.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview235"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.8023255"
+     inkscape:cx="292.40001"
+     inkscape:cy="202.23872"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg233" />
+  <!-- Background -->
+  <!-- ===================== COLUMN HEADERS ===================== -->
+  <!-- Agent A -->
+  <rect
+     x="0"
+     y="0"
+     width="100"
+     height="32"
+     rx="6"
+     fill="#4a90d9"
+     id="rect4" />
+  <text
+     x="50"
+     y="22"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text6">Agent A</text>
+  <!-- Agent B -->
+  <rect
+     x="120"
+     y="0"
+     width="100"
+     height="32"
+     rx="6"
+     fill="#e07b39"
+     id="rect8" />
+  <text
+     x="170"
+     y="22"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text10">Agent B</text>
+  <!-- Agent C -->
+  <rect
+     x="240"
+     y="0"
+     width="100"
+     height="32"
+     rx="6"
+     fill="#5ab05a"
+     id="rect12" />
+  <text
+     x="290"
+     y="22"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text14">Agent C</text>
+  <!-- Environment -->
+  <rect
+     x="400"
+     y="0"
+     width="140"
+     height="32"
+     rx="6"
+     fill="#7b5ea7"
+     id="rect16" />
+  <text
+     x="470"
+     y="22"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-weight="bold"
+     id="text18">Environment</text>
+  <!-- ===================== TIME AXIS (vertical) ===================== -->
+  <!-- Vertical time arrow -->
+  <line
+     x1="566"
+     y1="40"
+     x2="566"
+     y2="370"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arrow)"
+     id="line20" />
+  <text
+     x="581"
+     y="48"
+     fill="#333333"
+     font-size="12px"
+     id="text22">t</text>
+  <!-- Time tick marks and labels -->
+  <!-- t=0 -->
+  <line
+     x1="559"
+     y1="60"
+     x2="573"
+     y2="60"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line24" />
+  <text
+     x="579"
+     y="64"
+     fill="#555555"
+     font-size="11px"
+     id="text26">t = 0</text>
+  <!-- t=1 -->
+  <text
+     x="580.49316"
+     y="213.18378"
+     fill="#555555"
+     font-size="11px"
+     id="text30">t = 1</text>
+  <!-- t=2 -->
+  <line
+     x1="559"
+     y1="210"
+     x2="573"
+     y2="210"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line32" />
+  <text
+     x="579.05371"
+     y="380.26956"
+     fill="#555555"
+     font-size="11px"
+     id="text34">t = 2</text>
+  <!-- t=3 -->
+  <!-- Dashed horizontal guide lines for each simulation time step -->
+  <line
+     x1="0"
+     y1="59.885117"
+     x2="569.97388"
+     y2="59.885117"
+     stroke="#cccccc"
+     stroke-width="1"
+     stroke-dasharray="4, 4"
+     id="line40" />
+  <line
+     x1="0"
+     y1="210"
+     x2="566.26514"
+     y2="210"
+     stroke="#cccccc"
+     stroke-width="1"
+     stroke-dasharray="4, 4"
+     id="line44" />
+  <!-- ===================== ARROW MARKER ===================== -->
+  <defs
+     id="defs63">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2290">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop2286" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop2288" />
+    </linearGradient>
+    <marker
+       id="arrow"
+       markerWidth="8"
+       markerHeight="8"
+       refX="4"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 V 8 L 8,4 Z"
+         fill="#333333"
+         id="path48" />
+    </marker>
+    <marker
+       id="arrow-blue"
+       markerWidth="7"
+       markerHeight="7"
+       refX="3.5"
+       refY="3.5"
+       orient="auto">
+      <path
+         d="M 0,0 V 7 L 7,3.5 Z"
+         fill="#4a90d9"
+         id="path51" />
+    </marker>
+    <marker
+       id="arrow-orange"
+       markerWidth="7"
+       markerHeight="7"
+       refX="3.5"
+       refY="3.5"
+       orient="auto">
+      <path
+         d="M 0,0 V 7 L 7,3.5 Z"
+         fill="#e07b39"
+         id="path54" />
+    </marker>
+    <marker
+       id="arrow-green"
+       markerWidth="7"
+       markerHeight="7"
+       refX="3.5"
+       refY="3.5"
+       orient="auto">
+      <path
+         d="M 0,0 V 7 L 7,3.5 Z"
+         fill="#5ab05a"
+         id="path57" />
+    </marker>
+    <marker
+       id="arrow-purple"
+       markerWidth="7"
+       markerHeight="7"
+       refX="3.5"
+       refY="3.5"
+       orient="auto">
+      <path
+         d="M 0,0 V 7 L 7,3.5 Z"
+         fill="#7b5ea7"
+         id="path60" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2290"
+       id="linearGradient2292"
+       x1="43.75"
+       y1="170.5"
+       x2="57.75"
+       y2="170.5"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- ===================== AGENT A (x=80) ===================== -->
+  <!-- t=0: Agent A runs -->
+  <circle
+     cx="50"
+     cy="60"
+     r="9"
+     fill="#4a90d9"
+     id="circle65" />
+  <text
+     x="50"
+     y="64"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="9px"
+     font-weight="bold"
+     id="text67">A</text>
+  <!-- A waits: dashed vertical line from t=0 to sync point -->
+  <line
+     x1="50"
+     y1="69"
+     x2="50"
+     y2="117"
+     stroke="#4a90d9"
+     stroke-width="1.5"
+     stroke-dasharray="4, 3"
+     id="line69" />
+  <!-- Sync point A at t=1 -->
+  <!-- Arrow A: t=0 to t=1 (after sync) -->
+  <line
+     x1="50"
+     y1="133"
+     x2="50"
+     y2="201"
+     stroke="#4a90d9"
+     stroke-width="2"
+     marker-end="url(#arrow-blue)"
+     id="line75"
+     style="fill:url(#linearGradient2292);fill-opacity:1" />
+  <!-- t=1: Agent A runs -->
+  <circle
+     cx="50"
+     cy="210"
+     r="9"
+     fill="#4a90d9"
+     id="circle77" />
+  <text
+     x="50"
+     y="214"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="9px"
+     font-weight="bold"
+     id="text79">A</text>
+  <!-- A waits: dashed vertical line from t=1 to sync -->
+  <line
+     x1="50"
+     y1="219"
+     x2="50"
+     y2="297"
+     stroke="#4a90d9"
+     stroke-width="1.5"
+     stroke-dasharray="4, 3"
+     id="line81" />
+  <!-- Sync point A at t=2 -->
+  <rect
+     x="28"
+     y="297"
+     width="44"
+     height="16"
+     rx="4"
+     fill="#4a90d9"
+     opacity="0.18"
+     stroke="#4a90d9"
+     stroke-width="1.2"
+     id="rect83" />
+  <text
+     x="50"
+     y="309"
+     text-anchor="middle"
+     fill="#4a90d9"
+     font-size="10px"
+     font-weight="bold"
+     id="text85">wait</text>
+  <!-- Arrow A: t=2 to t=3 -->
+  <line
+     x1="50"
+     y1="313"
+     x2="50"
+     y2="370"
+     stroke="#4a90d9"
+     stroke-width="2"
+     marker-end="url(#arrow-blue)"
+     id="line87" />
+  <!-- t=2: Agent A runs -->
+  <!-- ===================== AGENT B (x=200) ===================== -->
+  <!-- t=0: Agent B runs, but slower -->
+  <circle
+     cx="170"
+     cy="60"
+     r="9"
+     fill="#e07b39"
+     id="circle93" />
+  <text
+     x="170"
+     y="64"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="9px"
+     font-weight="bold"
+     id="text95">B</text>
+  <!-- B runs slower (reaches t=1 later) -->
+  <line
+     x1="170"
+     y1="69"
+     x2="170"
+     y2="140"
+     stroke="#e07b39"
+     stroke-width="2"
+     id="line97" />
+  <!-- B reaches t=1 late -->
+  <circle
+     cx="170"
+     cy="124"
+     r="5"
+     fill="#e07b39"
+     opacity="0.5"
+     id="circle99" />
+  <!-- B waits: dashed line -->
+  <!-- Sync point B at t=1 -->
+  <line
+     x1="170"
+     y1="69"
+     x2="170"
+     y2="115"
+     stroke="#e07b39"
+     stroke-width="1.5"
+     stroke-dasharray="4, 3"
+     id="line107" />
+  <!-- Arrow B: t=1 to t=2 (after sync) -->
+  <line
+     x1="170"
+     y1="133"
+     x2="170"
+     y2="201"
+     stroke="#e07b39"
+     stroke-width="2"
+     marker-end="url(#arrow-orange)"
+     id="line109" />
+  <!-- t=1: Agent B runs -->
+  <circle
+     cx="170"
+     cy="210"
+     r="9"
+     fill="#e07b39"
+     id="circle111" />
+  <text
+     x="170"
+     y="214"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="9px"
+     font-weight="bold"
+     id="text113">B</text>
+  <!-- B is faster this round, reaches t=2 early, then waits -->
+  <line
+     x1="170"
+     y1="219"
+     x2="170"
+     y2="280"
+     stroke="#e07b39"
+     stroke-width="2"
+     id="line115" />
+  <circle
+     cx="170"
+     cy="284"
+     r="5"
+     fill="#e07b39"
+     opacity="0.5"
+     id="circle117" />
+  <line
+     x1="170"
+     y1="289"
+     x2="170"
+     y2="297"
+     stroke="#e07b39"
+     stroke-width="1.5"
+     stroke-dasharray="4, 3"
+     id="line119" />
+  <!-- Sync point B at t=2 -->
+  <rect
+     x="148"
+     y="297"
+     width="44"
+     height="16"
+     rx="4"
+     fill="#e07b39"
+     opacity="0.18"
+     stroke="#e07b39"
+     stroke-width="1.2"
+     id="rect121" />
+  <text
+     x="170"
+     y="309"
+     text-anchor="middle"
+     fill="#e07b39"
+     font-size="10px"
+     font-weight="bold"
+     id="text123">wait</text>
+  <!-- Arrow B: t=2 to t=3 -->
+  <line
+     x1="170"
+     y1="313"
+     x2="170"
+     y2="370"
+     stroke="#e07b39"
+     stroke-width="2"
+     marker-end="url(#arrow-orange)"
+     id="line125" />
+  <!-- ===================== AGENT C (x=320) ===================== -->
+  <!-- t=0: Agent C runs, fastest -->
+  <circle
+     cx="290"
+     cy="60"
+     r="9"
+     fill="#5ab05a"
+     id="circle131" />
+  <text
+     x="290"
+     y="64"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="9px"
+     font-weight="bold"
+     id="text133">C</text>
+  <!-- C reaches t=1 very fast -->
+  <line
+     x1="290"
+     y1="69"
+     x2="290"
+     y2="83"
+     stroke="#5ab05a"
+     stroke-width="2"
+     id="line135" />
+  <circle
+     cx="290"
+     cy="87"
+     r="5"
+     fill="#5ab05a"
+     opacity="0.5"
+     id="circle137" />
+  <!-- C must wait for B (slowest) -->
+  <line
+     x1="290"
+     y1="92"
+     x2="290"
+     y2="115"
+     stroke="#5ab05a"
+     stroke-width="1.5"
+     stroke-dasharray="4, 3"
+     id="line139" />
+  <!-- Sync point C at t=1 -->
+  <!-- Arrow C: t=1 to t=2 -->
+  <line
+     x1="290"
+     y1="133"
+     x2="290"
+     y2="201"
+     stroke="#5ab05a"
+     stroke-width="2"
+     marker-end="url(#arrow-green)"
+     id="line145" />
+  <!-- t=1: Agent C runs -->
+  <circle
+     cx="290"
+     cy="210"
+     r="9"
+     fill="#5ab05a"
+     id="circle147" />
+  <text
+     x="290"
+     y="214"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="9px"
+     font-weight="bold"
+     id="text149">C</text>
+  <!-- C reaches t=2 at regular speed -->
+  <line
+     x1="290"
+     y1="219"
+     x2="290"
+     y2="265"
+     stroke="#5ab05a"
+     stroke-width="2"
+     id="line151" />
+  <circle
+     cx="290"
+     cy="269"
+     r="5"
+     fill="#5ab05a"
+     opacity="0.5"
+     id="circle153" />
+  <circle
+     cx="49.699158"
+     cy="104.33784"
+     r="5"
+     fill="#5ab05a"
+     opacity="0.5"
+     id="circle153-6"
+     style="fill:#4a90d9;fill-opacity:1" />
+  <circle
+     cx="49.928883"
+     cy="246.09482"
+     r="5"
+     fill="#5ab05a"
+     opacity="0.5"
+     id="circle153-6-7"
+     style="fill:#4a90d9;fill-opacity:1" />
+  <line
+     x1="290"
+     y1="274"
+     x2="290"
+     y2="297"
+     stroke="#5ab05a"
+     stroke-width="1.5"
+     stroke-dasharray="4, 3"
+     id="line155" />
+  <!-- Sync point C at t=2 -->
+  <rect
+     x="268"
+     y="297"
+     width="44"
+     height="16"
+     rx="4"
+     fill="#5ab05a"
+     opacity="0.18"
+     stroke="#5ab05a"
+     stroke-width="1.2"
+     id="rect157" />
+  <text
+     x="290"
+     y="309"
+     text-anchor="middle"
+     fill="#5ab05a"
+     font-size="10px"
+     font-weight="bold"
+     id="text159">wait</text>
+  <!-- Arrow C: t=2 to t=3 -->
+  <line
+     x1="290"
+     y1="313"
+     x2="290"
+     y2="370"
+     stroke="#5ab05a"
+     stroke-width="2"
+     marker-end="url(#arrow-green)"
+     id="line161" />
+  <!-- ===================== SYNCHRONIZATION BARRIERS ===================== -->
+  <!-- Barrier at t=1 (connecting all agents + triggering env) -->
+  <!-- Horizontal dashed line connecting all 3 agent wait-boxes -->
+  <line
+     x1="50"
+     y1="125"
+     x2="470"
+     y2="125"
+     stroke="#cc0000"
+     stroke-width="1.8"
+     stroke-dasharray="6, 3"
+     id="line167" />
+  <!-- Barrier label -->
+  <rect
+     x="340"
+     y="114"
+     width="130"
+     height="22"
+     rx="5"
+     fill="#ffeaea"
+     stroke="#cc0000"
+     stroke-width="1.5"
+     id="rect169" />
+  <text
+     x="405"
+     y="129"
+     text-anchor="middle"
+     fill="#cc0000"
+     font-size="11px"
+     font-weight="bold"
+     id="text171">Sync Barrier (t = 0)</text>
+  <!-- Barrier at t=2 (connecting all agents + triggering env) -->
+  <line
+     x1="50"
+     y1="305"
+     x2="470"
+     y2="305"
+     stroke="#cc0000"
+     stroke-width="1.8"
+     stroke-dasharray="6, 3"
+     id="line173" />
+  <rect
+     x="340"
+     y="294"
+     width="130"
+     height="22"
+     rx="5"
+     fill="#ffeaea"
+     stroke="#cc0000"
+     stroke-width="1.5"
+     id="rect175" />
+  <text
+     x="405"
+     y="309"
+     text-anchor="middle"
+     fill="#cc0000"
+     font-size="11px"
+     font-weight="bold"
+     id="text177">Sync Barrier (t = 1)</text>
+  <!-- ===================== ENVIRONMENT (x=500) ===================== -->
+  <!-- Environment runs AFTER sync barrier at t=1 -->
+  <!-- Trigger arrow from barrier to env -->
+  <line
+     x1="470"
+     y1="133"
+     x2="470"
+     y2="168"
+     stroke="#7b5ea7"
+     stroke-width="2"
+     marker-end="url(#arrow-purple)"
+     id="line179" />
+  <!-- Env step block at t=1 -->
+  <rect
+     x="400"
+     y="168"
+     width="140"
+     height="36"
+     rx="7"
+     fill="#e8dcf5"
+     stroke="#7b5ea7"
+     stroke-width="2"
+     id="rect181" />
+  <text
+     x="470"
+     y="181"
+     text-anchor="middle"
+     fill="#7b5ea7"
+     font-size="11px"
+     font-weight="bold"
+     id="text183">Environment</text>
+  <text
+     x="470"
+     y="197"
+     text-anchor="middle"
+     fill="#7b5ea7"
+     font-size="10px"
+     id="text185">executes at t =0</text>
+  <!-- After env, signal back to agents (new messages/state) -->
+  <line
+     x1="400"
+     y1="186"
+     x2="50.621773"
+     y2="186"
+     stroke="#999999"
+     stroke-width="1.24419"
+     stroke-dasharray="3, 3"
+     id="line187" />
+  <line
+     x1="400"
+     y1="186"
+     x2="195"
+     y2="186"
+     stroke="#999999"
+     stroke-width="1.2"
+     stroke-dasharray="3, 3"
+     id="line189" />
+  <line
+     x1="400"
+     y1="186"
+     x2="315"
+     y2="186"
+     stroke="#999999"
+     stroke-width="1.2"
+     stroke-dasharray="3, 3"
+     id="line191" />
+  <circle
+     cx="49"
+     cy="186"
+     r="3"
+     fill="#999999"
+     id="circle193" />
+  <circle
+     cx="170.44516"
+     cy="186"
+     r="3"
+     fill="#999999"
+     id="circle195" />
+  <circle
+     cx="290.10968"
+     cy="186"
+     r="3"
+     fill="#999999"
+     id="circle197" />
+  <!-- Arrow from env result down to next agent round -->
+  <line
+     x1="470"
+     y1="204"
+     x2="470"
+     y2="294"
+     stroke="#7b5ea7"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="line199" />
+  <!-- Environment runs AFTER sync barrier at t=2 -->
+  <line
+     x1="470"
+     y1="313"
+     x2="470"
+     y2="338"
+     stroke="#7b5ea7"
+     stroke-width="2"
+     marker-end="url(#arrow-purple)"
+     id="line201" />
+  <!-- Env step block at t=2 -->
+  <rect
+     x="400"
+     y="338"
+     width="140"
+     height="36"
+     rx="7"
+     fill="#e8dcf5"
+     stroke="#7b5ea7"
+     stroke-width="2"
+     id="rect203" />
+  <text
+     x="470"
+     y="351"
+     text-anchor="middle"
+     fill="#7b5ea7"
+     font-size="11px"
+     font-weight="bold"
+     id="text205">Environment</text>
+  <text
+     x="470"
+     y="367"
+     text-anchor="middle"
+     fill="#7b5ea7"
+     font-size="10px"
+     id="text207">executes at t =1</text>
+  <!-- ===================== ANNOTATIONS ===================== -->
+  <!-- "local computation" label for agents (asynchronous zone) -->
+  <rect
+     x="55.928337"
+     y="69.855492"
+     width="56.215897"
+     height="36.289001"
+     rx="2.5096383"
+     fill="none"
+     stroke="#aaaaaa"
+     stroke-width="0.711307"
+     stroke-dasharray="3, 2"
+     id="rect209" />
+  <text
+     x="84"
+     y="83"
+     text-anchor="middle"
+     fill="#888888"
+     font-size="9px"
+     id="text211">local</text>
+  <text
+     x="84"
+     y="96"
+     text-anchor="middle"
+     fill="#888888"
+     font-size="9px"
+     id="text213">computation</text>
+  <rect
+     x="174.07204"
+     y="69.867348"
+     width="60.06036"
+     height="36.265297"
+     rx="2.6812661"
+     fill="none"
+     stroke="#aaaaaa"
+     stroke-width="0.734986"
+     stroke-dasharray="3, 2"
+     id="rect215" />
+  <text
+     x="206"
+     y="83"
+     text-anchor="middle"
+     fill="#888888"
+     font-size="9px"
+     id="text217">local (slower)</text>
+  <text
+     x="206"
+     y="96"
+     text-anchor="middle"
+     fill="#888888"
+     font-size="9px"
+     id="text219">computation</text>
+  <rect
+     x="296.57001"
+     y="69.853477"
+     width="55.576248"
+     height="36.293022"
+     rx="2.4810824"
+     fill="none"
+     stroke="#aaaaaa"
+     stroke-width="0.707287"
+     stroke-dasharray="3, 2"
+     id="rect221" />
+  <text
+     x="324"
+     y="83"
+     text-anchor="middle"
+     fill="#888888"
+     font-size="9px"
+     id="text223">local (faster)</text>
+  <text
+     x="324"
+     y="96"
+     text-anchor="middle"
+     fill="#888888"
+     font-size="9px"
+     id="text225">computation</text>
+  <!-- "Pessimistic: all agents must reach t>current before advancing" note -->
+  <g
+     id="g3331"
+     transform="translate(-0.75)">
+    <rect
+       x="28.75"
+       y="117"
+       width="44"
+       height="16"
+       rx="4"
+       fill="#4a90d9"
+       opacity="0.18"
+       stroke="#4a90d9"
+       stroke-width="1.2"
+       id="rect71" />
+    <text
+       x="50.75"
+       y="129"
+       text-anchor="middle"
+       fill="#4a90d9"
+       font-size="10px"
+       font-weight="bold"
+       id="text73">wait</text>
+  </g>
+  <rect
+     x="148"
+     y="115"
+     width="44"
+     height="16"
+     rx="4"
+     fill="#e07b39"
+     opacity="0.18"
+     stroke="#e07b39"
+     stroke-width="1.2"
+     id="rect103" />
+  <text
+     x="170"
+     y="127"
+     text-anchor="middle"
+     fill="#e07b39"
+     font-size="10px"
+     font-weight="bold"
+     id="text105">wait</text>
+  <rect
+     x="268"
+     y="115"
+     width="44"
+     height="16"
+     rx="4"
+     fill="#5ab05a"
+     opacity="0.18"
+     stroke="#5ab05a"
+     stroke-width="1.2"
+     id="rect141" />
+  <text
+     x="290"
+     y="127"
+     text-anchor="middle"
+     fill="#5ab05a"
+     font-size="10px"
+     font-weight="bold"
+     id="text143">wait</text>
+  <line
+     x1="49.911537"
+     y1="68.741287"
+     x2="49.911537"
+     y2="99.093094"
+     stroke="#5ab05a"
+     stroke-width="1.62459"
+     id="line151-3"
+     style="fill:#4a90d9;fill-opacity:1;stroke:#4a90d9;stroke-opacity:1" />
+  <line
+     x1="50.269157"
+     y1="217.5486"
+     x2="50.269157"
+     y2="242.56659"
+     stroke="#5ab05a"
+     stroke-width="1.47495"
+     id="line151-3-5"
+     style="fill:#4a90d9;fill-opacity:1;stroke:#4a90d9;stroke-opacity:1" />
+</svg>

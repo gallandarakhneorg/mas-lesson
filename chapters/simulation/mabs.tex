@@ -1,0 +1,86 @@
+\begin{graphicspathcontext}{{./chapters/simulation/imgs/},{./chapters/simulation/imgs/auto/},\old}
+
+\begin{frame}{What is Multiagent-based Simulation?}
+	\begin{definition}
+		Multiagent-based Simulation (MABS) is a computational methodology that models a system as a collection of \Emph{autonomous, interacting agents} situated in an explicit \Emph{environment}, whose \Emph{local interactions} give rise to \Emph{global, emergent phenomena}.
+	\end{definition}
+	\vspace{.5cm}
+	\begin{itemize}
+	\item Rooted in \Emph{Complex Systems} science
+	\item Bridges \Emph{Agent-Oriented Programming} and \Emph{Simulation Science}
+	\item Particularly suited to \emph{heterogeneous}, \emph{decentralised}, and \emph{adaptive} systems
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Core Concepts}
+	\vspace{-.5cm}
+	\begin{columns}
+		\begin{column}[t]{.5\linewidth}
+			\smaller
+			\begin{block}{Agent}
+				An \emph{autonomous entity} that:
+				\begin{description}
+				\item[Perceives] its environment via sensors
+				\item[Decides] according to its internal state \& goals
+				\item[Acts] to modify itself or the environment
+				\item May \Emph{communicate} with other agents
+				\end{description}
+			\end{block}
+			\begin{block}{Interaction}
+				Agents interact \Emph{locally}:
+				\begin{itemize}
+				\item Direct communication
+				\item Indirect through environment (stigmergy)
+				\item coordination, cooperation, negotiation, competition
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}[t]{.5\linewidth}
+			\smaller
+			\begin{block}{Agent Environment}
+				\Emph{Shared medium} in which agents are situated:
+				\begin{itemize}
+				\item Carries \emph{spatial} and \emph{temporal} structure
+				\item Mediates \emph{indirect interaction} (stigmergy)
+				\item Can itself be \emph{dynamic} or \emph{reactive}
+				\end{itemize}
+			\end{block}
+			\begin{block}{Emergence}
+				\Emph{Global patterns} arise from local rules:
+				\begin{itemize}
+				\item Not explicitly programmed
+				\item Cannot be predicted from individual behaviour alone
+				\end{itemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Advantages of Multiagent-based Simulation}
+	\hiconbox{
+		\begin{compactdescription}
+		\item[Individual heterogeneity] each agent has its own
+		state, rules, and objectives
+		\item[Spatial explicitness] agents are situated in a topology; local interactions are first-class citizens
+		\item[Emergence] complex global patterns arise \emph{bottom-up} from local rules, without explicit global equations
+		\item[Adaptive behaviour] agents learn and change strategy over time
+		\item[Stochasticity at the micro level] individual variability and rare events are handled naturally
+  		\end{compactdescription}}{simu-pros-icon}
+\end{frame}
+
+\begin{frame}{Disadvantages of Multiagent-based Simulation}
+	\hiconbox{
+		\begin{compactdescription}
+		\item[No analytical tractability] unlike EBM/SD, closed-form solutions or stability analyses are rarely possible
+		\item[Difficult validation] emergent behaviour is hard to verify against real data; risk of over-fitting micro rules
+		\item[Parameter explosion] many agent-level parameters must be estimated, calibrated, and sensitivity-tested
+		\item[Non-determinism] stochastic runs require statistical analysis of many replications
+		\item[Computational cost] large populations of agents are expensive; scaling is non-trivial
+		\item[Development complexity] building, debugging, and maintaining agent code is more demanding than scripting equations
+		\end{compactdescription}}{simu-cons-icon}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput
+

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="408.71344"
+   height="307.79999"
+   font-family="Arial, sans-serif"
+   font-size="12px"
+   version="1.1"
+   id="svg74"
+   sodipodi:docname="blackboard_cycle.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview76"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.2527778"
+     inkscape:cx="173.1196"
+     inkscape:cy="181.33169"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg74" />
+  <defs
+     id="defs8">
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <marker
+       id="cyc-arr"
+       markerWidth="9"
+       markerHeight="9"
+       refX="7"
+       refY="4.5"
+       orient="auto">
+      <path
+         d="M 0,0 V 9 L 9,4.5 Z"
+         fill="#1e5aa0"
+         id="path2" />
+    </marker>
+    <marker
+       id="cyc-arr-o"
+       markerWidth="9"
+       markerHeight="9"
+       refX="7"
+       refY="4.5"
+       orient="auto">
+      <path
+         d="M 0,0 V 9 L 9,4.5 Z"
+         fill="#c8600a"
+         id="path5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleStart-3"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-6" />
+    </marker>
+  </defs>
+  <!-- ── Central blackboard ── -->
+  <rect
+     x="144.95"
+     y="112.9"
+     width="116"
+     height="80"
+     rx="10"
+     fill="#1e5aa0"
+     stroke="#0d3a6e"
+     stroke-width="2.5"
+     id="rect10" />
+  <text
+     x="202.95"
+     y="140.89999"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     font-weight="bold"
+     id="text12">Blackboard</text>
+  <text
+     x="202.95"
+     y="156.89999"
+     text-anchor="middle"
+     fill="#b0ccf0"
+     font-size="9px"
+     id="text14">partial results</text>
+  <text
+     x="202.95"
+     y="170.89999"
+     text-anchor="middle"
+     fill="#b0ccf0"
+     font-size="9px"
+     id="text16">accumulate here</text>
+  <text
+     x="202.95"
+     y="184.89999"
+     text-anchor="middle"
+     fill="#b0ccf0"
+     font-size="9px"
+     id="text18">shared state</text>
+  <!-- ── Step 1: Monitor ── (top-left) -->
+  <g
+     id="g1123"
+     transform="translate(-17.1,-17.1)">
+    <rect
+       x="18"
+       y="18"
+       width="118"
+       height="54"
+       rx="8"
+       fill="#4a90d9"
+       stroke="#1e5aa0"
+       stroke-width="1.8"
+       id="rect20" />
+    <text
+       x="77"
+       y="38"
+       text-anchor="middle"
+       fill="#ffffff"
+       font-size="12px"
+       font-weight="bold"
+       id="text22">① Monitor</text>
+    <text
+       x="77"
+       y="54"
+       text-anchor="middle"
+       fill="#ddeeff"
+       font-size="9px"
+       id="text24">agents observe</text>
+    <text
+       x="77"
+       y="66"
+       text-anchor="middle"
+       fill="#ddeeff"
+       font-size="9px"
+       id="text26">the blackboard</text>
+  </g>
+  <!-- ── Step 2: Evaluate ── (top-right) -->
+  <g
+     id="g1069"
+     transform="translate(-14.18657,-17.1)">
+    <rect
+       x="304"
+       y="18"
+       width="118"
+       height="54"
+       rx="8"
+       fill="#c8600a"
+       stroke="#8b3f00"
+       stroke-width="1.8"
+       id="rect28" />
+    <text
+       x="363"
+       y="38"
+       text-anchor="middle"
+       fill="#ffffff"
+       font-size="12px"
+       font-weight="bold"
+       id="text30">② Evaluate</text>
+    <text
+       x="363"
+       y="54"
+       text-anchor="middle"
+       fill="#ffe0c0"
+       font-size="9px"
+       id="text32">control scores</text>
+    <text
+       x="363"
+       y="66"
+       text-anchor="middle"
+       fill="#ffe0c0"
+       font-size="9px"
+       id="text34">ready agents</text>
+  </g>
+  <!-- ── Step 3: Execute ── (bottom-right) -->
+  <g
+     id="g1087"
+     transform="translate(-14.18657,-17.1)">
+    <rect
+       x="304"
+       y="270"
+       width="118"
+       height="54"
+       rx="8"
+       fill="#2e7d32"
+       stroke="#1a4d1e"
+       stroke-width="1.8"
+       id="rect36" />
+    <text
+       x="363"
+       y="290"
+       text-anchor="middle"
+       fill="#ffffff"
+       font-size="12px"
+       font-weight="bold"
+       id="text38">③ Execute</text>
+    <text
+       x="363"
+       y="306"
+       text-anchor="middle"
+       fill="#c8f0c8"
+       font-size="9px"
+       id="text40">selected agent</text>
+    <text
+       x="363"
+       y="318"
+       text-anchor="middle"
+       fill="#c8f0c8"
+       font-size="9px"
+       id="text42">computes result</text>
+  </g>
+  <!-- ── Step 4: Update ── (bottom-left) -->
+  <g
+     id="g1105"
+     transform="translate(-17.1,-17.1)">
+    <rect
+       x="18"
+       y="270"
+       width="118"
+       height="54"
+       rx="8"
+       fill="#7b1fa2"
+       stroke="#4a0070"
+       stroke-width="1.8"
+       id="rect44" />
+    <text
+       x="77"
+       y="290"
+       text-anchor="middle"
+       fill="#ffffff"
+       font-size="12px"
+       font-weight="bold"
+       id="text46">④ Update</text>
+    <text
+       x="77"
+       y="306"
+       text-anchor="middle"
+       fill="#e8c0f8"
+       font-size="9px"
+       id="text48">writes result to</text>
+    <text
+       x="77"
+       y="318"
+       text-anchor="middle"
+       fill="#e8c0f8"
+       font-size="9px"
+       id="text50">blackboard</text>
+  </g>
+  <!-- ── Cycle arrows (clockwise outer ring) ── -->
+  <!-- 1 Monitor → 2 Evaluate (top, left→right) -->
+  <path
+     d="m 118.95,27.9 h 168"
+     fill="none"
+     stroke="#1e5aa0"
+     stroke-width="2"
+     marker-end="url(#cyc-arr)"
+     id="path52"
+     sodipodi:nodetypes="cc" />
+  <!-- 2 Evaluate → 3 Execute (right, top→bottom) -->
+  <path
+     d="M 348.81344,54.9 V 248.52344"
+     fill="none"
+     stroke="#1e5aa0"
+     stroke-width="1.97777"
+     marker-end="url(#cyc-arr)"
+     id="path54"
+     sodipodi:nodetypes="cc" />
+  <!-- 3 Execute → 4 Update (bottom, right→left) -->
+  <path
+     d="M 288.41694,279.9 H 123.50491"
+     fill="none"
+     stroke="#1e5aa0"
+     stroke-width="1.98153"
+     marker-end="url(#cyc-arr)"
+     id="path56"
+     sodipodi:nodetypes="cc" />
+  <!-- 4 Update → 1 Monitor (left, bottom→top) -->
+  <path
+     d="M 59.899996,252.9 V 54.9"
+     fill="none"
+     stroke="#1e5aa0"
+     stroke-width="2"
+     marker-end="url(#cyc-arr)"
+     id="path58"
+     sodipodi:nodetypes="cc" />
+  <!-- ── Blackboard ↔ Monitor (read) ── -->
+  <line
+     x1="117.86639"
+     y1="52.853214"
+     x2="146.23637"
+     y2="113.33349"
+     stroke="#4a90d9"
+     stroke-width="1.21854"
+     stroke-dasharray="5, 3"
+     marker-end="url(#cyc-arr)"
+     id="line60" />
+  <text
+     x="126.10143"
+     y="89.384499"
+     fill="#4a90d9"
+     font-size="9px"
+     text-anchor="end"
+     id="text62">read</text>
+  <!-- ── Execute → Blackboard (write) ── -->
+  <text
+     x="251.12663"
+     y="232.19527"
+     fill="#2e7d32"
+     font-size="9px"
+     id="text68">write</text>
+  <text
+     x="136.71748"
+     y="231.84064"
+     fill="#2e7d32"
+     font-size="9px"
+     id="text68-5"
+     style="fill:#7b1fa2;fill-opacity:1">write</text>
+  <!-- ── Control activates agent ── -->
+  <line
+     x1="296.18268"
+     y1="49.715611"
+     x2="258.82535"
+     y2="112.95815"
+     stroke="#c8600a"
+     stroke-width="0.857818"
+     stroke-dasharray="5, 3"
+     marker-end="url(#cyc-arr-o)"
+     id="line70" />
+  <text
+     x="282.8501"
+     y="91.151772"
+     fill="#c8600a"
+     font-size="9px"
+     id="text72">selects</text>
+  <line
+     x1="292.39172"
+     y1="251.46521"
+     x2="261.3775"
+     y2="196.11313"
+     stroke="#2e7d32"
+     stroke-width="1.40741"
+     stroke-dasharray="5, 3"
+     id="line64"
+     style="marker-end:url(#TriangleStart)" />
+  <line
+     x1="115.80559"
+     y1="252.91971"
+     x2="146.81982"
+     y2="197.56763"
+     stroke="#2e7d32"
+     stroke-width="1.40741"
+     stroke-dasharray="5, 3"
+     id="line64-7"
+     style="fill:#7b1fa2;fill-opacity:1;stroke:#7b1fa2;stroke-opacity:1;marker-end:url(#TriangleStart-3)" />
+</svg>

@@ -1,0 +1,72 @@
+\begin{graphicspathcontext}{{./chapters/ai/imgs/},{./chapters/ai/imgs/auto/},\old}
+
+\sidenote{Image generated with Mistral AI}
+\begin{frame}[t]{{Multiagent Systems:} Key Concepts}
+	\begin{columns}
+		\begin{column}{.8\linewidth}
+			\begin{block}{What is an Agent? \cite{Wooldridge09}}
+				An \Emph{autonomous human, hardware or software entity} that:
+				\begin{compactdescription}
+				\item[Perceives] its environment (sensors, messages, data streams)
+				\item[Reasons] using internal knowledge and goals
+				\item[Acts] to pursue objectives (actuators, service calls, decisions)
+				\item[Communicates] and \Emph{cooperates} with other agents
+				\end{compactdescription}
+			\end{block}
+			\begin{block}{What is a Multiagent System? \cite{Wooldridge09}}
+				\begin{compactdescription}
+				\item[Decentralised] no single point of control or failure
+				\item[Scalable] add/remove agents without redesigning the whole system
+				\item[Heterogeneous] agents may have different roles, skills, and knowledge
+				\item[Emergent Behaviour] complex outcomes from simple local rules
+				\end{compactdescription}
+			\end{block}
+		\end{column}
+		\begin{column}{.2\linewidth}
+			\includegraphics[width=\linewidth]{mas_application} \\[1cm]
+			\begin{center}
+				\includegraphics[width=.8\linewidth]{sarllogo} \\
+				{\smaller SARL Framework}\\
+				\url{www.sarl.io}
+			\end{center}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[t]{{Agentic AI:} A Simplified and Specialized Multiagent System}
+	\alertbox{Agentic AI $=$ LLM reasoning \textbf{+} Multiagent system's coordination principles}
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\begin{block}{LLM-Centric Orchestration}
+				\begin{compactdescription}
+				\item[LangChain / LangGraph] chains of LLM calls with
+				tool use, memory, and cyclic agent graphs
+				\item[OpenAI Agents SDK] lightweight SDK for building
+				hand-off and tool-calling agent pipelines
+				\item[AutoGen (Microsoft)] conversational multi-agent
+				framework; agents negotiate and self-correct
+				\item[CrewAI] role-based agent crews with explicit
+				task delegation and collaboration
+				\end{compactdescription}
+			\end{block}
+    		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{stabularx}[title={Choosing the Right Tool}]{X|X}
+			\tabularhead{Need}{Possible Frameworks} \\
+			Rapid prototyping & LangChain, LangGraph, CrewAI \\
+			\hline
+			Robust systems & \textit{SARL}, \textit{JADE} \\
+			\hline
+			Simulation \& analytics & \textit{Gamma}, \textit{Repast}, \textit{SARL} \\
+			\hline
+			IoT/distributed edge & \textit{SPADE}  \\
+			\end{stabularx}
+			{\smaller\smaller \textit{Italic}: general multiagent framework}
+    		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput
+

@@ -1,0 +1,15 @@
+%Overlays
+\bgroup%
+\begin{tikzpicture}%
+\node<1-> (X) {\includegraphics[width=961.65472em]{joinaroadtrain_layer1}};%
+\node<2-> (X) {\includegraphics[width=961.65472em]{joinaroadtrain_layer4}};%
+\node<2> (X) {\includegraphics[width=961.65472em]{joinaroadtrain_g53863}};%
+\node<3> (X) {\includegraphics[width=961.65472em]{joinaroadtrain_layer3}};%
+\node<4> (X) {\includegraphics[width=961.65472em]{joinaroadtrain_g52338}};%
+\node<5-> (X) {\includegraphics[width=961.65472em]{joinaroadtrain_g52378}};%
+\node<5> (X) {\includegraphics[width=961.65472em]{joinaroadtrain_g4033}};%
+\node<6-> (X) {\includegraphics[width=961.65472em]{joinaroadtrain_g53650}};%
+\node<6> (X) {\includegraphics[width=961.65472em]{joinaroadtrain_g4095}};%
+\node<8> (X) {\includegraphics[width=961.65472em]{joinaroadtrain_g53772}};%
+\end{tikzpicture}%
+\egroup%

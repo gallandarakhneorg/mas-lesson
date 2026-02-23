@@ -1,0 +1,15 @@
+%Overlays
+\bgroup%
+\begin{tikzpicture}%
+\node<1-> (X) {\includegraphics[width=1000em]{wireless_layer1}};%
+\node<2-3> (X) {\includegraphics[width=1000em]{wireless_layer2}};%
+\node<2> (X) {\includegraphics[width=1000em]{wireless_g11444}};%
+\node<4-5> (X) {\includegraphics[width=1000em]{wireless_g22670}};%
+\node<4> (X) {\includegraphics[width=1000em]{wireless_g12646}};%
+\node<6-7> (X) {\includegraphics[width=1000em]{wireless_g21340}};%
+\node<6> (X) {\includegraphics[width=1000em]{wireless_g21320}};%
+\node<7> (X) {\includegraphics[width=1000em]{wireless_layer3}};%
+\node<8-9> (X) {\includegraphics[width=1000em]{wireless_layer4}};%
+\node<8> (X) {\includegraphics[width=1000em]{wireless_g24824}};%
+\end{tikzpicture}%
+\egroup%

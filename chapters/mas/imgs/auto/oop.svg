@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="231.39999"
+   height="50.790001"
+   viewBox="0 0 231.39999 50.790001"
+   version="1.1"
+   id="svg389"
+   sodipodi:docname="oop.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview391"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.9807692"
+     inkscape:cx="240.54194"
+     inkscape:cy="1.1741935"
+     inkscape:window-width="3840"
+     inkscape:window-height="2123"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg389" />
+  <defs
+     id="defs351">
+    <marker
+       id="arr"
+       markerWidth="8"
+       markerHeight="6"
+       refX="8"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0,6 0,0 8,3 "
+         fill="#5a5a5a"
+         id="polygon344" />
+    </marker>
+  </defs>
+  <!-- ── LEFT: OOP ── -->
+  <!-- Object A -->
+  <rect
+     x="0.69999999"
+     y="0.69999999"
+     width="90"
+     height="36"
+     rx="4"
+     ry="4"
+     fill="#ffffff"
+     stroke="#5a5a5a"
+     stroke-width="1.4"
+     id="rect355" />
+  <text
+     x="45.700001"
+     y="23.700001"
+     font-family="monospace"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#5a5a5a"
+     id="text357">Object A</text>
+  <!-- Object B -->
+  <rect
+     x="140.7"
+     y="0.69999999"
+     width="90"
+     height="36"
+     rx="4"
+     ry="4"
+     fill="#ffffff"
+     stroke="#5a5a5a"
+     stroke-width="1.4"
+     id="rect359" />
+  <text
+     x="185.7"
+     y="23.700001"
+     font-family="monospace"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#5a5a5a"
+     id="text361">Object B</text>
+  <!-- call() arrow -->
+  <line
+     x1="90.699997"
+     y1="11.7"
+     x2="138.7"
+     y2="11.7"
+     stroke="#5a5a5a"
+     stroke-width="1.4"
+     marker-end="url(#arr)"
+     id="line363" />
+  <text
+     x="114.7"
+     y="7.6999998"
+     font-family="sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#5a5a5a"
+     id="text365">call()</text>
+  <!-- return arrow (bent) -->
+  <path
+     d="m 138.7,27.7 q -24,21 -48,0"
+     fill="none"
+     stroke="#5a5a5a"
+     stroke-width="1.4"
+     marker-end="url(#arr)"
+     id="path367" />
+  <text
+     x="114.7"
+     y="50.700001"
+     font-family="sans-serif"
+     font-size="9px"
+     text-anchor="middle"
+     fill="#5a5a5a"
+     id="text369">return</text>
+  <!-- ── RIGHT: AOP ── -->
+  <!-- Agent A -->
+  <!-- Agent B -->
+  <!-- message top arrow -->
+  <!-- message bottom arrow -->
+</svg>

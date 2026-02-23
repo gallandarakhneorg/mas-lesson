@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 394.53214 212.2"
+   width="394.53214"
+   height="212.2"
+   font-family="sans-serif"
+   version="1.1"
+   id="svg184"
+   sodipodi:docname="vacuum_world.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview186"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.3852941"
+     inkscape:cx="222.19482"
+     inkscape:cy="130.17263"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg184" />
+  <!-- Background -->
+  <!-- Title -->
+  <!-- ══════════════════════════════════════════════
+       GRID  (3 × 2, cells 80×80)
+       Top-left corner at (60, 55)
+  ═══════════════════════════════════════════════ -->
+  <!-- Cell fills -->
+  <!-- Row 0 -->
+  <rect
+     x="22.129993"
+     y="14.6"
+     width="80"
+     height="80"
+     fill="#f9e4b7"
+     id="rect6" />
+  <!-- dirty -->
+  <rect
+     x="102.13"
+     y="14.6"
+     width="80"
+     height="80"
+     fill="#e0f0e0"
+     id="rect8" />
+  <!-- clean -->
+  <rect
+     x="182.12999"
+     y="14.6"
+     width="80"
+     height="80"
+     fill="#f9e4b7"
+     id="rect10" />
+  <!-- dirty -->
+  <!-- Row 1 -->
+  <rect
+     x="22.129993"
+     y="94.599998"
+     width="80"
+     height="80"
+     fill="#e0f0e0"
+     id="rect12" />
+  <!-- clean -->
+  <rect
+     x="102.13"
+     y="94.599998"
+     width="80"
+     height="80"
+     fill="#f9e4b7"
+     id="rect14" />
+  <!-- dirty -->
+  <rect
+     x="182.12999"
+     y="94.599998"
+     width="80"
+     height="80"
+     fill="#e0f0e0"
+     id="rect16" />
+  <!-- clean -->
+  <!-- Grid lines -->
+  <rect
+     x="22.129993"
+     y="14.6"
+     width="240"
+     height="160"
+     fill="none"
+     stroke="#555555"
+     stroke-width="2.5"
+     id="rect18" />
+  <line
+     x1="102.13"
+     y1="14.6"
+     x2="102.13"
+     y2="174.60001"
+     stroke="#555555"
+     stroke-width="1.8"
+     id="line20" />
+  <line
+     x1="182.12999"
+     y1="14.6"
+     x2="182.12999"
+     y2="174.60001"
+     stroke="#555555"
+     stroke-width="1.8"
+     id="line22" />
+  <line
+     x1="22.129993"
+     y1="94.599998"
+     x2="262.13"
+     y2="94.599998"
+     stroke="#555555"
+     stroke-width="1.8"
+     id="line24" />
+  <!-- ══ DIRT particles (brown squiggles as small ellipses/dots) ══ -->
+  <!-- Cell (0,0) -->
+  <ellipse
+     cx="44.129993"
+     cy="59.599998"
+     rx="6"
+     ry="3"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse26" />
+  <ellipse
+     cx="58.129993"
+     cy="69.599998"
+     rx="5"
+     ry="2.5"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse28" />
+  <ellipse
+     cx="72.129997"
+     cy="56.599998"
+     rx="7"
+     ry="3"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse30" />
+  <ellipse
+     cx="52.129993"
+     cy="77.599998"
+     rx="4"
+     ry="2"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse32" />
+  <ellipse
+     cx="80.129997"
+     cy="71.599998"
+     rx="5"
+     ry="2.5"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse34" />
+  <text
+     x="62.129993"
+     y="92.599998"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#7a4a1e"
+     id="text36">dirty</text>
+  <!-- Cell (0,2) -->
+  <ellipse
+     cx="204.12999"
+     cy="57.599998"
+     rx="6"
+     ry="3"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse38" />
+  <ellipse
+     cx="220.12999"
+     cy="69.599998"
+     rx="5"
+     ry="2.5"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse40" />
+  <ellipse
+     cx="234.12999"
+     cy="54.599998"
+     rx="7"
+     ry="3"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse42" />
+  <ellipse
+     cx="212.12999"
+     cy="79.599998"
+     rx="4"
+     ry="2"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse44" />
+  <ellipse
+     cx="240.12999"
+     cy="74.599998"
+     rx="5"
+     ry="2.5"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse46" />
+  <text
+     x="222.12999"
+     y="92.599998"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#7a4a1e"
+     id="text48">dirty</text>
+  <!-- Cell (1,1) -->
+  <ellipse
+     cx="124.13"
+     cy="137.60001"
+     rx="6"
+     ry="3"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse50" />
+  <ellipse
+     cx="138.12999"
+     cy="149.60001"
+     rx="5"
+     ry="2.5"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse52" />
+  <ellipse
+     cx="152.12999"
+     cy="134.60001"
+     rx="7"
+     ry="3"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse54" />
+  <ellipse
+     cx="132.12999"
+     cy="159.60001"
+     rx="4"
+     ry="2"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse56" />
+  <ellipse
+     cx="160.12999"
+     cy="154.60001"
+     rx="5"
+     ry="2.5"
+     fill="#8b5e3c"
+     opacity="0.75"
+     id="ellipse58" />
+  <text
+     x="142.12999"
+     y="172.60001"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#7a4a1e"
+     id="text60">dirty</text>
+  <!-- Clean labels -->
+  <text
+     x="142.12999"
+     y="62.599998"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#2e7d32"
+     id="text62">✓</text>
+  <text
+     x="62.129993"
+     y="142.60001"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#2e7d32"
+     id="text66">✓</text>
+  <text
+     x="62.129993"
+     y="157.60001"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#2e7d32"
+     id="text68">clean</text>
+  <text
+     x="222.12999"
+     y="142.60001"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#2e7d32"
+     id="text70">✓</text>
+  <text
+     x="222.12999"
+     y="157.60001"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#2e7d32"
+     id="text72">clean</text>
+  <!-- ══ ROBOT in cell (0,1) — the "active" robot ══ -->
+  <!-- Body -->
+  <ellipse
+     cx="142.12999"
+     cy="47.599998"
+     rx="26"
+     ry="22"
+     fill="#1565c0"
+     stroke="#0d47a1"
+     stroke-width="2"
+     id="ellipse74" />
+  <!-- Dome / top -->
+  <ellipse
+     cx="142.12999"
+     cy="33.599998"
+     rx="16"
+     ry="10"
+     fill="#42a5f5"
+     stroke="#0d47a1"
+     stroke-width="1.5"
+     id="ellipse76" />
+  <!-- Eye / sensor -->
+  <circle
+     cx="142.12999"
+     cy="33.599998"
+     r="4"
+     fill="#ffffff"
+     id="circle78" />
+  <circle
+     cx="142.12999"
+     cy="33.599998"
+     r="2"
+     fill="#0d47a1"
+     id="circle80" />
+  <!-- Wheels -->
+  <rect
+     x="116.13"
+     y="61.599998"
+     width="12"
+     height="7"
+     rx="3"
+     fill="#333333"
+     id="rect82" />
+  <rect
+     x="156.12999"
+     y="61.599998"
+     width="12"
+     height="7"
+     rx="3"
+     fill="#333333"
+     id="rect84" />
+  <!-- Suction nozzle -->
+  <rect
+     x="137.12999"
+     y="65.599998"
+     width="10"
+     height="6"
+     rx="2"
+     fill="#ff8f00"
+     id="rect86" />
+  <!-- Label R -->
+  <text
+     x="142.12999"
+     y="53.599998"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text88">R1</text>
+  <!-- Perception arc -->
+  <!-- ══ SECOND ROBOT in cell (1,2) ══ -->
+  <ellipse
+     cx="222.12999"
+     cy="127.6"
+     rx="22"
+     ry="18"
+     fill="#6a1b9a"
+     stroke="#4a148c"
+     stroke-width="2"
+     id="ellipse94" />
+  <ellipse
+     cx="222.12999"
+     cy="115.6"
+     rx="13"
+     ry="8"
+     fill="#ab47bc"
+     stroke="#4a148c"
+     stroke-width="1.5"
+     id="ellipse96" />
+  <circle
+     cx="222.12999"
+     cy="115.6"
+     r="3.5"
+     fill="#ffffff"
+     id="circle98" />
+  <circle
+     cx="222.12999"
+     cy="115.6"
+     r="1.8"
+     fill="#4a148c"
+     id="circle100" />
+  <rect
+     x="200.12999"
+     y="139.60001"
+     width="10"
+     height="6"
+     rx="3"
+     fill="#333333"
+     id="rect102" />
+  <rect
+     x="234.12999"
+     y="139.60001"
+     width="10"
+     height="6"
+     rx="3"
+     fill="#333333"
+     id="rect104" />
+  <rect
+     x="217.12999"
+     y="142.60001"
+     width="10"
+     height="5"
+     rx="2"
+     fill="#ff8f00"
+     id="rect106" />
+  <text
+     x="222.12999"
+     y="132.60001"
+     text-anchor="middle"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text108">R2</text>
+  <!-- ══════════════════════════════════════════════
+       LEGEND  (right side)
+  ═══════════════════════════════════════════════ -->
+  <rect
+     x="286.90112"
+     y="14.371119"
+     width="107.10571"
+     height="153.99467"
+     rx="5.0402689"
+     fill="#ffffff"
+     stroke="#bbbbbb"
+     stroke-width="1.05061"
+     id="rect110" />
+  <text
+     x="340.13"
+     y="32.599998"
+     text-anchor="middle"
+     font-size="13px"
+     font-weight="bold"
+     fill="#333333"
+     id="text112">Legend</text>
+  <!-- Dirty cell -->
+  <rect
+     x="302.13"
+     y="44.599998"
+     width="22"
+     height="22"
+     rx="3"
+     fill="#f9e4b7"
+     stroke="#555555"
+     stroke-width="1.2"
+     id="rect114" />
+  <ellipse
+     cx="309.13"
+     cy="54.599998"
+     rx="4"
+     ry="2"
+     fill="#8b5e3c"
+     opacity="0.8"
+     id="ellipse116" />
+  <ellipse
+     cx="318.13"
+     cy="59.599998"
+     rx="3"
+     ry="1.5"
+     fill="#8b5e3c"
+     opacity="0.8"
+     id="ellipse118" />
+  <text
+     x="330.13"
+     y="59.599998"
+     font-size="11px"
+     fill="#333333"
+     id="text120">Dirty cell</text>
+  <!-- Clean cell -->
+  <rect
+     x="302.13"
+     y="76.599998"
+     width="22"
+     height="22"
+     rx="3"
+     fill="#e0f0e0"
+     stroke="#555555"
+     stroke-width="1.2"
+     id="rect122" />
+  <text
+     x="313.13"
+     y="91.599998"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#2e7d32"
+     id="text124">✓</text>
+  <text
+     x="330.13"
+     y="91.599998"
+     font-size="11px"
+     fill="#333333"
+     id="text126">Clean cell</text>
+  <!-- Robot 1 -->
+  <ellipse
+     cx="313.13"
+     cy="120.6"
+     rx="11"
+     ry="9"
+     fill="#1565c0"
+     stroke="#0d47a1"
+     stroke-width="1.5"
+     id="ellipse128" />
+  <text
+     x="313.13"
+     y="123.6"
+     text-anchor="middle"
+     font-size="8px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text130">R1</text>
+  <text
+     x="330.13"
+     y="123.6"
+     font-size="11px"
+     fill="#333333"
+     id="text132">Robot 1</text>
+  <!-- Robot 2 -->
+  <ellipse
+     cx="313.13"
+     cy="149.60001"
+     rx="11"
+     ry="9"
+     fill="#6a1b9a"
+     stroke="#4a148c"
+     stroke-width="1.5"
+     id="ellipse134" />
+  <text
+     x="313.13"
+     y="152.60001"
+     text-anchor="middle"
+     font-size="8px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="text136">R2</text>
+  <text
+     x="330.13"
+     y="152.60001"
+     font-size="11px"
+     fill="#333333"
+     id="text138">Robot 2</text>
+  <!-- Perception -->
+  <!-- ══════════════════════════════════════════════
+       ACTION ARROWS  (R1 considering moving right)
+  ═══════════════════════════════════════════════ -->
+  <defs
+     id="defs150">
+    <marker
+       id="arrowhead"
+       markerWidth="8"
+       markerHeight="6"
+       refX="8"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="8,3 0,6 0,0 "
+         fill="#e65100"
+         id="polygon144" />
+    </marker>
+    <marker
+       id="arrowhead2"
+       markerWidth="8"
+       markerHeight="6"
+       refX="8"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0,6 0,0 8,3 "
+         fill="#558b2f"
+         id="polygon147" />
+    </marker>
+  </defs>
+  <!-- R1: possible move right (toward dirty cell) -->
+  <line
+     x1="169.12999"
+     y1="49.599998"
+     x2="195.12999"
+     y2="49.599998"
+     stroke="#e65100"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrowhead)"
+     id="line152" />
+  <text
+     x="182.12999"
+     y="43.599998"
+     text-anchor="middle"
+     font-size="9px"
+     fill="#e65100"
+     id="text154">Move?</text>
+  <!-- R1: suck action (downward nozzle) -->
+  <line
+     x1="142.12999"
+     y1="71.599998"
+     x2="142.12999"
+     y2="87.599998"
+     stroke="#558b2f"
+     stroke-width="2"
+     marker-end="url(#arrowhead2)"
+     id="line156" />
+  <text
+     x="148.79114"
+     y="83.914429"
+     font-size="9px"
+     fill="#558b2f"
+     id="text158">Suck?</text>
+  <!-- ══════════════════════════════════════════════
+       ENVIRONMENT STATE  label
+  ═══════════════════════════════════════════════ -->
+  <rect
+     x="22.129993"
+     y="187.60001"
+     width="240"
+     height="24"
+     rx="5"
+     fill="#e3f2fd"
+     stroke="#90caf9"
+     stroke-width="1.2"
+     id="rect160" />
+  <text
+     x="142.12999"
+     y="203.60001"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#1565c0"
+     id="text162">Environment: 3 dirty / 3 clean cells</text>
+  <!-- ══════════════════════════════════════════════
+       PERCEPT label for R1
+  ═══════════════════════════════════════════════ -->
+  <!-- Column / row indices -->
+  <text
+     x="62.129993"
+     y="7.5999999"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#888888"
+     id="text174">col 0</text>
+  <text
+     x="142.12999"
+     y="7.5999999"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#888888"
+     id="text176">col 1</text>
+  <text
+     x="222.12999"
+     y="7.5999999"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#888888"
+     id="text178">col 2</text>
+  <text
+     x="12.129993"
+     y="59.599998"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#888888"
+     id="text180">row 0</text>
+  <text
+     x="12.129993"
+     y="139.60001"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#888888"
+     id="text182">row 1</text>
+</svg>

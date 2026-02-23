@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 762 331"
+   width="762"
+   height="331"
+   version="1.1"
+   id="svg96"
+   sodipodi:docname="environment_determinism.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview98"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3700194"
+     inkscape:cx="381.01651"
+     inkscape:cy="147.07821"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg96" />
+  <!-- Background -->
+  <!-- Title -->
+  <!-- ============================================================ -->
+  <!-- LEFT PANEL: Deterministic                                     -->
+  <!-- ============================================================ -->
+  <rect
+     x="1"
+     y="1"
+     width="365"
+     height="325"
+     rx="12"
+     fill="#d5e8d4"
+     stroke="#82b366"
+     stroke-width="2"
+     id="rect6" />
+  <text
+     x="183"
+     y="26"
+     font-family="Arial, sans-serif"
+     font-size="15px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1a5e1a"
+     id="text8">Deterministic</text>
+  <!-- State S1 -->
+  <circle
+     cx="101"
+     cy="111"
+     r="42"
+     fill="#aed6f1"
+     stroke="#1a5276"
+     stroke-width="2"
+     id="circle10" />
+  <text
+     x="101"
+     y="107"
+     font-family="Arial, sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1a5276"
+     id="text12">State</text>
+  <text
+     x="101"
+     y="124"
+     font-family="Arial, sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1a5276"
+     id="text14">S₁</text>
+  <!-- Arrow with action label -->
+  <line
+     x1="146"
+     y1="111"
+     x2="236"
+     y2="111"
+     stroke="#1a5276"
+     stroke-width="2.5"
+     marker-end="url(#arrow-blue)"
+     id="line16" />
+  <text
+     x="191"
+     y="101"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#1a5276"
+     font-style="italic"
+     id="text18">action a</text>
+  <!-- State S2 (always same) -->
+  <circle
+     cx="281"
+     cy="111"
+     r="42"
+     fill="#aed6f1"
+     stroke="#1a5276"
+     stroke-width="2"
+     id="circle20" />
+  <text
+     x="281"
+     y="107"
+     font-family="Arial, sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1a5276"
+     id="text22">State</text>
+  <text
+     x="281"
+     y="124"
+     font-family="Arial, sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#1a5276"
+     id="text24">S₂</text>
+  <!-- "Always" label -->
+  <text
+     x="183"
+     y="186"
+     font-family="Arial, sans-serif"
+     font-size="13px"
+     text-anchor="middle"
+     fill="#1a5e1a"
+     id="text28">Same action → <tspan
+   font-weight="bold"
+   id="tspan26">always</tspan> same next state</text>
+  <!-- Lock icon (predictable) -->
+  <rect
+     x="153"
+     y="206"
+     width="30"
+     height="24"
+     rx="3"
+     fill="#27ae60"
+     stroke="#1a5e1a"
+     stroke-width="2"
+     id="rect30" />
+  <path
+     d="m 158.61833,206.37793 q 3.65692,-15.72647 9.75178,-15.72647 6.09487,0 8.12649,15.72647"
+     fill="none"
+     stroke="#1a5e1a"
+     stroke-width="1.63172"
+     id="path32" />
+  <circle
+     cx="168"
+     cy="218"
+     r="4"
+     fill="#ffffff"
+     id="circle34" />
+  <text
+     x="206"
+     y="224"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     fill="#1a5e1a"
+     id="text36">Fully predictable</text>
+  <!-- Formula -->
+  <rect
+     x="31"
+     y="251"
+     width="310"
+     height="32"
+     rx="6"
+     fill="#c8e6c9"
+     stroke="#82b366"
+     stroke-width="1"
+     id="rect38" />
+  <text
+     x="186"
+     y="272"
+     font-family="Arial, sans-serif"
+     font-size="13px"
+     text-anchor="middle"
+     fill="#1a5276"
+     font-style="italic"
+     id="text40">S₂ = f(S₁, a) — one unique outcome</text>
+  <!-- ============================================================ -->
+  <!-- RIGHT PANEL: Stochastic                                       -->
+  <!-- ============================================================ -->
+  <rect
+     x="396"
+     y="1"
+     width="365"
+     height="325"
+     rx="12"
+     fill="#ffe6cc"
+     stroke="#d6a030"
+     stroke-width="2"
+     id="rect42" />
+  <text
+     x="578"
+     y="26"
+     font-family="Arial, sans-serif"
+     font-size="15px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#7a3b00"
+     id="text44">Stochastic</text>
+  <!-- State S1 -->
+  <circle
+     cx="471"
+     cy="121"
+     r="42"
+     fill="#f9c7a0"
+     stroke="#7a3b00"
+     stroke-width="2"
+     id="circle46" />
+  <text
+     x="471"
+     y="117"
+     font-family="Arial, sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#7a3b00"
+     id="text48">State</text>
+  <text
+     x="471"
+     y="134"
+     font-family="Arial, sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#7a3b00"
+     id="text50">S₁</text>
+  <!-- Action label -->
+  <text
+     x="556"
+     y="76"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     text-anchor="middle"
+     fill="#7a3b00"
+     font-style="italic"
+     id="text52">action a</text>
+  <!-- Arrow to S2a (70%) -->
+  <line
+     x1="511"
+     y1="104"
+     x2="626"
+     y2="74"
+     stroke="#e67e22"
+     stroke-width="2"
+     marker-end="url(#arrow-orange)"
+     id="line54" />
+  <circle
+     cx="661"
+     cy="66"
+     r="32"
+     fill="#f9c7a0"
+     stroke="#7a3b00"
+     stroke-width="2"
+     id="circle56" />
+  <text
+     x="661"
+     y="62"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#7a3b00"
+     id="text58">S₂ₐ</text>
+  <text
+     x="661"
+     y="78"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#e65100"
+     id="text60">70%</text>
+  <!-- Arrow to S2b (20%) -->
+  <line
+     x1="514"
+     y1="121"
+     x2="626"
+     y2="136"
+     stroke="#e67e22"
+     stroke-width="2"
+     marker-end="url(#arrow-orange)"
+     id="line62" />
+  <circle
+     cx="661"
+     cy="136"
+     r="32"
+     fill="#f9c7a0"
+     stroke="#7a3b00"
+     stroke-width="2"
+     id="circle64" />
+  <text
+     x="661"
+     y="132"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#7a3b00"
+     id="text66">S₂ᵦ</text>
+  <text
+     x="661"
+     y="148"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#e65100"
+     id="text68">20%</text>
+  <!-- Arrow to S2c (10%) -->
+  <line
+     x1="511"
+     y1="138"
+     x2="626"
+     y2="194"
+     stroke="#e67e22"
+     stroke-width="2"
+     marker-end="url(#arrow-orange)"
+     id="line70" />
+  <circle
+     cx="661"
+     cy="204"
+     r="32"
+     fill="#f9c7a0"
+     stroke="#7a3b00"
+     stroke-width="2"
+     id="circle72" />
+  <text
+     x="661"
+     y="200"
+     font-family="Arial, sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     text-anchor="middle"
+     fill="#7a3b00"
+     id="text74">S₂꜀</text>
+  <text
+     x="661"
+     y="216"
+     font-family="Arial, sans-serif"
+     font-size="11px"
+     text-anchor="middle"
+     fill="#e65100"
+     id="text76">10%</text>
+  <text
+     x="578"
+     y="264"
+     font-family="Arial, sans-serif"
+     font-size="13px"
+     text-anchor="middle"
+     fill="#7a3b00"
+     id="text80">Same action → <tspan
+   font-weight="bold"
+   id="tspan78">uncertain</tspan> next state</text>
+  <!-- Formula -->
+  <rect
+     x="411"
+     y="281"
+     width="335"
+     height="32"
+     rx="6"
+     fill="#ffe0b2"
+     stroke="#d6a030"
+     stroke-width="1"
+     id="rect82" />
+  <text
+     x="578"
+     y="302"
+     font-family="Arial, sans-serif"
+     font-size="13px"
+     text-anchor="middle"
+     fill="#7a3b00"
+     font-style="italic"
+     id="text84">P(S₂ | S₁, a) — probability distribution</text>
+  <!-- Divider -->
+  <line
+     x1="381"
+     y1="1"
+     x2="381"
+     y2="331"
+     stroke="#aaaaaa"
+     stroke-width="1.5"
+     stroke-dasharray="5, 4"
+     id="line86" />
+  <!-- Arrow markers -->
+  <defs
+     id="defs94">
+    <marker
+       id="arrow-blue"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0,7 0,0 10,3.5 "
+         fill="#1a5276"
+         id="polygon88" />
+    </marker>
+    <marker
+       id="arrow-orange"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0,7 0,0 10,3.5 "
+         fill="#e67e22"
+         id="polygon91" />
+    </marker>
+  </defs>
+</svg>

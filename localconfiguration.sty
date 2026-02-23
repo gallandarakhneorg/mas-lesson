@@ -1,0 +1,104 @@
+\ProvidesPackage{localconfiguration}[Local Configuration of the Document]
+
+\RequirePackage[utf8]{inputenc}
+
+\RequirePackage{algpseudocode}
+\RequirePackage{listings}
+\RequirePackage{autolatex} % For chapters 3 and 11
+\RequirePackage{tabularx}
+\RequirePackage{wasysym}
+\RequirePackage{epic}
+\RequirePackage{eepic}
+\RequirePackage{eurosym}
+\RequirePackage{sarl-beamer-listing}
+\RequirePackage{multirow}
+\RequirePackage{ifthen}
+\RequirePackage{bibunits}
+
+\RequirePackage[english,lined,titlenumbered]{algorithm2e}
+
+\algnewcommand{\Donnees}{\Statex \textbf{Donn\'ees}}
+
+%**** CAUTION ****
+% The graphics path will be locally redefined in the chapters.
+\graphicspath{{./imgs/}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\title{Multi-agent systems: An introduction to distributed artificial intelligence}
+
+\institute{\textbf{Universit\'e de Technologie de Belfort-Montb\'eliard} \\ 90010 Belfort cedex, France --- \insertinstituteurl}
+\instituteurl{http://www.ciad-lab.fr}
+
+\usefootlinewithsections
+%\useheaderlinewithutbmlogo
+
+%Boolean managing language of this presentation FR or EN
+\newboolean{isFrenchVersion}  
+
+\newcommand{\janus}{\textsc{Janus}\xspace}
+\newcommand{\jasim}{\textsc{JaSim}\xspace}
+
+\newcommand{\eg}{\textit{e.g.},\xspace}
+\newcommand{\ie}{\textit{i.e.},\xspace}
+
+\newcommand{\FuncName}[1]{\textsc{#1}\xspace}
+\newcommand{\True}{\textbf{true}\xspace}
+\newcommand{\deriv}{\textbf{d}}
+\DeclareMathOperator{\sgn}{sign}
+
+\begin{graphicspathcontext}{{./chapters/appendix/imgs/},\old}
+	\resolvepicturename{sgalland}
+	\addtextpicturepicture{sgalland}{\resolvedfilename}
+
+	\resolvepicturename{ngaud}
+	\addtextpicturepicture{ngaud}{\resolvedfilename}
+\end{graphicspathcontext}
+
+% Specific environment for Java listings
+\lstnewenvironment{javalisting}[1][]{\lstset{language=Java,basicstyle=\small,#1}}{}
+
+% Specific environment for SARL listings
+\lstnewenvironment{sarllisting}[1][]{\lstset{language=SARL,basicstyle=\small,#1}}{}
+
+\setbeamertemplate{code basic style}{\tiny}
+
+
+\def\subsubsectionname{\translate{Subsubsection}}
+\def\insertsubsubsectionnumber{\arabic{subsubsection}}
+
+\AtBeginSection{
+  	\tableofcontentslide[currentsection,hideothersubsections]
+}
+\AtBeginSubsection{
+  	\tableofcontentslide[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/hide/hide]
+}
+\AtBeginSubsubsection{
+  	\tableofcontentslide[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+}
+
+
+
+\renewcommand{\@bibunitname}{\jobname.\the\@bibunitauxcnt}
+
+\def\bibliographyslide{%
+	\begin{frame}[t,allowframebreaks]{\refname}%
+		\tiny\putbib[biblio]%
+	\end{frame}%
+}
+
+\NewEnviron{bibliographysection}[1][apalike]{%
+	\begin{bibunit}[apalike]%
+	\BODY%
+	\bibliographyslide%
+	\end{bibunit}%
+}
+
+\newcommand{\ahc}[2]{\mbox{}\hfill#1\hfill\mbox{}\newline#2}
+
+\endinput
+

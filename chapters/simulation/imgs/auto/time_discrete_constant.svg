@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 635.28711 231.60498"
+   width="635.28711"
+   height="231.60498"
+   font-family="'Segoe UI', Arial, sans-serif"
+   version="1.1"
+   id="svg132"
+   sodipodi:docname="time_discrete_constant.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview134"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.5222438"
+     inkscape:cx="284.44853"
+     inkscape:cy="113.97649"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg132" />
+  <!-- Background -->
+  <defs
+     id="defs10">
+    <marker
+       id="arr2"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="10,3.5 0,7 0,0 "
+         fill="#333333"
+         id="polygon4" />
+    </marker>
+    <marker
+       id="arr-step"
+       markerWidth="9"
+       markerHeight="6"
+       refX="8"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="9,3 0,6 0,0 "
+         fill="#e08c3b"
+         id="polygon7" />
+    </marker>
+  </defs>
+  <!-- Y axis -->
+  <line
+     x1="35.770508"
+     y1="203.46436"
+     x2="35.770508"
+     y2="13.464355"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arr2)"
+     id="line12" />
+  <text
+     x="29.770508"
+     y="9.4643555"
+     text-anchor="end"
+     font-size="13px"
+     fill="#333333"
+     id="text14">State</text>
+  <!-- X axis -->
+  <line
+     x1="35.770508"
+     y1="203.46436"
+     x2="625.77051"
+     y2="203.46436"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arr2)"
+     id="line16" />
+  <text
+     x="631.77051"
+     y="207.46436"
+     font-size="13px"
+     fill="#333333"
+     id="text18">t</text>
+  <!-- Constant step markers & values -->
+  <!-- Steps at x = 80, 175, 270, 365, 460, 555, 650 → Δt = 95px -->
+  <!-- State values (y): 200, 150, 170, 110, 130, 90, 145 -->
+  <!-- Δt brace on x-axis -->
+  <line
+     x1="35.770508"
+     y1="215.46436"
+     x2="130.77051"
+     y2="215.46436"
+     stroke="#e08c3b"
+     stroke-width="1.5"
+     id="line20" />
+  <line
+     x1="35.770508"
+     y1="211.46436"
+     x2="35.770508"
+     y2="219.46436"
+     stroke="#e08c3b"
+     stroke-width="1.5"
+     id="line22" />
+  <line
+     x1="130.77051"
+     y1="211.46436"
+     x2="130.77051"
+     y2="219.46436"
+     stroke="#e08c3b"
+     stroke-width="1.5"
+     id="line24" />
+  <text
+     x="82.770508"
+     y="231.46436"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#e08c3b"
+     font-weight="bold"
+     id="text26">Δt</text>
+  <!-- Repeat Δt brace suggestion -->
+  <line
+     x1="130.77051"
+     y1="215.46436"
+     x2="225.77051"
+     y2="215.46436"
+     stroke="#e08c3b"
+     stroke-width="1.5"
+     opacity="0.4"
+     id="line28" />
+  <line
+     x1="225.77051"
+     y1="211.46436"
+     x2="225.77051"
+     y2="219.46436"
+     stroke="#e08c3b"
+     stroke-width="1.5"
+     opacity="0.4"
+     id="line30" />
+  <text
+     x="177.77051"
+     y="231.46436"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#e08c3b"
+     opacity="0.5"
+     id="text32">Δt</text>
+  <line
+     x1="225.77051"
+     y1="215.46436"
+     x2="320.77051"
+     y2="215.46436"
+     stroke="#e08c3b"
+     stroke-width="1.5"
+     opacity="0.25"
+     id="line34" />
+  <line
+     x1="320.77051"
+     y1="211.46436"
+     x2="320.77051"
+     y2="219.46436"
+     stroke="#e08c3b"
+     stroke-width="1.5"
+     opacity="0.25"
+     id="line36" />
+  <!-- Tick marks on x-axis -->
+  <!-- t0..t6 -->
+  <!-- x positions: 80, 175, 270, 365, 460, 555, 650 -->
+  <line
+     x1="35.770508"
+     y1="200.46436"
+     x2="35.770508"
+     y2="208.46436"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line38" />
+  <line
+     x1="130.77051"
+     y1="200.46436"
+     x2="130.77051"
+     y2="208.46436"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line40" />
+  <line
+     x1="225.77051"
+     y1="200.46436"
+     x2="225.77051"
+     y2="208.46436"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line42" />
+  <line
+     x1="320.77051"
+     y1="200.46436"
+     x2="320.77051"
+     y2="208.46436"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line44" />
+  <line
+     x1="415.77051"
+     y1="200.46436"
+     x2="415.77051"
+     y2="208.46436"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line46" />
+  <line
+     x1="510.77051"
+     y1="200.46436"
+     x2="510.77051"
+     y2="208.46436"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line48" />
+  <line
+     x1="605.77051"
+     y1="200.46436"
+     x2="605.77051"
+     y2="208.46436"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line50" />
+  <text
+     x="35.770508"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#555555"
+     id="text52">t₀</text>
+  <text
+     x="130.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#555555"
+     id="text54">t₁</text>
+  <text
+     x="225.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#555555"
+     id="text56">t₂</text>
+  <text
+     x="320.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#555555"
+     id="text58">t₃</text>
+  <text
+     x="415.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#555555"
+     id="text60">t₄</text>
+  <text
+     x="510.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#555555"
+     id="text62">t₅</text>
+  <text
+     x="605.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#555555"
+     id="text64">t₆</text>
+  <!-- Vertical dashed grid lines -->
+  <line
+     x1="130.77051"
+     y1="23.464355"
+     x2="130.77051"
+     y2="203.46436"
+     stroke="#cccccc"
+     stroke-width="1"
+     stroke-dasharray="4, 4"
+     id="line66" />
+  <line
+     x1="225.77051"
+     y1="23.464355"
+     x2="225.77051"
+     y2="203.46436"
+     stroke="#cccccc"
+     stroke-width="1"
+     stroke-dasharray="4, 4"
+     id="line68" />
+  <line
+     x1="320.77051"
+     y1="23.464355"
+     x2="320.77051"
+     y2="203.46436"
+     stroke="#cccccc"
+     stroke-width="1"
+     stroke-dasharray="4, 4"
+     id="line70" />
+  <line
+     x1="415.77051"
+     y1="23.464355"
+     x2="415.77051"
+     y2="203.46436"
+     stroke="#cccccc"
+     stroke-width="1"
+     stroke-dasharray="4, 4"
+     id="line72" />
+  <line
+     x1="510.77051"
+     y1="23.464355"
+     x2="510.77051"
+     y2="203.46436"
+     stroke="#cccccc"
+     stroke-width="1"
+     stroke-dasharray="4, 4"
+     id="line74" />
+  <line
+     x1="605.77051"
+     y1="23.464355"
+     x2="605.77051"
+     y2="203.46436"
+     stroke="#cccccc"
+     stroke-width="1"
+     stroke-dasharray="4, 4"
+     id="line76" />
+  <!-- Horizontal step (staircase) lines between sample points -->
+  <!-- From t0(200) to t1(150) -->
+  <line
+     x1="35.770508"
+     y1="163.46436"
+     x2="130.77051"
+     y2="163.46436"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line78" />
+  <line
+     x1="130.77051"
+     y1="163.46436"
+     x2="130.77051"
+     y2="113.46436"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line80" />
+  <line
+     x1="130.77051"
+     y1="113.46436"
+     x2="225.77051"
+     y2="113.46436"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line82" />
+  <line
+     x1="225.77051"
+     y1="113.46436"
+     x2="225.77051"
+     y2="133.46436"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line84" />
+  <line
+     x1="225.77051"
+     y1="133.46436"
+     x2="320.77051"
+     y2="133.46436"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line86" />
+  <line
+     x1="320.77051"
+     y1="133.46436"
+     x2="320.77051"
+     y2="73.464355"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line88" />
+  <line
+     x1="320.77051"
+     y1="73.464355"
+     x2="415.77051"
+     y2="73.464355"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line90" />
+  <line
+     x1="415.77051"
+     y1="73.464355"
+     x2="415.77051"
+     y2="93.464355"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line92" />
+  <line
+     x1="415.77051"
+     y1="93.464355"
+     x2="510.77051"
+     y2="93.464355"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line94" />
+  <line
+     x1="510.77051"
+     y1="93.464355"
+     x2="510.77051"
+     y2="53.464355"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line96" />
+  <line
+     x1="510.77051"
+     y1="53.464355"
+     x2="605.77051"
+     y2="53.464355"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line98" />
+  <line
+     x1="605.77051"
+     y1="53.464355"
+     x2="605.77051"
+     y2="108.46436"
+     stroke="#e08c3b"
+     stroke-width="1.8"
+     stroke-dasharray="5, 4"
+     opacity="0.4"
+     id="line100" />
+  <!-- Arrows between sample points along x -->
+  <line
+     x1="40.770508"
+     y1="188.46436"
+     x2="123.77051"
+     y2="188.46436"
+     stroke="#e08c3b"
+     stroke-width="2"
+     marker-end="url(#arr-step)"
+     id="line102" />
+  <line
+     x1="135.77051"
+     y1="188.46436"
+     x2="218.77051"
+     y2="188.46436"
+     stroke="#e08c3b"
+     stroke-width="2"
+     marker-end="url(#arr-step)"
+     id="line104" />
+  <line
+     x1="230.77051"
+     y1="188.46436"
+     x2="313.77051"
+     y2="188.46436"
+     stroke="#e08c3b"
+     stroke-width="2"
+     marker-end="url(#arr-step)"
+     id="line106" />
+  <line
+     x1="325.77051"
+     y1="188.46436"
+     x2="408.77051"
+     y2="188.46436"
+     stroke="#e08c3b"
+     stroke-width="2"
+     marker-end="url(#arr-step)"
+     id="line108" />
+  <line
+     x1="420.77051"
+     y1="188.46436"
+     x2="503.77051"
+     y2="188.46436"
+     stroke="#e08c3b"
+     stroke-width="2"
+     marker-end="url(#arr-step)"
+     id="line110" />
+  <line
+     x1="515.77051"
+     y1="188.46436"
+     x2="598.77051"
+     y2="188.46436"
+     stroke="#e08c3b"
+     stroke-width="2"
+     marker-end="url(#arr-step)"
+     id="line112" />
+  <!-- Discrete sample dots -->
+  <circle
+     cx="35.770508"
+     cy="163.46436"
+     r="6"
+     fill="#e08c3b"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle114" />
+  <circle
+     cx="130.77051"
+     cy="113.46436"
+     r="6"
+     fill="#e08c3b"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle116" />
+  <circle
+     cx="225.77051"
+     cy="133.46436"
+     r="6"
+     fill="#e08c3b"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle118" />
+  <circle
+     cx="320.77051"
+     cy="73.464355"
+     r="6"
+     fill="#e08c3b"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle120" />
+  <circle
+     cx="415.77051"
+     cy="93.464355"
+     r="6"
+     fill="#e08c3b"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle122" />
+  <circle
+     cx="510.77051"
+     cy="53.464355"
+     r="6"
+     fill="#e08c3b"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle124" />
+  <circle
+     cx="605.77051"
+     cy="108.46436"
+     r="6"
+     fill="#e08c3b"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle126" />
+  <!-- Annotation -->
+  <text
+     x="385.77051"
+     y="38.464355"
+     font-size="12px"
+     fill="#b86718"
+     font-style="italic"
+     id="text128">state known only</text>
+  <text
+     x="385.77051"
+     y="53.464355"
+     font-size="12px"
+     fill="#b86718"
+     font-style="italic"
+     id="text130">at each time step</text>
+</svg>

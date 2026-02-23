@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 635.28711 225.68506"
+   width="635.28711"
+   height="225.68506"
+   font-family="'Segoe UI', Arial, sans-serif"
+   version="1.1"
+   id="svg44"
+   sodipodi:docname="time_continuous.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview46"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.1527778"
+     inkscape:cx="297.29032"
+     inkscape:cy="113.57419"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg44" />
+  <!-- Background -->
+  <!-- Axes -->
+  <defs
+     id="defs10">
+    <marker
+       id="arr"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="10,3.5 0,7 0,0 "
+         fill="#333333"
+         id="polygon4" />
+    </marker>
+  </defs>
+  <!-- Y axis -->
+  <line
+     x1="35.770508"
+     y1="203.46436"
+     x2="35.770508"
+     y2="13.464355"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arr)"
+     id="line12" />
+  <text
+     x="29.770508"
+     y="9.4643555"
+     text-anchor="end"
+     font-size="13px"
+     fill="#333333"
+     id="text14">State</text>
+  <!-- X axis -->
+  <line
+     x1="35.770508"
+     y1="203.46436"
+     x2="625.77051"
+     y2="203.46436"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arr)"
+     id="line16" />
+  <text
+     x="631.77051"
+     y="207.46436"
+     font-size="13px"
+     fill="#333333"
+     id="text18">t</text>
+  <!-- Continuous curve (smooth sine-like evolving state) -->
+  <path
+     d="m 35.770508,163.46436 c 50,-10 80.000002,-100.000005 140.000002,-90.000005 60,10 80,70.000005 140,50.000005 60,-20 90,-80.000005 150,-70.000005 60,10 90,80.000005 140,65.000005"
+     stroke="#4a90d9"
+     stroke-width="3"
+     fill="none"
+     stroke-linecap="round"
+     id="path20" />
+  <!-- Shading under the curve -->
+  <path
+     d="m 35.770508,163.46436 c 50,-10 80.000002,-100.000005 140.000002,-90.000005 60,10 80,70.000005 140,50.000005 60,-20 90,-80.000005 150,-70.000005 60,10 90,80.000005 140,65.000005 v 85 H 35.770508 Z"
+     fill="#4a90d9"
+     opacity="0.07"
+     id="path22" />
+  <!-- Highlight: a few tangent tick marks to suggest continuity -->
+  <!-- t0 label -->
+  <line
+     x1="35.770508"
+     y1="203.46436"
+     x2="35.770508"
+     y2="211.46436"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line30" />
+  <text
+     x="35.770508"
+     y="223.46436"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#555555"
+     id="text32">t₀</text>
+  <!-- Continuous time label on axis -->
+  <!-- Annotation -->
+  <text
+     x="475.77051"
+     y="41.464355"
+     font-size="12px"
+     fill="#2c6fad"
+     font-style="italic"
+     id="text38">state(t) defined</text>
+  <text
+     x="475.77051"
+     y="56.464355"
+     font-size="12px"
+     fill="#2c6fad"
+     font-style="italic"
+     id="text40">at every instant t</text>
+</svg>

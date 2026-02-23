@@ -1,0 +1,277 @@
+\begin{graphicspathcontext}{{./chapters/mas/imgs/},{./chapters/mas/imgs/auto/},\old}
+
+\begin{frame}[t]{Interests for Using Multiagent Systems}
+	\vspace{-.15cm}
+	\begin{columns}
+		\begin{column}{.2\linewidth}
+			\begin{bottomarrowsequence}
+				\arrow[bg=CIADgreen]{Natural}
+				\arrow{Distribution}
+				\arrow{Heterogeneity}
+				\arrow{Openness}
+				\arrow{Complexity}
+				\arrow{Legacy}
+			\end{bottomarrowsequence}
+		\end{column}
+		\begin{column}{.8\linewidth}
+			\simplebox{``For many problems, the agent metaphor provides an \emph{intuitive and natural way of thinking} about, designing and implementing complex software systems'' \cite{Wooldridge09}}
+			\begin{columns}
+				\begin{column}{.5\linewidth}
+					\begin{block}{Why?}
+						\smaller
+						\begin{itemize}
+						\item Many real-world problems already involve
+						\emph{independent, interacting entities}
+						\item Agents \emph{mirror} real-world actors
+						\item Decomposing a problem into agents
+						\emph{matches the domain structure}
+						directly, reducing the abstraction gap
+						\item Stakeholders can reason using familiar concepts
+						\end{itemize}
+					\end{block}
+				\end{column}
+				\begin{column}{.5\linewidth}
+					\viconbox{
+						\smaller
+						\begin{description}
+							\item[Easier modelling] one-to-one mapping
+							\item[Maintainability] changes translate naturally
+							\item[Communicability] stakeholders
+							understand
+							\item[Scalability] new real-world
+							actors $\Rightarrow$ new agents
+						\end{description}
+					}{pros-icon}
+				\end{column}
+			\end{columns}
+  		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Interests for Using Multiagent Systems}
+	\vspace{-.15cm}
+	\begin{columns}
+		\begin{column}{.2\linewidth}
+			\begin{bottomarrowsequence}
+				\arrow{Natural}
+				\arrow[bg=CIADgreen]{Distribution}
+				\arrow{Heterogeneity}
+				\arrow{Openness}
+				\arrow{Complexity}
+				\arrow{Legacy}
+			\end{bottomarrowsequence}
+		\end{column}
+		\begin{column}{.8\linewidth}
+			\simplebox{``Some problems are most naturally seen as a collection of independent, autonomous components that must \emph{coordinate} to achieve a goal, where there is \emph{no single locus of control} and data may be \emph{inherently distributed}'' \cite{Wooldridge09}}
+			\begin{columns}
+				\begin{column}{.5\linewidth}
+					\begin{block}{Why?}
+						\smaller
+						\begin{compactitemize}
+							\item Many real systems have \emph{no natural central authority}
+							\item Data is often \emph{physically or legally impossible to centralize}
+							\item Single controller $=$ failure or performance bottleneck
+							\item Reducing latency with \emph{local and autonomous} actions
+							\item Coordination emerges local interactions
+						\end{compactitemize}
+					\end{block}
+				\end{column}
+				\begin{column}{.5\linewidth}
+					\viconbox{
+						\smaller
+						\begin{compactdescription}
+							\item[Fault tolerance] other agents continue operating
+							\item[Scalability] new agent $\Rightarrow$ no redesigning
+							\item[Privacy preservation] only local data
+							\item[Parallelism] agents act simultaneously
+							\item[Responsiveness] local decisions reduce response overhead
+						\end{compactdescription}
+					}{pros-icon}
+				\end{column}
+			\end{columns}
+  		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Interests for Using Multiagent Systems}
+	\vspace{-.15cm}
+	\begin{columns}
+		\begin{column}{.2\linewidth}
+			\begin{bottomarrowsequence}
+				\arrow{Natural}
+				\arrow{Distribution}
+				\arrow[bg=CIADgreen]{Heterogeneity}
+				\arrow{Openness}
+				\arrow{Complexity}
+				\arrow{Legacy}
+			\end{bottomarrowsequence}
+		\end{column}
+		\begin{column}{.8\linewidth}
+			\simplebox{``Multiagent systems are a natural paradigm for building systems that integrate \emph{heterogeneous} components, possibly developed independently, using different languages, architectures, or data representations, [...]'' \cite{Wooldridge09}}
+			\begin{columns}
+				\begin{column}{.5\linewidth}
+					\begin{block}{Why?}
+						\smaller
+						\begin{compactitemize}
+							\item Systems with \emph{independently developed} components
+							\item Agents have \emph{different architectures}
+							\item Agents pursue \emph{different objectives}
+							\item Data in \emph{different formats, ontologies, or protocols}
+							\item \emph{No single model} fits all sub-problems
+							\item Agents implemented with \emph{different technologies}
+						\end{compactitemize}
+					\end{block}
+				\end{column}
+				\begin{column}{.5\linewidth}
+					\viconbox{
+						\smaller
+						\begin{compactdescription}
+							\item[Specialisation] optimised agent for specific task
+							\item[Emergent capabilities] combining agents with complementary behaviours
+							\item[Standardised interaction] common communication protocols allow heterogeneous agents to coordinate transparently
+						\end{compactdescription}
+					}{pros-icon}
+				\end{column}
+			\end{columns}
+  		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Interests for Using Multiagent Systems}
+	\vspace{-.15cm}
+	\begin{columns}
+		\begin{column}{.2\linewidth}
+			\begin{bottomarrowsequence}
+				\arrow{Natural}
+				\arrow{Distribution}
+				\arrow{Heterogeneity}
+				\arrow[bg=CIADgreen]{Openness}
+				\arrow{Complexity}
+				\arrow{Legacy}
+			\end{bottomarrowsequence}
+		\end{column}
+		\begin{column}{.8\linewidth}
+			\simplebox{``In an \emph{open} multiagent system, agents can freely enter and leave the system at runtime. The system does not assume a \emph{fixed, pre-known} set of participants, unlike \emph{closed} systems where all components are determined at design time'' \cite{Wooldridge09}}
+			\begin{columns}
+				\begin{column}{.5\linewidth}
+					\begin{block}{Why?}
+						\smaller
+						\begin{compactitemize}
+							\item Many systems are \emph{inherently dynamic}
+							\item \emph{Impossible to enumerate} all future participants
+							\item Closed systems \emph{break} when adding or removing component
+							\item Open systems reflect the \emph{social and organisational} nature of real-world interactions
+							\item Openness enables \emph{incremental deployment}
+						\end{compactitemize}
+					\end{block}
+				\end{column}
+				\begin{column}{.5\linewidth}
+					\viconbox{
+						\smaller
+						\begin{compactdescription}
+							\item[Dynamic scalability] no system restart
+							\item[Self-organisation] system adapts its structure
+							\item[Evolvability] system can incorporate new capabilities
+							\item[Resilience] departing or failing agents do not halt the system
+						\end{compactdescription}
+					}{pros-icon}
+				\end{column}
+			\end{columns}
+  		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Interests for Using Multiagent Systems}
+	\vspace{-.15cm}
+	\begin{columns}
+		\begin{column}{.2\linewidth}
+			\begin{bottomarrowsequence}
+				\arrow{Natural}
+				\arrow{Distribution}
+				\arrow{Heterogeneity}
+				\arrow{Openness}
+				\arrow[bg=CIADgreen]{Complexity}
+				\arrow{Legacy}
+			\end{bottomarrowsequence}
+		\end{column}
+		\begin{column}{.8\linewidth}
+			\simplebox{``Agent-oriented approaches provide an \emph{adequate paradigm} for the modelling of complex systems, since a complex system can be naturally described as a \emph{society of interacting autonomous agents}, exhibiting emergent behaviour, self-organisation, and decentralised control at multiple levels of abstraction.'' \cite{CossentinoGaudHilaireGallandKoukam2010_1}}
+			\begin{columns}
+				\begin{column}{.5\linewidth}
+					\begin{block}{Why?}
+						\smaller
+						\begin{compactitemize}
+							\item Complex systems consist of many
+							\emph{interacting autonomous entities}
+							whose global behaviour \emph{emerges}
+							from local interactions
+							\item \emph{No central controller}
+							\item \emph{Autonomy,
+							reactivity, proactivity, social ability} of complex entities \cite{Wooldridge95}
+							\item \emph{Multilevel structure} of complex systems \cite{Holland.95}
+						\end{compactitemize}
+					\end{block}
+				\end{column}
+				\begin{column}{.5\linewidth}
+					\viconbox{
+						\smaller\smaller
+						\begin{compactdescription}
+							\item[Emergence] system behaviour from nonlinear interactions
+							\item[Self-organisation] agents dynamically restructure their interactions
+							\item[Scalability] Huge number of entities
+							\item[Hierarchy] systems decomposed into complex systems
+							\item[Decentralised control] complex systems are intrinsically parallel
+						\end{compactdescription}
+					}{pros-icon}
+				\end{column}
+			\end{columns}
+  		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[t]{Interests for Using Multiagent Systems}
+	\vspace{-.15cm}
+	\begin{columns}
+		\begin{column}{.2\linewidth}
+			\begin{bottomarrowsequence}
+				\arrow{Natural}
+				\arrow{Distribution}
+				\arrow{Heterogeneity}
+				\arrow{Openness}
+				\arrow{Complexity}
+				\arrow[bg=CIADgreen]{Legacy}
+			\end{bottomarrowsequence}
+		\end{column}
+		\begin{column}{.8\linewidth}
+			\simplebox{\smaller ``Perhaps the most persuasive argument for agent-based computing is the \emph{legacy system} argument. Many organisations have a \emph{large investment} in software that cannot simply be discarded. The agent metaphor provides a natural way of \textbf{wrapping} these legacy components so that they can interact with newer systems'' \cite{Wooldridge09}}
+			\begin{columns}
+				\begin{column}{.5\linewidth}
+					\begin{block}{Why?}
+						\smaller
+						\begin{compactitemize}
+							\item Organisations accumulate \emph{decades
+							of software investment} with \emph{critical business logic}
+							\item Connecting legacy systems to modern architectures creates \emph{tight coupling}
+							\item \emph{Interoperability} between heterogeneous legacy systems and modern services is a fundamental enterprise challenge
+						\end{compactitemize}
+					\end{block}
+				\end{column}
+				\begin{column}{.5\linewidth}
+					\viconbox{
+						\smaller
+						\begin{compactdescription}
+							\item[Agent wrapping] legacy system encapsulated behind agent
+							\item[Incremental migration] from legacy system to agents progressively
+							\item[Reusability] legacy system becomes reusable service to agents
+						\end{compactdescription}
+					}{pros-icon}
+				\end{column}
+			\end{columns}
+  		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput
+

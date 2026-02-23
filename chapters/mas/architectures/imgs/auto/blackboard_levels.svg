@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="376.65158"
+   height="305.35449"
+   font-family="Arial, sans-serif"
+   font-size="12px"
+   version="1.1"
+   id="svg71"
+   sodipodi:docname="blackboard_levels.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview73"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.3852941"
+     inkscape:cx="157.63255"
+     inkscape:cy="152.39211"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg71" />
+  <defs
+     id="defs11">
+    <marker
+       id="arr-up"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 V 8 L 8,4 Z"
+         fill="#1e5aa0"
+         id="path2" />
+    </marker>
+    <marker
+       id="arr-g2"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 V 8 L 8,4 Z"
+         fill="#2e7d32"
+         id="path8" />
+    </marker>
+  </defs>
+  <!-- ── Blackboard outer box ── -->
+  <rect
+     x="31.874023"
+     y="1.25"
+     width="240"
+     height="286"
+     rx="10"
+     fill="#e8eef8"
+     stroke="#1e5aa0"
+     stroke-width="2.5"
+     id="rect13" />
+  <text
+     x="151.87402"
+     y="-4.75"
+     text-anchor="middle"
+     fill="#1e5aa0"
+     font-size="13px"
+     font-weight="bold"
+     id="text15" />
+  <!-- Level 4 – Solution (top, darkest) -->
+  <rect
+     x="41.874023"
+     y="9.25"
+     width="220"
+     height="54"
+     rx="7"
+     fill="#1e5aa0"
+     id="rect17" />
+  <text
+     x="151.87402"
+     y="31.25"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     font-weight="bold"
+     id="text19">Level 4 — Solution</text>
+  <text
+     x="151.87402"
+     y="48.25"
+     text-anchor="middle"
+     fill="#b0ccf0"
+     font-size="10px"
+     id="text21">complete answer / final result</text>
+  <!-- Level 3 -->
+  <rect
+     x="41.874023"
+     y="73.25"
+     width="220"
+     height="54"
+     rx="7"
+     fill="#3a72b8"
+     id="rect23" />
+  <text
+     x="151.87402"
+     y="95.25"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     font-weight="bold"
+     id="text25">Level 3 — Interpretation</text>
+  <text
+     x="151.87402"
+     y="112.25"
+     text-anchor="middle"
+     fill="#c8dcf8"
+     font-size="10px"
+     id="text27">structured partial solutions</text>
+  <!-- Level 2 -->
+  <rect
+     x="41.874023"
+     y="137.25"
+     width="220"
+     height="54"
+     rx="7"
+     fill="#6898d0"
+     id="rect29" />
+  <text
+     x="151.87402"
+     y="159.25"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     font-weight="bold"
+     id="text31">Level 2 — Hypotheses</text>
+  <text
+     x="151.87402"
+     y="176.25"
+     text-anchor="middle"
+     fill="#ddeeff"
+     font-size="10px"
+     id="text33">candidate partial results</text>
+  <!-- Level 1 – Raw data (bottom, lightest) -->
+  <rect
+     x="41.874023"
+     y="201.25"
+     width="220"
+     height="54"
+     rx="7"
+     fill="#a0bce0"
+     id="rect35" />
+  <text
+     x="151.87402"
+     y="223.25"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     font-weight="bold"
+     id="text37">Level 1 — Raw Data</text>
+  <text
+     x="151.87402"
+     y="240.25"
+     text-anchor="middle"
+     fill="#e8f0ff"
+     font-size="10px"
+     id="text39">observations, sensor inputs</text>
+  <!-- ── Upward abstraction arrow ── -->
+  <line
+     x1="17.874023"
+     y1="255.25"
+     x2="17.874023"
+     y2="11.25"
+     stroke="#1e5aa0"
+     stroke-width="2"
+     marker-end="url(#arr-up)"
+     id="line41" />
+  <text
+     x="-151.25"
+     y="7.8740234"
+     fill="#1e5aa0"
+     font-size="11px"
+     font-weight="bold"
+     transform="rotate(-90)"
+     id="text43">abstraction</text>
+  <!-- ── Agent A writes to level 2 (left side) ── -->
+  <g
+     id="g362"
+     transform="matrix(1.0708234,0,0,0.99858037,293.66277,0.20904095)">
+    <rect
+       x="0.75"
+       y="129.25"
+       width="76"
+       height="36"
+       rx="6"
+       fill="#2e7d32"
+       stroke="#1a4d1e"
+       stroke-width="1.5"
+       id="rect45" />
+    <text
+       x="38.75"
+       y="144.25"
+       text-anchor="middle"
+       fill="#ffffff"
+       font-size="11px"
+       font-weight="bold"
+       id="text47">Agent 1</text>
+    <text
+       x="38.75"
+       y="158.25"
+       text-anchor="middle"
+       fill="#c8f0c8"
+       font-size="9px"
+       id="text49">reads L1, writes L2</text>
+  </g>
+  <line
+     x1="294.26526"
+     y1="146.56546"
+     x2="264.26526"
+     y2="164.56546"
+     stroke="#2e7d32"
+     stroke-width="1.8"
+     marker-end="url(#arr-g2)"
+     id="line51" />
+  <!-- ── Agent B writes to level 3 (right side) ── -->
+  <rect
+     x="293.87402"
+     y="65.25"
+     width="82"
+     height="36"
+     rx="6"
+     fill="#2e7d32"
+     stroke="#1a4d1e"
+     stroke-width="1.5"
+     id="rect53" />
+  <text
+     x="334.87402"
+     y="80.25"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text55">Agent 2</text>
+  <text
+     x="334.87402"
+     y="94.25"
+     text-anchor="middle"
+     fill="#c8f0c8"
+     font-size="9px"
+     id="text57">reads L2, writes L3</text>
+  <line
+     x1="293.87402"
+     y1="83.25"
+     x2="263.87402"
+     y2="93.25"
+     stroke="#2e7d32"
+     stroke-width="1.8"
+     marker-end="url(#arr-g2)"
+     id="line59" />
+  <!-- ── Agent C writes to level 4 (right side, top) ── -->
+  <rect
+     x="293.87402"
+     y="1.25"
+     width="82"
+     height="36"
+     rx="6"
+     fill="#c8600a"
+     stroke="#8b3f00"
+     stroke-width="1.5"
+     id="rect61" />
+  <text
+     x="334.87402"
+     y="16.25"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text63">Agent 3</text>
+  <text
+     x="334.87402"
+     y="30.25"
+     text-anchor="middle"
+     fill="#ffe0c0"
+     font-size="9px"
+     id="text65">reads L3, writes L4</text>
+  <line
+     x1="293.87402"
+     y1="19.25"
+     x2="263.87402"
+     y2="25.25"
+     stroke="#c8600a"
+     stroke-width="1.8"
+     marker-end="url(#arr-g2)"
+     id="line67" />
+  <!-- ── bottom note ── -->
+  <text
+     x="151.87402"
+     y="303.25"
+     text-anchor="middle"
+     fill="#555555"
+     font-size="10px"
+     id="text69">Agents read lower levels and write higher levels</text>
+</svg>

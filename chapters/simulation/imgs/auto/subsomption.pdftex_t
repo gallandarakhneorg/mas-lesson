@@ -1,0 +1,76 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'subsomption.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{225.728125bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.59606369)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{subsomption.pdf}}%
+    \put(0.15059311,0.5456915){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$condition_1$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{subsomption.pdf}}%
+    \put(0.67421344,0.54600651){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{$action_1$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{subsomption.pdf}}%
+    \put(0.15059311,0.37218874){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$condition_2$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{subsomption.pdf}}%
+    \put(0.67421344,0.3725038){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{$action_2$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{subsomption.pdf}}%
+    \put(0.15059311,0.19650337){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$condition_n$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{subsomption.pdf}}%
+    \put(0.67421344,0.19681832){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{$action_n$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{subsomption.pdf}}%
+    \put(0.74509517,0.019614){\color[rgb]{1,1,1}\makebox(0,0)[lb]{\smash{$\emptyset$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{subsomption.pdf}}%
+    \put(0.05791969,0.53688228){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[rb]{\smash{inputs}}}}%
+    \put(0.98873089,0.05764143){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{output}}}}%
+    \put(0.48476902,0.60401112){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{true}}}%
+    \put(0.48476902,0.41825516){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{true}}}%
+    \put(0.48476902,0.24358224){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{true}}}%
+    \put(0.27815646,0.46129042){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{false}}}%
+    \put(0.27815646,0.2874176){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{false}}}%
+    \put(0.27815646,0.09198656){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{false}}}%
+  \end{picture}%
+\endgroup%

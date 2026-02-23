@@ -1,0 +1,605 @@
+\begin{graphicspathcontext}{{./chapters/mas/architectures/imgs/},{./chapters/mas/architectures/imgs/auto/},{./chapters/mas/imgs/auto/},\old}
+
+\begin{frame}{What is a Rule-based System?}
+	\begin{definitionblock}{Rule-based System (or expert system)}
+		Decision-making process that is composed of:
+		\begin{itemize}
+		\item a database containing knowledge available to the AI
+		\item a set of ``if-then'' rules
+		\end{itemize}
+	\end{definitionblock}
+	\vspace{.5cm}
+	\begin{block}{General Principle}
+		\begin{description}
+		\item[Rule activation] Test if a ``if-then'' rule's condition is evaluated to true based on database
+		\item[Rule triggering] Rule with true condition is triggered
+		\item[Rule firing] Triggered rule may be selected to fire, whereupon its ``then'' component is executed
+		\end{description}
+	\end{block}
+\end{frame}
+
+\begin{frame}[t,fragile]{Fact-base Format}
+	\begin{block}{Format of the base of facts}
+		\begin{itemize}
+			\item Contains the knowledge of an agent
+			\item $data = \langle identifier, value \rangle$
+		\end{itemize}
+	\end{block}
+	\begin{example}[Pair Syntax]\ttfamily
+		Captain's-weapon = rifle \\
+		Johnson's-weapon = machine-gun \\
+		Captain's-rifle's-ammo = 36 \\
+		Johnson's-machine-gun-ammo = 229
+	\end{example}
+	\begin{example}[Functional Syntax --- more popular]\ttfamily
+		\vspace{-.8em}\begin{sarllisting}[language=lisp,basicstyle=\small]
+(Captain
+	(Weapon (Rifle (Ammo 36)))
+	(Health 65)
+	(Position 21, 46, 92))
+		\end{sarllisting}\vspace{-3em}
+	\end{example}
+	\alertbox{Wildcards are allowed: \texttt{(?anyone (Health 0-15))}}
+\end{frame}
+
+\begin{frame}{Wildcard Problem}
+	\begin{columns}[t]
+		\begin{column}{.5\linewidth}
+			\begin{block}{Database}\ttfamily
+				(Captain (Health 51)) \\
+				(Johnson (Health 38)) \\
+				(Sale (Health 13)) \\
+				(Whisker (Health 15)) \\
+				(Radio (Held-by Whisker))
+			\end{block}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Query}\ttfamily
+				(?person (Health 0-15)) \\
+				AND \\
+				(Radio (Held-by ?person))
+			\end{block}
+		\end{column}
+	\end{columns}
+	\begin{block}{Matching}
+		\begin{tabularx}{\linewidth}{>{\ttfamily}Xc>{\ttfamily}l}
+			(Sale (Health 13)) & $\Rightarrow$ & ?person = Sale \\
+			(Radio (Held-by Whisker)) & $\Rightarrow$ & ?person = Whisker \\
+		\end{tabularx}
+	\end{block}
+
+	\alertbox{But they are expecting to have the same value! No? Really?}
+\end{frame}
+
+\begin{frame}{Unification}
+	\alertbox{A set of wildcards are matched so that they all refer to the same thing/object/value}
+	\begin{definition}[Free variable]
+		Each wildcard corresponds to the name a free variable
+	\end{definition}
+	\begin{definition}[Unification]
+		Algorithmic process of solving free variables within larger expressions, in which each occurrence of a free variable must refer to the same value as the other occurrence of the free variable
+	\end{definition}
+	\begin{example}
+		\begin{tabularx}{\linewidth}{>{\ttfamily}Xc>{\ttfamily}l}
+			(Whisker (Health 15)) & $\Rightarrow$ & ?person = Whisker \\
+			(Radio (Held-by Whisker)) & $\Rightarrow$ & ?person = Whisker \\
+		\end{tabularx}
+	\end{example}
+\end{frame}
+
+\begin{frame}{Database Matching}
+	\alertbox*{Condition (or pattern) consists of facts identical to those on database, combined with boolean operators}
+	\begin{columns}[t]
+		\begin{column}{.5\linewidth}
+			\begin{block}{Database}\ttfamily
+				(Captain (Health 51)) \\
+				(Johnson (Health 38)) \\
+				(Sale (Health 42)) \\
+				(Whisker (Health 15))
+			\end{block}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Rule}\ttfamily
+				IF (Whisker (Health 0)) \\
+				AND (Radio Whisker) \\
+				AND (?a (Health >0)) \\
+				THEN \\
+				$\ominus$ (Radio Whisher) \\
+				$\oplus$ (Radio ?a)
+			\end{block}
+		\end{column}
+	\end{columns}
+	\vspace{.5cm}
+	\alertbox*{No match from database $\Rightarrow$ nothing to do}
+\end{frame}
+
+\begin{frame}[t]{Database Matching \insertcontinuationtext}
+\begin{columns}[t]
+	\begin{column}{.5\linewidth}
+		\begin{block}{Database}\ttfamily
+			(Fuel 1500) \\
+			(Distance-to-Base 100) \\
+			(Enemies (Guy1 42) \\
+			       (Guy2 21)) \\
+			(Action Patrolling)
+		\end{block}
+		\begin{block}{New Database}\ttfamily
+			(Fuel 1500) \\
+			(Distance-to-Base 100) \\
+			(Enemies (Guy1 42) \\
+			(Guy2 21)) \\
+			(Action (Attack Guy2))
+		\end{block}
+	\end{column}
+	\begin{column}{.5\linewidth}
+		\begin{block}{Rule}\ttfamily
+			IF (Action Patrolling) \\
+			AND (Enemies (list ?a)) \\
+			AND ?s = (min-pair-b ?a)
+			THEN \\
+			$\ominus$ (Action Patrolling) \\
+			$\oplus$ (Action (Attack ?s))
+		\end{block}
+		\ttfamily
+		?a = ((Enemy1 42) (Enemy2 21)) \\
+		?d = 21 \\
+		?s = Guy2
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Rule Application Methods}
+	\begin{block}{Forward Chaining}
+		\begin{itemize}
+		\item Starts with a known database of information
+		\item Repeatedly applies rules that change the database content
+		\end{itemize}
+	\end{block}
+	\begin{block}{Backward Chaining}
+		\begin{itemize}
+			\item Starts with a given piece of knowledge (found in database) as a goal
+			\item Find rules matching the goals to reach
+			\item Look conditions to determine how they may be triggered
+			\item Actions that may trigger conditions are new sub-goals to reachs
+			\item Optionally, loop with sub-goals and goals until no more rule is usable
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Naive Algorithm}
+	\begin{block}{Inputs}
+		\begin{itemize}
+			\item Not-empty database
+			\item Set of rules
+		\end{itemize}
+	\end{block}
+	\begin{block}{Algorithm}
+		\begin{itemize}
+			\item Rules are applied in iterations
+			\item Each rules is checked to determine if it is triggering on current database knowledge
+			\item \Emph{First triggered rule is fired}, and rule's action is executed
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Database}
+\begin{sarllisting}[basicstyle=\scriptsize]
+/* According to the format of the database rules, the database
+ * is a kind of tree.
+ */
+interface Database extends Iterable<DataNode> {
+
+	// Defining the node into a tree
+	abstract class DataNode {
+		var identifier : String
+	}
+	
+	// Defining a non-leaf node
+	class DataGroup extends DataNode {
+		var children : List<DataNode>
+	}
+	
+	// Defining a leaf node
+	class Datum extends DataNode {
+		var value : Object
+	}
+	
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Rule}
+\begin{sarllisting}[basicstyle=\scriptsize]
+interface Rule {
+
+	/* The IF-clause is used by the algorithm and is
+	 * defined in the following slides
+	 */
+	def getIfClause : IfClauseExpression
+
+	/* This function defines the action to run if
+	 * the IF-clause matchs.
+	 *
+	 * @param bindings the values associated to the wildcards
+	 */
+	def action(bindings : Map<String, Object>) 
+
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} If-Clause Expression}
+\begin{sarllisting}[basicstyle=\scriptsize]
+abstract class IfClauseExpression
+	/* Function that permits to match this clause to the
+	 * content of a database.
+	 * The "bindings" parameter is both in input and
+	 * output, when a part of the clause matches a
+	 * wildcard, it is added to the bindings.
+	 */
+	def matches(database : Database,
+			bindings : Map<String, Object>) : boolean {
+		// Go through each item in the database
+		for (item : database) {
+			if (matchesItems(item, bindings))
+				return true
+		}
+		return false
+	}
+
+	abstract def matchesItems(item : DataNode, bindings : Map<String, Object>) : boolean
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[t,fragile]{{Pseudo-Code:} Data Matcher}
+\begin{sarllisting}[basicstyle=\scriptsize]
+/* The atomic part of a IF-clause expression is
+ * represented by the DatumMatch class.
+ */
+class DatumMatch extends IfClauseExpression {
+
+	/* Datum to match in the database, or an identifier
+	 * starting with "?" to represent a wildcard
+	 */
+	var identifier : String
+
+	// Range of values to match
+	var minValue : Object
+	var maxValue : Object
+
+	def matchesItems(item : DataNode,
+			bindings : Map<String, Object>) {
+		// Is the item of the same type?
+		if (!(item instanceof Datum)) return false
+
+		// Does the identifier match?
+		if (!identifier.isWildcard
+				&& identifier != item.identifier)
+			return false
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Data Matcher \insertcontinuationtext}
+\begin{sarllisting}[basicstyle=\scriptsize]
+		// Does the value fit?
+		if ((minValue .. maxValue).contains(item.value) {
+
+			// Do we need to add to the bindings list?
+			if (identifier.isWildcard) {
+				bindings += identifier => item
+			return true
+		} else {
+			return false
+		}
+	}
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Boolean Matcher}
+\begin{sarllisting}[basicstyle=\scriptsize]
+class AndMatch extends IfClauseExpression {
+
+	// Two operands
+	var match1 : IfClauseExpression
+	var match2 : IfClauseExpression
+
+	def matches(database : Database,
+			bindings : Map<String, Object>) : boolean {
+		// True if we match both if-matches
+		return match1.matches(database, bindings)
+			&& match2.matches(database, bindings)
+	}
+
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[t,fragile]{{Pseudo-Code:} Group Matcher}
+\begin{sarllisting}[basicstyle=\scriptsize]
+/* A data group test will match a database data group
+ * if its identifier matches and if all its children
+ * match at least one child of the database group
+ * Example:    (?anyone (Health 0-54))
+ *          on (Captain (Health 43) (Ammo 140))
+ *          should match
+ */
+class GroupMatch extends IfClauseExpression {
+
+	var identifier : String
+
+	var children : List<IfClauseExpression>
+
+	def matchesItems(item : DataNode,
+			bindings : Map<String, Object>) : boolean {
+
+		// Is the item the same type?
+		if (!(item instanceof DataGroup)) return false
+
+		// Does the identifier match?
+		if (!identifier.isWildcard
+				&& identifier != item.identifier)
+			return false
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Group Matcher \insertcontinuationtext}
+\begin{sarllisting}[basicstyle=\scriptsize]
+		// Is every child present?
+		for (child : children) {
+			// Use the children of the item as if they
+			// were a database and call matches recursively
+			if (!child.matches(item.children))
+				return false
+		}
+
+		// We have matched all the children
+
+		// Do we need to add to the bindings list?
+		if (identifier.isWildcard) {
+			bindings += identifier => item
+		}
+		return true
+	}
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Rule System}
+\begin{sarllisting}[basicstyle=\scriptsize]
+class RuleBasedSystem {
+
+	def iteration(database : Database, rules : List<Rule>) {
+		// Check each rule in turn
+		for (rule : rules) {
+			// Create the empty set of bindings
+			var bindings = #{}
+
+			// Check for triggering
+			if (rule.ifClause.matches(database, bindings)) {
+				// Fire the rule
+				rule.action(bindings)
+				// Exit: we're done for this iteration
+				return
+			}
+		}
+		
+		// If we get here, we've had no match, we could
+		// use a fallback action, or simply do nothing
+	}
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}{Rule Arbitration}
+	\alertbox{How to manage rules that trigger at the same time?}
+	\vspace{.5cm}
+	\alertbox*{Only a single could be fired within a set of triggered rules}
+	\vspace{.5cm}
+	\begin{alertblock}{Naive Arbitration}
+			\begin{itemize}
+				\item First triggered rule is allowed to fire
+				\item Fine as long as the rules are arranged in order of priority
+			\end{itemize}
+	\end{alertblock}
+	\begin{example}[of problem]
+		\begin{itemize}
+		\item If the rule does not change the content of the database
+		\item If no external changes are imposed, then the same rule will continue to fire every time the system is run.
+		\end{itemize}
+	\end{example}
+\end{frame}
+
+\begin{frame}{{Rule Arbitration:} Least Recently Used}
+	\begin{block}{Principle}
+		Use the least recently used rule
+	\end{block}
+	\begin{block}{How?}
+		\begin{itemize}
+			\item FIFO linked list of the rules
+			\item When a rule is fired, it is removed from its position and added to the end
+		\end{itemize}
+	\end{block}
+	\begin{alertblock}{Advantages}
+		\begin{itemize}
+			\item No ``loop'' issue
+			\item Each rule has the opportunity to fire
+			\item $O(\frac{n}{2})$
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}{{Rule Arbitration:} Random Rule}
+	\begin{block}{Principle}
+		Select randomly within the set of triggered rules
+	\end{block}
+	\begin{block}{How?}
+		\begin{itemize}
+			\item Loop on all rules to detect the triggered ones
+			\item Random selection with the set of triggered rules
+		\end{itemize}
+	\end{block}
+	\begin{alertblock}{Disadvantage}
+		\begin{itemize}
+			\item $O(n)$, where $n$ is the number of rules
+		\end{itemize}
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}{{Rule Arbitration:} Most Specific Condition}
+	\begin{definition}[Rule Specialization]
+	\begin{itemize}
+		\item When conditions are very easy to meet, or database regularly triggers it, then they are general rules
+		\item When conditions are hard to fulfill or less triggered by the system, then they are specific rules
+	\end{itemize}
+	\end{definition}
+	\begin{block}{Principle}
+		More specific rules should be preferred over more general rules
+	\end{block}
+	\begin{block}{How?}
+		\begin{itemize}
+			\item From boolean conditions, the number of clauses is a good indicator of the specificity of the rule
+			\item Arbiter is the same as ``first applicable'' arbiter $\Rightarrow$ Rules are ordered \Emph{offline}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{{Rule Arbitration:} Dynamic Priority}
+\begin{block}{Principle}
+	Associate a priority value to each rule in order to select the most suitable rule in a specific context
+\end{block}
+\begin{block}{How?}
+	\begin{itemize}
+		\item Rules are arranged in order of decreasing priority
+		\item First triggered rule is fired
+	\end{itemize}
+\end{block}
+	\begin{alertblock}{Disadvantage}
+	\begin{itemize}
+		\item $O(\frac{n}{2} + n.\log_2(n))$, where $n$ is the number of rules
+	\end{itemize}
+\end{alertblock}
+\end{frame}
+
+\begin{frame}{RETE Algorithm}
+	\begin{itemize}
+		\item RETE algorithm is an AI industry standard for matching rules against a database
+		\vspace{.5cm}
+		\item One of the fastest algorithm in the market
+		\vspace{.5cm}
+		\item Not commonly used, due to patent restrictions and private implementation
+		\vspace{.5cm}
+		\item Inside most of the commercial expert systems, with specific and complex optimizations
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{The RETE}
+	\begin{definition}Directed Acyclic Graph composed of:
+		\begin{description}
+			\item[Pattern Node] single condition term that may be used in one or more rules
+			\item[Join Node] combination of nodes with the ``and'' boolean operator
+			\item[Rule Node] name of the firable rule
+			\item[Edge] association between terms in a rule's condition
+			\item[Path] complete condition expression for a rule
+		\end{description}
+	\end{definition}
+	\vspace{.5cm}
+	\alertbox*{Each node contains a list of all the matching facts against the database}
+\end{frame}
+
+\begin{frame}{RETE Example}
+	\begin{columns}
+		\begin{column}{.6\linewidth}
+			\smaller\smaller
+			\begin{tabularx}{\linewidth}{|X|}
+			\hline
+			\textbf{Swap Radio Rule:} \\
+			\ttfamily
+			IF (?person1 (Health $<$15)) AND \\
+			(Radio (Held-by ?person1)) AND \\
+			(?person2 (Health $>$ 45)) \\
+			THEN \\
+			$\ominus$ (Radio (Held-by ?person1)) \\
+			$\oplus$ (Radio (Held-by ?person2)) \\
+			
+			\hline
+			\textbf{Change Backup Rule:} \\
+			\ttfamily
+			IF	(?person1 (Health $<$15)) AND \\
+			(?person2 (Health $>$45)) AND \\
+			(?person2 (IsCovering ?person1)) \\
+			THEN \\
+			$\ominus$ (?person2 (IsCovering
+			?person1)) \\
+			$\oplus$ (?person1 (IsCoveting
+			?person2)) \\
+			\hline
+			\end{tabularx}
+		\end{column}
+		\begin{column}{.4\linewidth}
+			\includeanimatedfigure[width=\linewidth]{rete1}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{{Key Elements} of the RETE Algorithm}
+	\begin{itemize}
+		\item Start from right
+		\vspace{.5cm}
+		\item Try to find triggered rules (at the left)
+		\vspace{.5cm}
+		\item If wildcard, node gives variable ``bindings''
+		\vspace{.5cm}
+		\item Pattern nodes records matching facts for incremental updating
+		\vspace{.5cm}
+		\item \Emph{Notice that rather than finding a match, we find all matches}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{{RETE Example:} Rule activitation}
+	\centering\includeanimatedfigure[width=.85\linewidth]{rete2}
+\end{frame}
+
+\begin{frame}{Fact Removal}
+\begin{itemize}
+	\item Removal request identifies the fact that has been removed
+	\item Removal request is sent to each pattern node
+	\item If pattern node has the fact, then \begin{itemize}
+		\item the match is removed
+		\item the removal request is forward to any join nodes
+	\end{itemize}
+	\item If join node has the fact, then \begin{itemize}
+		\item the match is removed
+		\item the removal request is forward to any join nodes
+	\end{itemize}
+	\item If rule node has the fact, then it is desactivated
+	\item If any node doesn't have the fact, then it does nothing
+\end{itemize}
+\end{frame}
+
+\begin{frame}{{RETE Example:} Fact Removal}
+	\centering\includeanimatedfigure[width=.85\linewidth]{rete3}
+\end{frame}
+
+\begin{frame}{Fact Addition}
+\begin{itemize}
+	\item Adding a fact is very similar to removing one.
+	\item If pattern node matches, then it updates its bindings and notifies the join nodes
+	\item If it is a new fact for join node, it adds it to its bindings and notifies nodes
+	\item If is ia a new fact for rule node, it updates its bindings and change its activation status.
+	\item If the fact doesn't update the node, then there is no need to pass the addition request to the next nodess
+\end{itemize}
+\end{frame}
+
+\begin{frame}{{RETE Example:} Fact Addition}
+	\centering\includeanimatedfigure[width=.85\linewidth]{rete4}
+\end{frame}
+
+\begin{frame}{{RETE Example:} Remove+Add}
+	\centering\includeanimatedfigure[width=.85\linewidth]{rete5}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput

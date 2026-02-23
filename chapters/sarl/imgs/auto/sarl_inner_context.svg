@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="294.52222"
+   height="227.12854"
+   viewBox="0 0 294.52222 227.12854"
+   version="1.1"
+   id="svg56"
+   sodipodi:docname="inner_context.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview58"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.1192308"
+     inkscape:cx="146.83107"
+     inkscape:cy="121.66461"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg56" />
+  <defs
+     id="defs8">
+    <marker
+       id="arrowO"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#c07000"
+         id="path5" />
+    </marker>
+  </defs>
+  <!-- Super-agent -->
+  <rect
+     x="77.114655"
+     y="1.25"
+     width="140"
+     height="55"
+     rx="10"
+     ry="10"
+     fill="#fff9e6"
+     stroke="#e6a817"
+     stroke-width="2.5"
+     id="rect10" />
+  <text
+     x="147.11465"
+     y="23.25"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#7a4e00"
+     id="text12">Super-Agent</text>
+  <text
+     x="147.11465"
+     y="43.25"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#7a4e00"
+     id="text14">(super-holon)</text>
+  <!-- Inner context box -->
+  <rect
+     x="0.92508006"
+     y="81.174904"
+     width="292.67206"
+     height="145.02855"
+     rx="12.804403"
+     ry="13.099353"
+     fill="#f0e6ff"
+     stroke="#7b2fbf"
+     stroke-width="1.85016"
+     stroke-dasharray="7, 3"
+     id="rect16" />
+  <text
+     x="147.11465"
+     y="101.25"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#5a1a99"
+     id="text18">Inner Context</text>
+  <!-- Super-agent is member of inner context's default space -->
+  <ellipse
+     cx="147.11465"
+     cy="139.25"
+     rx="22"
+     ry="16"
+     fill="#fff9e6"
+     stroke="#e6a817"
+     stroke-width="2"
+     id="ellipse20" />
+  <text
+     x="147.11465"
+     y="144.25"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="9px"
+     fill="#7a4e00"
+     id="text22">self</text>
+  <!-- Sub-agents -->
+  <rect
+     x="9.1146517"
+     y="166.25"
+     width="72"
+     height="52"
+     rx="8"
+     ry="8"
+     fill="#fce4ff"
+     stroke="#7b2fbf"
+     stroke-width="1.8"
+     id="rect24" />
+  <text
+     x="45.114651"
+     y="189.25"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#4a0080"
+     id="text26">Sub-agent</text>
+  <text
+     x="45.114651"
+     y="205.25"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#4a0080"
+     id="text28">A</text>
+  <rect
+     x="110.11465"
+     y="166.25"
+     width="72"
+     height="52"
+     rx="8"
+     ry="8"
+     fill="#fce4ff"
+     stroke="#7b2fbf"
+     stroke-width="1.8"
+     id="rect30" />
+  <text
+     x="146.11465"
+     y="189.25"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#4a0080"
+     id="text32">Sub-agent</text>
+  <text
+     x="146.11465"
+     y="205.25"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#4a0080"
+     id="text34">B</text>
+  <rect
+     x="211.11465"
+     y="166.25"
+     width="72"
+     height="52"
+     rx="8"
+     ry="8"
+     fill="#fce4ff"
+     stroke="#7b2fbf"
+     stroke-width="1.8"
+     id="rect36" />
+  <text
+     x="247.11465"
+     y="189.25"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#4a0080"
+     id="text38">Sub-agent</text>
+  <text
+     x="247.11465"
+     y="205.25"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#4a0080"
+     id="text40">C</text>
+  <!-- Arrows: super-agent to inner context -->
+  <line
+     x1="147.11465"
+     y1="56.25"
+     x2="147.11465"
+     y2="81.25"
+     stroke="#7b2fbf"
+     stroke-width="2"
+     marker-end="url(#arrowO)"
+     id="line42" />
+  <!-- Default space of inner context (dashed oval) -->
+  <ellipse
+     cx="147.11465"
+     cy="139.25"
+     rx="140"
+     ry="22"
+     fill="none"
+     stroke="#7b2fbf"
+     stroke-width="1.2"
+     stroke-dasharray="4, 3"
+     id="ellipse44" />
+  <text
+     x="237.11465"
+     y="136.25"
+     font-family="sans-serif"
+     font-size="9px"
+     fill="#7b2fbf"
+     id="text46">default</text>
+  <text
+     x="237.11465"
+     y="148.25"
+     font-family="sans-serif"
+     font-size="9px"
+     fill="#7b2fbf"
+     id="text48">space</text>
+  <!-- Lines connecting sub-agents to default space -->
+  <line
+     x1="45.114651"
+     y1="166.25"
+     x2="87.114655"
+     y2="155.25"
+     stroke="#7b2fbf"
+     stroke-width="1.2"
+     stroke-dasharray="3, 2"
+     id="line50" />
+  <line
+     x1="146.11465"
+     y1="166.25"
+     x2="146.11465"
+     y2="161.25"
+     stroke="#7b2fbf"
+     stroke-width="1.2"
+     stroke-dasharray="3, 2"
+     id="line52" />
+  <line
+     x1="247.11465"
+     y1="166.25"
+     x2="207.11465"
+     y2="155.25"
+     stroke="#7b2fbf"
+     stroke-width="1.2"
+     stroke-dasharray="3, 2"
+     id="line54" />
+</svg>

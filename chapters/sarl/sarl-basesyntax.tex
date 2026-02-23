@@ -1,0 +1,287 @@
+\begin{graphicspathcontext}{{./chapters/sarl/imgs/},{./chapters/sarl/imgs/auto/},\old}
+
+\begin{frame}[t,fragile]{Java vs. SARL}
+	\vspace{-.75cm}
+	\begin{columns}
+		\begin{column}[t]{.5\linewidth}
+			\begin{javalisting}[basicstyle=\tiny]
+public class ExampleOfClass
+    extends SuperClass
+    implements SuperInterface {
+  // Field
+  private int a;
+  // Single-initialization field
+  private final String b
+                = "example";
+  // Constructor
+  public ExampleOfClass(int p) {
+    this.a = p;
+  }
+  // Function with return value
+  public int getA() {
+    return this.a;
+  }
+  // Simulation of default
+  // parameter value
+  public void increment(int a) {
+    this.a += a;
+  }
+  public void increment() {
+    increment(1);
+  }
+  // Variadic parameter
+  public void add(int... v) {
+    for(value : v) {
+      this.a += value;
+    }
+  }
+}
+\end{javalisting}
+		\end{column}
+		\begin{column}[t]{.5\linewidth}
+			\begin{sarllisting}[basicstyle=\tiny]
+class ExampleOfClass
+    extends SuperClass
+    implements SuperInterface {
+  // Field
+  var a : int
+  // Single-initialization field
+  // automatic detection of the
+  // field type
+  val b = "example"
+  // Constructor
+  new(p : int) {
+    this.a = p
+  }
+  // Function with return value
+  def getA : int {
+    this.a
+  }
+  // Real default parameter value
+  def increment(a : int = 1) {
+    this.a += a
+  }
+  // Variadic parameter
+  def add(v : int*) {
+    for(value : v) {
+      this.a += value
+    }
+  }
+}
+\end{sarllisting}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Advanced Syntactic Features}
+	\vspace{-.3cm}
+	\begin{columns}
+		\begin{column}{.15\linewidth}
+			\begin{bottomarrowsequence}[width=\linewidth]
+				\only<1>{\arrow[bg=CIADgreen]{\ahc{Implicit}{Get/Set}}}
+				\only<2->{\arrow{\ahc{Implicit}{Get/Set}}}
+				\only<2>{\arrow[bg=CIADgreen]{\ahc{Extension}{Method}}}
+				\only<1,3->{\arrow{\ahc{Extension}{Method}}}
+				\only<3-4>{\arrow[bg=CIADgreen]{\ahc{Lambda}{Expression}}}
+				\only<1-2,5->{\arrow{\ahc{Lambda}{Expression}}}
+				\only<5>{\arrow[bg=CIADgreen]{\ahc{Instance}{Variables}}}
+				\only<1-4,6->{\arrow{\ahc{Instance}{Variables}}}
+				\only<6->{\arrow[bg=CIADgreen]{Operators}}
+				\only<1-5>{\arrow{Operators}}
+			\end{bottomarrowsequence}
+		\end{column}
+		\begin{column}{.85\linewidth}
+			\only<1>{
+				\smaller
+				\begin{block}{Why does it matter?}
+					\Emph{Encapsulation} encourages the use of
+					\texttt{getX()} / \texttt{setX()} methods instead of direct field access.
+					However, calling them explicitly is \Emph{verbose} and reduces code readability \\
+					\begin{example}
+						\code{object.setX(object.getX + 1)}
+					\end{example}
+				\end{block}
+				\begin{alertblock}{How does SARL resolve \texttt{variable.field}?}
+					\begin{enumerate}
+					\item \Emph{Read access} \textemdash{} \code{variable.field} \quad$\Rightarrow$\quad SARL first looks for \code{getField()} in the variable's type, then falls back to the accessible field \code{field}
+					\item \Emph{Write access} \textemdash{} \code{variable.field = value} \quad$\Rightarrow$\quad SARL first looks for \code{setField(value)} in the variable's type, then falls back to the accessible field \code{field}.
+					\end{enumerate}
+					\begin{example}
+						\code{object.x = object.x + 1}
+					\end{example}
+				\end{alertblock}
+			}
+			\only<2>{
+				\smaller
+				\begin{block}{Why does it matter?}
+					Simulate the extension of existing types with new methods, \Emph{without modifying} their source code
+					\begin{example}
+						\code{def distance(a : String, b : String) : int \{/*Leivenstein algo*/\}} \\
+						\code{distance("abc", "abz") == 1} \\
+					\end{example}
+				\end{block}
+				\begin{alertblock}{How does SARL apply extension method?}
+					\begin{itemize}
+					\item \Emph{first argument} of a function can be placed \Emph{before} the function name
+					\begin{example}
+						\code{"abc".distance("abz") == 1} \\
+					\end{example}
+					\item[Note] function \Emph{distance} is unchanged. Only the \emph{call syntax} differs
+					\end{itemize}
+				\end{alertblock}
+			}
+			\only<3-4>{
+				\smaller
+				\begin{definitionblock}{Lambda Expression}
+					Lambda expression is a \Emph{piece of code} wrapped in an object so it can be \Emph{passed around} like any other value
+				\end{definitionblock}
+			}
+			\only<3>{
+				\smaller
+				\begin{compactdescription}
+					\item[Syntax] \code{[ param : type, ... | code ]}
+					\item[Rules] \begin{compactitemize}
+						\item Parameter types may be omitted
+						\item If \emph{single parameter}, it can be referred to as \code{it}
+						\end{compactitemize}
+						\begin{example}
+							Single parameter, return the length of the parameter, use implicit name \code{it}: \\
+							\code{var f = [ it.length ]}
+						\end{example}
+					\item[Type] Lambda expression is an object: it has a \emph{type}
+						\begin{example}
+							Lambda taking an \code{int} and a \code{String}, returning an \code{int}: \\
+							\code{(int, String) => int}
+						\end{example}
+				\end{compactdescription}
+      			}
+			\only<4>{
+				\smaller
+				\begin{compactdescription}
+				\item[Problem] Passing a lambda \Emph{inside} the parentheses of a call is cluttered and hard to read
+				\item[Solution] If the \Emph{last parameter} of a function is a lambda expression, it can be written \Emph{outside and after} the closing parenthesis
+				\end{compactdescription}
+				\begin{example}
+					{\code{f(a, b, [ code ])}} \quad $\Longrightarrow$ \quad {\code{f(a, b) [ code ]}}
+				\end{example}
+				\vspace{.25cm}
+				\hiconbox{Both forms are \Emph{strictly equivalent}. The second is preferred for readability}{info-icon}
+			}
+			\only<5>{
+				\smaller
+				\begin{block}{Why does it matter?}
+					Most object-oriented languages provide \Emph{special variables} that give access to key objects depending on the \Emph{current execution context}
+				\end{block}
+				\begin{stabularx}{l|X|X}
+					\tabularhead{Variable}{Semantic}{Usage} \\
+					\code{this} & Current instance of the enclosing type (class, agent, behavior...)  & Use it to access own fields and methods \\
+					\hline
+					\code{super} & Inherited instance, i.e., the current object seen as its parent type & Use it to call an overridden method \\
+					\hline
+					\code{occurrence} & Current event instance received by the agent & Available only inside an event handler \code{on EventType \{ ... \}} \\
+					\hline
+					\code{it} & Context-dependent object & In a lambda with a single parameter,  \code{it} is that parameter. In the expression on a event handler's guard, \code{it} is \code{occurrence}. Outside these contexts, \code{it} is unknown \\
+				\end{stabularx}
+      			}
+      			\only<6>{
+      				\smaller
+      				\begin{block}{Type Operators}
+		      			\begin{description}
+					\item[Naming a type] Use \code{typeof(T)} to refer to a type as a value. \\
+						\emph{Recommended:}\code{typeof(String)}, also valid but less explicit: \code{String}
+					\item[Casting] Change the \emph{static type} of a variable at runtime: \code{variable as Type}
+					\item[Type testing] Check the \Emph{actual type} of an object at runtime: \code{variable instanceof Type}
+					\item[Smart cast] Inside an \code{if} block guarded by \code{instanceof}, the variable is \emph{automatically cast} -- no explicit \code{as} needed
+					\end{description}
+					\begin{example}
+						\code{class B extends A \{ ... \}} \\
+						\code{var v : A = ...} \\
+						\code{if (v instanceof B) \{} \\
+						\mbox{}\hspace{.25cm}\code{var v2 : B = v // No need to cast v to B} \\
+						\code{\}}
+					\end{example}
+				\end{block}
+      			}
+      			\only<7>{
+      				\smaller
+      				\begin{block}{Equality and Comparison Operators}
+					\begin{stabularx}{c|X|X}
+					\tabularhead{SARL Operator}{Meaning}{Java equivalent} \\
+					\code{a == b}  & Content equality & \code{a.equals(b)} \\
+					\hline
+					\code{a != b}  & Content inequality & \code{!a.equals(b)} \\
+					\hline
+					\code{a === b} & Reference equality & \code{a == b} \\
+					\hline
+					\code{a !== b} & Reference inequality & \code{a != b} \\
+					\hline
+					\code{a <=> b} & Comparison sign: $\text{sgn}(b-a) \in \{\mathbb{N}^-, 0, \mathbb{N}^+\}$ & \code{Comparable} interface \\
+					\end{stabularx}
+				\end{block}
+				\begin{alertblock}{Key distinction: content vs.\ reference equality}
+					Unlike Java, \code{==} in SARL tests \Emph{content equality} (calls \code{.equals()}), \Emph{not} reference equality. Use \code{===} for reference equality
+				\end{alertblock}
+      			}
+      			\only<8>{
+      				\smaller
+      				\begin{block}{Range and Arithmetic Operators}
+					\begin{stabularx}{c|X|X}
+					\tabularhead{SARL Operator}{Meaning}{Java equivalent} \\
+					\code{a .. b}   & Closed interval $[a,\, b]$, step $1$  & n/a \\
+					\hline
+					\code{a ..< b}  & Half-open interval $[a,\, b)$, step $1$ & n/a \\
+					\hline
+					\code{a >.. b}  & Half-open interval $(a,\, b]$, step $1$ & n/a \\
+					\hline
+					\code{a ** b}   & Power: $a^b$  & \code{Math.pow(a, b)} \\
+					\end{stabularx}
+				\end{block}
+      			}
+      			\only<9>{
+      				\smaller
+      				\begin{block}{Null-safe and Functional Operators}
+					\begin{stabularx}{c|X|X}
+					\tabularhead{SARL Operator}{Meaning}{Java equivalent} \\
+					\code{a ?: b} & If \code{a} is not \code{null}, return \code{a}; otherwise return \code{b} & \code{a == null ? b : a} \\
+					\hline
+					\code{a?.b} & If \code{a} is not \code{null}, call \code{a.b}; otherwise return a default value & \code{a == null ? default : a.b} \\
+					\hline
+					\code{if (a) b else c} & Inline conditional expression (returns a value) & \code{a ? b : c} \\
+					\hline
+					\code{a -> b} & Create a \Emph{pair} $(a, b)$ & n/a \\
+					\hline
+					\code{a => b} & Call lambda \code{b} with \code{a} as its argument & n/a \\
+					\end{stabularx}
+				\end{block}
+      			}
+      			\only<10>{
+      				\smaller
+      				\begin{block}{Operator Overloading}
+					Allow user-defined types to \Emph{support operators} (e.g.\ \code{+}, \code{**}) just like built-in types do
+				\end{block}
+				\begin{compactdescription}
+				\item[Principle] Every SARL operator maps to a \Emph{reserved function name}. Defining that function in your class \textbf{overloads the operator}
+				\item[Rule] \code{a OP b} $\Longrightarrow$ \code{a.operator_OPNAME(b)}
+				\end{compactdescription}
+				\hiconbox{If no such function is defined, a \emph{compilation error} is raised. You may also define operators on types you \emph{do not own} using \Emph{extension methods}}{info-icon}
+				\begin{stabularx}{c|X}
+				\tabularhead{Operator}{Function name} \\
+				\code{a + b} & \code{operator\_plus(a, b)} \\
+				\hline
+				\code{a * b} & \code{operator\_multiply(a, b)} \\
+				\hline
+				\code{a ** b} & \code{operator\_power(a, b)} \\
+				\hline
+				\code{col += v} & \code{operator\_add(col, v)} \\
+				\hline
+				...
+				\end{stabularx}
+			}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput
+

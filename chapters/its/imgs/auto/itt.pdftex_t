@@ -1,0 +1,17 @@
+\%Overlays
+\bgroup%
+\begin{tikzpicture}%
+\node<Base <1->> (X) {\includegraphics[width=1000.0em]{itt_layer1.pdf}};%
+\node<Wireless <1,3->> (X) {\includegraphics[width=1000.0em]{itt_g3066.pdf}};%
+\node<Big Wireless <2>> (X) {\includegraphics[width=1000.0em]{itt_g4161.pdf}};%
+\node<comptech <1-2,4->> (X) {\includegraphics[width=1000.0em]{itt_g3188.pdf}};%
+\node<Big comptech <3>> (X) {\includegraphics[width=1000.0em]{itt_g4175.pdf}};%
+\node<data <1-3,5->> (X) {\includegraphics[width=1000.0em]{itt_g3329.pdf}};%
+\node<Big data <4>> (X) {\includegraphics[width=1000.0em]{itt_g4189.pdf}};%
+\node<inductiveloop <1-4,7->> (X) {\includegraphics[width=1000.0em]{itt_g4141.pdf}};%
+\node<Big inductiveloop <5-6>> (X) {\includegraphics[width=1000.0em]{itt_g4203.pdf}};%
+\node<video <1-4,5-6>> (X) {\includegraphics[width=1000.0em]{itt_g4121.pdf}};%
+\node<Big video <7>> (X) {\includegraphics[width=1000.0em]{itt_g4217.pdf}};%
+\node<Base2 <1->> (X) {\includegraphics[width=1000.0em]{itt_g3234.pdf}};%
+\end{tikzpicture}%
+\egroup%

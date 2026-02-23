@@ -1,0 +1,587 @@
+\begin{frame}{What is a Goal?}
+	\begin{definitionblock}{Goal}
+		Part of the state of the system (environment or the agent itself) that should be reached by the agent \\
+		$g \in G = \langle i, S \rangle$ \\
+		$i$: insistence value of the goal (level of importance) \\
+		$S$: set of actions associated to the goal
+	\end{definitionblock}
+	
+	\begin{itemize}
+	\item Agent could have one or more goals
+	\item Agent has to fullfil the goal or to reduce its insistence
+	\item To reach a goal or reduce its insistence, agent must apply an action
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{What is an Action?}
+	\begin{definitionblock}{Action}
+		Definition of the incrementation or decrementation values for goals insistences. \\
+		$a \in A : G \rightarrow \mathbb{R}$ \\
+	\end{definitionblock}
+	\begin{itemize}
+	\item Can be hard-coded, or given by several environmental objects
+	eg., a door provides the actions ``open'', ``lock''
+	\item Availability depends on:
+		\begin{itemize}
+		\item the current state of the environment
+		\item the perceived objects
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{{Action Selection:} Most-Insistense Algorithm}
+	\begin{block}{Principle}
+		Choose the action that corresponds to the \textcolor<2>{CIADmagenta}{most pressing goal}, and that provides the \textcolor<3>{CIADmagenta}{largest decrease in insistence}
+	\end{block}
+	\begin{example}[at time \only<1-3>{$t$}\only<4>{$t+1$}]
+		\begin{tabularx}{\linewidth}{lXXr}
+			Goal: & Hunger & = \only<1-3>{4}\only<4>{\textcolor{CIADmagenta}{1}} & \only<2,4>{\textcolor{CIADmagenta}{$\Leftarrow$}} \\
+			Goal: & Tired & = 3 & \\
+			Action: & Get-Raw-Food & Hunger: -3 & \only<3>{\textcolor{CIADmagenta}{$\Leftarrow$}} \\
+			Action: & Get-Snack & Hunger: -2 & \\
+			Action: & Sleep-In-Bed & Tired: -4 & \\
+			Action: & Sleep-On-Sofa & Tired: -2 & \\
+		\end{tabularx}
+	\end{example}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Goal and Action}
+	\begin{sarllisting}[basicstyle=\scriptsize]
+interface Goal {
+
+	def getName : String
+
+	def getInsistence : float
+
+	def setInsistence(newInsistence : float)
+
+}
+
+
+interface Action {
+
+	def getName : String
+
+	def getGoalChange(goal : Goal) : float
+
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Choose Goal}
+\begin{sarllisting}[basicstyle=\scriptsize]
+class GoalOrientedBehaviour {
+
+	def chooseAction(
+			actions : List<Action>,
+			goals : List<Goal>) {
+
+		// Find the goal to try and fulfill
+		var iterg = goals.iterator
+		topGoal = iterg.next
+
+		while (iterg.hasNext) {
+			val goal = iterg.next
+			if (goal.insistence > topGoal.insitence)
+				topGoal = goal
+		}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[t,fragile]{{Pseudo-Code:} Choose Action}
+\begin{sarllisting}[basicstyle=\scriptsize]
+		// Find the best action to take
+		var itera = actions.iterator
+		bestAction = itera.next
+		bestUtility = - bestAction.getGoalChange(topGoal)
+		while (itera.hasNext) {
+			val action = itera.next
+
+			// We invert the change because a low change value
+			// is good (we want to reduce the insistence for
+			// the goal) but utilities are typically scaled so
+			// high values are good
+			utility = - action.getGoalChange(topGoal)
+
+			// We look for the lowest change (highest utility)
+			if (utility > bestUtility) {
+				bestUtility = utility
+				bestAction = action
+			}
+		}
+
+		// Return the best action to be carried out
+		return bestAction
+	}
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}{Complexity Analysis}
+	\begin{block}{In time}
+		$O(g+a)$ \\
+		$g$: number of goals \\
+		$a$: number of possible actions
+	\end{block}
+	\begin{block}{Memory footprint}
+		$O(g + a)$ \\
+		$g$: number of goals \\
+		$a$: number of actions
+	\end{block}
+\end{frame}
+
+\begin{frame}{{Most-Insistense Algorithm:} Bad Side-Effects}
+\begin{example}
+	\begin{tabularx}{\linewidth}{lXX}
+		Goal: & Hunger & = 4 \\
+		Goal: & Urination & = 3 \\
+		Action: & Drink-Soda & Hunger:~-2; Urination:~+3 \\
+		Action: & Visit-Bathroom & Urination: -4 \\
+	\end{tabularx}
+\end{example}
+\alertbox*{Natural Human Behavior: Human Being may not select the Drink-Soda action because it increase the Bathroom's insistence with a high rate}
+\alertbox{But the simple selection algorithm select Drink-Soda, before Visit-Bathroom}
+\end{frame}
+
+\begin{frame}{{Solution:} Overall Utility}
+	\begin{definition}[Discontentment of the agent]
+		\begin{itemize}
+			\item Discontentment is a global value for an agent that indicates the level of contentment of the agent regarding its general state
+			\item Higher are the goals' insistences, higher is the agent's discontenment
+			\item Agent aims at reducing its discontentment
+			\item $dis = \sum_{g \in G} \left(insistence_g\right)^2$
+		\end{itemize}
+	\end{definition}
+	\begin{itemize}
+		\item In Research literature, discontentment is also known as ``energy''
+		\item This concept of energy is also used in learning algorithms
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{{Discontentment Algorithm:} Example}
+\begin{example}[at time \only<-3>{$t$}\only<4>{$t+1$}]
+	\begin{tabularx}{\linewidth}{lXXr}
+		Goal: & Hunger & = \only<-3>{4}\only<4>{\textcolor{CIADmagenta}{4}} & \\
+		Goal: & Urination & = \only<-3>{3}\only<4>{\textcolor{CIADmagenta}{0}} & \\
+		Action: & Drink-Soda & Hunger: -2; & \\
+		& & Urination: +3 & \\
+		\only<2>{\textcolor{CIADmagenta}{$\Rightarrow$}} & \only<2>{\textcolor{CIADmagenta}{Hunger=2}}& \only<2>{\textcolor{CIADmagenta}{Urination=6}} & \only<2>{\textcolor{CIADmagenta}{dis=40}} \\
+		Action: & Visit-Bathroom & Urination: -4 & \\
+		\only<2-3>{\textcolor{CIADmagenta}{$\Rightarrow$}} & \only<2-3>{\textcolor{CIADmagenta}{Hunger=4}}& \only<2-3>{\textcolor{CIADmagenta}{Urination=0}} & \only<2-3>{\textcolor{CIADmagenta}{dis=16}} \\
+	\end{tabularx}
+\end{example}
+\end{frame}
+
+\begin{frame}[fragile]{{Discontentment Pseudo-Code:} Goal and Action}
+\begin{sarllisting}[basicstyle=\scriptsize]
+interface Goal {
+	def getName : String
+
+	def getInsistence : float
+	def setInsistence(newInsistence : float)
+
+	def discontentment(insistenceValue : float) : float {
+		insistenceValue ** 2
+	}
+}
+
+interface Action {
+
+	def getGoalChange(goal : Goal) : float
+
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[t,fragile]{{Discontentment Pseudo-Code:} Best Action}
+\begin{sarllisting}[basicstyle=\scriptsize]
+class GoalOrientedBehaviour2 {
+
+	def chooseAction(
+			actions : List<Action>,
+			goals : List<Goal>) {
+
+		// Go through each action, and calculate the discontentment
+		val itera = actions.iterator
+		var bestAction = itera.next
+		var bestValue = bestAction.calculateDiscontentment(goals)
+		while (itera.hasNext) {
+			val action = itera.next
+			var value = action.calculateDiscontentment(goals)
+			if (value < bestValue) {
+				bestValue = value
+				bestAction = action
+			}
+		}
+
+		// Return the best action
+		return bestAction
+	}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Discontentment Pseudo-Code:} Discontentment}
+\begin{sarllisting}[basicstyle=\scriptsize]
+	def calculateDiscontentment(
+			action : Action,
+			goals : List<Goal>) {
+	
+		// Keep a running total
+		var discontentment = 0
+
+		// Loop through each goal
+		for (goal : goals) {
+
+			// Calculate the new insistence after the action
+			var newInsistence = goal.insistence
+					+ action.getGoalChange(goal)
+
+			// Get the discontentment of the new insistence
+			discontentment += goal.getDiscontentment(
+					newInsistence)
+		}
+
+		return discontentment
+	}
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}{Complexity Analysis}
+	\begin{block}{In time}
+		$O(g \times a)$ \\
+		$g$: number of goals \\
+		$a$: number of possible actions
+	\end{block}
+	\begin{block}{Memory footprint}
+		$O(g + a)$ \\
+		$g$: number of goals \\
+		$a$: number of possible actions
+	\end{block}
+\end{frame}
+
+\begin{frame}{{Time Support} in Goal-Oriented Decision}
+	\begin{block}{Informed decision needs time}
+		\begin{itemize}
+			\item Agent needs to know how long action will take to carry out
+			\item Timing is often split into two components:
+				\begin{enumerate}
+				\item Actions typically take time to complete
+				\item Moves to the location where to start the action takes time
+				\end{enumerate}
+		\end{itemize}
+	\end{block}
+	\vspace{1cm}
+	\alertbox*{
+		Travel duration is usually given by path finding algorithms
+	}
+	\vspace{1cm}
+	\alertbox*{
+		Alternative: stigmergy-based GOB algorithms, based on sensors of the agent
+	}
+\end{frame}
+
+\begin{frame}{{Include Time} in Goal-Oriented Decision}
+	\begin{block}{Approach 1}
+			Incorporate the time into discontentment
+	\end{block}
+	\begin{block}<2->{Approach 2}
+		Prefer shorter actions than longer actions
+	\end{block}
+	\begin{block}<3->{Approach 3}
+		Consider the consequence of extra time, e.g. an agent may be increasingly hungry unless it gets food
+	\end{block}
+	\vspace{.5cm}
+	\alertbox<4>{
+		An action may dynamically change time factors on goals or other actions
+	}
+\end{frame}
+
+\begin{frame}{{Timed GOB:} Example}
+\begin{example}[at time \only<-3>{$t$}\only<4>{$t+1$}]
+	\begin{tabularx}{\linewidth}{lXXr}
+		Goal: & Hunger & = \only<-3>{4}\only<4>{\textcolor{CIADmagenta}{2}} & +4/hour \\
+		Goal: & Urination & = \only<-3>{3}\only<4>{\textcolor{CIADmagenta}{3.5}} & +2/hour \\
+		Action: & Drink-Snack & Hunger: -2 & 15 mins\\
+		\only<2-3>{\textcolor{CIADmagenta}{$\Rightarrow$}} &
+			\only<2-3>{\textcolor{CIADmagenta}{Hunger = 2}} &
+			\only<2-3>{\textcolor{CIADmagenta}{Uri. = $3 + \frac{2\times15}{60}=3.5$}} &
+			\only<2-3>{\textcolor{CIADmagenta}{dis = 16.5}} \\
+		Action: & Drink-Main-Meal & Hunger: -4 & 1 hour\\
+		\only<2>{\textcolor{CIADmagenta}{$\Rightarrow$}} &
+			\only<2>{\textcolor{CIADmagenta}{Hunger = 0}} &
+			\only<2>{\textcolor{CIADmagenta}{Uri. = $3 + 2 = 5$}} &
+			\only<2>{\textcolor{CIADmagenta}{dis = 25}} \\
+		Action: & Visit-Bathroom & Urination: -4 & 15 mins\\
+		\only<2>{\textcolor{CIADmagenta}{$\Rightarrow$}} &
+			\only<2>{\textcolor{CIADmagenta}{Hunger = $4 + \frac{4\times15}{60}=5$}} &
+			\only<2>{\textcolor{CIADmagenta}{Uri. = 0}} &
+			\only<2>{\textcolor{CIADmagenta}{dis = 25}} \\
+	\end{tabularx}
+\end{example}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Goal and Action}
+\begin{sarllisting}[basicstyle=\scriptsize]
+interface Goal {
+	def getName : String
+
+	def getInsistence : float
+	def setInsistence(newInsistence : float)
+
+	def getChangePerTimeUnit : float
+
+	def getDiscontentment(value : float) : float {
+		value ** 2
+	}
+}
+
+interface Action {
+	def getGoalChange(goal : Goal) : float
+
+	def getDuration : float
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[t,fragile]{{Pseudo-Code:} Discontentment}
+\begin{sarllisting}[basicstyle=\scriptsize]
+class GoalOrientedBehaviour3
+			extends GoalOrientedBehaviour2 {
+	def calculateDiscontentment(
+			action : Action,
+			goals : List<Goal>) {
+		// Keep a running total
+		var discontentment = 0
+		// Loop through each goal
+		for (goal : goals) {
+			// Calculate the new insistence after the action
+			newInsistence = goal.value
+				+ action.getGoalChange(goal)
+			// Calculate the change due to time alone
+			newInsistence += action.duration
+				* goal.changePerUnitTime
+			// Get the discontentment of the new insistence
+			discontentment += goal.getDiscontentment(
+					newInsistence)
+		}
+		return discontentment
+	}
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}{Action Planning}
+	\alertbox*{
+		Actions are available for selection when agent can execute them
+	}
+	\vspace{.5cm}
+	\begin{alertblock}{}
+		\begin{itemize}
+		\item Actions can influence future actions in time
+		\item Because actions are situation-dependent, it is normal for one action to enable or disable several others
+		\end{itemize}
+	\end{alertblock}
+	\vspace{.5cm}
+	\begin{block}{Goal-Oriented Action Planning (GOAP)}
+		\begin{itemize}
+			\item To allow agent to properly anticipate effects and take advantage of sequences of actions, a level of planning may be introducing
+			\item $\approx$ AI exploration algorithms in trees
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{GOAP Principle}
+	\begin{enumerate}
+		\item Start from a knowledge model (state of the environment or the agent's beliefs)
+		\item Set depth to 0
+		\item \label{goapprinciple:back}Increment depth by 1
+		\item Actions are extracted from environment model
+		\item For each extracted action:
+			\begin{itemize}
+			\item Discontentment is computed
+			\item Copy the knowledge model
+			\item Apply action on the copy
+			\item Loop back to step \ref{goapprinciple:back} with the copy as parameter until the maximum depth is reached
+			\end{itemize}
+		\item Select the first action in the sequence that has the best discontentment value after its last action
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Environment Model}
+\begin{sarllisting}[basicstyle=\scriptsize]
+interface EnvironmentModel {
+
+	/* Return the total discontentment associated with
+	 * the state of the environment
+	 */
+	def calculateDiscontentment : float
+
+	/* Apply the given action in the world model
+	 */
+	def applyAction(action : Action)
+
+	/* Iterate through each valid action that can be
+	 * applied in the environment.
+	 * When an action is applied, the iterator resets
+	 * and begins to return actions available from the
+	 * new state of the environment.
+	 * If no more action is available, return null value
+	 */
+	def nextAction : Action
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Initialization}
+\begin{sarllisting}[basicstyle=\scriptsize]
+class GoalOrientedActionPlanning {
+
+	def planAction(w : Environment, maxDepth : int) {
+
+		// Create storage for world models at each depth,
+		// and actions that corresponds to them
+		var models = Environment.newArrayOfSize(maxDepth+1)
+		var actions = Action.newArrayOfSize(maxDepth)
+
+		// Set up the initial data
+		models.set(0, w)
+		var currentDepth = 0
+
+		// Keep track of the best action
+		var bestAction : Action
+		var bestValue = Double::INFINITY
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Exploration}
+\begin{sarllisting}[basicstyle=\scriptsize]
+		// Iterate until we have completed all actions
+		// at depth zero
+		while (currentDepth >= 0) {
+			// Calculate the discontentment value, we'll need
+			// it in all cases
+			var currentValue = models.get(currentDepth)
+					.calcultateDiscontentment
+
+			// Check if we're a maximum depth
+			if (currentDepth >= maxDepth
+					&& currentValue < bestValue) {
+
+				// If the current value is the best, store it
+				bestValue = currentValue
+				bestAction = action.first
+				
+				// We're done at this depth, so drop back
+				currentDepth = -1
+			} else {
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Exploration \insertcontinuationtext}
+\begin{sarllisting}[basicstyle=\scriptsize]
+				// Otherwise, we need to try the next action
+				var nextAction = models.get(currentDepth)
+					.nextAction
+
+				if (nextAction !== null) {
+
+					// We have an action to apply, copy the
+					//current model
+					models.set(currentDepth+1,
+						models.get(currentDepth))
+
+					// Apply the action on the copy
+					actions.set(currentDepth, nextAction)
+					models.get(currentDepth+1)
+						.applyAction(nextAction)
+
+					// Process the action on the next iteration
+					currentDepth += 1
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{{Pseudo-Code:} Exploration \insertcontinuationtext}
+\begin{sarllisting}[basicstyle=\scriptsize]
+				} else {
+					// No action to apply, go back to the
+					// upper level
+					currentDepth -= 1
+				}
+			}
+		}
+		return bestAction
+	}
+}
+\end{sarllisting}
+\end{frame}
+
+\begin{frame}{{Single Goal}-Oriented Action Planning (SGOAP)}
+	\alertbox*{
+		In the previous slides, we do not have a single goal: \\
+		find the best of all possible action sequences
+	}
+	\vspace{.5cm}
+	\alertbox{How to compute the best action sequence to reach a single goal?}
+	\vspace{.5cm}
+	\begin{block}{}
+		\begin{itemize}
+		\item $\neq$ reduce insistence as mush as possible (GOAP) \\
+			$\Rightarrow$ a single distinct goal to aim at
+		\item Similar to A*:
+		find the best path in a graph of possible actions to reach the goal
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{{SGOAP} Algorithms}
+	\smaller
+	\begin{block}{Iterative Deepening A* (IDA*)}
+			\begin{enumerate}
+				\item Heuristic : evaluate how much environment state fulfils the goal
+				\item No open/close list
+				\item Cutoff value $c = heuristic()$
+				\item \label{idastart:back}Depth-first search until depth level or $cost_{action} > c$
+				\item When reaching the goal, return action sequence
+				\item If not, $c = increment(c)$ value, go to step \ref{idastart:back}
+			\end{enumerate}
+			\smaller To keep track of already encountered states, a transposition data structure is used
+	\end{block}
+	\begin{block}{Others}
+		\begin{itemize}
+			\item node array A* (or simply A*)
+			\item dynamic D*
+			\item simplified memory-bounded A* (SMA*)
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Stigmergy Goal-Oriented Behaviors}
+	\begin{itemize}
+		\item An interesting approach for making believable GOB is related to the agent perceptions
+		\vspace{.3cm}
+		\item Each motive that an agent can have is represented as a kind of information into the environment
+			\begin{itemize}
+			\item It gradually diffuses through the environment $\Rightarrow$ Stigmergy
+			\end{itemize}
+		\vspace{.3cm}
+		\item ``Goal'' objects provides actions to the agent
+		\vspace{.3cm}
+		\item GOB can be implemented with an agent following the ``goal'' object \\
+			Example: ant with pheromones
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Advantage of Stigmergy Goal-Oriented Behaviors}
+	\alertbox*{This approach reduces the need for complex pathfinding in  simulation}
+	
+	\begin{example}
+		\begin{itemize}
+			\item Agent has 3 possible sources of food
+			\item Conventional GOB: path finder is used to select the less difficult reachable source
+			\item Stigmergy approach: agent can move toward the greater concentration of food directly
+		\end{itemize}
+	\end{example}
+\end{frame}
+
+\endinput

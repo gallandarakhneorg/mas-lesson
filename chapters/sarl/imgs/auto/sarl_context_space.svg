@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 702.5 272.5"
+   width="702.5"
+   height="272.5"
+   version="1.1"
+   id="svg52"
+   sodipodi:docname="sarl_context_space.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs56" />
+  <sodipodi:namedview
+     id="namedview54"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.481102"
+     inkscape:cx="351.08992"
+     inkscape:cy="138.07286"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg52" />
+  <!-- Context outer box -->
+  <rect
+     x="1.25"
+     y="1.25"
+     width="700"
+     height="270"
+     rx="14"
+     fill="#f0f4ff"
+     stroke="#3949ab"
+     stroke-width="2.5"
+     id="rect4" />
+  <text
+     x="351.25"
+     y="25.25"
+     font-family="sans-serif"
+     font-size="16px"
+     font-weight="bold"
+     fill="#3949ab"
+     text-anchor="middle"
+     id="text6">Context (AgentContext)</text>
+  <!-- Default Space -->
+  <rect
+     x="31.25"
+     y="41.25"
+     width="220"
+     height="190"
+     rx="10"
+     fill="#e3f0ff"
+     stroke="#005aaa"
+     stroke-width="2"
+     id="rect8" />
+  <text
+     x="141.25"
+     y="63.25"
+     font-family="sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#005aaa"
+     text-anchor="middle"
+     id="text10">Default Space</text>
+  <text
+     x="141.25"
+     y="79.25"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#666666"
+     text-anchor="middle"
+     id="text12">(EventSpace)</text>
+  <!-- Agents in default space -->
+  <rect
+     x="51.25"
+     y="89.25"
+     width="80"
+     height="44"
+     rx="6"
+     fill="#fff3e0"
+     stroke="#e65100"
+     stroke-width="1.5"
+     id="rect14" />
+  <text
+     x="91.25"
+     y="115.25"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#e65100"
+     text-anchor="middle"
+     id="text16">Agent A</text>
+  <rect
+     x="151.25"
+     y="89.25"
+     width="80"
+     height="44"
+     rx="6"
+     fill="#e8f5e9"
+     stroke="#2e7d32"
+     stroke-width="1.5"
+     id="rect18" />
+  <text
+     x="191.25"
+     y="115.25"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#2e7d32"
+     text-anchor="middle"
+     id="text20">Agent B</text>
+  <!-- Event in default space -->
+  <rect
+     x="61.25"
+     y="156.25"
+     width="160"
+     height="32"
+     rx="7"
+     fill="#b8d9f8"
+     stroke="#005aaa"
+     stroke-width="1"
+     id="rect22" />
+  <text
+     x="141.25"
+     y="177.25"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#003366"
+     text-anchor="middle"
+     id="text24">Events circulate here</text>
+  <!-- Custom Space 1 -->
+  <rect
+     x="281.25"
+     y="41.25"
+     width="190"
+     height="190"
+     rx="10"
+     fill="#e8f5e9"
+     stroke="#2e7d32"
+     stroke-width="2"
+     stroke-dasharray="7, 3"
+     id="rect26" />
+  <text
+     x="376.25"
+     y="63.25"
+     font-family="sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#2e7d32"
+     text-anchor="middle"
+     id="text28">Custom Space 1</text>
+  <text
+     x="376.25"
+     y="79.25"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#666666"
+     text-anchor="middle"
+     id="text30">(MySpaceSpec)</text>
+  <rect
+     x="301.25"
+     y="89.25"
+     width="80"
+     height="44"
+     rx="6"
+     fill="#fff3e0"
+     stroke="#e65100"
+     stroke-width="1.5"
+     id="rect32" />
+  <text
+     x="341.25"
+     y="115.25"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#e65100"
+     text-anchor="middle"
+     id="text34">Agent A</text>
+  <text
+     x="376.25"
+     y="156.25"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#888888"
+     text-anchor="middle"
+     id="text36">Only opted-in agents</text>
+  <!-- Custom Space 2 -->
+  <rect
+     x="496.25"
+     y="41.25"
+     width="185"
+     height="190"
+     rx="10"
+     fill="#f3e5f5"
+     stroke="#6a1b9a"
+     stroke-width="2"
+     stroke-dasharray="7, 3"
+     id="rect38" />
+  <text
+     x="588.25"
+     y="63.25"
+     font-family="sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#6a1b9a"
+     text-anchor="middle"
+     id="text40">Custom Space 2</text>
+  <text
+     x="588.25"
+     y="79.25"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#666666"
+     text-anchor="middle"
+     id="text42">(AnotherSpec)</text>
+  <rect
+     x="516.25"
+     y="89.25"
+     width="80"
+     height="44"
+     rx="6"
+     fill="#e8f5e9"
+     stroke="#2e7d32"
+     stroke-width="1.5"
+     id="rect44" />
+  <text
+     x="556.25"
+     y="115.25"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#2e7d32"
+     text-anchor="middle"
+     id="text46">Agent B</text>
+  <text
+     x="588.25"
+     y="156.25"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#888888"
+     text-anchor="middle"
+     id="text48">Independent rules</text>
+  <!-- Bottom note -->
+  <text
+     x="351.25"
+     y="259.25"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#888888"
+     text-anchor="middle"
+     id="text50">Agents can participate in multiple spaces within the same context</text>
+</svg>

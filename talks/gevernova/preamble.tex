@@ -1,0 +1,25 @@
+\setboolean{isFrenchVersion}{false}
+
+\addauthor*[S.~Galland]{Prof.Dr. St\'ephane~GALLAND}
+
+\event[GE Vernova 2026]{GE Vernova Conference - Belfort - November 23, 2026}
+
+\title{Overview and Examples of Artificial Intelligence}
+
+\setpredefinedtitlepagebackground8
+
+\usefootlinefortitlepage
+
+\begin{graphicspathcontext}{{./talks/gevernova/imgs/auto/},\old}
+	\resolvepicturename{gefrontslide}
+	\pgfdeclareimage[width=6cm]{gevernovafrontslide}{\resolvedfilename}
+	\settitlepagerightfigure(230,-70){gevernovafrontslide}
+
+	\partnerlogo{gevernovalogo}
+\end{graphicspathcontext}
+
+% Preambles of sections
+\input{./chapters/ai/preamble}
+\input{./chapters/ciad/preamble}
+
+\endinput

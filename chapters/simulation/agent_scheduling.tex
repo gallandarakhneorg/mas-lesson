@@ -1,0 +1,202 @@
+\begin{graphicspathcontext}{{./chapters/simulation/imgs/},{./chapters/simulation/imgs/auto/},{./chapters/mas/imgs/auto/},\old}
+
+\begin{frame}{Scheduling of the Agents}
+	\begin{definitionblock}{Scheduling}
+		The agent scheduling may impose a \Emph{sequential execution} of the agents having only a notion of \emph{parallel execution}
+	\end{definitionblock}
+	\vspace{.5cm}
+	\hiconbox{
+		\begin{itemize}
+		\item Agents' actions are synchronized \cite{Michel.01.InfluenceReact}
+		\item Agents' execution (order...) has a strong impact on the results \cite{Lawson00}
+		\end{itemize}
+	}{info-icon}
+	\vspace{.5cm}
+	\simplebox*[.32\linewidth]{Synchronous \\ Scheduling}
+	\hfill
+	\simplebox*[.32\linewidth]{Asynchronous \\ Scheduling}
+	\hfill
+	\simplebox*[.32\linewidth]{Hybrid \\ Scheduling}
+\end{frame}
+
+\figureslide{Synchronous Scheduling}{synchronous_scheduling}
+
+\sidecite{Michel.01.InfluenceReact,GallandGaudDemangeKoukam2009_11}
+\begin{frame}[t]{Algorithm for Synchronous Scheduling}
+	\begin{algorithm}[H]
+	\smaller\smaller
+	%\dontprintsemicolon
+	%\linesnotnumbered
+	\SetKw{KwInside}{in}
+	\SetKw{KwSet}{set}
+	\SetKw{KwGet}{get}
+	\SetKw{KwAt}{at index}
+	%
+	\SetKwFunction{computePerceptionOf}{computePerceptionOf}
+	\SetKwFunction{runAgent}{runAgent}
+	\SetKwFunction{runEnvironmentDynamics}{runEnvironmentDynamics}
+	\SetKwFunction{computeReactions}{computeReactions}
+	\SetKwFunction{applyActions}{applyActions}
+	\SetKwFunction{timeEvolution}{timeEvolution}
+	%
+	\SetKwData{varP}{p}
+	\SetKwData{varA}{a}
+	\SetKwData{varI}{i}
+	\SetKwData{varT}{t}
+	\SetKwData{varAgents}{agents}
+	\SetKwData{varSigma}{\ensuremath{\sigma_e}}
+	\KwSet \varT \KwTo 0 \;
+	\While{true}{
+		\KwSet \varP \KwTo \ensuremath{\emptyset} \;
+		\ForAll{\varA \KwInside \varAgents}{
+			\KwSet \varP \KwAt \varA \KwTo \computePerceptionOf{\varSigma,\varA} \;
+		}
+		\KwSet \varI \KwTo \ensuremath{\emptyset} \;
+		\ForAll{\varA \KwInside \varAgents}{
+			\KwSet \varI \KwAt \varA \KwTo \runAgent{a,\KwGet \varP \KwAt \varA} \;
+		}
+		\KwSet \varI \KwTo \varI \ensuremath{\cup} \runEnvironmentDynamics \;
+		\KwSet \varA \KwTo \computeReactions{\varSigma,\varI} \;
+		\KwSet \varSigma \KwTo \applyActions{\varSigma,\varA} \;
+		\KwSet \varT \KwTo \timeEvolution{\varT,\varSigma} \;
+	}
+	\end{algorithm}
+	\vfill
+	\footnotesize
+	\alertbox{
+		This algorithm works only if the agents are not run asynchronously \\
+		AND the influence-reaction model is used \\ 
+		Otherwise, synchronization algorithms must be used among the agents, and the environment}
+\end{frame}
+
+\begin{frame}{Asynchronous Scheduling}
+	\small
+	\begin{block}{Principle}
+	\begin{itemize}
+	\item \Emph{Each agent runs inside a specific parallel computers}
+	\item Time is evolving for agent $a$ when:
+		\begin{description}
+		\item[Pessimistic approach] iff $t_a \le t_o | \forall o \in$ other agents.
+		\item[Optimistic approach] always, but go back to past when an inconsistent state is detected.
+		\end{description}
+	\end{itemize}
+	\end{block}
+	\vspace{2em}
+	\hiconbox{
+		This synchronization is usually directly implemented in the agent frameworks and not in the agents
+	}{info-icon}
+\end{frame}
+
+\sidenote{Image Claude Sonnet 4.6}
+\figureslide{Pessimistic Asynchronous Scheduling}{pessimistic_asynchronous_scheduling}
+
+\begin{frame}[t]{Algorithm for Pessimistic Asynchronous Scheduling}
+	Each agent runs: \\
+	\vspace{.5em}
+	\begin{algorithm}[H]
+	\footnotesize
+	%\dontprintsemicolon
+	%\linesnotnumbered
+	\SetKw{KwSet}{set}
+	\SetKw{KwSetValue}{set the value for}
+	\SetKw{KwValues}{values of}
+	\SetKw{KwInside}{in}
+	%
+	\SetKwFunction{Min}{min}
+	\SetKwFunction{Decide}{decide}
+	\SetKwFunction{GetEnvironmentPerception}{getEnvironmentPerception}
+	\SetKwFunction{GetMessagesAt}{getMessagesAt}
+	\SetKwFunction{EmitInfluences}{emitInfluences}
+	\SetKwFunction{SendMessages}{sendMessages}
+	%
+	\SetKwData{varTimeKnowledge}{timeKnowledge}
+	\SetKwData{varA}{a}
+	\SetKwData{varT}{t}
+	\SetKwData{varK}{k}
+	\SetKwData{varV}{v}
+	\SetKwData{varI}{influences}
+	\SetKwData{varP}{p}
+	\SetKwData{varMsgs}{msgs}
+	%
+	\KwSet \varTimeKnowledge \KwTo Map\{Identifier \ensuremath{\Rightarrow} double\} \;
+	\KwSetValue the environment identifier \KwInside \varTimeKnowledge \KwTo 0 \;
+	\ForAll{\varA \KwInside known agents}{
+		\KwSetValue \varA \KwInside \varTimeKnowledge \KwTo 0 \;
+	}
+	\KwSet \varT \KwTo 0 \;
+	\While{true}{
+		\If{\ensuremath{(\varT < \varV) | \forall \varV} \KwInside \KwValues \varTimeKnowledge}{
+			\KwSet \varT \KwTo \Min{\KwValues \varTimeKnowledge} \;
+			\KwSet \varP \KwTo \GetEnvironmentPerception{\varT} \ensuremath{\cup} \GetMessagesAt{\varT} \;
+			\KwSet (\varI, \varMsgs) \KwTo \Decide{\varT, \varP} \;
+			\EmitInfluences{\varI, \varT + \ensuremath{\delta}} \;
+			\SendMessages{\varMsgs, \varT + \ensuremath{\delta}} and update the variable \varTimeKnowledge of the receivers\;
+		}
+	}
+	\end{algorithm}
+\end{frame}
+
+%\animatedslidefigure{Optimistic Asynchronous Scheduling}{optimistic_asynchronous_scheduling}
+\figureslide{Optimistic Asynchronous Scheduling}{optimistic_asynchronous_scheduling_1}
+\figureslide{Optimistic Asynchronous Scheduling}{optimistic_asynchronous_scheduling_2}
+
+\begin{frame}[t]{Algorithm for Optimistic Asynchronous Scheduling}
+	Each agent runs: \\[-.2cm]
+	\vspace{.25em}
+	\begin{algorithm}[H]
+	\scriptsize
+	%\dontprintsemicolon
+	%\linesnotnumbered
+	\SetKw{KwSet}{set}
+	\SetKw{KwInside}{in}
+	%
+	\SetKwFunction{Min}{min}
+	\SetKwFunction{Decide}{decide}
+	\SetKwFunction{GetEnvironmentPerception}{getEnvironmentPerception}
+	\SetKwFunction{GetMessages}{getMessages}
+	\SetKwFunction{GetMessagesAt}{getMessagesAt}
+	\SetKwFunction{EmitInfluences}{emitInfluences}
+	\SetKwFunction{SendMessages}{sendMessages}
+	\SetKwFunction{SendMessage}{sendMessage}
+	\SetKwFunction{RestoreEnvironment}{restoreEnvironmentStateAt}
+	\SetKwFunction{RemoveOldMessages}{removeMessagesAfter}
+	\SetKwFunction{Invert}{invert}
+	%
+	\SetKwData{varMsgMemory}{messageMemory}
+	\SetKwData{varT}{t}
+	\SetKwData{varMsgs}{msgs}
+	\SetKwData{varM}{m}
+	\SetKwData{varTm}{t\ensuremath{_{m}}}
+	\SetKwData{varI}{i}
+	\SetKwData{varP}{p}
+	%
+	\KwSet \varMsgMemory \KwTo Map\{double \ensuremath{\Rightarrow} List\{Message\}\} \;
+	\KwSet \varT \KwTo 0 \;
+	\While{true}{
+		\KwSet \varMsgs \KwTo \GetMessages{} \;
+		\KwSet \varTm \KwTo \Min{timestamps of \varMsgs} \;
+		\If{\ensuremath{\varTm < \varT}}{
+			\RestoreEnvironment{\varTm - 1} \;
+			\RemoveOldMessages{\varTm} \;
+			\ForAll{\varM \KwInside \varMsgMemory \ensuremath{|} timestamp of \varM $>$ \varTm}{
+				\SendMessage{\Invert{\varM}, timestamp of \varM} \;
+				\KwSet \varMsgMemory \KwTo \varMsgMemory - \{ \varM \} \;
+			}
+			\KwSet \varT \KwTo \varTm
+		}
+		\KwSet \varP \KwTo \GetEnvironmentPerception{\varT} \ensuremath{\cup} \GetMessagesAt{\varT} \;
+		\KwSet (\varI, \varMsgs) \KwTo \Decide{\varT, \varP} \;
+		\EmitInfluences{\varI, \varT + \ensuremath{\delta}} \;
+		\SendMessages{\varMsgs, \varT + \ensuremath{\delta}} \;
+		\KwSet \varMsgMemory \KwTo \varMsgMemory \ensuremath{\cup} \{ (\varT + \ensuremath{\delta}) \ensuremath{\Rightarrow} \varMsgs \} \;
+		\KwSet \varT \KwTo \varT + \ensuremath{\delta} \;
+	}
+	\end{algorithm}
+\end{frame}
+
+\figureslide[subtitle={Example on local computer with threads}]{Hybrid Scheduling}{hybridscheduling}
+
+\end{graphicspathcontext}
+
+\endinput
+

@@ -1,0 +1,54 @@
+\begin{graphicspathcontext}{{./chapters/ciad/imgs/},{./chapters/ciad/imgs/auto/},{./chapters/ciad/examples/imgs/},{./chapters/ciad/examples/imgs/auto/},\old}
+
+\resolvepicturename{ciadlogo_green_background}
+\pgfdeclareimage[height=0.5cm]{prj-logo-ciad}{\resolvedfilename}
+
+\resolvepicturename{utbmlogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-utbm}{\resolvedfilename}
+
+\resolvepicturename{ubelogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-ube}{\resolvedfilename}
+
+\resolvepicturename{anrlogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-anr}{\resolvedfilename}
+
+\resolvepicturename{sayenslogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-sayens}{\resolvedfilename}
+
+\resolvepicturename{toyotalogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-toyota}{\resolvedfilename}
+
+\resolvepicturename{tsologo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-tso}{\resolvedfilename}
+
+\resolvepicturename{zayeduniversityresearchlogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-zayed}{\resolvedfilename}
+
+\resolvepicturename{opmlogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-opm}{\resolvedfilename}
+
+\makeatletter
+\gdef\addprojectlogos#1{%
+	\gdef\@projectslide@list{}%
+	\beamer@theme@ciad@foreach,\in#1,\do%
+		{\protected@xdef\@projectslide@list{\@projectslide@list\protect\pgfuseimage{prj-logo-\beamer@theme@ciad@foreach@term}\protect\;}}\and%
+		{\protected@xdef\@projectslide@list{\@projectslide@list\protect\pgfuseimage{prj-logo-\beamer@theme@ciad@foreach@term}}}%
+	\settextvideofooter{\@projectslide@list}%
+}
+\makeatother
+
+\resolvepicturename{prj-goal}
+\addiconboxpicture{prj-section-goal}{\resolvedfilename}
+
+\resolvepicturename{prj-inputs}
+\addiconboxpicture{prj-section-inputs}{\resolvedfilename}
+
+\resolvepicturename{prj-tools}
+\addiconboxpicture{prj-section-tools}{\resolvedfilename}
+
+\resolvepicturename{sgalland_qrcode}
+\addtextpicturepicture{sgalland-qrcode}{\resolvedfilename}
+
+\end{graphicspathcontext}
+
+\endinput

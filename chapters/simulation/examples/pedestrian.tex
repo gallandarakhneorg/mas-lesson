@@ -1,0 +1,98 @@
+\begin{graphicspathcontext}{{./chapters/simulation/examples/imgs/},{./chapters/simulation/examples/imgs/auto/},\old}
+
+\begin{frame}{Pedestrian Simulation}
+	\begin{block}{What is simulated?}
+		\begin{enumerate}
+		\item Movements of pedestrians at a microscopic level.
+		\item Force-based model for avoiding collisions.
+		\end{enumerate}
+	\end{block}
+	\vfill
+	\cite{buisson.abmtrans13}\hfill\includegraphics[width=.25\linewidth]{voxelia2}
+\end{frame}
+
+\begin{frame}{Force to Apply to Each Agent}
+	\begin{itemize}
+	\item The force to apply to each agent is:\hfill\hbox to .2\linewidth{\vbox to 0pt {\includegraphicswtex[width=.2\linewidth]{pedestrian_agent_params}}}
+		\[ \vec{F_a} = \vec{F} + w_a.\delta_{\|\vec{F}\|} \dfrac{\vec{p_t} - p_a}{\|\vec{p_t} - p_a\|} \]
+		\[ \vec{F} = \sum_{i \in M} U(t_c^i) \cdot \hat{S_i} \]
+	\item \smaller $\vec{F}$: collision-avoidance force.
+	\item $\hat{S_i}$: a sliding force.
+	\item $t_c^i$: time to collision to object $i$.
+	\item $U(t)$: scaling function of the time to collision.
+	\item $M$: set objects around (including the other agents).
+	\item $w_a$: weight of the attractive force.
+	\item $\delta_{x} g$: is $g$ if $x\leq0$, $0$ otherwise.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Sliding Force}
+	\begin{itemize}
+	\item The sliding force $\vec{S_i}$ is:
+		\[ \vec{s_j} = (p_j - p_a) \times \hat{y} \]
+		\[ \hat{S_j} = \sgn (\vec{s_j} \cdot (\vec{p_t} - p_a)) \frac{\vec{s_j}}{\|\vec{s_j}\|} \]
+	\item \smaller $\hat{y}$: vertical unit vector.
+	\end{itemize}
+	\vfill
+	\begin{center}
+		\includegraphicswtex[width=.65\linewidth]{pedestrian_sliding_force}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Scaling the Sliding Force}
+	\begin{itemize}
+	\item \alert{How to scale $\hat{S_j}$ to obtain the repulsive force?}
+	\item Many force-based models use a monotonic decreasing function of the distance to an obstacle.
+	\item But it does not support the velocity of the agent.
+	\vfill
+	\item \alert{Solution: Use time-based force scaling function.}
+		\[ U(t) = \begin{cases}
+				\frac{\sigma}{{t}^\phi} - \frac{\sigma}{{t_{max}}^\phi} & \text{if }0\leq t\leq t_{max} \\
+				0 & \text{if }t > t_{max}
+			\end{cases} \]
+	\item \smaller $t$: estimated time to collision.
+	\item $t_{max}$: the maximum anticipation time.
+	\item  $\sigma$ and $\phi$ are constants, such that $U(t_{max}) = 0$.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t,fragile]{{Video 1:} Collision Avoidance Behavior}
+	\vspace{-.25cm}
+	\begin{center}
+		\embeddedvideo[width=.52\linewidth]{./videos/simulation/pedestrians_circle.avi}{pedestrians_circle}
+			\\
+	\tiny This video was realized on the SIMULATE\textup{\regmark} tool \copyright Voxelia S.A.S
+	\end{center}
+\end{frame}
+
+\begin{frame}[t,fragile]{{Video 2:} Simulation of Belfort Railway Station}
+	\vspace{-.2cm}
+	\begin{center}
+		\embeddedvideo[width=.9\linewidth]{./videos/simulation/pedestrians_gare_belfort.avi}{pedestrians_gare_belfort}
+		\\
+		\tiny This video was realized on the SIMULATE\textup{\regmark} tool \copyright Voxelia S.A.S
+	\end{center}
+\end{frame}
+
+\begin{frame}[t,fragile]{{Video 3:} Simulation of Belfort Downtown}
+	\vspace{-.2cm}
+	\begin{center}
+		\embeddedvideo[width=.8\linewidth]{./videos/simulation/pedestrians_place_arme_belfort.avi}{pedestrians_place_arme_belfort}
+		\\
+		\tiny This video was realized on the SIMULATE\textup{\regmark} tool \copyright Voxelia S.A.S
+	\end{center}
+\end{frame}
+
+\begin{frame}[t,fragile]{{Video 4:} Drone Behavior}
+	\vspace{-.2cm}
+	\begin{center}
+		\embeddedvideo[width=.9\linewidth]{./videos/simulation/pedestrians_drones.mp4}{pedestrians_drones_sarl}
+		\\
+		\tiny This video was realized with SARL and Airsim
+	\end{center}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput
+

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 635.28711 223.5"
+   width="635.28711"
+   height="223.5"
+   font-family="'Segoe UI', Arial, sans-serif"
+   version="1.1"
+   id="svg107"
+   sodipodi:docname="time_event_based.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview109"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.1527778"
+     inkscape:cx="315.87097"
+     inkscape:cy="113.57419"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg107" />
+  <!-- Background -->
+  <defs
+     id="defs13">
+    <marker
+       id="arr3"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="10,3.5 0,7 0,0 "
+         fill="#333333"
+         id="polygon4" />
+    </marker>
+    <marker
+       id="arr-evt"
+       markerWidth="9"
+       markerHeight="6"
+       refX="8"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="9,3 0,6 0,0 "
+         fill="#d94f5c"
+         id="polygon7" />
+    </marker>
+  </defs>
+  <!-- Y axis -->
+  <line
+     x1="35.770508"
+     y1="203.46436"
+     x2="35.770508"
+     y2="13.464355"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arr3)"
+     id="line15" />
+  <text
+     x="29.770508"
+     y="9.4643555"
+     text-anchor="end"
+     font-size="13px"
+     fill="#333333"
+     id="text17">State</text>
+  <!-- X axis -->
+  <line
+     x1="35.770508"
+     y1="203.46436"
+     x2="625.77051"
+     y2="203.46436"
+     stroke="#333333"
+     stroke-width="2"
+     marker-end="url(#arr3)"
+     id="line19" />
+  <text
+     x="631.77051"
+     y="207.46436"
+     font-size="13px"
+     fill="#333333"
+     id="text21">t</text>
+  <!-- ── Flat state segments (state unchanged between events) ── -->
+  <!-- Segment 1: t0(80)→e1(180), state=190 -->
+  <line
+     x1="35.770508"
+     y1="153.46436"
+     x2="135.77051"
+     y2="153.46436"
+     stroke="#d94f5c"
+     stroke-width="2.8"
+     stroke-linecap="round"
+     id="line23" />
+  <!-- Segment 2: e1(180)→e2(310), state=130 -->
+  <line
+     x1="135.77051"
+     y1="93.464355"
+     x2="265.77051"
+     y2="93.464355"
+     stroke="#d94f5c"
+     stroke-width="2.8"
+     stroke-linecap="round"
+     id="line25" />
+  <!-- Segment 3: e2(310)→e3(390), state=165 -->
+  <line
+     x1="265.77051"
+     y1="128.46436"
+     x2="345.77051"
+     y2="128.46436"
+     stroke="#d94f5c"
+     stroke-width="2.8"
+     stroke-linecap="round"
+     id="line27" />
+  <!-- Segment 4: e3(390)→e4(530), state=95 -->
+  <line
+     x1="345.77051"
+     y1="58.464355"
+     x2="485.77051"
+     y2="58.464355"
+     stroke="#d94f5c"
+     stroke-width="2.8"
+     stroke-linecap="round"
+     id="line29" />
+  <!-- Segment 5: e4(530)→e5(620), state=150 -->
+  <line
+     x1="485.77051"
+     y1="113.46436"
+     x2="575.77051"
+     y2="113.46436"
+     stroke="#d94f5c"
+     stroke-width="2.8"
+     stroke-linecap="round"
+     id="line31" />
+  <!-- Segment 6: e5(620)→end(660), state=120 -->
+  <line
+     x1="575.77051"
+     y1="83.464355"
+     x2="615.77051"
+     y2="83.464355"
+     stroke="#d94f5c"
+     stroke-width="2.8"
+     stroke-linecap="round"
+     id="line33" />
+  <!-- ── Vertical jumps at each event ── -->
+  <line
+     x1="135.77051"
+     y1="153.46436"
+     x2="135.77051"
+     y2="93.464355"
+     stroke="#d94f5c"
+     stroke-width="2"
+     stroke-dasharray="4, 3"
+     id="line35" />
+  <line
+     x1="265.77051"
+     y1="93.464355"
+     x2="265.77051"
+     y2="128.46436"
+     stroke="#d94f5c"
+     stroke-width="2"
+     stroke-dasharray="4, 3"
+     id="line37" />
+  <line
+     x1="345.77051"
+     y1="128.46436"
+     x2="345.77051"
+     y2="58.464355"
+     stroke="#d94f5c"
+     stroke-width="2"
+     stroke-dasharray="4, 3"
+     id="line39" />
+  <line
+     x1="485.77051"
+     y1="58.464355"
+     x2="485.77051"
+     y2="113.46436"
+     stroke="#d94f5c"
+     stroke-width="2"
+     stroke-dasharray="4, 3"
+     id="line41" />
+  <line
+     x1="575.77051"
+     y1="113.46436"
+     x2="575.77051"
+     y2="83.464355"
+     stroke="#d94f5c"
+     stroke-width="2"
+     stroke-dasharray="4, 3"
+     id="line43" />
+  <!-- ── Time axis: variable gaps with arrows ── -->
+  <!-- Gap 1: 80→180 -->
+  <line
+     x1="35.770508"
+     y1="183.46436"
+     x2="128.77051"
+     y2="183.46436"
+     stroke="#d94f5c"
+     stroke-width="1.8"
+     marker-end="url(#arr-evt)"
+     id="line45" />
+  <!-- Gap 2: 180→310 -->
+  <line
+     x1="140.77051"
+     y1="183.46436"
+     x2="258.77051"
+     y2="183.46436"
+     stroke="#d94f5c"
+     stroke-width="1.8"
+     marker-end="url(#arr-evt)"
+     id="line47" />
+  <!-- Gap 3: 310→390 -->
+  <line
+     x1="270.77051"
+     y1="183.46436"
+     x2="338.77051"
+     y2="183.46436"
+     stroke="#d94f5c"
+     stroke-width="1.8"
+     marker-end="url(#arr-evt)"
+     id="line49" />
+  <!-- Gap 4: 390→530 -->
+  <line
+     x1="350.77051"
+     y1="183.46436"
+     x2="478.77051"
+     y2="183.46436"
+     stroke="#d94f5c"
+     stroke-width="1.8"
+     marker-end="url(#arr-evt)"
+     id="line51" />
+  <!-- Gap 5: 530→620 -->
+  <line
+     x1="490.77051"
+     y1="183.46436"
+     x2="568.77051"
+     y2="183.46436"
+     stroke="#d94f5c"
+     stroke-width="1.8"
+     marker-end="url(#arr-evt)"
+     id="line53" />
+  <!-- Gap 6: 620→660 -->
+  <line
+     x1="580.77051"
+     y1="183.46436"
+     x2="608.77051"
+     y2="183.46436"
+     stroke="#d94f5c"
+     stroke-width="1.8"
+     marker-end="url(#arr-evt)"
+     id="line55" />
+  <!-- ── Event markers on x-axis ── -->
+  <!-- Event tick + label: e1=180, e2=310, e3=390, e4=530, e5=620 -->
+  <line
+     x1="35.770508"
+     y1="200.46436"
+     x2="35.770508"
+     y2="208.46436"
+     stroke="#333333"
+     stroke-width="1.5"
+     id="line57" />
+  <text
+     x="35.770508"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#555555"
+     id="text59">t₀</text>
+  <line
+     x1="135.77051"
+     y1="200.46436"
+     x2="135.77051"
+     y2="208.46436"
+     stroke="#d94f5c"
+     stroke-width="2"
+     id="line61" />
+  <text
+     x="135.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#d94f5c"
+     font-weight="bold"
+     id="text63">e₁</text>
+  <line
+     x1="265.77051"
+     y1="200.46436"
+     x2="265.77051"
+     y2="208.46436"
+     stroke="#d94f5c"
+     stroke-width="2"
+     id="line65" />
+  <text
+     x="265.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#d94f5c"
+     font-weight="bold"
+     id="text67">e₂</text>
+  <line
+     x1="345.77051"
+     y1="200.46436"
+     x2="345.77051"
+     y2="208.46436"
+     stroke="#d94f5c"
+     stroke-width="2"
+     id="line69" />
+  <text
+     x="345.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#d94f5c"
+     font-weight="bold"
+     id="text71">e₃</text>
+  <line
+     x1="485.77051"
+     y1="200.46436"
+     x2="485.77051"
+     y2="208.46436"
+     stroke="#d94f5c"
+     stroke-width="2"
+     id="line73" />
+  <text
+     x="485.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#d94f5c"
+     font-weight="bold"
+     id="text75">e₄</text>
+  <line
+     x1="575.77051"
+     y1="200.46436"
+     x2="575.77051"
+     y2="208.46436"
+     stroke="#d94f5c"
+     stroke-width="2"
+     id="line77" />
+  <text
+     x="575.77051"
+     y="221.46436"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#d94f5c"
+     font-weight="bold"
+     id="text79">e₅</text>
+  <!-- ── Event flash markers (diamonds on curve) ── -->
+  <polygon
+     points="180,139 173,130 180,121 187,130 "
+     fill="#d94f5c"
+     stroke="#ffffff"
+     stroke-width="1.5"
+     id="polygon81"
+     transform="translate(-44.229492,-36.535645)" />
+  <polygon
+     points="310,174 303,165 310,156 317,165 "
+     fill="#d94f5c"
+     stroke="#ffffff"
+     stroke-width="1.5"
+     id="polygon83"
+     transform="translate(-44.229492,-36.535645)" />
+  <polygon
+     points="390,104 383,95 390,86 397,95 "
+     fill="#d94f5c"
+     stroke="#ffffff"
+     stroke-width="1.5"
+     id="polygon85"
+     transform="translate(-44.229492,-36.535645)" />
+  <polygon
+     points="530,159 523,150 530,141 537,150 "
+     fill="#d94f5c"
+     stroke="#ffffff"
+     stroke-width="1.5"
+     id="polygon87"
+     transform="translate(-44.229492,-36.535645)" />
+  <polygon
+     points="620,129 613,120 620,111 627,120 "
+     fill="#d94f5c"
+     stroke="#ffffff"
+     stroke-width="1.5"
+     id="polygon89"
+     transform="translate(-44.229492,-36.535645)" />
+  <!-- Start dot -->
+  <circle
+     cx="35.770508"
+     cy="153.46436"
+     r="5"
+     fill="#d94f5c"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle91" />
+  <!-- Variable gap annotations -->
+  <text
+     x="85.770508"
+     y="176.46436"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#999999"
+     font-style="italic"
+     id="text93">Δt₁</text>
+  <text
+     x="200.77051"
+     y="176.46436"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#999999"
+     font-style="italic"
+     id="text95">Δt₂</text>
+  <text
+     x="305.77051"
+     y="176.46436"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#999999"
+     font-style="italic"
+     id="text97">Δt₃</text>
+  <text
+     x="415.77051"
+     y="176.46436"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#999999"
+     font-style="italic"
+     id="text99">Δt₄</text>
+  <text
+     x="530.77051"
+     y="176.46436"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#999999"
+     font-style="italic"
+     id="text101">Δt₅</text>
+  <!-- Annotation -->
+  <text
+     x="345.77051"
+     y="35.464355"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#a82b38"
+     font-style="italic"
+     id="text103">state changes only at event occurrences</text>
+  <text
+     x="345.77051"
+     y="50.464355"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#a82b38"
+     font-style="italic"
+     id="text105">time jumps directly to the next event</text>
+</svg>
