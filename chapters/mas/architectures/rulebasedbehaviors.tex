@@ -73,12 +73,13 @@
 
 \begin{frame}{Unification}
 	\alertbox{A set of wildcards are matched so that they all refer to the same thing/object/value}
-	\begin{definition}[Free variable]
+	\vspace{.25cm}
+	\begin{definitionblock}{Free variable}
 		Each wildcard corresponds to the name a free variable
-	\end{definition}
-	\begin{definition}[Unification]
+	\end{definitionblock}
+	\begin{definitionblock}{Unification}
 		Algorithmic process of solving free variables within larger expressions, in which each occurrence of a free variable must refer to the same value as the other occurrence of the free variable
-	\end{definition}
+	\end{definitionblock}
 	\begin{example}
 		\begin{tabularx}{\linewidth}{>{\ttfamily}Xc>{\ttfamily}l}
 			(Whisker (Health 15)) & $\Rightarrow$ & ?person = Whisker \\
@@ -253,9 +254,9 @@ abstract class IfClauseExpression
 \end{frame}
 
 \begin{frame}[t,fragile]{{Pseudo-Code:} Data Matcher}
-\begin{sarllisting}[basicstyle=\scriptsize]
-/* The atomic part of a IF-clause expression is
- * represented by the DatumMatch class.
+	\vspace{-.25cm}
+	\begin{sarllisting}[basicstyle=\scriptsize]
+/* The atomic part of a IF-clause expression is represented by this class
  */
 class DatumMatch extends IfClauseExpression {
 
@@ -277,11 +278,11 @@ class DatumMatch extends IfClauseExpression {
 		if (!identifier.isWildcard
 				&& identifier != item.identifier)
 			return false
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[fragile]{{Pseudo-Code:} Data Matcher \insertcontinuationtext}
-\begin{sarllisting}[basicstyle=\scriptsize]
+	\begin{sarllisting}[basicstyle=\scriptsize]
 		// Does the value fit?
 		if ((minValue .. maxValue).contains(item.value) {
 
@@ -294,11 +295,11 @@ class DatumMatch extends IfClauseExpression {
 		}
 	}
 }
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[fragile]{{Pseudo-Code:} Boolean Matcher}
-\begin{sarllisting}[basicstyle=\scriptsize]
+	\begin{sarllisting}[basicstyle=\scriptsize]
 class AndMatch extends IfClauseExpression {
 
 	// Two operands
@@ -313,16 +314,15 @@ class AndMatch extends IfClauseExpression {
 	}
 
 }
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[t,fragile]{{Pseudo-Code:} Group Matcher}
-\begin{sarllisting}[basicstyle=\scriptsize]
-/* A data group test will match a database data group
- * if its identifier matches and if all its children
- * match at least one child of the database group
- * Example:    (?anyone (Health 0-54))
- *          on (Captain (Health 43) (Ammo 140))
+	\vspace{-.25cm}
+	\begin{sarllisting}[basicstyle=\scriptsize]
+/* A data group test will match a database data group if its identifier matches
+ * and if all its children match at least one child of the database group
+ * Example: (?anyone (Health 0-54)) on (Captain (Health 43) (Ammo 140))
  *          should match
  */
 class GroupMatch extends IfClauseExpression {
@@ -341,11 +341,11 @@ class GroupMatch extends IfClauseExpression {
 		if (!identifier.isWildcard
 				&& identifier != item.identifier)
 			return false
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[fragile]{{Pseudo-Code:} Group Matcher \insertcontinuationtext}
-\begin{sarllisting}[basicstyle=\scriptsize]
+	\begin{sarllisting}[basicstyle=\scriptsize]
 		// Is every child present?
 		for (child : children) {
 			// Use the children of the item as if they
@@ -363,11 +363,11 @@ class GroupMatch extends IfClauseExpression {
 		return true
 	}
 }
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
-\begin{frame}[fragile]{{Pseudo-Code:} Rule System}
-\begin{sarllisting}[basicstyle=\scriptsize]
+\begin{frame}[t,fragile]{{Pseudo-Code:} Rule System}
+	\begin{sarllisting}[basicstyle=\scriptsize]
 class RuleBasedSystem {
 
 	def iteration(database : Database, rules : List<Rule>) {
@@ -389,14 +389,14 @@ class RuleBasedSystem {
 		// use a fallback action, or simply do nothing
 	}
 }
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}{Rule Arbitration}
 	\alertbox{How to manage rules that trigger at the same time?}
 	\vspace{.5cm}
 	\alertbox*{Only a single could be fired within a set of triggered rules}
-	\vspace{.5cm}
+	\vspace{.4cm}
 	\begin{alertblock}{Naive Arbitration}
 			\begin{itemize}
 				\item First triggered rule is allowed to fire
@@ -406,7 +406,7 @@ class RuleBasedSystem {
 	\begin{example}[of problem]
 		\begin{itemize}
 		\item If the rule does not change the content of the database
-		\item If no external changes are imposed, then the same rule will continue to fire every time the system is run.
+		\item If no external changes are imposed, then the same rule will continue to fire every time the system is run
 		\end{itemize}
 	\end{example}
 \end{frame}
@@ -448,12 +448,12 @@ class RuleBasedSystem {
 \end{frame}
 
 \begin{frame}{{Rule Arbitration:} Most Specific Condition}
-	\begin{definition}[Rule Specialization]
+	\begin{definitionblock}{Rule Specialization}
 	\begin{itemize}
 		\item When conditions are very easy to meet, or database regularly triggers it, then they are general rules
 		\item When conditions are hard to fulfill or less triggered by the system, then they are specific rules
 	\end{itemize}
-	\end{definition}
+	\end{definitionblock}
 	\begin{block}{Principle}
 		More specific rules should be preferred over more general rules
 	\end{block}
@@ -466,20 +466,20 @@ class RuleBasedSystem {
 \end{frame}
 
 \begin{frame}{{Rule Arbitration:} Dynamic Priority}
-\begin{block}{Principle}
-	Associate a priority value to each rule in order to select the most suitable rule in a specific context
-\end{block}
-\begin{block}{How?}
-	\begin{itemize}
-		\item Rules are arranged in order of decreasing priority
-		\item First triggered rule is fired
-	\end{itemize}
-\end{block}
+	\begin{block}{Principle}
+		Associate a priority value to each rule in order to select the most suitable rule in a specific context
+	\end{block}
+	\begin{block}{How?}
+		\begin{itemize}
+			\item Rules are arranged in order of decreasing priority
+			\item First triggered rule is fired
+		\end{itemize}
+	\end{block}
 	\begin{alertblock}{Disadvantage}
-	\begin{itemize}
-		\item $O(\frac{n}{2} + n.\log_2(n))$, where $n$ is the number of rules
-	\end{itemize}
-\end{alertblock}
+		\begin{itemize}
+			\item $O(\frac{n}{2} + n.\log_2(n))$, where $n$ is the number of rules
+		\end{itemize}
+	\end{alertblock}
 \end{frame}
 
 \begin{frame}{RETE Algorithm}

@@ -158,7 +158,7 @@ class StateMachine {
 	\vspace{-.5cm}
 	\begin{columns}
 		\begin{column}[t]{.5\linewidth}
-			\begin{sarllisting}
+			\begin{sarllisting}[basicstyle=\tiny]
 enum State {
 	PATROL, DEFEND, SLEEP
 }
@@ -180,7 +180,7 @@ class PatrollerFSM {
 			\end{sarllisting}
 		\end{column}
 		\begin{column}[t]{.5\linewidth}
-			\begin{sarllisting}
+			\begin{sarllisting}[basicstyle=\tiny]
 					return #[RANDOM_MOVE]
 				}
 			}
@@ -249,36 +249,47 @@ abstract class AbstractHFSM {
 \end{sarllisting}
 \end{frame}
 
-\begin{frame}[t,fragile]{{Pseudo-Code:} State and Transition}
-\begin{sarllisting}[basicstyle=\scriptsize]
+\begin{frame}[fragile]{{Pseudo-Code:} State and Transition}
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\begin{sarllisting}[basicstyle=\scriptsize]
 class State extends AbstractHFSM { 
 	def getStates {
-		// If we're just a state, then the stack is just us
+		// If we're just a state
+		// then the stack is just us
 		#[ this ]
 	}
 
-	// As in the standard FSM implementation...
+	// As in the standard FSM
+	// implementation...
 	def getActions {...}
 	def getEnterActions {...}
 	def getExitActions {...}
 	def getTransitions {...}
 }
-
+			\end{sarllisting}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{sarllisting}[basicstyle=\scriptsize]
 class Transition {
-	// Returns the different in levels of the hierarchy
-	// from the source to the target of the transition
-	def getLevel : int
+	// Returns the different in
+	// levels of the hierarchy
+	// from the source to the target
+	// of the transition
+	def getLevel : int {...}
 
 	// As in the standard FSM implementation...
 	def isTriggered {...}
 	def getTargetState {...}
 	def getActions {...}
 }
-\end{sarllisting}
+			\end{sarllisting}
+		\end{column}
+	\end{columns}
 \end{frame}
 
 \begin{frame}[t,fragile]{{Pseudo-Code:} HFSM}
-\begin{sarllisting}[basicstyle=\scriptsize]
+	\begin{sarllisting}[basicstyle=\scriptsize]
 class HierarchicalFiniteStateMachine extends AbstractHFSM {
 	// List of states at this level of the hierarchy
 	var states : List<State>
@@ -293,11 +304,11 @@ class HierarchicalFiniteStateMachine extends AbstractHFSM {
 	def getStates : List<AbstractHFSM>
 		this.currentState?.getStates
 	}
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[t,fragile]{{Pseudo-Code:} HFSM \insertcontinuationtext}
-\begin{sarllisting}[basicstyle=\scriptsize]
+	\begin{sarllisting}[basicstyle=\scriptsize]
 	// Recursively updates the machine
 	def update : UpdateResult {
 		// If we're in no state, use the initial state
@@ -315,11 +326,12 @@ class HierarchicalFiniteStateMachine extends AbstractHFSM {
 			if (transition.isTriggered)
 				triggeredTransition = transition
 		}
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[t,fragile]{{Pseudo-Code:} HFSM \insertcontinuationtext}
-\begin{sarllisting}[basicstyle=\scriptsize]
+	\vspace{-.25cm}
+	\begin{sarllisting}[basicstyle=\scriptsize]
 		// If we're found one, make a result structure for
 		// it
 		var result = UpdateResult
@@ -331,7 +343,7 @@ class HierarchicalFiniteStateMachine extends AbstractHFSM {
 			]
 		} else {
 			// Otherwise recurse down for a result
-			result = currentstate.update
+			result = currentstate.updaTransitionte
 		}
 
 		// Check if the result contains a transition
@@ -343,11 +355,12 @@ class HierarchicalFiniteStateMachine extends AbstractHFSM {
 				result.actions += currentState.exitActions
 				result.actions += result.transition.actions
 				result.actions += targetState.enterActions
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[t,fragile]{{Pseudo-Code:} HFSM \insertcontinuationtext}
-\begin{sarllisting}[basicstyle=\scriptsize]
+	\vspace{-.25cm}
+	\begin{sarllisting}[basicstyle=\scriptsize]
 				// Set our current state
 				currentState = targetState
 				// Add our normal action (we may be a state)
@@ -372,11 +385,11 @@ class HierarchicalFiniteStateMachine extends AbstractHFSM {
 				// Clear the transition, so nobody else does it
 				result.transition = null
 			}
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[t,fragile]{{Pseudo-Code:} HFSM \insertcontinuationtext}
-\begin{sarllisting}[basicstyle=\scriptsize]
+	\begin{sarllisting}[basicstyle=\scriptsize]
 		} else {
 			// We can simply do our normal action
 			result.actions += getActions
@@ -398,11 +411,11 @@ class HierarchicalFiniteStateMachine extends AbstractHFSM {
 			// Otherwise we have no action to add to
 			actions = #[]
 		}
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[t,fragile]{{Pseudo-Code:} HFSM \insertcontinuationtext}
-\begin{sarllisting}[basicstyle=\scriptsize]
+	\begin{sarllisting}[basicstyle=\scriptsize]
 		// If we have a current state, exit it
 		if (currentState !== null)
 			actions += currentState.exitActions
@@ -413,11 +426,11 @@ class HierarchicalFiniteStateMachine extends AbstractHFSM {
 		return actions
 	}
 }
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[t,fragile]{{Pseudo-Code:} Sub-machine}
-\begin{sarllisting}[basicstyle=\scriptsize]
+	\begin{sarllisting}[basicstyle=\scriptsize]
 class SubMachineState
 		extends State, HierarchicalStateMachine
 
@@ -439,7 +452,7 @@ class SubMachineState
 			return #[this]
 	}
 }
-\end{sarllisting}
+	\end{sarllisting}
 \end{frame}
 
 \begin{frame}[t]{Combining Decision Trees and State Machines}
