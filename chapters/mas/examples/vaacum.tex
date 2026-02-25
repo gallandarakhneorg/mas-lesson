@@ -26,9 +26,9 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}[fragile]{Vacuum Agent Loop}
+\begin{frame}[t,fragile]{Vacuum Agent Loop}
 	\begin{columns}
-		\begin{column}{.5\linewidth}
+		\begin{column}[t]{.5\linewidth}
 				\begin{sarllisting}
 def run() {
 	var done = false
@@ -41,65 +41,49 @@ def run() {
 	die()
 }\end{sarllisting}
 		\end{column}
-		\begin{column}{.5\linewidth}
-			\begin{block}{\texttt{get\_percept()}}
-				Convert sensor data to the logical facts for perceptions
-			\end{block}
-			\begin{block}{Reactive behavior: \texttt{choose\_action()}}
-				If the current cell is dirty, suck \\
-				Otherwise, move \\[1ex]
-				\centering
-				\begin{tabular}{|c|c|}
-				\hline
-				\textbf{Perception \texttt{p}} & \textbf{Action \texttt{a}} \\
-				\hline
-				\texttt{[Dirty]} & \texttt{Suck} \\
-				\hline
-				\texttt{[Clean, CanGoLeft]} & \texttt{MoveLeft} \\
-				\hline
-				\texttt{[Clean, CanGoRight]} & \texttt{MoveRight} \\
-				\hline
-				\texttt{[Clean, CanGoUp]} & \texttt{MoveUp} \\
-				\hline
-				\texttt{[Clean, CanGoDown]} & \texttt{MoveDown} \\
-				\hline
-				\end{tabular}
-			\end{block}
-		\end{column}
-	\end{columns}
-\end{frame}
-
-\begin{frame}[fragile]{Vacuum Agent Loop \insertcontinuationtext}
-	\begin{columns}
-		\begin{column}{.5\linewidth}
-				\begin{sarllisting}
-def run() {
-	var done = false
-	while (!done) {
-	  var p = get_percept()
-	  var a = choose_action(p)
-	  do_action(a)
-	  done = check_if_done()
-	}
-	die()
-}\end{sarllisting}
-		\end{column}
-		\begin{column}{.5\linewidth}
-			\begin{block}{\texttt{do\_action()}}
-				Convert selected action fact to a concrete effect with the robot effectors
-			\end{block}
-			\begin{block}{\texttt{check\_if\_done()}}
-				Determine if the robot has to stop its running
-			\end{block}
-			\begin{block}{Does this agent perform well?}
-				\smaller Need a performance measure:
-				\begin{compactitemize}
-				\item Maximize amount of dirt picked up?
-				\item Maximize ratio of dirt to energy expended?
-				\item Maximize ratio of dirt to combination of energy and time?
-				\end{compactitemize}
-				Selecting a performance measure is not always easy
-			\end{block}
+		\begin{column}[t]{.5\linewidth}
+			\only<1>{
+				\begin{block}{\texttt{get\_percept()}}
+					Convert sensor data to the logical facts for perceptions
+				\end{block}
+				\begin{block}{Reactive behavior: \texttt{choose\_action()}}
+					If the current cell is dirty, suck \\
+					Otherwise, move \\[1ex]
+					\centering
+					\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Perception \texttt{p}} & \textbf{Action \texttt{a}} \\
+					\hline
+					\texttt{[Dirty]} & \texttt{Suck} \\
+					\hline
+					\texttt{[Clean, CanGoLeft]} & \texttt{MoveLeft} \\
+					\hline
+					\texttt{[Clean, CanGoRight]} & \texttt{MoveRight} \\
+					\hline
+					\texttt{[Clean, CanGoUp]} & \texttt{MoveUp} \\
+					\hline
+					\texttt{[Clean, CanGoDown]} & \texttt{MoveDown} \\
+					\hline
+					\end{tabular}
+				\end{block}
+			}
+			\only<2>{
+				\begin{block}{\texttt{do\_action()}}
+					Convert selected action fact to a concrete effect with the robot effectors
+				\end{block}
+				\begin{block}{\texttt{check\_if\_done()}}
+					Determine if the robot has to stop its running
+				\end{block}
+				\begin{block}{Does this agent perform well?}
+					\smaller Need a performance measure:
+					\begin{compactitemize}
+					\item Maximize amount of dirt picked up?
+					\item Maximize ratio of dirt to energy expended?
+					\item Maximize ratio of dirt to combination of energy and time?
+					\end{compactitemize}
+					Selecting a performance measure is not always easy
+				\end{block}
+			}
 		\end{column}
 	\end{columns}
 \end{frame}

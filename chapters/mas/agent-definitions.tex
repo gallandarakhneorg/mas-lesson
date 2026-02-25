@@ -14,44 +14,35 @@
 	\hiconbox*{No commonly/universally accepted definition}{info-icon}
 \end{frame}
 
-\begin{frame}[t]{Agent: Autonomy}
-	\begin{columns}
-		\begin{column}{.2\linewidth}
-			\begin{bottomarrowsequence}
-				\arrow[bg=CIADgreen]{Autonomy}
-				\arrow{Interaction}
-				\arrow{Reactive}
-				\arrow{Proactive}
-			\end{bottomarrowsequence}
-		\end{column}
-		\begin{column}{.8\linewidth}
-			\begin{definitionblock}{Principle of autonomy}
-				Agents encapsulate their \Emph{internal state} (that is not accessible to other agents), and make decisions about what to do based on this state, without the direct intervention of humans or others agent
-			\end{definitionblock}
-			\vspace{.5cm}
-			\begin{itemize}
-				\item Able to \alert{act without any direct intervention} of human users or other agents
-				\item Total \alert{control} over its own \alert{internal state}
-				\item Total \alert{control} over its own \alert{actions} (no master/slave relationship)
-				\item Can modify its behavior according to its experience (\alert{adaptation} or \alert{learning})
-			\end{itemize}
-		\end{column}
-	\end{columns}
-\end{frame}
-
-\begin{frame}[t]{Agent: Interaction}
+\begin{frame}[t]{Agent Properties}
 	\vspace{-.5cm}
 	\begin{columns}
 		\begin{column}[t]{.2\linewidth}
 			\begin{bottomarrowsequence}
-				\arrow{Autonomy}
-				\arrow[bg=CIADgreen]{Interaction}
-				\arrow{Reactive}
-				\arrow{Proactive}
+				\only<1>{\arrow[bg=CIADgreen]{Autonomy}}
+				\only<2->{\arrow{Autonomy}}
+				\only<2-3>{\arrow[bg=CIADgreen]{Interaction}}
+				\only<1,4->{\arrow{Interaction}}
+				\only<4>{\arrow[bg=CIADgreen]{Reactive}}
+				\only<1-3,5->{\arrow{Reactive}}
+				\only<5>{\arrow[bg=CIADgreen]{Proactive}}
+				\only<1-4>{\arrow{Proactive}}
 			\end{bottomarrowsequence}
 		\end{column}
 		\begin{column}[t]{.8\linewidth}
 			\only<1>{
+				\begin{definitionblock}{Principle of autonomy}
+					Agents encapsulate their \Emph{internal state} (that is not accessible to other agents), and make decisions about what to do based on this state, without the direct intervention of humans or others agent
+				\end{definitionblock}
+				\vspace{.5cm}
+				\begin{itemize}
+					\item Able to \alert{act without any direct intervention} of human users or other agents
+					\item Total \alert{control} over its own \alert{internal state}
+					\item Total \alert{control} over its own \alert{actions} (no master/slave relationship)
+					\item Can modify its behavior according to its experience (\alert{adaptation} or \alert{learning})
+				\end{itemize}
+			}
+			\only<2>{
 				\begin{definitionblock}{Principle of interaction}
 					Agent interacts with other agents, and have the ability to engage in social activities (cooperation, coordination, negotation...) in order to achieve its goals
 				\end{definitionblock}
@@ -66,7 +57,7 @@
 					\end{description}
 				\end{itemize}
 			}
-			\only<2->{
+			\only<3>{
 				\begin{columns}
 					\begin{column}[t]{.5\linewidth}
 						\fancybox[width=5.2cm]{Direct Interaction}{
@@ -87,58 +78,30 @@
 					\only<3>{\includegraphics[width=.7\linewidth]{indirect_interaction}}
 				\end{center}
 			}
-		\end{column}
-	\end{columns}
-\end{frame}
-
-\begin{frame}[t]{Agent: Reactive Behavior}
-	\vspace{-.5cm}
-	\begin{columns}
-		\begin{column}[t]{.2\linewidth}
-			\begin{bottomarrowsequence}
-				\arrow{Autonomy}
-				\arrow{Interaction}
-				\arrow[bg=CIADgreen]{Reactive}
-				\arrow{Proactive}
-			\end{bottomarrowsequence}
-		\end{column}
-		\begin{column}[t]{.8\linewidth}
-			\begin{definitionblock}{Principle of reactive behavior}
-				Agent \Emph{perceives} its environment and \Emph{immediately produces an action in response}, without planning or memory
-			\end{definitionblock}
-			\begin{description}
-			\item[Perception $\rightarrow$ Action] behavior is a direct mapping from sensed stimuli to output actions
-			\item[No internal model] agent holds no representation of the world
-			\item[No deliberation] no reasoning, planning, or goal inference occurs
-			\item[Quick response] reaction is immediate and computationally lightweight
-			\item[Emergence] complex collective behaviors can arise from many simple reactive agents
-			\end{description}
-		\end{column}
-	\end{columns}
-\end{frame}
-
-\begin{frame}[t]{Agent: Proactive Behavior}
-	\vspace{-.5cm}
-	\begin{columns}
-		\begin{column}[t]{.2\linewidth}
-			\begin{bottomarrowsequence}
-				\arrow{Autonomy}
-				\arrow{Interaction}
-				\arrow{Reactive}
-				\arrow[bg=CIADgreen]{Proactive}
-			\end{bottomarrowsequence}
-		\end{column}
-		\begin{column}[t]{.8\linewidth}
-			\begin{definitionblock}{Principle of proactive behavior}
-				Agent \Emph{pursues its own goals} by anticipating future states and planning actions, independently of immediate stimuli
-			\end{definitionblock}
-			\begin{description}
-			\item[Goal-driven] behavior is directed by internal objectives, not just external stimuli
-			\item[Internal model] agent maintains a representation of the world to reason about it
-			\item[Deliberation] agent evaluates options and selects actions toward its goals
-			\item[Anticipation] agent predicts future states to plan ahead
-			\item[Initiative] the agent acts on its own, without waiting for external triggers
-			\end{description}
+			\only<4>{
+				\begin{definitionblock}{Principle of reactive behavior}
+					Agent \Emph{perceives} its environment and \Emph{immediately produces an action in response}, without planning or memory
+				\end{definitionblock}
+				\begin{description}
+				\item[Perception $\rightarrow$ Action] behavior is a direct mapping from sensed stimuli to output actions
+				\item[No internal model] agent holds no representation of the world
+				\item[No deliberation] no reasoning, planning, or goal inference occurs
+				\item[Quick response] reaction is immediate and computationally lightweight
+				\item[Emergence] complex collective behaviors can arise from many simple reactive agents
+				\end{description}
+			}
+			\only<5>{
+				\begin{definitionblock}{Principle of proactive behavior}
+					Agent \Emph{pursues its own goals} by anticipating future states and planning actions, independently of immediate stimuli
+				\end{definitionblock}
+				\begin{description}
+				\item[Goal-driven] behavior is directed by internal objectives, not just external stimuli
+				\item[Internal model] agent maintains a representation of the world to reason about it
+				\item[Deliberation] agent evaluates options and selects actions toward its goals
+				\item[Anticipation] agent predicts future states to plan ahead
+				\item[Initiative] the agent acts on its own, without waiting for external triggers
+				\end{description}
+			}
 		\end{column}
 	\end{columns}
 \end{frame}
