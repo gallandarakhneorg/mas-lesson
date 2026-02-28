@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 502 292.46838"
+   width="502"
+   height="292.46838"
+   font-family="sans-serif"
+   font-size="13px"
+   version="1.1"
+   id="svg32"
+   sodipodi:docname="cps_venn.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs36" />
+  <sodipodi:namedview
+     id="namedview34"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.1342105"
+     inkscape:cx="246.46116"
+     inkscape:cy="172.19482"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg32"
+     inkscape:lockguides="true" />
+  <!-- Complex Systems (large background) -->
+  <ellipse
+     cx="251"
+     cy="146.23419"
+     rx="250.07533"
+     ry="145.30951"
+     fill="#dce8f7"
+     stroke="#2c7bb6"
+     stroke-width="1.84935"
+     opacity="0.6"
+     id="ellipse2" />
+  <text
+     x="189.91803"
+     y="42.283051"
+     fill="#2c5f8a"
+     font-weight="bold"
+     font-size="14px"
+     id="text4">Complex Systems</text>
+  <!-- AI ellipse -->
+  <ellipse
+     cx="248.80615"
+     cy="181"
+     rx="207.54427"
+     ry="99.738129"
+     fill="#fde8b3"
+     stroke="#e67e22"
+     stroke-width="2.52374"
+     opacity="0.7"
+     id="ellipse6" />
+  <text
+     x="81.000008"
+     y="156"
+     fill="#7d4e00"
+     font-weight="bold"
+     id="text8">Artificial</text>
+  <text
+     x="80.584007"
+     y="173"
+     fill="#7d4e00"
+     font-weight="bold"
+     id="text10">Intelligence</text>
+  <!-- MAS ellipse -->
+  <ellipse
+     cx="291"
+     cy="182.87622"
+     rx="120.04575"
+     ry="81.921959"
+     fill="#d5f5e3"
+     stroke="#27ae60"
+     stroke-width="1.9085"
+     opacity="0.7"
+     id="ellipse12" />
+  <text
+     x="229.07114"
+     y="136.29669"
+     fill="#1a5e38"
+     font-weight="bold"
+     id="text14">Multiagent Systems</text>
+  <!-- CPS ellipse (intersection) -->
+  <ellipse
+     cx="353.72592"
+     cy="186.22321"
+     rx="127.55147"
+     ry="42.52541"
+     fill="#f7c6d0"
+     stroke="#c0392b"
+     stroke-width="2.4898"
+     opacity="0.8"
+     id="ellipse16" />
+  <text
+     x="296.59702"
+     y="180.45462"
+     fill="#6e0f1a"
+     font-weight="bold"
+     font-size="12px"
+     id="text18"><tspan
+       sodipodi:role="line"
+       id="tspan421"
+       x="296.59702"
+       y="180.45462"
+       style="text-align:center;text-anchor:middle">Cyber-Physical</tspan><tspan
+       sodipodi:role="line"
+       id="tspan423"
+       x="296.59702"
+       y="195.45462"
+       style="text-align:center;text-anchor:middle">Systems</tspan></text>
+  <!-- Labels for regions -->
+  <text
+     x="72.02816"
+     y="207.46762"
+     fill="#7d4e00"
+     font-size="11px"
+     font-style="italic"
+     id="text20">Machine Learning</text>
+  <text
+     x="72.02816"
+     y="222.46762"
+     fill="#7d4e00"
+     font-size="11px"
+     font-style="italic"
+     id="text22">Expert Systems</text>
+  <text
+     x="248.59796"
+     y="240.5936"
+     fill="#1a5e38"
+     font-size="11px"
+     font-style="italic"
+     id="text24">Agent coordination</text>
+  <text
+     x="248.59796"
+     y="255.5936"
+     fill="#1a5e38"
+     font-size="11px"
+     font-style="italic"
+     id="text26">Emergence</text>
+  <text
+     x="26.740894"
+     y="94.520271"
+     fill="#2c5f8a"
+     font-size="11px"
+     font-style="italic"
+     id="text28">Self-organisation</text>
+  <text
+     x="26.740894"
+     y="109.52027"
+     fill="#2c5f8a"
+     font-size="11px"
+     font-style="italic"
+     id="text30">Non-linearity</text>
+</svg>

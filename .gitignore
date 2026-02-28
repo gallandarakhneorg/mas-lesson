@@ -7,7 +7,8 @@
 *.snm
 *.toc
 *.vrb
-*.pdf
+
+TALK.pdf
 
 videos/*
 videos/*/*

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 253.63667 212.94554"
+   width="253.63667"
+   height="212.94554"
+   font-family="sans-serif"
+   font-size="13px"
+   version="1.1"
+   id="svg55"
+   sodipodi:docname="cps_layers.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview57"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.3852941"
+     inkscape:cx="127.02836"
+     inkscape:cy="129.75339"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg55" />
+  <!-- Physical layer -->
+  <rect
+     x="0.62024945"
+     y="170.86716"
+     width="252.39621"
+     height="41.462627"
+     rx="6.5842495"
+     fill="#b3d9f7"
+     stroke="#2c7bb6"
+     stroke-width="1.23153"
+     id="rect2" />
+  <text
+     x="126.96"
+     y="185.94432"
+     text-anchor="middle"
+     font-weight="bold"
+     fill="#1a4a6e"
+     id="text4">Physical Layer</text>
+  <text
+     x="126.96"
+     y="201.94435"
+     text-anchor="middle"
+     fill="#1a4a6e"
+     font-size="11px"
+     id="text6">Sensors · Actuators · Physical processes</text>
+  <!-- Communication layer -->
+  <rect
+     x="0.6183421"
+     y="115.26373"
+     width="252.39999"
+     height="41.116764"
+     rx="6.5843482"
+     fill="#b3f7d9"
+     stroke="#2cb67d"
+     stroke-width="1.22639"
+     id="rect8" />
+  <text
+     x="126.96"
+     y="130.10582"
+     text-anchor="middle"
+     font-weight="bold"
+     fill="#1a4e35"
+     id="text10">Communication Layer</text>
+  <text
+     x="126.96"
+     y="146.10582"
+     text-anchor="middle"
+     fill="#1a4e35"
+     font-size="11px"
+     id="text12">Networks · Protocols · Real-time data streams</text>
+  <!-- Computation layer -->
+  <rect
+     x="0.62092084"
+     y="58.838135"
+     width="252.39487"
+     height="41.584896"
+     rx="6.5842142"
+     fill="#f7e6b3"
+     stroke="#d4a017"
+     stroke-width="1.23334"
+     id="rect14" />
+  <text
+     x="126.96"
+     y="74.267357"
+     text-anchor="middle"
+     font-weight="bold"
+     fill="#5a3e00"
+     id="text16">Computation Layer</text>
+  <text
+     x="126.96"
+     y="90.267349"
+     text-anchor="middle"
+     fill="#5a3e00"
+     font-size="11px"
+     id="text18">Embedded systems · Edge computing · Cloud</text>
+  <!-- Application layer -->
+  <rect
+     x="0.63296002"
+     y="0.63296002"
+     width="252.37076"
+     height="43.815266"
+     rx="6.5835853"
+     fill="#f7b3c2"
+     stroke="#c0392b"
+     stroke-width="1.26592"
+     id="rect20" />
+  <text
+     x="126.96"
+     y="18.428877"
+     text-anchor="middle"
+     font-weight="bold"
+     fill="#6e1a1a"
+     id="text22">Application Layer</text>
+  <text
+     x="126.96"
+     y="34.428879"
+     text-anchor="middle"
+     fill="#6e1a1a"
+     font-size="11px"
+     id="text24">Control logic · Decision-making · Services</text>
+  <!-- Arrows -->
+  <defs
+     id="defs29">
+    <marker
+       id="arr"
+       markerWidth="8"
+       markerHeight="8"
+       refX="4"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 V 8 L 8,4 Z"
+         fill="#555555"
+         id="path26" />
+    </marker>
+  </defs>
+  <line
+     x1="126.96"
+     y1="166.10582"
+     x2="126.96"
+     y2="161.10582"
+     stroke="#555555"
+     stroke-width="2"
+     marker-end="url(#arr)"
+     id="line31" />
+  <line
+     x1="126.96"
+     y1="110.26735"
+     x2="126.96"
+     y2="105.26735"
+     stroke="#555555"
+     stroke-width="2"
+     marker-end="url(#arr)"
+     id="line33" />
+  <line
+     x1="126.96"
+     y1="54.428879"
+     x2="126.96"
+     y2="49.428879"
+     stroke="#555555"
+     stroke-width="2"
+     marker-end="url(#arr)"
+     id="line35" />
+  <line
+     x1="126.96"
+     y1="161.10582"
+     x2="126.96"
+     y2="166.10582"
+     stroke="#555555"
+     stroke-width="2"
+     marker-end="url(#arr)"
+     id="line37" />
+  <line
+     x1="126.96"
+     y1="105.26735"
+     x2="126.96"
+     y2="110.26735"
+     stroke="#555555"
+     stroke-width="2"
+     marker-end="url(#arr)"
+     id="line39" />
+  <line
+     x1="126.96"
+     y1="49.428879"
+     x2="126.96"
+     y2="54.428879"
+     stroke="#555555"
+     stroke-width="2"
+     marker-end="url(#arr)"
+     id="line41" />
+  <!-- double headed arrows drawn as two lines with tip -->
+  <!-- just use double-line segments: physical↔comm -->
+</svg>

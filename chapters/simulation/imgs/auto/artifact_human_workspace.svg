@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="279.51395"
+   height="141.23743"
+   viewBox="0 0 279.51395 141.23743"
+   version="1.1"
+   id="svg33"
+   sodipodi:docname="artifact_human_workspace.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview35"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.8619048"
+     inkscape:cx="136.97904"
+     inkscape:cy="68.23058"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg33" />
+  <!-- Workspace box -->
+  <rect
+     x="0.87163502"
+     y="0.87163502"
+     width="277.77066"
+     height="139.49416"
+     rx="9.2590208"
+     fill="#fffbe6"
+     stroke="#cc9900"
+     stroke-width="1.74327"
+     stroke-dasharray="6, 3"
+     id="rect4" />
+  <text
+     x="139.75696"
+     y="18.987011"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     fill="#996600"
+     id="text6">Shared Workspace</text>
+  <!-- Tool (whiteboard) -->
+  <!-- Person A -->
+  <!-- Person B -->
+  <!-- Arrows to tool -->
+  <g
+     id="g1286"
+     transform="translate(-30.243034,-37.012989)">
+    <g
+       id="g1236">
+      <rect
+         x="130"
+         y="90"
+         width="80"
+         height="50"
+         rx="6"
+         fill="#ffe0a0"
+         stroke="#cc6600"
+         stroke-width="2"
+         id="rect8" />
+      <text
+         x="170"
+         y="111"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="11px"
+         fill="#663300"
+         id="text10">Whiteboard</text>
+      <text
+         x="170"
+         y="127"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="9px"
+         fill="#884400"
+         id="text12">(shared tool)</text>
+    </g>
+    <g
+       id="g1203"
+       transform="translate(0,5)">
+      <circle
+         cx="60"
+         cy="110"
+         r="20"
+         fill="#c8e6c9"
+         stroke="#388e3c"
+         stroke-width="2"
+         id="circle14" />
+      <text
+         x="60"
+         y="114"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="11px"
+         fill="#1b5e20"
+         id="text16">Alice</text>
+    </g>
+    <g
+       id="g1219"
+       transform="translate(0,5)">
+      <circle
+         cx="280"
+         cy="110"
+         r="20"
+         fill="#c8e6c9"
+         stroke="#388e3c"
+         stroke-width="2"
+         id="circle18" />
+      <text
+         x="280"
+         y="114"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="11px"
+         fill="#1b5e20"
+         id="text20">Bob</text>
+    </g>
+    <line
+       x1="79.915657"
+       y1="114.72501"
+       x2="128.00792"
+       y2="115.09143"
+       stroke="#388e3c"
+       stroke-width="2"
+       marker-end="url(#ga)"
+       id="line22" />
+    <line
+       x1="259.45779"
+       y1="114.72501"
+       x2="211.36554"
+       y2="115.09143"
+       stroke="#388e3c"
+       stroke-width="2"
+       marker-end="url(#ga-3)"
+       id="line22-7"
+       style="marker-end:url(#ga-3)" />
+  </g>
+  <text
+     x="140.00446"
+     y="129.98701"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#336699"
+     id="text26">Indirect coordination via shared tool</text>
+  <defs
+     id="defs31">
+    <marker
+       id="ga"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#388e3c"
+         id="path28" />
+    </marker>
+    <marker
+       id="ga-3"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#388e3c"
+         id="path28-6" />
+    </marker>
+  </defs>
+</svg>

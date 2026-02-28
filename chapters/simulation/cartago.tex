@@ -1,0 +1,172 @@
+\begin{graphicspathcontext}{{./chapters/simulation/imgs/},{./chapters/simulation/imgs/auto/},\old}
+
+\sidecite{RicciCartago2007}
+\begin{frame}{What is CArtAgO?}
+	\begin{definitionblock}{CArtAgO \cite{RicciCartago2007}}
+		{CArtAgO} (Common ARTifact infrastructure for AGents Open environments) is the \emph{reference Java implementation} of the A\&A meta-model
+	\end{definitionblock}
+	\begin{columns}
+		\begin{column}{.7\linewidth}
+			\begin{block}{Main features}
+				\begin{itemize}
+				\item Define artifacts by extending \code{Artifact} class
+				\item Annotate operations with \code{@OPERATION}
+				\item Annotate guards with \code{@GUARD}
+				\item Declare observable properties with \code{defineObsProperty}
+				\item Emit signals with \code{signal(...)}
+				\item Distributed workspaces via \code{CartagoService}
+				\item Bridges for \emph{Jason}, \emph{JaCaMo}, and \emph{SARL}
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{.3\textwidth}
+			\smaller
+			\begin{block}{Maven dependency}
+			\small
+			\texttt{groupId: cartago}\\
+			\texttt{artifactId: cartago}\\
+			\texttt{version: 3.x}
+			\end{block}
+			\smaller\smaller
+			\vspace{4pt}
+			\url{https://github.com/cartAgO-org}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidecite{RicciCartago2007}
+\begin{frame}[fragile]{CArtAgO: Defining an Artifact}
+	\vspace{-.25cm}
+	\begin{javalisting}[basicstyle=\tiny]
+import cartago.*;
+
+@ARTIFACT_INFO(outports = { @OUTPORT(name = "out-port") })
+public class CounterArtifact extends Artifact {
+	// Called once when the artifact is created
+	void init(int initialValue) {
+		defineObsProperty("count", initialValue); // observable property
+	}
+
+	@OPERATION
+	public void inc() {
+		ObsProperty prop = getObsProperty("count");
+		prop.updateValue(prop.intValue() + 1);
+		signal("incremented"); // emit a signal
+	}
+
+	@OPERATION
+	public void reset() {
+		getObsProperty("count").updateValue(0);
+	}
+
+	@OPERATION
+	public void getValue(OpFeedbackParam<Integer> v) {
+		v.set(getObsProperty("count").intValue()); // out-parameter
+	}
+}
+	\end{javalisting}
+\end{frame}
+
+\sidecite{RicciCartago2007}
+\begin{frame}[fragile]{CArtAgO: Using an Artifact}
+	\vspace{-.25cm}
+	\begin{javalisting}[basicstyle=\tiny]
+import cartago.*;
+
+public class MyAgent extends CAgentArch {
+
+	@Override
+	public void sense() throws InterruptedException {
+		// percepts are automatically collected from focused artifacts
+	}
+
+	public void act() throws Exception {
+		// Create the artifact in the default workspace
+		ArtifactId cid = makeArtifact("myCounter",
+			"CounterArtifact",
+			ArtifactConfig.DEFAULT_CONFIG);
+
+		// Execute operations
+		execLinkedOp(cid, "inc");
+		execLinkedOp(cid, "inc");
+
+		// Read an observable property
+		int val = (int) lookupArtifact("myCounter")
+			.getObsProperty("count").getValue();
+
+		System.out.println("Count = " + val); // prints: Count = 2
+	}
+}
+	\end{javalisting}
+\end{frame}
+
+\sidecite{RicciCartago2007}
+\begin{frame}[t,fragile]{CArtAgO: Guard Example}
+	\vspace{-.25cm}
+	\begin{javalisting}[basicstyle=\tiny]
+public class BoundedQueueArtifact extends Artifact {
+	private Queue<String> queue = new LinkedList<>();
+	private int maxSize;
+
+	void init(int max) {
+		this.maxSize = max;
+		defineObsProperty("size", 0);
+	}
+
+	@GUARD
+	boolean notFull(String item) {
+		return queue.size() < maxSize; // blocks enqueue when full
+	}
+
+	@OPERATION
+	@GUARD("notFull")
+	public void enqueue(String item) {
+		queue.add(item);
+		updateObsProperty("size", queue.size());
+	}
+
+	@OPERATION
+	public void dequeue(OpFeedbackParam<String> out) {
+		if (queue.isEmpty()) {
+			failed("Queue is empty");
+		} else {
+			out.set(queue.poll());
+			updateObsProperty("size", queue.size());
+		}
+	}
+}
+	\end{javalisting}
+\end{frame}
+
+\sidecite{RicciCartago2007}
+\begin{frame}[fragile]{{CArtAgO:} Workspace Management}
+	\vspace{-.25cm}
+	\begin{javalisting}[basicstyle=\tiny]
+import cartago.*;
+
+public class WorkspaceSetup {
+	public static void main(String[] args) throws Exception {
+
+		// Start a CArtAgO node
+		CartagoService.startNode();
+
+		// Create a named workspace
+		CartagoService.createWorkspace("lab");
+
+		// Agents join the workspace to interact with artifacts
+		// (agent framework-specific, e.g. Jason, JaCaMo, SARL)
+
+		// Lookup a workspace
+		WorkspaceId wid = CartagoService.getWorkspaceId("lab");
+		System.out.println("Workspace: " + wid.getName());
+	}
+}
+	\end{javalisting}
+	\vspace{.25cm}
+	\begin{compactitemize}
+	\item Workspaces can be \emph{distributed} across JVMs/nodes
+	\item Artifacts are \emph{addressable} by name within their workspace
+	\end{compactitemize}
+\end{frame}
+
+\end{graphicspathcontext}

@@ -1,0 +1,190 @@
+\input{./chapters/ciad/sgalland}
+\input{./talks/utseus/intro}
+
+\part{From Cyber-Physical System to Multiagent Systems}
+\begin{bibliographysection}
+
+	\section{Complex Systems}
+	\input{./chapters/cps/cs}
+
+	\section{Artificial Intelligence and Complex Systems}
+	\subsection{Definitions of AI}
+	\input{./chapters/ai/intro-definitions}
+	\subsection{AI Domain and Approaches}
+	\input{./chapters/ai/ai-scientific-domains}
+	\input{./chapters/ai/ai-approaches}
+	\subsection{AI for Complex Systems}
+	\input{./chapters/cps/ai4cs}
+	\subsection{Multiagent Systems}
+	\input{./chapters/ai/mas-intro}
+
+	\section{Cyber-Physical Systems}
+	\subsection{Definition}
+	\input{./chapters/cps/cps}
+	\subsection{Cyber-Physical System as Complex System}
+	\input{./chapters/cps/cps_cs}
+	\subsection{The Interplay: CPS, AI and MAS}
+	\input{./chapters/cps/cps_ai}
+
+	\section[MABS Examples]{Examples of Multiagent Systems}
+	\subsection{Traffic on French Highway}
+	\input{./chapters/simulation/examples/frenchhighway}
+	\subsection{Pedestrian Simulation}
+	\input{./chapters/simulation/examples/pedestrian}
+	\subsection{Digital Twin of an Autonomous Vehicle}
+	\input{./chapters/simulation/examples/autonomousvehicle}
+
+	\thanksslide
+\end{bibliographysection}
+
+\part{Introduction to Multiagent Systems}
+\begin{bibliographysection}
+
+	\section{Agent}
+	\input{./chapters/mas/agent-definitions}
+
+	\section{Multiagent System}
+	\input{./chapters/mas/mas-definitions}
+
+	\section{Basic Examples}
+	\subsection{Vaacum Robot}
+	\input{./chapters/mas/examples/vaacum}
+	\subsection{Forager Bots}
+	\input{./chapters/mas/examples/foragerbots}
+
+	\section{Interests of Multiagent Systems}
+	\input{./chapters/mas/mas-interests}
+
+	\thanksslide
+\end{bibliographysection}
+
+\part{Agent-Oriented Programming}
+\begin{bibliographysection}
+
+	\section{Bases of Agent-Oriented Programming}
+	\input{./chapters/mas/agent-programming}
+
+	\section{SARL Programming Language}
+	\subsection{What is SARL?}
+	\input{./chapters/sarl/sarl-intro}
+	\subsection{Syntactic Basics of SARL}
+	\input{./chapters/sarl/sarl-basesyntax}
+	\subsection{Agent-Oriented Concepts}
+	\subsubsection{Overview of Concepts}
+	\input{./chapters/sarl/sarl-concepts}
+	\subsubsection{Agent}
+	\input{./chapters/sarl/sarl-agent}
+	\subsubsection{Capacity \& Skill}
+	\input{./chapters/sarl/sarl-capacityskill}
+	\subsubsection{Behavior}
+	\input{./chapters/sarl/sarl-behavior}
+	\subsubsection{Interactions}
+	\input{./chapters/sarl/sarl-interactions}
+	\subsubsection{Holon}
+	\input{./chapters/sarl/sarl-holons}
+	\subsection{Official Documentation}
+	\input{./chapters/sarl/sarl-documentation}
+	\subsection{SARL Toolchain}
+	\input{./chapters/sarl/sarl-toolchain}
+
+\end{bibliographysection}
+
+\part{Multiagent-based Simulation}
+\begin{bibliographysection}
+
+	\section[Simulation Basics]{Basics of Simulation}
+	\input{./chapters/simulation/base}
+
+	\section[MABS Principles]{Principles of Multiagent-based Simulation}
+	\input{./chapters/simulation/mabs}
+	\section[MABS Simulator]{Multiagent-based Simulator}
+	\subsection{Simulation Architecture}
+	\input{./chapters/simulation/mabs_archi}
+	\subsection{Agent Environment}
+	\input{./chapters/simulation/agent_environment_intro}
+	\subsection{Agent Scheduling}
+	\input{./chapters/simulation/agent_scheduling}
+
+	\thanksslide
+\end{bibliographysection}
+
+\part{Agent Architectures}
+\begin{bibliographysection}
+
+	\section{Action Selection}
+	\subsection{Decision Trees}
+	\input{./chapters/mas/architectures/decisiontrees}
+	\subsection{Rule-based Decision}
+	\input{./chapters/mas/architectures/rulebasedbehaviors}
+	\subsection{State Machine}
+	\input{./chapters/mas/architectures/statemachines}
+	\subsection{Goal-Oriented Behavior}
+	\input{./chapters/mas/architectures/gob}
+
+	\section{Coordination Behavior}
+	\subsection{Blackboard}
+	\input{./chapters/mas/architectures/blackboard}
+
+\end{bibliographysection}
+
+\part{Agent Environment}
+\begin{bibliographysection}
+
+	\section{General Principles}
+	\input{./chapters/simulation/agent_environment_intro}
+
+	\section{Modeling the Agent Environment}
+	
+	\subsection{Agent \& Artifact}
+	\subsubsection{Metamodel \& Concepts}
+	\input{./chapters/simulation/agent_and_artifact}
+	\subsubsection{{CArtAgO:} Java implementation of A\&A}
+	\input{./chapters/simulation/cartago}
+	\subsubsection{SARL bridge to {CArtAgO}}
+	\input{./chapters/simulation/cartago_sarl}
+
+	\subsection{Smart Objects}
+	\input{./chapters/simulation/smart_objects}
+
+	\subsection{Agent Bodies}
+	\input{./chapters/simulation/agent_bodies}
+
+	\section{Examples of Agent Environments}
+	
+	\subsection[2D Environment]{{Jaak:} simulation with {2D} discrete environment}
+	\subsubsection{General Definition}
+	\input{./chapters/simulation/examples/2d_environment}
+	\subsubsection{Ant Colony Simulation}
+	\input{./chapters/simulation/examples/2d_environment_ant_colony}
+
+	\subsection[3D Environment]{{3D} Urban Environment}
+	\subsubsection{General Definition}
+	\input{./chapters/simulation/examples/3d_environment}
+	\subsubsection{Hybrid Environment Model}
+	\input{./chapters/simulation/examples/3d_environment_buisson}
+
+\end{bibliographysection}
+
+\part{Hierarchical Multiagent Systems}
+\begin{bibliographysection}
+
+	\section{Complex Systems \& Multiagent Systems}
+	\input{./chapters/hmas/cs_hmas}
+	\section{Holons and Holarchies}
+	\input{./chapters/hmas/holons}
+	\section{Holonic Multiagent Systems}
+	\input{./chapters/hmas/holonicmas}
+	\section{Holonic Multiagent Systems in SARL}
+	\input{./chapters/hmas/hmas_sarl}
+
+\end{bibliographysection}
+
+\appendix
+\section{Document License}
+\input{./chapters/appendix/license_CCBYNCSA}
+\section{Recommanded Books}
+\input{./chapters/appendix/books}
+\section{About the Author}
+\input{./chapters/appendix/sgalland}
+
+\endinput

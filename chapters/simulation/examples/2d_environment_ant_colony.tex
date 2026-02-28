@@ -1,0 +1,509 @@
+\begin{graphicspathcontext}{{./chapters/simulation/examples/imgs/},{./chapters/simulation/examples/imgs/auto/},\old}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}[label=antexampleslide]{{Ant Colony} Simulation}
+	\begin{alertblock}{Problem}
+		Simulating the global behavior of a colony of ants for finding the shortest routes from the nest to a food source.
+	\end{alertblock}
+	\vspace{2em}
+	\begin{block}{What is a Ant?}
+		\begin{itemize}
+		\item Simple insects with no global knowledge and limited memory.
+		\item Capable of performing simple actions:
+			\begin{itemize}
+			\item move
+			\item get food from the cell
+			\item sense pheromon is neightbor cells
+			\item put pheromon into the current cell
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<1>{Work Steps}
+	\begin{center}
+		\includeanimatedfigure[width=.4\linewidth]{jaak_ant_steps}
+	\end{center}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<2>[t,fragile]{Definition of the Environmental Objects}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{alertblock}{General Principle}
+			For each type of object inside the environment, a subclass of \code{EnvironmentalObject} must be defined
+			\end{alertblock}
+			\begin{block}{In the ant colony problem}
+				\begin{itemize}
+				\item Nest: location where many ants may be at the same place. It is a kind of \code{Burrow} to enable this behavior
+				\end{itemize}
+			\end{block}
+			\begin{sarllisting}[basicstyle=\scriptsize]
+class Nest extends Burrow {
+  val colonyId : int
+
+  new (colonyId : int) {
+   this.colonyId = colonyId
+  }
+
+  def getColonyId : int {
+   this.colonyId
+  }
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<3>[t]{Definition of the Environmental Substances}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{alertblock}{General Principle}
+			For each substance (countable/measurable) inside the environment, a subclass of \code{Substance} must be defined
+			\end{alertblock}
+			\begin{block}{In the ant colony problem}
+				\begin{itemize}
+				\item \code{ColonyPheromone}: put when the ant is going far and far from the ant colony
+				\item \code{FoodPheromone}: put when the ant is going far and far from a food source
+				\item \code{Food}: a source of food
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<3>[t,fragile]{Definition of the Environmental Substances \insertcontinuationtext}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{block}{Definition of a food source}
+				\begin{itemize}
+				\item Contains the quantity of available food
+				\item Quantity cannot increase
+				\end{itemize}
+			\end{block}
+			\begin{sarllisting}[basicstyle=\scriptsize]
+class Food extends FloatSubstance {
+  new (foodQuantity : float) {
+   super(foodQuantity, typeof(Food))
+  }
+  def decrement(s : Substance) : Substance {
+   var oldValue = floatValue()
+   decrement(s.floatValue)
+   var c = clone
+   c.value = abs(floatValue() - oldValue)
+   return c
+  }
+  def increment(s : Substance) : Substance {
+   // The food source could not be increased
+   null
+  }
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<4>[t]{Definition of the Environmental Processes}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{alertblock}{General Principle}
+			\begin{itemize}
+			\item Endogenous environmental activities are the processes that produce an evolution of the environment state outside the control of any agent
+			\item Two types of endogenous environmental activities:
+				\begin{enumerate}[a)]
+				\item a autonomous endogenous process associated to an object
+				\item the global endogenous engine
+				\end{enumerate}
+			\end{itemize}
+			\end{alertblock}
+			\begin{block}{In the ant colony problem}
+				Pheromones are substances that are evaporating over the time
+			\end{block}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<4>[t,fragile]{Definition of the Environmental Processes \insertcontinuationtext}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{block}{Update of the definition of a pheromone}
+				Implements the \code{AutonomousEndogenousProcess} interface
+			\end{block}
+			\begin{sarllisting}[basicstyle=\scriptsize]
+class Pheromone extends Substance
+                implements AutonomousEndogenousProcess {
+  def runAutonomousEndogenousProcess(
+         currentTime : float,
+         simulationStepDuration : float)
+         : Influence {
+
+   decrement(simulationStepDuration
+             * this.evaporationAmount)
+
+   if (floatValue() <= 0) {
+     /* Provided by EnvironmentalObject */
+     return createRemovalInfluenceForItself()
+   }
+   return null
+  }
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<5>[t]{Definition of the Turtle Agents}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{alertblock}{General Principle}
+			Define the different behaviors associated to the turtle agents
+			\end{alertblock}
+			\begin{block}{In the ant colony problem}
+				\begin{itemize}
+				\item \emph{Foragers}: Search for food, and carrying it to the nest
+				\item \emph{Patrollers}: patrolling around the nest, and defend against others
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<5>[t,fragile]{Definition of the Turtle Agents \insertcontinuationtext}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{block}{Definition of a patroller}
+				\begin{itemize}
+				\item \Emph{Define the initialization} (similar for all turtles agents)
+				\item Define the specific behavior
+				\end{itemize}
+			\end{block}
+			\begin{sarllisting}[basicstyle=\scriptsize]
+agent PatrollingAnt {
+  uses Lifecycle
+  on Initialize {
+   var body = new PhysicBodySkill
+   setSkill(body)
+   setSkill(new PheromoneFollowingSkill) 
+   setSkill(new FoodSelectionSkill)
+  }
+  
+  on BodyCreated {}
+
+  on SimulationStopped {
+   killMe
+  }
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<5>[t,fragile]{Definition of the Turtle Agents \insertcontinuationtext}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{block}{Definition of a patroller}
+				\begin{itemize}
+				\item Define the initialization (similar for all turtles agents)
+				\item \Emph{Define the specific behavior}
+				\end{itemize}
+			\end{block}
+			\begin{sarllisting}[basicstyle=\scriptsize]
+agent PratrollingAnt {
+...
+  uses PhysicBody
+
+  var state = ForagerState::SEARCH_FOOD
+  var bag : Food
+
+  on Perception [state == ForagerState::SEARCH_FOOD] {
+   var body = occurrence.body
+		...
+       moveForward(1)
+       dropOff(new ColonyPheromone)
+		...
+   synchronizeBody
+  }
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<6>[t]{Definition of the Turtle Spawners}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{alertblock}{General Principle}
+			Two ways are available to add turtle agents in the system:
+				\begin{enumerate}[a)]
+				\item manual instanciation of a turtle agent through the standard SARL API
+				\item definition of a spawner: a point or an area where turtle agents could be automatically created at a given generation rate
+				\end{enumerate}
+			\end{alertblock}
+			\begin{block}{In the ant colony problem}
+				A spawner is defined for each nest since the Queen is inside
+			\end{block}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<6>[t,fragile]{Definition of the Turtle Spawners \insertcontinuationtext}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{block}{Definition of nest spawner}
+				\begin{itemize}
+				\item Located at a specific point on the ground
+				\item Maximal number of ants to generate
+				\end{itemize}
+			\end{block}
+			\begin{sarllisting}[basicstyle=\tiny]
+class NestSpawner extends JaakPointSpawner {
+  var budget : int
+
+  new (environment : EnvironmentArea, budget : int, x : int, y : int) {
+    super(environment, x, y)
+    this.budget = budget
+  }
+
+  def isSpawnable(timeManager : TimeManager) : boolean {
+    (this.budget > 0)
+  }
+
+  def computeSpawnedTurtleOrientation(timeManager : TimeManager) : float {
+    RandomNumber::nextFloat() * 2 * Math::PI;
+  }
+
+  def turtleSpawned(turtle : UUID, body : TurtleBody,
+                    timeManager : TimeManager) {
+    this.budget = this.budget - 1
+    body.semantic = typeof(Forager.class)
+  }
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<7>[t]{Definition of the System Initialization}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			\begin{alertblock}{General Principle}
+			Setting up the system by defining initialization functions
+			\end{alertblock}
+			\begin{block}{In the ant colony problem}
+				\begin{itemize}
+				\item Extend the Jaak kernel agent with initialization of the nests, spawners
+				\item Provide the spawner-agent mapping that is used when agents are manually created
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<7>[t,fragile]{Definition of the System Initialization \insertcontinuationtext}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			{\smaller
+			\begin{block}{Initializing the system}
+				\begin{itemize}
+				\item \Emph{Create subtype of \code{JaakKernelAgent}}
+				\item \Emph{Create the environment grid}
+				\item Create the spawners on the ground
+				\item Provide the spawner-agent mapping for manually created agents
+				\item Initialize the UI and start the simulation
+				\end{itemize}
+			\end{block}}
+			\begin{sarllisting}[basicstyle=\scriptsize]
+agent AntColonyProblem extends JaakKernelAgent {
+  def createEnvironment(tm : TimeManager) : JaakEnvironment {
+    var environment = new JaakEnvironment(WIDTH, HEIGHT)
+    environment.timeManager = tm
+    var actionApplier = environment.actionApplier;
+    for(i : 0..99)
+      actionApplier.putObject(random, random,
+      	new Food(50))
+    return environment
+  }
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<7>[t,fragile]{Definition of the System Initialization \insertcontinuationtext}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			{\smaller
+			\begin{block}{Initializing the system}
+				\begin{itemize}
+				\item Create subtype of \code{JaakKernelAgent}
+				\item Create the environment grid
+				\item \Emph{Create the spawners on the ground}
+				\item Provide the spawner-agent mapping for manually created agents
+				\item Initialize the UI and start the simulation
+				\end{itemize}
+			\end{block}}
+			\begin{sarllisting}[basicstyle=\scriptsize]
+agent AntColonyProblem extends JaakKernelAgent {
+...
+  def createSpawners : JaakSpawner[] {
+    var spawners = <JaakSpawner>newArrayOfSize(ANT_COLONY_COUNT)
+    for(i : 0 .. spawners.length)
+      spawners.set(i, createColony(i+1))
+    return spawners
+  }
+  def createColony(colonyId : int) : JaakSpawner {
+    ...
+  }
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<7>[t,fragile]{Definition of the System Initialization \insertcontinuationtext}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			{\smaller
+			\begin{block}{Initializing the system}
+				\begin{itemize}
+				\item Create subtype of \code{JaakKernelAgent}
+				\item Create the environment grid
+				\item Create the spawners on the ground
+				\item \Emph{Provide the spawner-agent mapping for manually created agents}
+				\item Initialize the UI and start the simulation
+				\end{itemize}
+			\end{block}}
+			\begin{sarllisting}[basicstyle=\scriptsize]
+agent AntColonyProblem extends JaakKernelAgent {
+...
+  def getSpawnableAgentType(spawner : JaakSpawner)
+      : Class<? extends Agent> {
+    return typeof(Ant)
+  }
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidenote{\url{https://github.com/gallandarakhneorg/jaak}}
+\begin{frame}<7>[t,fragile]{Definition of the System Initialization \insertcontinuationtext}
+	\vspace{-.5cm}
+	\smaller
+	\begin{columns}
+		\begin{column}[t]{.78\linewidth}
+			{\smaller
+			\begin{block}{Initializing the system}
+				\begin{itemize}
+				\item Create subtype of \code{JaakKernelAgent}
+				\item Create the environment grid
+				\item Create the spawners on the ground
+				\item Provide the spawner-agent mapping for manually created agents
+				\item \Emph{Initialize the UI and start the simulation}
+				\end{itemize}
+			\end{block}}
+			\begin{sarllisting}[basicstyle=\scriptsize]
+agent AntColonyProblem extends JaakKernelAgent {
+...
+  on Initialize {
+    super._handle_Initialize_0(occurrence)
+    var ui = new UI(controller)
+    addJaakListener(ui)
+    fireEnvironmentChange
+    ui.visible = true
+
+    controller.startSimulation
+  }
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.2\linewidth}
+			\raisebox{-1.1\height}{\includeanimatedfigure[width=\linewidth]{jaak_ant_steps}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{graphicspathcontext}

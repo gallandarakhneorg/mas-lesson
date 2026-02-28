@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="869.01355"
+   height="322.73047"
+   viewBox="0 0 869.01355 322.73047"
+   font-family="Arial, sans-serif"
+   version="1.1"
+   id="svg228"
+   sodipodi:docname="holons-environment-relationships.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs232" />
+  <sodipodi:namedview
+     id="namedview230"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2"
+     inkscape:cx="685"
+     inkscape:cy="273.25"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg228" />
+  <rect
+     x="607.02917"
+     y="96.767578"
+     width="261.23438"
+     height="68.714844"
+     rx="5"
+     fill="#ffe5c0"
+     stroke="#cc7700"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="rect166" />
+  <rect
+     x="634.77527"
+     y="10.40625"
+     width="196.73242"
+     height="67.876953"
+     rx="5"
+     fill="#ffe5c0"
+     stroke="#aa5500"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="rect146" />
+  <rect
+     x="641.74402"
+     y="194.08008"
+     width="109.05273"
+     height="89.894531"
+     rx="5"
+     fill="#ffe5c0"
+     stroke="#dd9900"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="rect210" />
+  <rect
+     x="755.43939"
+     y="194.08008"
+     width="109.05273"
+     height="89.894531"
+     rx="5"
+     fill="#ffe5c0"
+     stroke="#dd9900"
+     stroke-width="1.5"
+     stroke-dasharray="5, 3"
+     id="rect210-8" />
+  <rect
+     x="318.75378"
+     y="190.56836"
+     width="250"
+     height="100.19336"
+     rx="6"
+     fill="#c0f0d8"
+     stroke="#2a7a4a"
+     stroke-width="1.5"
+     stroke-dasharray="6, 3"
+     id="rect122" />
+  <!-- ===== PART 1: Shared environment (left) ===== -->
+  <!-- Section background -->
+  <!-- Shared environment box (behind everything) -->
+  <rect
+     x="0.68051279"
+     y="3.3039742"
+     width="260.14655"
+     height="316.72214"
+     rx="6.0033813"
+     fill="#d0e8ff"
+     stroke="#5588bb"
+     stroke-width="1.35376"
+     stroke-dasharray="6, 3"
+     id="rect4" />
+  <!-- Level 3 (top holon) -->
+  <!-- Level 2 holons -->
+  <!-- Level 1 (atomic agents) -->
+  <!-- Hierarchy lines L3 -> L2 -->
+  <g
+     id="g1664"
+     transform="translate(-29.24419,-55.210937)">
+    <g
+       id="g1343"
+       transform="translate(1)">
+      <ellipse
+         cx="159"
+         cy="100"
+         rx="60"
+         ry="28"
+         fill="#ffffff"
+         stroke="#336699"
+         stroke-width="2"
+         id="ellipse6" />
+      <text
+         x="158.8335"
+         y="95"
+         text-anchor="middle"
+         font-size="11px"
+         fill="#336699"
+         font-weight="bold"
+         id="text8">Holon L3</text>
+      <text
+         x="158.87793"
+         y="109"
+         text-anchor="middle"
+         font-size="10px"
+         fill="#336699"
+         id="text10">(super-holon)</text>
+    </g>
+    <g
+       id="g1358">
+      <g
+         id="g1348">
+        <ellipse
+           cx="105"
+           cy="188"
+           rx="52"
+           ry="26"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="ellipse12" />
+        <text
+           x="104.78247"
+           y="183"
+           text-anchor="middle"
+           font-size="11px"
+           fill="#336699"
+           font-weight="bold"
+           id="text14">Holon L2a</text>
+        <text
+           x="104.87793"
+           y="196"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text16">(sub-holon)</text>
+      </g>
+      <g
+         id="g631"
+         transform="translate(10,-22)">
+        <ellipse
+           cx="205"
+           cy="210"
+           rx="52"
+           ry="26"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="ellipse18" />
+        <text
+           x="205"
+           y="205"
+           text-anchor="middle"
+           font-size="11px"
+           fill="#336699"
+           font-weight="bold"
+           id="text20">Holon L2b</text>
+        <text
+           x="205"
+           y="218"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text22">(sub-holon)</text>
+      </g>
+    </g>
+    <g
+       id="g1396"
+       transform="translate(0,-44)">
+      <g
+         id="g1363"
+         transform="translate(5,-15.833985)">
+        <circle
+           cx="70"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle24" />
+        <text
+           x="70.061035"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text26">Agent</text>
+        <text
+           x="70.925293"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text28">A1</text>
+      </g>
+      <g
+         id="g1378"
+         transform="translate(11.666667,-15.833985)">
+        <circle
+           cx="120"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle30" />
+        <text
+           x="120.06104"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text32">Agent</text>
+        <text
+           x="120.271"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text34">A2</text>
+      </g>
+      <g
+         id="g1373"
+         transform="translate(3.3333333,-15.833984)">
+        <circle
+           cx="185"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle36" />
+        <text
+           x="185.06104"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text38">Agent</text>
+        <text
+           x="185.23438"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text40">A3</text>
+      </g>
+      <g
+         id="g1368"
+         transform="translate(10,-15.833984)">
+        <circle
+           cx="235"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle42" />
+        <text
+           x="235.06104"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text44">Agent</text>
+        <text
+           x="235.24902"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text46">A4</text>
+      </g>
+    </g>
+    <line
+       x1="194.2045"
+       y1="121.93299"
+       x2="201.32939"
+       y2="162.62506"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50"
+       style="stroke-width:1;stroke-dasharray:none" />
+    <line
+       x1="236.69537"
+       y1="212.06999"
+       x2="243.82027"
+       y2="252.76205"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-7"
+       style="stroke-width:1;stroke-dasharray:none" />
+    <line
+       x1="124.33014"
+       y1="211.26726"
+       x2="131.45503"
+       y2="251.95932"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-7-5"
+       style="stroke-width:1;stroke-dasharray:none" />
+    <line
+       x1="126.96089"
+       y1="122.43299"
+       x2="119.83601"
+       y2="163.12505"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-6"
+       style="stroke-width:1;stroke-dasharray:none" />
+    <line
+       x1="195.44525"
+       y1="212.88249"
+       x2="188.32037"
+       y2="253.57454"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-6-5"
+       style="stroke-width:1;stroke-dasharray:none" />
+    <line
+       x1="83.621033"
+       y1="212.06023"
+       x2="76.496155"
+       y2="252.75229"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-6-5-3"
+       style="stroke-width:1;stroke-dasharray:none" />
+  </g>
+  <g
+     id="g1664-6"
+     transform="translate(282.12882,-55.210937)">
+    <g
+       id="g1343-2"
+       transform="translate(1)">
+      <ellipse
+         cx="159"
+         cy="100"
+         rx="60"
+         ry="28"
+         fill="#ffffff"
+         stroke="#336699"
+         stroke-width="2"
+         id="ellipse6-9"
+         style="stroke:#2a7a4a;stroke-opacity:1" />
+      <text
+         x="158.8335"
+         y="95"
+         text-anchor="middle"
+         font-size="11px"
+         fill="#336699"
+         font-weight="bold"
+         id="text8-1"
+         style="fill:#2a7a4a;fill-opacity:1">Holon L3</text>
+      <text
+         x="158.87793"
+         y="109"
+         text-anchor="middle"
+         font-size="10px"
+         fill="#336699"
+         id="text10-2"
+         style="fill:#2a7a4a;fill-opacity:1">(super-holon)</text>
+    </g>
+    <g
+       id="g1358-7">
+      <g
+         id="g1348-0">
+        <ellipse
+           cx="105"
+           cy="188"
+           rx="52"
+           ry="26"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="ellipse12-9"
+           style="stroke:#2a7a4a;stroke-opacity:1" />
+        <text
+           x="104.78247"
+           y="183"
+           text-anchor="middle"
+           font-size="11px"
+           fill="#336699"
+           font-weight="bold"
+           id="text14-3"
+           style="fill:#2a7a4a;fill-opacity:1">Holon L2a</text>
+        <text
+           x="104.87793"
+           y="196"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text16-6"
+           style="fill:#2a7a4a;fill-opacity:1">(sub-holon)</text>
+      </g>
+      <g
+         id="g631-0"
+         transform="translate(10,-22)">
+        <ellipse
+           cx="205"
+           cy="210"
+           rx="52"
+           ry="26"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="ellipse18-6"
+           style="stroke:#2a7a4a;stroke-opacity:1" />
+        <text
+           x="205"
+           y="205"
+           text-anchor="middle"
+           font-size="11px"
+           fill="#336699"
+           font-weight="bold"
+           id="text20-2"
+           style="fill:#2a7a4a;fill-opacity:1">Holon L2b</text>
+        <text
+           x="205"
+           y="218"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text22-6"
+           style="fill:#2a7a4a;fill-opacity:1">(sub-holon)</text>
+      </g>
+    </g>
+    <g
+       id="g1396-1"
+       transform="translate(0,-44)">
+      <g
+         id="g1363-8"
+         transform="translate(5,-15.833985)">
+        <circle
+           cx="70"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle24-7"
+           style="stroke:#2a7a4a;stroke-opacity:1" />
+        <text
+           x="70.061035"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text26-9"
+           style="fill:#2a7a4a;fill-opacity:1">Agent</text>
+        <text
+           x="70.925293"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text28-2"
+           style="fill:#2a7a4a;fill-opacity:1">A1</text>
+      </g>
+      <g
+         id="g1378-0"
+         transform="translate(11.666667,-15.833985)">
+        <circle
+           cx="120"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle30-2"
+           style="stroke:#2a7a4a;stroke-opacity:1" />
+        <text
+           x="120.06104"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text32-3"
+           style="fill:#2a7a4a;fill-opacity:1">Agent</text>
+        <text
+           x="120.271"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text34-7"
+           style="fill:#2a7a4a;fill-opacity:1">A2</text>
+      </g>
+      <g
+         id="g1373-5"
+         transform="translate(3.3333333,-15.833984)">
+        <circle
+           cx="185"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle36-9"
+           style="stroke:#2a7a4a;stroke-opacity:1" />
+        <text
+           x="185.06104"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text38-2"
+           style="fill:#2a7a4a;fill-opacity:1">Agent</text>
+        <text
+           x="185.23438"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text40-2"
+           style="fill:#2a7a4a;fill-opacity:1">A3</text>
+      </g>
+      <g
+         id="g1368-8"
+         transform="translate(10,-15.833984)">
+        <circle
+           cx="235"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle42-9"
+           style="stroke:#2a7a4a;stroke-opacity:1" />
+        <text
+           x="235.06104"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text44-7"
+           style="fill:#2a7a4a;fill-opacity:1">Agent</text>
+        <text
+           x="235.24902"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text46-3"
+           style="fill:#2a7a4a;fill-opacity:1">A4</text>
+      </g>
+    </g>
+    <line
+       x1="194.2045"
+       y1="121.93299"
+       x2="201.32939"
+       y2="162.62506"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-61"
+       style="stroke:#2a7a4a;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="236.69537"
+       y1="212.06999"
+       x2="243.82027"
+       y2="252.76205"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-7-2"
+       style="stroke:#2a7a4a;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="124.33014"
+       y1="211.26726"
+       x2="131.45503"
+       y2="251.95932"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-7-5-9"
+       style="stroke:#2a7a4a;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="126.96089"
+       y1="122.43299"
+       x2="119.83601"
+       y2="163.12505"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-6-3"
+       style="stroke:#2a7a4a;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="195.44525"
+       y1="212.88249"
+       x2="188.32037"
+       y2="253.57454"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-6-5-1"
+       style="stroke:#2a7a4a;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="83.621033"
+       y1="212.06023"
+       x2="76.496155"
+       y2="252.75229"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-6-5-3-9"
+       style="stroke:#2a7a4a;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     id="g1664-6-4"
+     transform="translate(593.50183,-55.210937)">
+    <g
+       id="g1343-2-7"
+       transform="translate(1)">
+      <ellipse
+         cx="159"
+         cy="100"
+         rx="60"
+         ry="28"
+         fill="#ffffff"
+         stroke="#336699"
+         stroke-width="2"
+         id="ellipse6-9-8"
+         style="stroke:#aa5500;stroke-opacity:1" />
+      <text
+         x="158.8335"
+         y="95"
+         text-anchor="middle"
+         font-size="11px"
+         fill="#336699"
+         font-weight="bold"
+         id="text8-1-4"
+         style="fill:#aa5500;fill-opacity:1">Holon L3</text>
+      <text
+         x="158.87793"
+         y="109"
+         text-anchor="middle"
+         font-size="10px"
+         fill="#336699"
+         id="text10-2-5"
+         style="fill:#aa5500;fill-opacity:1">(super-holon)</text>
+    </g>
+    <g
+       id="g1358-7-0">
+      <g
+         id="g1348-0-3">
+        <ellipse
+           cx="105"
+           cy="188"
+           rx="52"
+           ry="26"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="ellipse12-9-6"
+           style="stroke:#aa5500;stroke-opacity:1" />
+        <text
+           x="104.78247"
+           y="183"
+           text-anchor="middle"
+           font-size="11px"
+           fill="#336699"
+           font-weight="bold"
+           id="text14-3-1"
+           style="fill:#aa5500;fill-opacity:1">Holon L2a</text>
+        <text
+           x="104.87793"
+           y="196"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text16-6-0"
+           style="fill:#aa5500;fill-opacity:1">(sub-holon)</text>
+      </g>
+      <g
+         id="g631-0-6"
+         transform="translate(10,-22)">
+        <ellipse
+           cx="205"
+           cy="210"
+           rx="52"
+           ry="26"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="ellipse18-6-3"
+           style="stroke:#aa5500;stroke-opacity:1" />
+        <text
+           x="205"
+           y="205"
+           text-anchor="middle"
+           font-size="11px"
+           fill="#336699"
+           font-weight="bold"
+           id="text20-2-2"
+           style="fill:#aa5500;fill-opacity:1">Holon L2b</text>
+        <text
+           x="205"
+           y="218"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text22-6-0"
+           style="fill:#aa5500;fill-opacity:1">(sub-holon)</text>
+      </g>
+    </g>
+    <g
+       id="g1396-1-6"
+       transform="translate(0,-44)">
+      <g
+         id="g1363-8-1"
+         transform="translate(5,-15.833985)">
+        <circle
+           cx="70"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle24-7-5"
+           style="stroke:#aa5500;stroke-opacity:1" />
+        <text
+           x="70.061035"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text26-9-5"
+           style="fill:#aa5500;fill-opacity:1">Agent</text>
+        <text
+           x="70.925293"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text28-2-4"
+           style="fill:#aa5500;fill-opacity:1">A1</text>
+      </g>
+      <g
+         id="g1378-0-7"
+         transform="translate(11.666667,-15.833985)">
+        <circle
+           cx="120"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle30-2-6"
+           style="stroke:#aa5500;stroke-opacity:1" />
+        <text
+           x="120.06104"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text32-3-5"
+           style="fill:#aa5500;fill-opacity:1">Agent</text>
+        <text
+           x="120.271"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text34-7-6"
+           style="fill:#aa5500;fill-opacity:1">A2</text>
+      </g>
+      <g
+         id="g1373-5-9"
+         transform="translate(3.3333333,-15.833984)">
+        <circle
+           cx="185"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle36-9-3"
+           style="stroke:#aa5500;stroke-opacity:1" />
+        <text
+           x="185.06104"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text38-2-7"
+           style="fill:#aa5500;fill-opacity:1">Agent</text>
+        <text
+           x="185.23438"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text40-2-4"
+           style="fill:#aa5500;fill-opacity:1">A3</text>
+      </g>
+      <g
+         id="g1368-8-5"
+         transform="translate(10,-15.833984)">
+        <circle
+           cx="235"
+           cy="335"
+           r="22"
+           fill="#ffffff"
+           stroke="#336699"
+           stroke-width="2"
+           id="circle42-9-2"
+           style="stroke:#aa5500;stroke-opacity:1" />
+        <text
+           x="235.06104"
+           y="330"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           font-weight="bold"
+           id="text44-7-5"
+           style="fill:#aa5500;fill-opacity:1">Agent</text>
+        <text
+           x="235.24902"
+           y="343"
+           text-anchor="middle"
+           font-size="10px"
+           fill="#336699"
+           id="text46-3-4"
+           style="fill:#aa5500;fill-opacity:1">A4</text>
+      </g>
+    </g>
+    <line
+       x1="194.2045"
+       y1="121.93299"
+       x2="201.32939"
+       y2="162.62506"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-61-7"
+       style="stroke:#aa5500;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="236.69537"
+       y1="212.06999"
+       x2="243.82027"
+       y2="252.76205"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-7-2-4"
+       style="stroke:#aa5500;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="124.33014"
+       y1="211.26726"
+       x2="131.45503"
+       y2="251.95932"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-7-5-9-4"
+       style="stroke:#aa5500;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="126.96089"
+       y1="122.43299"
+       x2="119.83601"
+       y2="163.12505"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-6-3-3"
+       style="stroke:#aa5500;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="195.44525"
+       y1="212.88249"
+       x2="188.32037"
+       y2="253.57454"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-6-5-1-0"
+       style="stroke:#aa5500;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+    <line
+       x1="83.621033"
+       y1="212.06023"
+       x2="76.496155"
+       y2="252.75229"
+       stroke="#336699"
+       stroke-width="0.873482"
+       id="line50-6-5-3-9-7"
+       style="stroke:#aa5500;stroke-width:1;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <!-- Hierarchy lines L2 -> L1 -->
+  <!-- Environment label -->
+  <text
+     x="130.91988"
+     y="273.35742"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#336699"
+     font-weight="bold"
+     id="text60">Shared</text>
+  <text
+     x="130.39253"
+     y="288.35742"
+     text-anchor="middle"
+     font-size="12px"
+     fill="#336699"
+     font-weight="bold"
+     id="text62">Environment</text>
+  <text
+     x="130.63374"
+     y="311.35742"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#5577aa"
+     id="text64">(all levels access)</text>
+  <!-- ===== PART 2: Env linked only to lowest level (centre) ===== -->
+  <!-- Level 3 -->
+  <!-- Level 2 -->
+  <!-- Level 1 agents -->
+  <!-- Hierarchy lines L3 -> L2 -->
+  <!-- Hierarchy lines L2 -> L1 -->
+  <!-- Single shared environment box linked only to L1 agents -->
+  <text
+     x="443.75378"
+     y="264.78906"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#2a7a4a"
+     font-weight="bold"
+     id="text124">Shared Environment</text>
+  <text
+     x="443.75378"
+     y="280.78906"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#2a7a4a"
+     id="text126">(lowest level only)</text>
+  <!-- Lines from agents to environment -->
+  <!-- NO link from L2/L3 to env — label -->
+  <text
+     x="443.75378"
+     y="308.78906"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#559966"
+     id="text136">(higher holons: no direct access)</text>
+  <text
+     x="738.44727"
+     y="308.78906"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#559966"
+     id="text136-3"
+     style="fill:#cc7700;fill-opacity:1">(each super-holon may have its own environment)</text>
+  <!-- ===== PART 3: One environment per level (right) ===== -->
+  <!-- Level 3 agent + its own environment -->
+  <text
+     x="666.10144"
+     y="46.931641"
+     text-anchor="middle"
+     font-size="9px"
+     fill="#aa5500"
+     font-weight="bold"
+     id="text148">Env L3</text>
+  <!-- Level 2 holons + their shared environment -->
+  <!-- Env for L2 (shared between L2a and L2b) -->
+  <text
+     x="658.17175"
+     y="93.107422"
+     text-anchor="middle"
+     font-size="9px"
+     fill="#cc7700"
+     font-weight="bold"
+     id="text168"><tspan
+       sodipodi:role="line"
+       id="tspan5504"
+       x="658.17175"
+       y="93.107422">Env L2 (shared</tspan><tspan
+       sodipodi:role="line"
+       id="tspan5506"
+       x="658.17175"
+       y="104.35742">between L2a and L2b)</tspan></text>
+  <!-- Lines L2 holons -> Env L2 -->
+  <!-- Hierarchy L3 -> L2 -->
+  <!-- Level 1 agents -->
+  <!-- Hierarchy L2 -> L1 -->
+  <!-- Env L1 -->
+  <text
+     x="696.34381"
+     y="261.1499"
+     text-anchor="middle"
+     font-size="9px"
+     fill="#dd9900"
+     font-weight="bold"
+     id="text212"><tspan
+       sodipodi:role="line"
+       id="tspan5535"
+       x="696.34381"
+       y="261.1499">Env L1a (shared</tspan><tspan
+       sodipodi:role="line"
+       id="tspan5537"
+       x="696.34381"
+       y="272.3999">among A1 and A2)</tspan></text>
+  <text
+     x="810.03918"
+     y="261.1499"
+     text-anchor="middle"
+     font-size="9px"
+     fill="#dd9900"
+     font-weight="bold"
+     id="text212-6"><tspan
+       sodipodi:role="line"
+       id="tspan5535-8"
+       x="810.03918"
+       y="261.1499">Env L1b (shared</tspan><tspan
+       sodipodi:role="line"
+       id="tspan5537-8"
+       x="810.03918"
+       y="272.3999">among A3 and A4)</tspan></text>
+  <!-- Lines L1 agents -> Env L1 -->
+  <!-- ===== Dividers between parts ===== -->
+  <line
+     x1="286.44232"
+     y1="0"
+     x2="286.44232"
+     y2="322.73047"
+     stroke="#aaaaaa"
+     stroke-width="1.28465"
+     stroke-dasharray="6, 4"
+     id="line224" />
+  <line
+     x1="597.81531"
+     y1="0"
+     x2="597.81531"
+     y2="322.73047"
+     stroke="#aaaaaa"
+     stroke-width="1.28465"
+     stroke-dasharray="6, 4"
+     id="line226" />
+</svg>

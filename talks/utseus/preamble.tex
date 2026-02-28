@@ -1,0 +1,35 @@
+\setboolean{isFrenchVersion}{false}
+
+\addauthor*[S.~Galland]{Prof.Dr. St\'ephane~GALLAND}
+
+\event[Master CPS - UTSEUS - 2026]{Master Cyber-Physical Systems - UTSEUS - 2026}
+
+\title{Introduction to Multiagent Systems for Cyber-Physical Systems}
+
+%\setpredefinedtitlepagebackground7
+
+\begin{graphicspathcontext}{{./talks/utseus/imgs/},{./talks/utseus/imgs/auto/},\old}
+	\resolvepicturename{cps_ai_titlepage}
+	\pgfdeclareimage[height=\paperheight]{cps-ai-titlepage}{\resolvedfilename}
+	\settitlepageuserbackground{cps-ai-titlepage}
+	
+	\resolvepicturename{utseuslogo_titlepage}
+	\pgfdeclareimage[width=5cm]{utseuslogo-titlepage}{\resolvedfilename}
+	\settitlepageleftfigure(0,-30){utseuslogo-titlepage}
+
+	\resolvepicturename{frontright_titlepage}
+	\pgfdeclareimage[width=6cm]{frontright-titlepage}{\resolvedfilename}
+	\settitlepagerightfigure(230,-70){frontright-titlepage}
+
+	\partnerlogo{utseuslogo}
+\end{graphicspathcontext}
+
+\usefootlinewithsections
+
+% Preambles of sections
+\input{./chapters/cps/preamble}
+\input{./chapters/ai/preamble}
+\input{./chapters/mas/preamble}
+\input{./chapters/simulation/preamble}
+
+\endinput

@@ -1,0 +1,139 @@
+\begin{graphicspathcontext}{{./chapters/simulation/examples/imgs/},{./chapters/simulation/examples/imgs/auto/},\old}
+
+\begin{frame}[t]{Jaak Simulation Library}
+	\begin{block}{What is Jaak?}
+		\begin{itemize}
+		\item \emph{Reactive agent} execution framework (but may be cognitive with additional libraries)
+		\item Provides a \Emph{discrete 2D environment model}
+		\item Provides a simplified agent-environment model based on LOGO-like primitives: move forward, turn left, etc.
+		\end{itemize}
+	\end{block}
+	\begin{center}
+		\includegraphics[width=.3\linewidth]{jaak_ants} \\
+		\smaller\url{https://github.com/gallandarakhneorg/jaak}
+	\end{center}
+\end{frame}
+
+\begin{frame}[t]{{From LOGO} to Jaak}
+	\begin{block}{LOGO}
+		\wrapfigure{jaak_logo_turtle}
+		\begin{itemize}
+		\wrapitem{Reflexive and functional programming language from the MIT}
+		\wrapitem{Mainly known for its famous \Emph{graphical turtle}}
+		\wrapitem{Turtles move with simple instructions: move forward, turn 45 degrees left, etc.}
+		\end{itemize}
+	\end{block}
+	\begin{block}{Jaak}
+		\wrapfigure{jaak_ants}
+		\begin{itemize}
+		\wrapitem{\emph{Turtles are situated agents}, which is able to move on a 2D environment}
+		\wrapitem{Turtles are written in SARL}
+		\wrapitem{A specific capacity provides the simple instructions for moves}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+%\animatedfigureslide{Architecture of a Jaak Application}{jaak_architecture}
+\figureslide{Architecture of a Jaak Application}{jaak_architecture_layer1}
+
+\begin{frame}{{Objects and Substances} in the Environment}
+	\small
+	\begin{block}{Environment Objects}
+		\begin{itemize}
+		\item Environment objects are all the entities inside the environment
+		\item \alert{Turtles are not, and cannot be environmental objects}
+		\item \emph{But turtle's bodies are special types of environmental objects}
+		\item Each body is associated to one turtle agent, and contains the physical description of that agent: field of vision, maximal speed, weight, etc.
+		\end{itemize}
+	\end{block}
+	\begin{block}{Substances}
+		Substance is a special type of environmental object:
+		\begin{itemize}
+		\item It is a particular type of liquid, solid, or gas located in the environment
+		\item It is countable and may be divided or expanded
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\figureslide[scale=.95]{{Class Diagram} of the Environment Objects}{jaakuml_Jaak_Environment_Objects}
+
+\begin{frame}[t]{Structure of the Environment}
+	\smaller
+	\alertbox{The environment structure is based on a 2D grid (matrix of cells)}
+	\begin{block}{Properties of the cells}
+		\begin{itemize}
+		\item A cell contains:
+			\begin{itemize}
+			\item At most one agent body (see burrow for exception), or
+			\item at most one obstacle; and
+			\item many other environmental objects
+			\end{itemize}
+		\item Cell's ``graphical'' size is application-dependent
+		\end{itemize}
+	\end{block}
+	\vspace{-.5cm}
+	\begin{columns}
+		\begin{column}{.6\linewidth}
+			\begin{block}{Properties of the grid}
+				\begin{itemize}
+				\item Size is fixed at start-up
+				\item Grid could be wrapped: if an agent is located on one side of the grid and is trying to move outside; it will be moved at the opposite side of the grid
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{.3\linewidth}
+			\raisebox{-1.1\height}{\includegraphics{jaak_pacman}}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\figureslide[scale=.8,valign=c,label=turtlelifecycle]{{Life Cycle} of a Turtle Agent}{jaakuml_Jaak_Turtle_Life_Cycle}
+
+\begin{frame}{{What is a} Perception?}
+	\begin{definition}
+		An environmental object, or a collection of environmental objects, that are inside, or intersecting, the field of perception of an agent \\
+		Perception is computed and given by the sensors of the agent's body
+	\end{definition}
+	\begin{alertblock}{Hypotheses}
+		\begin{enumerate}
+		\item Agent cannot be omniscient: the scope of its perception is restricted to a limited portion of the environment
+		\item Perception is for a given time
+		\item Perception's list may be influenced or changed according to the properties of the sensors, e.g. visual impaired agent
+		\item An agent can perceive even if it is inside a burrow
+		\end{enumerate}
+	\end{alertblock}
+\end{frame}
+
+\figureslide{API for the Perception}{jaakuml_Jaak_Perception_API}
+
+\sidecite{Ferber96,Michel.07}
+\begin{frame}[t]{{What is an} Influence?}
+	\vspace{-.25cm}
+	\smaller
+	\begin{alertblock}<1->{Problem 1: simultaneous actions}
+		\begin{itemize}
+		\item Actions decided by different agents that may be applied at the same time on the same action space.
+		\item Simultaneous actions may be under conflict. Example: when two agents try to move on the same cell.
+		\end{itemize}
+	\end{alertblock}
+	\vspace{-.25em}
+	\begin{alertblock}<2->{Problem 2: uncertain actions}
+		\begin{itemize}
+		\item An action decided by an agent may be skipped or partially applied according to the internal rules of the environment.
+		\item Example: an agent cannot go inside the same cell of an obstacle.
+		\end{itemize}
+	\end{alertblock}
+	\vspace{-.25em}
+	\begin{block}<3>{Solution: influence}
+		\begin{itemize}
+		\item Actions from agents are not directly applied in the environment.
+		\item Conflicts among actions are detected and solved.
+		\item The resolution result is applied in the environment.
+		\item \Emph{Influence: the expected action by the agent.}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\figureslide{API for the Influence}{jaakuml_Jaak_Influence_API}
+
+\end{graphicspathcontext}
