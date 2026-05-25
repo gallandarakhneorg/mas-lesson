@@ -1,0 +1,75 @@
+\begin{graphicspathcontext}{{./chapters/ai/imgs/},{./chapters/ai/imgs/auto/},\old}
+
+\sidenote{Image générée avec Mistral AI}
+\begin{frame}[t]{{Systèmes multiagents :} Concepts clés}
+	\vspace{-.2cm}
+	\begin{columns}
+		\begin{column}{.8\linewidth}
+			\begin{block}{Qu'est-ce qu'un agent ? \cite{Wooldridge09}}
+				Une \Emph{entité autonome humaine, matérielle ou logicielle} qui :
+				\begin{compactdescription}
+				\item[Perçoit] son environnement {\smaller(capteurs, messages, flux de données)}
+				\item[Raisonne] à l'aide de connaissances internes et d'objectifs
+				\item[Agit] pour poursuivre ses objectifs {\smaller(actionneurs, appels de services, décisions)}
+				\item[Communique] et \Emph{coopère} avec d'autres agents
+				\end{compactdescription}
+			\end{block}
+			\begin{block}{Qu'est-ce qu'un système multiagents ? \cite{Wooldridge09}}
+				\begin{compactdescription}
+				\item[Décentralisé] aucun point de contrôle ou de défaillance unique
+				\item[Évolutif] ajout/suppression d'agents dynamique
+				\item[Hétérogène] agents ont des rôles, compétences et connaissances différents
+				\item[Comportement émergent] résultats complexes issus de règles locales simples
+				\end{compactdescription}
+			\end{block}
+		\end{column}
+		\begin{column}{.2\linewidth}
+			\includegraphics[width=\linewidth]{mas_application} \\[1cm]
+			\begin{center}
+				\includegraphics[width=.8\linewidth]{sarllogo} \\
+				{\smaller Framework SARL}\\
+				\url{www.sarl.io}
+			\end{center}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[t]{{IA agentique :} Un système multiagents simplifié et spécialisé}
+	\alertbox{IA agentique $=$ raisonnement LLM \textbf{+} principes de coordination des systèmes multiagents}
+	\small
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Orchestration centrée sur les LLM}
+				\begin{compactdescription}
+				\item[LangChain / LangGraph] chaînes d'appels LLM avec
+				utilisation d'outils, mémoire et graphes d'agents cycliques
+				\item[OpenAI Agents SDK] SDK léger pour construire des
+				pipelines d'agents avec transfert et appels d'outils
+				\item[AutoGen (Microsoft)] framework multi-agents conversationnel ;
+				les agents négocient et s'autocorrigent
+				\item[CrewAI] équipes d'agents basées sur des rôles avec
+				délégation de tâches et collaboration explicites
+				\end{compactdescription}
+			\end{block}
+    		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{stabularx}[title={Choisir le bon outil}]{X|X}
+			\tabularhead{Besoin}{Frameworks possibles} \\
+			Prototypage rapide & LangChain, LangGraph, CrewAI \\
+			\hline
+			Systèmes robustes & \textit{SARL}, \textit{JADE} \\
+			\hline
+			Simulation et analytique & \textit{Gamma}, \textit{Repast}, \textit{SARL} \\
+			\hline
+			IoT / edge distribué & \textit{SPADE}  \\
+			\end{stabularx}
+			{\smaller\smaller \textit{Italique} : framework multiagents généraliste}
+    		\end{column}
+	\end{columns}
+	\normalsize
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput
+

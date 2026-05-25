@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="362.00476"
+   height="223.29108"
+   viewBox="0 0 362.00476 223.29108"
+   version="1.1"
+   id="svg45"
+   sodipodi:docname="sarl_agent_contexts.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview47"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.8964286"
+     inkscape:cx="180.91245"
+     inkscape:cy="131.36868"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg45" />
+  <defs
+     id="defs5">
+    <marker
+       id="arr"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#444444"
+         id="path2" />
+    </marker>
+  </defs>
+  <!-- Default context (parent) -->
+  <rect
+     x="1"
+     y="1.0053095"
+     width="360"
+     height="125"
+     rx="14"
+     ry="14"
+     fill="#e8f4fd"
+     stroke="#5b9bd5"
+     stroke-width="2"
+     stroke-dasharray="7, 3"
+     id="rect7" />
+  <text
+     x="181"
+     y="19.00531"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#2b5f8a"
+     id="text9">Default Context (= social environment)</text>
+  <!-- Agent box -->
+  <rect
+     x="121"
+     y="41.00531"
+     width="120"
+     height="60"
+     rx="10"
+     ry="10"
+     fill="#fff9e6"
+     stroke="#e6a817"
+     stroke-width="2.5"
+     id="rect11" />
+  <text
+     x="181"
+     y="66.00531"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#7a4e00"
+     id="text13">Agent / Holon</text>
+  <text
+     x="181"
+     y="86.00531"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#7a4e00"
+     id="text15">unique ID: uuid</text>
+  <!-- Peers in default context -->
+  <rect
+     x="21"
+     y="46.00531"
+     width="75"
+     height="48"
+     rx="8"
+     ry="8"
+     fill="#d4edda"
+     stroke="#3d8b3d"
+     stroke-width="1.8"
+     id="rect17" />
+  <text
+     x="59"
+     y="71.00531"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#1e5a1e"
+     id="text19">Peer A</text>
+  <rect
+     x="266"
+     y="46.00531"
+     width="75"
+     height="48"
+     rx="8"
+     ry="8"
+     fill="#d4edda"
+     stroke="#3d8b3d"
+     stroke-width="1.8"
+     id="rect21" />
+  <text
+     x="304"
+     y="71.00531"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#1e5a1e"
+     id="text23">Peer B</text>
+  <!-- Default space line -->
+  <line
+     x1="96"
+     y1="70.00531"
+     x2="121"
+     y2="70.00531"
+     stroke="#3d8b3d"
+     stroke-width="1.5"
+     stroke-dasharray="4, 2"
+     marker-end="url(#arr)"
+     id="line25" />
+  <line
+     x1="241"
+     y1="70.00531"
+     x2="266"
+     y2="70.00531"
+     stroke="#3d8b3d"
+     stroke-width="1.5"
+     stroke-dasharray="4, 2"
+     marker-end="url(#arr)"
+     id="line27" />
+  <!-- Inner context (child) -->
+  <rect
+     x="40.867645"
+     y="135.87219"
+     width="280.26471"
+     height="86.550934"
+     rx="14.013235"
+     ry="10.536635"
+     fill="#fef3fb"
+     stroke="#a84db5"
+     stroke-width="1.73589"
+     stroke-dasharray="7, 3"
+     id="rect29" />
+  <text
+     x="181"
+     y="154.00531"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#6a1a75"
+     id="text31">Inner Context (ID = agent's ID)</text>
+  <!-- Sub-agents -->
+  <rect
+     x="100.72627"
+     y="166.00531"
+     width="70"
+     height="48"
+     rx="8"
+     ry="8"
+     fill="#fce4ff"
+     stroke="#a84db5"
+     stroke-width="1.8"
+     id="rect33" />
+  <text
+     x="135.72623"
+     y="191.00531"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#5e1170"
+     id="text35">Sub-agent 1</text>
+  <rect
+     x="190.72623"
+     y="166.00531"
+     width="70"
+     height="48"
+     rx="8"
+     ry="8"
+     fill="#fce4ff"
+     stroke="#a84db5"
+     stroke-width="1.8"
+     id="rect37" />
+  <text
+     x="225.72623"
+     y="191.00531"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#5e1170"
+     id="text39">Sub-agent 2</text>
+  <!-- Arrow from agent to inner context -->
+  <line
+     x1="181"
+     y1="101.00531"
+     x2="181"
+     y2="136.00531"
+     stroke="#a84db5"
+     stroke-width="2"
+     marker-end="url(#arr)"
+     id="line41" />
+  <text
+     x="187"
+     y="124.00531"
+     font-family="sans-serif"
+     font-size="9.5px"
+     fill="#a84db5"
+     id="text43">owns</text>
+</svg>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="615.93298"
+   height="279"
+   font-family="sans-serif"
+   version="1.1"
+   id="svg65"
+   sodipodi:docname="hmas_holarchy.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview67"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.1926471"
+     inkscape:cx="311.07275"
+     inkscape:cy="156.37485"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg65" />
+  <!-- Level 0 — Root holon -->
+  <rect
+     x="210.933"
+     y="0"
+     width="200"
+     height="52"
+     rx="14"
+     fill="#4a90d9"
+     opacity="0.9"
+     id="rect2" />
+  <text
+     x="310.93301"
+     y="31"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="15px"
+     font-weight="bold"
+     id="text4">Root Holon (H)</text>
+  <!-- Level 1 holons -->
+  <rect
+     x="50.932999"
+     y="115"
+     width="160"
+     height="52"
+     rx="12"
+     fill="#5ba85a"
+     opacity="0.88"
+     id="rect6" />
+  <text
+     x="130.933"
+     y="146"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="14px"
+     font-weight="bold"
+     id="text8">Holon H1</text>
+  <rect
+     x="230.933"
+     y="115"
+     width="160"
+     height="52"
+     rx="12"
+     fill="#5ba85a"
+     opacity="0.88"
+     id="rect10" />
+  <text
+     x="310.93301"
+     y="146"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="14px"
+     font-weight="bold"
+     id="text12">Holon H2</text>
+  <rect
+     x="410.93301"
+     y="115"
+     width="160"
+     height="52"
+     rx="12"
+     fill="#5ba85a"
+     opacity="0.88"
+     id="rect14" />
+  <text
+     x="490.93301"
+     y="146"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="14px"
+     font-weight="bold"
+     id="text16">Holon H3</text>
+  <!-- Level 2 holons (leaves) -->
+  <rect
+     x="10.933"
+     y="235"
+     width="110"
+     height="44"
+     rx="10"
+     fill="#e08c3b"
+     opacity="0.88"
+     id="rect18" />
+  <text
+     x="65.932999"
+     y="262"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     id="text20">Holon h11</text>
+  <rect
+     x="135.933"
+     y="235"
+     width="110"
+     height="44"
+     rx="10"
+     fill="#e08c3b"
+     opacity="0.88"
+     id="rect22" />
+  <text
+     x="190.933"
+     y="262"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     id="text24">Holon h12</text>
+  <rect
+     x="260.93301"
+     y="235"
+     width="110"
+     height="44"
+     rx="10"
+     fill="#e08c3b"
+     opacity="0.88"
+     id="rect26" />
+  <text
+     x="315.93301"
+     y="262"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     id="text28">Holon h21</text>
+  <rect
+     x="385.93301"
+     y="235"
+     width="110"
+     height="44"
+     rx="10"
+     fill="#e08c3b"
+     opacity="0.88"
+     id="rect30" />
+  <text
+     x="440.93301"
+     y="262"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     id="text32">Holon h31</text>
+  <rect
+     x="505.93301"
+     y="235"
+     width="110"
+     height="44"
+     rx="10"
+     fill="#e08c3b"
+     opacity="0.88"
+     id="rect34" />
+  <text
+     x="560.93298"
+     y="262"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="12px"
+     id="text36">Holon h32</text>
+  <!-- Edges H -> H1, H2, H3 -->
+  <line
+     x1="270.93301"
+     y1="52"
+     x2="160.933"
+     y2="115"
+     stroke="#555555"
+     stroke-width="2"
+     marker-end="url(#a)"
+     id="line38" />
+  <line
+     x1="310.93301"
+     y1="52"
+     x2="310.93301"
+     y2="115"
+     stroke="#555555"
+     stroke-width="2"
+     marker-end="url(#a)"
+     id="line40" />
+  <line
+     x1="350.93301"
+     y1="52"
+     x2="460.93301"
+     y2="115"
+     stroke="#555555"
+     stroke-width="2"
+     marker-end="url(#a)"
+     id="line42" />
+  <!-- Edges H1 -> h11, h12 -->
+  <line
+     x1="105.933"
+     y1="167"
+     x2="70.932999"
+     y2="235"
+     stroke="#555555"
+     stroke-width="1.5"
+     marker-end="url(#a)"
+     id="line44" />
+  <line
+     x1="155.933"
+     y1="167"
+     x2="190.933"
+     y2="235"
+     stroke="#555555"
+     stroke-width="1.5"
+     marker-end="url(#a)"
+     id="line46" />
+  <!-- Edges H2 -> h21 -->
+  <line
+     x1="310.93301"
+     y1="167"
+     x2="315.93301"
+     y2="235"
+     stroke="#555555"
+     stroke-width="1.5"
+     marker-end="url(#a)"
+     id="line48" />
+  <!-- Edges H3 -> h31, h32 -->
+  <line
+     x1="460.93301"
+     y1="167"
+     x2="445.93301"
+     y2="235"
+     stroke="#555555"
+     stroke-width="1.5"
+     marker-end="url(#a)"
+     id="line50" />
+  <line
+     x1="520.93298"
+     y1="167"
+     x2="545.93298"
+     y2="235"
+     stroke="#555555"
+     stroke-width="1.5"
+     marker-end="url(#a)"
+     id="line52" />
+  <!-- Level labels -->
+  <text
+     x="-1.067"
+     y="35"
+     fill="#888888"
+     font-size="11px"
+     id="text54">L2</text>
+  <text
+     x="-1.067"
+     y="147"
+     fill="#888888"
+     font-size="11px"
+     id="text56">L1</text>
+  <text
+     x="-1.067"
+     y="261"
+     fill="#888888"
+     font-size="11px"
+     id="text58">L0</text>
+  <defs
+     id="defs63">
+    <marker
+       id="a"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#555555"
+         id="path60" />
+    </marker>
+  </defs>
+</svg>

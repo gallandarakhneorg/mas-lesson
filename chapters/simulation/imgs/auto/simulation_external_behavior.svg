@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 423.20001 401.36694"
+   width="423.20001"
+   height="401.36694"
+   font-family="'Segoe UI', Arial, sans-serif"
+   version="1.1"
+   id="svg102"
+   sodipodi:docname="simulation_external_behavior.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview104"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3080645"
+     inkscape:cx="201.82491"
+     inkscape:cy="214.43896"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg102" />
+  <!-- Background -->
+  <!-- ── Environment band (top) ── -->
+  <!-- ── System box (black box) ── -->
+  <!-- Hatch pattern inside to show opacity / unknowns -->
+  <defs
+     id="defs13">
+    <pattern
+       id="hatch"
+       patternUnits="userSpaceOnUse"
+       width="12"
+       height="12"
+       patternTransform="rotate(45)">
+      <line
+         x1="0"
+         y1="0"
+         x2="0"
+         y2="12"
+         stroke="#ffffff"
+         stroke-width="1.2"
+         opacity="0.08"
+         id="line10" />
+    </pattern>
+  </defs>
+  <!-- ── Boundary dashed ring ── -->
+  <!-- ═══════════════════════════════ -->
+  <!--  INPUT arrows (left side)      -->
+  <!-- ═══════════════════════════════ -->
+  <defs
+     id="defs33">
+    <marker
+       id="arr-in"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0,7 0,0 10,3.5 "
+         fill="#4a90d9"
+         id="polygon27" />
+    </marker>
+    <marker
+       id="arr-out"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0,7 0,0 10,3.5 "
+         fill="#5bb86a"
+         id="polygon30" />
+    </marker>
+  </defs>
+  <!-- Input 1 -->
+  <!-- Input 2 -->
+  <!-- Input label -->
+  <!-- ═══════════════════════════════ -->
+  <!--  OUTPUT arrows (right side)    -->
+  <!-- ═══════════════════════════════ -->
+  <!-- Output 1 -->
+  <!-- Output 2 -->
+  <!-- Output label -->
+  <g
+     id="g517"
+     transform="translate(-29.4,-95.631775)">
+    <rect
+       x="130"
+       y="210"
+       width="220"
+       height="180"
+       rx="12"
+       fill="#2c3e6b"
+       stroke="#1a2545"
+       stroke-width="2.5"
+       id="rect8" />
+    <rect
+       x="130"
+       y="210"
+       width="220"
+       height="180"
+       rx="12"
+       fill="url(#hatch)"
+       id="rect15" />
+    <text
+       x="240"
+       y="292"
+       text-anchor="middle"
+       font-size="15px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text17">S Y S T E M</text>
+    <text
+       x="240"
+       y="314"
+       text-anchor="middle"
+       font-size="12px"
+       fill="#a0aac8"
+       id="text19">(internal structure</text>
+    <text
+       x="240"
+       y="331"
+       text-anchor="middle"
+       font-size="12px"
+       fill="#a0aac8"
+       id="text21">not observable)</text>
+    <rect
+       x="115"
+       y="195"
+       width="250"
+       height="210"
+       rx="16"
+       fill="none"
+       stroke="#e08c3b"
+       stroke-width="2"
+       stroke-dasharray="8, 5"
+       id="rect23" />
+    <text
+       x="370"
+       y="190"
+       text-anchor="middle"
+       font-size="11px"
+       fill="#e08c3b"
+       font-style="italic"
+       id="text25">boundary</text>
+    <line
+       x1="101.55113"
+       y1="265"
+       x2="129.47345"
+       y2="265"
+       stroke="#4a90d9"
+       stroke-width="1.602"
+       marker-end="url(#arr-in)"
+       id="line35" />
+    <rect
+       x="30"
+       y="248"
+       width="70"
+       height="26"
+       rx="6"
+       fill="#4a90d9"
+       opacity="0.15"
+       stroke="#4a90d9"
+       stroke-width="1.2"
+       id="rect37" />
+    <text
+       x="65"
+       y="265"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       font-size="11.5px"
+       fill="#2c6fad"
+       font-weight="bold"
+       id="text39">Input 1</text>
+    <line
+       x1="101.95428"
+       y1="335"
+       x2="129.48775"
+       y2="335"
+       stroke="#4a90d9"
+       stroke-width="1.5908"
+       marker-end="url(#arr-in)"
+       id="line41" />
+    <rect
+       x="30"
+       y="318"
+       width="70"
+       height="26"
+       rx="6"
+       fill="#4a90d9"
+       opacity="0.15"
+       stroke="#4a90d9"
+       stroke-width="1.2"
+       id="rect43" />
+    <text
+       x="65"
+       y="335"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       font-size="11.5px"
+       fill="#2c6fad"
+       font-weight="bold"
+       id="text45">Input 2</text>
+    <text
+       x="94"
+       y="240"
+       text-anchor="middle"
+       font-size="11px"
+       fill="#4a90d9"
+       font-style="italic"
+       id="text47">stimuli</text>
+    <line
+       x1="352"
+       y1="265"
+       x2="379.01843"
+       y2="265"
+       stroke="#5bb86a"
+       stroke-width="1.59955"
+       marker-end="url(#arr-out)"
+       id="line49" />
+    <rect
+       x="380"
+       y="248"
+       width="72"
+       height="26"
+       rx="6"
+       fill="#5bb86a"
+       opacity="0.15"
+       stroke="#5bb86a"
+       stroke-width="1.2"
+       id="rect51" />
+    <text
+       x="416"
+       y="265"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       font-size="11.5px"
+       fill="#2e7a3c"
+       font-weight="bold"
+       id="text53">Output 1</text>
+    <line
+       x1="352"
+       y1="335"
+       x2="377.43015"
+       y2="335"
+       stroke="#5bb86a"
+       stroke-width="1.55182"
+       marker-end="url(#arr-out)"
+       id="line55" />
+    <rect
+       x="380"
+       y="318"
+       width="72"
+       height="26"
+       rx="6"
+       fill="#5bb86a"
+       opacity="0.15"
+       stroke="#5bb86a"
+       stroke-width="1.2"
+       id="rect57" />
+    <text
+       x="416"
+       y="335"
+       text-anchor="middle"
+       dominant-baseline="middle"
+       font-size="11.5px"
+       fill="#2e7a3c"
+       font-weight="bold"
+       id="text59">Output 2</text>
+    <text
+       x="390"
+       y="240"
+       text-anchor="middle"
+       font-size="11px"
+       fill="#5bb86a"
+       font-style="italic"
+       id="text61">reactions</text>
+  </g>
+  <!-- ═══════════════════════════════════════ -->
+  <!--  Observer eye (below system)           -->
+  <!-- ═══════════════════════════════════════ -->
+  <!-- Eye icon -->
+  <!-- eyelashes -->
+  <g
+     id="g529"
+     transform="translate(-28.531836,-95.633064)">
+    <text
+       x="240"
+       y="429"
+       text-anchor="middle"
+       font-size="12px"
+       fill="#5a6680"
+       id="text63">Observable at the</text>
+    <text
+       x="240"
+       y="447"
+       text-anchor="middle"
+       font-size="12px"
+       fill="#5a6680"
+       id="text65">system boundary only</text>
+    <ellipse
+       cx="240"
+       cy="482"
+       rx="28"
+       ry="14"
+       fill="none"
+       stroke="#5a6680"
+       stroke-width="2"
+       id="ellipse67" />
+    <circle
+       cx="240"
+       cy="482"
+       r="7"
+       fill="#5a6680"
+       opacity="0.3"
+       id="circle69" />
+    <circle
+       cx="240"
+       cy="482"
+       r="4"
+       fill="#5a6680"
+       id="circle71" />
+    <line
+       x1="224"
+       y1="474"
+       x2="221"
+       y2="468"
+       stroke="#5a6680"
+       stroke-width="1.4"
+       id="line73" />
+    <line
+       x1="232"
+       y1="470"
+       x2="231"
+       y2="464"
+       stroke="#5a6680"
+       stroke-width="1.4"
+       id="line75" />
+    <line
+       x1="240"
+       y1="468"
+       x2="240"
+       y2="462"
+       stroke="#5a6680"
+       stroke-width="1.4"
+       id="line77" />
+    <line
+       x1="248"
+       y1="470"
+       x2="249"
+       y2="464"
+       stroke="#5a6680"
+       stroke-width="1.4"
+       id="line79" />
+    <line
+       x1="256"
+       y1="474"
+       x2="259"
+       y2="468"
+       stroke="#5a6680"
+       stroke-width="1.4"
+       id="line81" />
+  </g>
+  <!-- Approach label (bottom) -->
+  <g
+     id="g533"
+     transform="translate(-24.043013,-54.816557)">
+    <rect
+       x="75.643013"
+       y="55.416557"
+       width="320"
+       height="34"
+       rx="8"
+       fill="#2c3e6b"
+       opacity="0.08"
+       stroke="#2c3e6b"
+       stroke-width="1.2"
+       id="rect83" />
+    <text
+       x="235.64302"
+       y="76.416557"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="bold"
+       fill="#2c3e6b"
+       id="text85">External Behavior (Black-Box)</text>
+  </g>
+  <!-- Time axis hint at top area -->
+  <defs
+     id="defs94">
+    <marker
+       id="arr-t"
+       markerWidth="8"
+       markerHeight="6"
+       refX="7"
+       refY="3"
+       orient="auto">
+      <polygon
+         points="0,0 8,3 0,6 "
+         fill="#bbbbbb"
+         id="polygon91" />
+    </marker>
+  </defs>
+  <g
+     id="g494"
+     transform="translate(-30.1,-101.95798)">
+    <text
+       x="240"
+       y="160"
+       text-anchor="middle"
+       font-size="12px"
+       fill="#888888"
+       id="text87">Inputs drive the system over time</text>
+    <line
+       x1="90"
+       y1="170"
+       x2="390"
+       y2="170"
+       stroke="#bbbbbb"
+       stroke-width="1.4"
+       id="line89" />
+    <line
+       x1="380"
+       y1="170"
+       x2="392"
+       y2="170"
+       stroke="#bbbbbb"
+       stroke-width="1.4"
+       marker-end="url(#arr-t)"
+       id="line96" />
+    <text
+       x="90"
+       y="165"
+       font-size="10px"
+       fill="#aaaaaa"
+       id="text98">t₀</text>
+    <text
+       x="375"
+       y="165"
+       font-size="10px"
+       fill="#aaaaaa"
+       id="text100">t</text>
+  </g>
+</svg>

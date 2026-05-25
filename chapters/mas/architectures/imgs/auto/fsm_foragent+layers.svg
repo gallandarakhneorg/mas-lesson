@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="240.84158"
+   height="106.6711"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="fsm_foragent+layers.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker11266"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path11264"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#008009;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker10469"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#008009;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path10467"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker9798"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9796"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#008009;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker9431"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:#008009;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path9429"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4789"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#008009;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path927"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-1-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path927-2-9"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-6"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path927-0"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4789-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#008009;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-2-2"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4789-6-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#008009;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-5"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4789-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#008009;fill-opacity:1;fill-rule:evenodd;stroke:#008000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="534.71266"
+     inkscape:cy="161.43596"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g7573"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     inkscape:measure-start="0,0"
+     inkscape:measure-end="0,0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(128.97401,5.2811744)"
+     id="g4720"
+     inkscape:groupmode="layer"
+     inkscape:label="state1 &lt;1-&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       transform="translate(4.4979167,-52.159644)"
+       id="g4696">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4684"
+         width="34.395832"
+         height="20.37291"
+         x="-59.609367"
+         y="69.382736" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-45.126015"
+         y="77.041695"
+         id="text4688"><tspan
+           sodipodi:role="line"
+           id="tspan4686"
+           x="-45.126015"
+           y="77.041695"
+           style="font-size:6.3499999px;text-align:center;text-anchor:middle;stroke-width:0.26458332">State 1</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-56.799786"
+         y="82.909363"
+         id="text4694"><tspan
+           sodipodi:role="line"
+           id="tspan4690"
+           x="-56.799786"
+           y="82.909363"
+           style="stroke-width:0.26458332">In: Action 1</tspan><tspan
+           sodipodi:role="line"
+           x="-56.799786"
+           y="88.201027"
+           style="stroke-width:0.26458332"
+           id="tspan4692">Exit: Action 2</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:label="labels state1 &lt;1&gt;"
+     inkscape:groupmode="layer"
+     id="g7377"
+     transform="translate(128.97401,5.2811744)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <text
+       id="text7357"
+       y="0.0072804769"
+       x="-101.77895"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#008000;stroke-width:0.26458332"
+         y="0.0072804769"
+         x="-101.77895"
+         id="tspan7355"
+         sodipodi:role="line">Name of the state</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path7359"
+       d="m -56.006036,1.8593625 8.466667,17.4624995"
+       style="fill:#008009;fill-opacity:1;stroke:#008000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <text
+       id="text7365"
+       y="51.13884"
+       x="-128.01811"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#008000;stroke-width:0.26458332"
+         y="51.13884"
+         x="-128.01811"
+         id="tspan7361"
+         sodipodi:role="line">Action(s) to execute when</tspan><tspan
+         id="tspan7363"
+         style="fill:#008000;stroke-width:0.26458332"
+         y="58.194397"
+         x="-128.01811"
+         sodipodi:role="line">agent is in the state</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path7367"
+       d="M -90.18269,45.318007 -54.199357,29.972174"
+       style="fill:#008009;fill-opacity:1;stroke:#008000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-2)" />
+    <text
+       id="text7373"
+       y="57.303349"
+       x="-45.058903"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#008000;stroke-width:0.26458332"
+         y="57.303349"
+         x="-45.058903"
+         id="tspan7369"
+         sodipodi:role="line">Action(s) to execute when</tspan><tspan
+         id="tspan7371"
+         style="fill:#008000;stroke-width:0.26458332"
+         y="64.358902"
+         x="-45.058903"
+         sodipodi:role="line">agent quits the state</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path7375"
+       d="M -36.176823,51.493019 -39.880989,38.528436"
+       style="fill:#008009;fill-opacity:1;stroke:#008000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-2-2)" />
+  </g>
+  <g
+     style="display:inline"
+     transform="translate(128.97401,5.2811744)"
+     id="g7573"
+     inkscape:groupmode="layer"
+     inkscape:label="state2 &lt;2-&gt;"
+     sodipodi:insensitive="true">
+    <path
+       inkscape:transform-center-y="-54.075251"
+       inkscape:transform-center-x="-28.665227"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path7537"
+       d="M -20.934766,27.900981 52.354817,27.371817"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-1-0)" />
+    <text
+       id="text7543"
+       y="20.185862"
+       x="-15.24799"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="font-size:5.64444447px;stroke-width:0.26458332"
+         y="20.185862"
+         x="-15.24799"
+         id="tspan7541"
+         sodipodi:role="line">[condition1] / Action 5</tspan></text>
+    <g
+       transform="translate(113.40542,-52.159644)"
+       id="g7563">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7551"
+         width="34.395832"
+         height="20.37291"
+         x="-59.609367"
+         y="69.382736" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-45.126015"
+         y="77.041695"
+         id="text7555"><tspan
+           sodipodi:role="line"
+           id="tspan7553"
+           x="-45.126015"
+           y="77.041695"
+           style="font-size:6.3499999px;text-align:center;text-anchor:middle;stroke-width:0.26458332">State 2</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="-56.799786"
+         y="82.909363"
+         id="text7561"><tspan
+           sodipodi:role="line"
+           id="tspan7557"
+           x="-56.799786"
+           y="82.909363"
+           style="stroke-width:0.26458332">Enter: Action 3</tspan><tspan
+           sodipodi:role="line"
+           x="-56.799786"
+           y="88.201027"
+           style="stroke-width:0.26458332"
+           id="tspan7559">In: Action 4</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="labels state2 &lt;2&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true"
+     transform="translate(52.065901,20.178581)">
+    <text
+       id="text7357-2"
+       y="52.645599"
+       x="114.51917"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#008000;stroke-width:0.26458332"
+         y="52.645599"
+         x="114.51917"
+         id="tspan7355-2"
+         sodipodi:role="line">Action(s) to execute when</tspan><tspan
+         style="fill:#008000;stroke-width:0.26458332"
+         y="59.701157"
+         x="114.51917"
+         sodipodi:role="line"
+         id="tspan7775">the agent enters into the</tspan><tspan
+         style="fill:#008000;stroke-width:0.26458332"
+         y="66.756714"
+         x="114.51917"
+         sodipodi:role="line"
+         id="tspan7777">state</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path7359-8"
+       d="m 143.93334,46.246519 -4.7625,-26.45833"
+       style="display:inline;fill:#008009;fill-opacity:1;stroke:#008000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend-5)"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:label="labels transition1 &lt;3&gt;"
+     id="g9427"
+     inkscape:groupmode="layer"
+     style="display:inline"
+     sodipodi:insensitive="true"
+     transform="translate(52.065901,20.178581)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="55.252506"
+       y="43.385181"
+       id="text9423"><tspan
+         id="tspan9421"
+         sodipodi:role="line"
+         x="55.252506"
+         y="43.385181"
+         style="fill:#008000;stroke-width:0.26458332">Condition that must</tspan><tspan
+         sodipodi:role="line"
+         x="55.252506"
+         y="50.440739"
+         style="fill:#008000;stroke-width:0.26458332"
+         id="tspan9780">be evaluated to true for</tspan><tspan
+         sodipodi:role="line"
+         x="55.252506"
+         y="57.496292"
+         style="fill:#008000;stroke-width:0.26458332"
+         id="tspan9782">activating the transition</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       style="display:inline;fill:#008009;fill-opacity:1;stroke:#008000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker9431)"
+       d="m 79.904173,35.134019 -4.7625,-26.45833"
+       id="path9425"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     style="display:inline"
+     inkscape:groupmode="layer"
+     id="g9794"
+     inkscape:label="labels transition2 &lt;4&gt;"
+     sodipodi:insensitive="true"
+     transform="translate(52.065901,20.178581)">
+    <text
+       id="text9790"
+       y="43.385181"
+       x="55.252506"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         id="tspan9788"
+         style="fill:#008000;stroke-width:0.26458332"
+         y="43.385181"
+         x="55.252506"
+         sodipodi:role="line">Action(s) to execute when</tspan><tspan
+         style="fill:#008000;stroke-width:0.26458332"
+         y="50.440739"
+         x="55.252506"
+         sodipodi:role="line"
+         id="tspan10299">the transition is triggered</tspan><tspan
+         style="fill:#008000;stroke-width:0.26458332"
+         y="57.496292"
+         x="55.252506"
+         sodipodi:role="line"
+         id="tspan10303">for changing of state</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path9792"
+       d="m 101.61212,35.927769 4.7625,-26.45833"
+       style="display:inline;fill:#008009;fill-opacity:1;stroke:#008000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker9798)"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     style="display:inline"
+     transform="translate(128.97401,5.2811744)"
+     id="g10341"
+     inkscape:groupmode="layer"
+     inkscape:label="initialstate &lt;5-&gt;"
+     sodipodi:insensitive="true">
+    <path
+       inkscape:connector-curvature="0"
+       id="path10307"
+       d="m -71.163533,27.419155 h 13.49375"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)" />
+    <circle
+       r="2.6458333"
+       cy="27.409548"
+       cx="-71.957283"
+       id="circle10313"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <g
+     inkscape:label="labels initialstate &lt;5&gt;"
+     id="g10465"
+     inkscape:groupmode="layer"
+     style="display:inline"
+     sodipodi:insensitive="true"
+     transform="translate(52.065901,20.178581)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="3.3941729"
+       y="53.70393"
+       id="text10461"><tspan
+         id="tspan10459"
+         sodipodi:role="line"
+         x="3.3941729"
+         y="53.70393"
+         style="fill:#008000;stroke-width:0.26458332">Specification of the initial state of the agent</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       style="display:inline;fill:#008009;fill-opacity:1;stroke:#008000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10469)"
+       d="M 12.70001,45.717352 7.93751,19.259022"
+       id="path10463"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:label="finalstate &lt;6&gt;"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(128.97401,5.2811744)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="-76.393188"
+       y="50.290504"
+       id="text841-7-2-2-1"><tspan
+         sodipodi:role="line"
+         id="tspan839-5-9-6-8"
+         x="-76.393188"
+         y="50.290504"
+         style="font-size:5.64444447px;stroke-width:0.26458332">[condition2]</tspan></text>
+    <g
+       id="g2885">
+      <circle
+         r="5.8208332"
+         cy="52.746861"
+         cx="16.225216"
+         id="path2881"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <circle
+         r="2.6458333"
+         cy="52.746861"
+         cx="16.225216"
+         id="path896-3"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-6)"
+       d="M -38.108827,37.146053 V 52.095011 L 8.4578397,52.227303"
+       id="path898-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+  <g
+     style="display:inline"
+     inkscape:groupmode="layer"
+     id="g11262"
+     inkscape:label="labels finalstate &lt;6&gt;"
+     sodipodi:insensitive="true"
+     transform="translate(52.065901,20.178581)">
+    <text
+       id="text11258"
+       y="77.781013"
+       x="8.9504232"
+       style="font-style:normal;font-weight:normal;font-size:5.64444447px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#008000;stroke-width:0.26458332"
+         y="77.781013"
+         x="8.9504232"
+         sodipodi:role="line"
+         id="tspan11256">Specification of the state from which an agent</tspan><tspan
+         style="fill:#008000;stroke-width:0.26458332"
+         y="84.836571"
+         x="8.9504232"
+         sodipodi:role="line"
+         id="tspan11964">can commit a suicide, and under which condition</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path11260"
+       d="m 50.270843,69.529852 -4.7625,-26.45833"
+       style="display:inline;fill:#008009;fill-opacity:1;stroke:#008000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11266)"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

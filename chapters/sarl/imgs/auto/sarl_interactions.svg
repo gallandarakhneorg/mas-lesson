@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 701.49237 193.65773"
+   width="701.49237"
+   height="193.65773"
+   version="1.1"
+   id="svg44"
+   sodipodi:docname="sarl_interactions.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview46"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.4421257"
+     inkscape:cx="351.56437"
+     inkscape:cy="90.49142"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg44" />
+  <!-- Background -->
+  <!-- Space box -->
+  <rect
+     x="231.25494"
+     y="9.6049948"
+     width="240"
+     height="160"
+     rx="14"
+     fill="#e3f0ff"
+     stroke="#005aaa"
+     stroke-width="2.5"
+     id="rect4" />
+  <text
+     x="351.25494"
+     y="35.604996"
+     font-family="sans-serif"
+     font-size="15px"
+     font-weight="bold"
+     fill="#005aaa"
+     text-anchor="middle"
+     id="text6">Space</text>
+  <!-- Event arrows inside space -->
+  <ellipse
+     cx="351.25494"
+     cy="94.604996"
+     rx="60"
+     ry="22"
+     fill="#b8d9f8"
+     stroke="#005aaa"
+     stroke-width="1.5"
+     id="ellipse8" />
+  <text
+     x="351.25494"
+     y="99.604996"
+     font-family="sans-serif"
+     font-size="12px"
+     fill="#003366"
+     text-anchor="middle"
+     id="text10">Event flow</text>
+  <!-- Agent A -->
+  <rect
+     x="11.254945"
+     y="49.604996"
+     width="130"
+     height="80"
+     rx="10"
+     fill="#fff3e0"
+     stroke="#e65100"
+     stroke-width="2"
+     id="rect12" />
+  <text
+     x="76.254944"
+     y="85.604996"
+     font-family="sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#e65100"
+     text-anchor="middle"
+     id="text14">Agent A</text>
+  <text
+     x="76.254944"
+     y="105.605"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#555555"
+     text-anchor="middle"
+     id="text16">emits events</text>
+  <!-- Agent B -->
+  <rect
+     x="561.25494"
+     y="49.604996"
+     width="130"
+     height="80"
+     rx="10"
+     fill="#e8f5e9"
+     stroke="#2e7d32"
+     stroke-width="2"
+     id="rect18" />
+  <text
+     x="626.25494"
+     y="85.604996"
+     font-family="sans-serif"
+     font-size="14px"
+     font-weight="bold"
+     fill="#2e7d32"
+     text-anchor="middle"
+     id="text20">Agent B</text>
+  <text
+     x="626.25494"
+     y="105.605"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#555555"
+     text-anchor="middle"
+     id="text22">receives events</text>
+  <!-- Arrow A → Space -->
+  <line
+     x1="142.25494"
+     y1="89.604996"
+     x2="229.25494"
+     y2="89.604996"
+     stroke="#e65100"
+     stroke-width="2"
+     marker-end="url(#arrowO)"
+     id="line24" />
+  <!-- Arrow Space → B -->
+  <line
+     x1="473.25494"
+     y1="89.604996"
+     x2="559.25494"
+     y2="89.604996"
+     stroke="#2e7d32"
+     stroke-width="2"
+     marker-end="url(#arrowG)"
+     id="line26" />
+  <defs
+     id="defs34">
+    <marker
+       id="arrowO"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#e65100"
+         id="path28" />
+    </marker>
+    <marker
+       id="arrowG"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#2e7d32"
+         id="path31" />
+    </marker>
+  </defs>
+  <!-- Labels -->
+  <text
+     x="186.25494"
+     y="79.604996"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#e65100"
+     text-anchor="middle"
+     id="text36">emit()</text>
+  <text
+     x="516.25494"
+     y="79.604996"
+     font-family="sans-serif"
+     font-size="10px"
+     fill="#2e7d32"
+     text-anchor="middle"
+     id="text38">on Event</text>
+  <!-- Context border -->
+  <rect
+     x="0.75105375"
+     y="0.74213499"
+     width="699.98358"
+     height="192.17346"
+     rx="15.300189"
+     fill="none"
+     stroke="#aaaaaa"
+     stroke-width="1.48427"
+     stroke-dasharray="6, 4"
+     id="rect40" />
+  <text
+     x="351.25494"
+     y="187.605"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#888888"
+     text-anchor="middle"
+     id="text42">Context (default context)</text>
+</svg>

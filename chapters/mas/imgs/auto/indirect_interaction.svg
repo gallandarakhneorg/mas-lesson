@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 610.5 91.726585"
+   width="610.5"
+   height="91.726585"
+   font-family="Arial, sans-serif"
+   version="1.1"
+   id="svg87"
+   sodipodi:docname="indirect_interaction.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview89"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.8619047"
+     inkscape:cx="169.34649"
+     inkscape:cy="37.67571"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg87" />
+  <!-- Background -->
+  <!-- Title -->
+  <!-- ===== SHARED ENVIRONMENT (center rectangle) ===== -->
+  <!-- Information traces inside environment -->
+  <g
+     id="g578"
+     transform="translate(-54.75,-179.53493)">
+    <rect
+       x="229.87729"
+       y="180.66273"
+       width="260.24539"
+       height="89.460091"
+       rx="14.013213"
+       fill="#d6eaf8"
+       stroke="#2980b9"
+       stroke-width="2.25561"
+       stroke-dasharray="8, 4"
+       id="rect6" />
+    <text
+       x="360"
+       y="202"
+       text-anchor="middle"
+       font-size="14px"
+       font-weight="bold"
+       fill="#1a5276"
+       id="text8">Shared Environment</text>
+    <ellipse
+       cx="310"
+       cy="228"
+       rx="22"
+       ry="10"
+       fill="#f9e79f"
+       stroke="#d4ac0d"
+       stroke-width="1.5"
+       id="ellipse10" />
+    <text
+       x="310"
+       y="232"
+       text-anchor="middle"
+       font-size="10px"
+       fill="#7d6608"
+       id="text12">trace₁</text>
+    <ellipse
+       cx="360"
+       cy="245"
+       rx="22"
+       ry="10"
+       fill="#f9e79f"
+       stroke="#d4ac0d"
+       stroke-width="1.5"
+       id="ellipse14" />
+    <text
+       x="360"
+       y="249"
+       text-anchor="middle"
+       font-size="10px"
+       fill="#7d6608"
+       id="text16">trace₂</text>
+    <ellipse
+       cx="410"
+       cy="228"
+       rx="22"
+       ry="10"
+       fill="#f9e79f"
+       stroke="#d4ac0d"
+       stroke-width="1.5"
+       id="ellipse18" />
+    <text
+       x="410"
+       y="232"
+       text-anchor="middle"
+       font-size="10px"
+       fill="#7d6608"
+       id="text20">trace₃</text>
+  </g>
+  <!-- ===== AGENT A (left) ===== -->
+  <g
+     id="g624"
+     transform="translate(-54.75,-169.13671)">
+    <circle
+       cx="100"
+       cy="215"
+       r="44"
+       fill="#d5f5e3"
+       stroke="#27ae60"
+       stroke-width="2.5"
+       id="circle22" />
+    <text
+       x="100"
+       y="210"
+       text-anchor="middle"
+       font-size="14px"
+       font-weight="bold"
+       fill="#1e8449"
+       id="text24">Agent</text>
+    <text
+       x="100"
+       y="228"
+       text-anchor="middle"
+       font-size="14px"
+       font-weight="bold"
+       fill="#1e8449"
+       id="text26">A</text>
+  </g>
+  <!-- ===== AGENT B (right) ===== -->
+  <g
+     id="g601"
+     transform="translate(-54.75,-169.13671)">
+    <circle
+       cx="620"
+       cy="215"
+       r="44"
+       fill="#fadbd8"
+       stroke="#e74c3c"
+       stroke-width="2.5"
+       id="circle28" />
+    <text
+       x="620"
+       y="210"
+       text-anchor="middle"
+       font-size="14px"
+       font-weight="bold"
+       fill="#922b21"
+       id="text30">Agent</text>
+    <text
+       x="620"
+       y="228"
+       text-anchor="middle"
+       font-size="14px"
+       font-weight="bold"
+       fill="#922b21"
+       id="text32">B</text>
+  </g>
+  <!-- ===== AGENT C (bottom, optional 3rd agent) ===== -->
+  <!-- ===== ARROW: Agent A → Environment (writes) ===== -->
+  <!-- Line from agent A to environment left edge -->
+  <line
+     x1="89.25"
+     y1="36.357536"
+     x2="173.25"
+     y2="36.357536"
+     stroke="#27ae60"
+     stroke-width="2"
+     marker-end="url(#arrowGreen)"
+     id="line40" />
+  <text
+     x="131.25"
+     y="27.357534"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#1e8449"
+     id="text42">writes</text>
+  <!-- ===== ARROW: Environment → Agent B (reads) ===== -->
+  <line
+     x1="437.25"
+     y1="45.863289"
+     x2="519.25"
+     y2="45.863289"
+     stroke="#e74c3c"
+     stroke-width="2"
+     marker-end="url(#arrowRed)"
+     id="line44" />
+  <text
+     x="478.25"
+     y="37.735847"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#922b21"
+     id="text46">reads</text>
+  <!-- ===== ARROW: Agent C → Environment (writes) ===== -->
+  <!-- ===== ARROW: Environment → Agent A (reads, lower) ===== -->
+  <line
+     x1="175.53194"
+     y1="64.169197"
+     x2="91.245743"
+     y2="63.253601"
+     stroke="#27ae60"
+     stroke-width="2"
+     stroke-dasharray="5, 3"
+     marker-end="url(#arrowGreen)"
+     id="line52" />
+  <text
+     x="127.25"
+     y="77.357536"
+     text-anchor="middle"
+     font-size="11px"
+     fill="#1e8449"
+     font-style="italic"
+     id="text54">reads</text>
+  <!-- ===== NO DIRECT ARROW between agents ===== -->
+  <!-- Label: No direct link -->
+  <!-- Cross marks -->
+  <!-- ===== LEGEND ===== -->
+  <!-- ===== ARROW MARKERS ===== -->
+  <defs
+     id="defs85">
+    <marker
+       id="arrowGreen"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#27ae60"
+         id="path76" />
+    </marker>
+    <marker
+       id="arrowRed"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#e74c3c"
+         id="path79" />
+    </marker>
+  </defs>
+</svg>

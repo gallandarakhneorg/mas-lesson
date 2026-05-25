@@ -1,0 +1,199 @@
+\begin{graphicspathcontext}{{./chapters/sarl/imgs/},{./chapters/sarl/imgs/auto/},\old}
+
+\begin{frame}[c]{Compatibility between SARL and Java}
+	\alertbox{SARL is 100\% compatible with Java}
+	\begin{center}
+		\includegraphics[width=.9\linewidth]{sarl-compilation-process}
+	\end{center}
+	\begin{itemize}
+	\item Any Java feature or library could be included and called from SARL.
+	\item A Java application could call any public feature from the SARL API.
+	\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Example of Convertion: Event}
+	\begin{columns}[c]
+		\begin{column}{.35\linewidth}
+			\begin{lstlisting}
+event Ping {
+
+  var value : Integer
+
+  new (v : int) {
+    value = v
+  }
+
+}
+\end{lstlisting}
+		\end{column}
+		\begin{column}{.05\linewidth}
+			\Emph{$\Rightarrow$}
+		\end{column}
+		\begin{column}{.55\linewidth}
+			\begin{lstlisting}[language=java]
+public class Ping extends Event {
+
+  private Integer value;
+
+  public Ping(final int v) {
+    this.value = Integer.valueOf(v);
+  }
+
+}
+\end{lstlisting}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{Example of Convertion: Agent}
+	\begin{columns}[c]
+		\begin{column}{.45\linewidth}
+			\begin{lstlisting}
+agent PongAgent {
+  uses
+    DefaultContextInteractions
+
+  on Initialize {
+    println(
+      "Waiting for ping")
+  }
+
+  on Ping {
+    println(
+       "Recv Ping: " +
+       occurrence.value)
+    println(
+       "Send Pong: " +
+       occurrence.value)
+    emit(new Pong(
+      occurrence.value))
+  }
+}
+\end{lstlisting}
+		\end{column}
+		\begin{column}{.05\linewidth}
+			\Emph{$\Rightarrow$}
+		\end{column}
+		\begin{column}{.55\linewidth}
+			\begin{lstlisting}[language=java]
+public class PongAgent extends Agent {
+
+  public PongAgent(final UUID parent,
+           final UUID id) {
+    super(parent, id);
+  }
+
+
+  @PerceptGuardEvaluator
+  private void $guard$Initialize(
+      final Initialize occurrence,
+      final Collection<Runnable>
+        $handlers) {
+    final Ping it = occurrence;
+    $handlers.add( () ->
+      $on$Initialize(occurrence));
+  }
+
+  private void $on$Initialize(
+      final Initialize occurrence) {
+    System.out.println(
+      "Waiting for ping");
+  }
+\end{lstlisting}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]{Example of Convertion: Agent}
+	\begin{columns}[c]
+		\begin{column}{.45\linewidth}
+			\begin{lstlisting}
+agent PongAgent {
+  uses
+    DefaultContextInteractions
+
+  on Initialize {
+    println(
+      "Waiting for ping")
+  }
+
+  on Ping {
+    println(
+       "Recv Ping: " +
+       occurrence.value)
+    println(
+       "Send Pong: " +
+       occurrence.value)
+    emit(new Pong(
+      occurrence.value))
+  }
+}
+\end{lstlisting}
+		\end{column}
+		\begin{column}{.05\linewidth}
+			\Emph{$\Rightarrow$}
+		\end{column}
+		\begin{column}{.55\linewidth}
+			\begin{lstlisting}[language=java]
+  @PerceptGuardEvaluator
+  private void $guard$Ping(
+      final Ping occurrence,
+      final Collection<Runnable>
+        $handlers) {
+    final Ping it = occurrence;
+    $handlers.add( () ->
+      $on$Ping(occurrence));
+  }
+
+  private void $on$Ping(
+      final Ping occurrence) {
+    System.out.println("Recv Ping: "
+      + occurrence.value);
+    System.out.println("Send Pong: "
+      + occurrence.value);
+    final DefaultContextInteractions s
+      = getSkill(
+    DefaultContextInteractions.class);
+    s.emit(new Pong(
+      occurrence.value));
+  }
+
+}
+\end{lstlisting}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\figureslide{SARL in the Eclipse IDE}{eclipse_about}
+
+\begin{frame}[t]{Runtime Environment for SARL (SRE)}
+	\smaller
+	\begin{block}{Runtime Environment Requirements}	
+	\begin{itemize}
+		\item Implements SARL concepts.
+		\item Provides Built-in Capacities.
+		\item Handles Agent's Lifecycle.
+		\item Handles resources.
+	\end{itemize}
+	\end{block}
+	\begin{block}{Janus as a SARL Runtime Environment}
+		\wrapfigure[width=1.5cm]{janus}
+		\begin{itemize}
+		\wrapitem{\alert{Fully distributed}.}
+		\wrapitem{\alert{Dynamic discovery of Kernels}.}
+		\wrapitem{\alert{Automatic synchronization of kernels' data (easy recovery)}.}
+		\item Micro-Kernel implementation.
+		\item Official website: \url{https://www.sarl.io/runtime/janus/}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput
+

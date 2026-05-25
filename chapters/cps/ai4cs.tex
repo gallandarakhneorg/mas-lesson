@@ -1,0 +1,72 @@
+\begin{graphicspathcontext}{{./chapters/cps/imgs/},{./chapters/cps/imgs/auto/},\old}
+
+\sidecite{LeCun2015DeepLearning}
+\begin{frame}[t]{AI as a Tool for Complex Systems}
+	\smaller
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Why AI matters for complexity}
+				\begin{itemize}
+				\item Learning from high-dimensional data streams
+				\item Pattern recognition in non-stationary environments
+				\item \emph{Autonomous} decision-making under uncertainty
+				\item Optimisation in exponential search spaces
+				\end{itemize}
+			\end{block}
+			\begin{block}{Relevant AI paradigms}
+				\begin{description}
+				\item[Machine Learning] {\smaller supervised, RL, unsupervised}
+				\item[Symbolic AI] {\smaller planning, knowledge representation}
+				\item[Evolutionary computation] {\smaller evolution, adaptation}
+				\item[Swarm intelligence] {\smaller MAS}
+				\end{description}
+			\end{block}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{stabularx}[title={AI $\cap$ Complex Systems}]{X|X}
+			\tabularhead{CS Property}{AI Technique} \\
+			Emergence & \Emph{MAS}, Machine learning \\
+			Adaptability & \Emph{MAS}, Reinforcement learning \\
+			Self-organization & \Emph{MAS}, Evolutionary algorithms \\
+			Non-linearity & \Emph{MAS} \& Deep learning \\
+			Decentralism  & \Emph{MAS} \\
+			\end{stabularx}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidecite{Weiss.99}
+\begin{frame}{{Distributed AI:} shift to decentralisation}
+	\begin{itemize}
+	\item Classical AI: \emph{centralised} reasoning on a single locus of control
+	\item Modern complex domains require \emph{distributed}, \emph{concurrent}, \emph{reactive} decision-making
+	\end{itemize}
+	\begin{columns}
+		\begin{column}{0.46\textwidth}
+			\begin{block}{Centralised AI}
+				\begin{itemize}
+				\item Single global world model
+				\item Scalability bottleneck
+				\item Single point of failure
+				\item Suitable for \emph{small, static} problems
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.46\textwidth}
+			\begin{alertblock}{Distributed AI / Multiagent system}
+				\begin{itemize}
+				\item Local world models per agent
+				\item Scalability
+				\item Fault tolerance
+				\item Suited for \emph{open, dynamic} environments
+				\end{itemize}
+			\end{alertblock}
+		\end{column}
+	\end{columns}
+	\vspace{.25cm}
+	\hiconbox{\Emph{Multiagent Systems} (MAS) emerge as the natural paradigm}{info-icon}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput

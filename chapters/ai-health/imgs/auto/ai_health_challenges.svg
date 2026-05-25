@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 781.49998 278.33984"
+   width="781.5"
+   height="278.33984"
+   version="1.1"
+   id="svg_challenges"
+   sodipodi:docname="ai_health_challenges.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs60" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.8902439"
+     inkscape:cx="605.2129"
+     inkscape:cy="264.51613"
+     inkscape:window-width="1690"
+     inkscape:window-height="1660"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg_challenges" />
+  <!-- Title -->
+  <!-- Row 1: 3 challenges -->
+  <!-- Challenge 1: Niveau de preuve -->
+  <rect
+     x="0.75"
+     y="0.75"
+     width="240"
+     height="120"
+     rx="10"
+     fill="#fff3f3"
+     stroke="#c0392b"
+     stroke-width="1.5"
+     id="c1_bg" />
+  <rect
+     x="0.75"
+     y="0.75"
+     width="240"
+     height="28"
+     rx="10"
+     fill="#c0392b"
+     id="c1_head" />
+  <rect
+     x="0.75"
+     y="14.75"
+     width="240"
+     height="14"
+     fill="#c0392b"
+     id="c1_head2" />
+  <text
+     x="120.75"
+     y="20.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="c1_title">⚠ Level of Evidence</text>
+  <text
+     x="120.75"
+     y="46.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c1_t1">Few randomized clinical trials</text>
+  <text
+     x="120.75"
+     y="62.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c1_t2">In vitro results □ clinical practice</text>
+  <text
+     x="120.75"
+     y="78.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c1_t3">Publication bias: negative studies</text>
+  <text
+     x="120.75"
+     y="94.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c1_t4">rarely published</text>
+  <text
+     x="120.75"
+     y="110.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c1_t5">→ Clinical validation essential</text>
+  <!-- Challenge 2: Biais algorithmiques -->
+  <rect
+     x="270.75"
+     y="0.75"
+     width="240"
+     height="120"
+     rx="10"
+     fill="#fff3f3"
+     stroke="#c0392b"
+     stroke-width="1.5"
+     id="c2_bg" />
+  <rect
+     x="270.75"
+     y="0.75"
+     width="240"
+     height="28"
+     rx="10"
+     fill="#c0392b"
+     id="c2_head" />
+  <rect
+     x="270.75"
+     y="14.75"
+     width="240"
+     height="14"
+     fill="#c0392b"
+     id="c2_head2" />
+  <text
+     x="390.75"
+     y="20.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="c2_title">⚠ Algorithmic Biases</text>
+  <text
+     x="390.75"
+     y="46.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c2_t1">Biased training data</text>
+  <text
+     x="390.75"
+     y="62.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c2_t2">Under-representation: women, elderly,</text>
+  <text
+     x="390.75"
+     y="78.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c2_t3">ethnic minorities</text>
+  <text
+     x="390.75"
+     y="94.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c2_t4">Risk of discrimination</text>
+  <text
+     x="390.75"
+     y="110.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c2_t5">→ Diverse data required</text>
+  <!-- Challenge 3: Explicabilité -->
+  <rect
+     x="540.75"
+     y="0.75"
+     width="240"
+     height="120"
+     rx="10"
+     fill="#fff3f3"
+     stroke="#c0392b"
+     stroke-width="1.5"
+     id="c3_bg" />
+  <rect
+     x="540.75"
+     y="0.75"
+     width="240"
+     height="28"
+     rx="10"
+     fill="#c0392b"
+     id="c3_head" />
+  <rect
+     x="540.75"
+     y="14.75"
+     width="240"
+     height="14"
+     fill="#c0392b"
+     id="c3_head2" />
+  <text
+     x="660.75"
+     y="20.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="c3_title">⚠ Explainability (XAI)</text>
+  <text
+     x="660.75"
+     y="46.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c3_t1">&quot;Black box&quot; models </text>
+  <text
+     x="660.75"
+     y="62.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c3_t2">Clinician must understand the</text>
+  <text
+     x="660.75"
+     y="78.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c3_t3">decision to take responsibility</text>
+  <text
+     x="660.75"
+     y="94.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c3_t4">EU AI Act: legal requirement </text>
+  <text
+     x="660.75"
+     y="110.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a1010"
+     id="c3_t5">→ Hybrid / neuro-symbolic AI</text>
+  <!-- Row 2: 3 challenges -->
+  <!-- Challenge 4: Hallucinations -->
+  <rect
+     x="0.75"
+     y="145.75"
+     width="240"
+     height="120"
+     rx="10"
+     fill="#fff8e8"
+     stroke="#e08000"
+     stroke-width="1.5"
+     id="c4_bg" />
+  <rect
+     x="0.75"
+     y="145.75"
+     width="240"
+     height="28"
+     rx="10"
+     fill="#e08000"
+     id="c4_head" />
+  <rect
+     x="0.75"
+     y="159.75"
+     width="240"
+     height="14"
+     fill="#e08000"
+     id="c4_head2" />
+  <text
+     x="120.75"
+     y="165.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="c4_title">⚠ LLM Hallucinations</text>
+  <text
+     x="120.75"
+     y="191.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c4_t1">False but plausible and confident</text>
+  <text
+     x="120.75"
+     y="207.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c4_t2">medical information</text>
+  <text
+     x="120.75"
+     y="223.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c4_t3">Life-threatening in clinical context</text>
+  <text
+     x="120.75"
+     y="239.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c4_t4">RAG + certified medical databases  </text>
+  <text
+     x="120.75"
+     y="255.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c4_t5">→ Mandatory human supervision </text>
+  <!-- Challenge 5: Responsabilité -->
+  <rect
+     x="270.75"
+     y="145.75"
+     width="240"
+     height="120"
+     rx="10"
+     fill="#fff8e8"
+     stroke="#e08000"
+     stroke-width="1.5"
+     id="c5_bg" />
+  <rect
+     x="270.75"
+     y="145.75"
+     width="240"
+     height="28"
+     rx="10"
+     fill="#e08000"
+     id="c5_head" />
+  <rect
+     x="270.75"
+     y="159.75"
+     width="240"
+     height="14"
+     fill="#e08000"
+     id="c5_head2" />
+  <text
+     x="390.75"
+     y="165.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="c5_title">⚠ Legal Liability</text>
+  <text
+     x="390.75"
+     y="191.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c5_t1">In case of error: doctor,</text>
+  <text
+     x="390.75"
+     y="207.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c5_t2">publisher or institution?</text>
+  <text
+     x="390.75"
+     y="223.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c5_t3">Insurance, CE/FDA certification  </text>
+  <text
+     x="390.75"
+     y="239.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c5_t4">Medical device (MDR 2017/745) </text>
+  <text
+     x="390.75"
+     y="255.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c5_t5">→  Legal framework under construction  n</text>
+  <!-- Challenge 6: Confidentialité -->
+  <rect
+     x="540.75"
+     y="145.75"
+     width="240"
+     height="120"
+     rx="10"
+     fill="#fff8e8"
+     stroke="#e08000"
+     stroke-width="1.5"
+     id="c6_bg" />
+  <rect
+     x="540.75"
+     y="145.75"
+     width="240"
+     height="28"
+     rx="10"
+     fill="#e08000"
+     id="c6_head" />
+  <rect
+     x="540.75"
+     y="159.75"
+     width="240"
+     height="14"
+     fill="#e08000"
+     id="c6_head2" />
+  <text
+     x="660.75"
+     y="165.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="c6_title">⚠ Privacy</text>
+  <text
+     x="660.75"
+     y="191.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c6_t1"> Health data = GDPR art. 9</text>
+  <text
+     x="660.75"
+     y="207.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c6_t2"> Mandatory HDS certification  </text>
+  <text
+     x="660.75"
+     y="223.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c6_t3">US CLOUD Act: sovereignty risk</text>
+  <text
+     x="660.75"
+     y="239.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c6_t4"> Re-identification possible  </text>
+  <text
+     x="660.75"
+     y="255.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a4000"
+     id="c6_t5">→ Sovereign hosting (HDS)</text>
+  <!-- credit -->
+  <text
+     x="390.75"
+     y="276.75"
+     text-anchor="middle"
+     style="font-size:8px;font-family:Arial;fill:#888888"
+     id="credit">[Generated by Claude Sonnet 4.6]</text>
+</svg>

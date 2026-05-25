@@ -1,0 +1,70 @@
+\begin{graphicspathcontext}{{./chapters/mas/imgs/},{./chapters/mas/imgs/auto/},\old}
+
+\begin{frame}{Why Go Beyond Objects?}
+	\begin{columns}
+		\begin{column}[t]{.5\linewidth}
+			\begin{block}{Object-Oriented Programming}
+				\begin{itemize}
+				\item Passive entities called by others
+				\item No autonomous decision-making
+				\item No perception of the world
+				\item No explicit notion of goals
+				\item Concurrency is ad-hoc
+				\end{itemize}
+			\end{block}
+			\vspace{.5cm}
+			\centering\includegraphics[width=.8\linewidth]{oop}
+		\end{column}
+		\begin{column}[t]{.5\linewidth}
+			\begin{block}{Agent-Oriented Programming}
+				\begin{description}
+				\item[Autonomous] acts on its own initiative
+				\item[Proactive] pursues goals
+				\item[Reactive] responds to the environment
+				\item[Social] interacts with other agents
+				\item Concurrency is \emph{native}
+				\end{description}
+			\end{block}
+			\vspace{.5cm}
+			\centering\includegraphics[width=.7\linewidth]{aop}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\figureslide{Levels of Abstraction in Software}{aop_abstraction_levels}
+
+\figureslide{{Sense-Decide-Act} Loop}{aop_agent_loop}
+
+\begin{frame}[t]{Several Agent Programming Languages and Frameworks}
+	\vspace{-.3cm}
+	\scriptsize
+	\begin{stabularx}{X|c|c|c|X}
+		\tabularhead{Language}{Type}{Architecture}{Lang.}{Application} \\
+		AgentSpeak / Jason \hrefbutton{https://jason-lang.github.io} & Declarative & BDI & AgentSpeak & Cognitive robotics, MAS research \\
+		\hline
+		Akka \hrefbutton{https://akka.io} & Imperative & Actor & Java, C\# & Reactive distributed systems, cloud \& microservices \\
+		\hline
+		GAMA \hrefbutton{https://gama-platform.org} & Hybrid & Any & GAML, Java & Spatial agent-based simulation, crisis management \\
+		\hline
+		JACK \hrefbutton{https://aosgrp.com/products/jack/} & Declarative & BDI & JACK, Java & Industry, defense \& critical systems \\
+		\hline
+		Jadex \hrefbutton{https://www.activecomponents.org} & Hybrid & BDI & Java & service-oriented MAS \\
+		\hline
+		JADE \hrefbutton{https://jade.tilab.com} & Imperative & FIPA & Java & Enterprise and IoT middleware \\
+		\hline
+		Mesa \hrefbutton{https://mesa.readthedocs.io} & Imperative & Any & Python & Rapid prototyping \\
+		\hline
+		NetLogo \hrefbutton{https://ccl.northwestern.edu/netlogo/} & Imperative & Any & Logo & Agent-based simulation, social \& natural sciences \\
+		\hline
+		Repast \hrefbutton{https://repast.github.io} & Imperative & Any & Java, C\# & Large-scale social simulation, urban modelling \\
+		\hline
+		SARL \hrefbutton{https://www.sarl.io} & Hybrid & Any, Holon & SARL, Java & General-purpose MAS, simulation, IoT \\
+		\hline
+		SPADE \hrefbutton{https://spade-mas.readthedocs.io} & Imperative & FIPA & & Chatbot \& IoT integration \\
+	\end{stabularx}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput
+

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="401.5"
+   height="261.5"
+   font-family="Arial, sans-serif"
+   font-size="12px"
+   version="1.1"
+   id="svg106"
+   sodipodi:docname="blackboard_motivation.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview108"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.7033333"
+     inkscape:cx="200.86313"
+     inkscape:cy="141.12207"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg106" />
+  <defs
+     id="defs8">
+    <marker
+       id="arr-blue"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 V 8 L 8,4 Z"
+         fill="#1e5aa0"
+         id="path5" />
+    </marker>
+  </defs>
+  <!-- ── LEFT PANEL: fully-connected mess ── -->
+  <rect
+     x="0.75"
+     y="0.75"
+     width="180"
+     height="260"
+     rx="8"
+     fill="#fff7f7"
+     stroke="#e07070"
+     stroke-width="1.5"
+     id="rect10" />
+  <text
+     x="90.75"
+     y="22.75"
+     text-anchor="middle"
+     fill="#c03030"
+     font-size="11px"
+     font-weight="bold"
+     id="text12">Without blackboard</text>
+  <!-- 5 agents arranged in a pentagon -->
+  <!-- positions: top(100,55) right(160,110) br(138,175) bl(62,175) left(40,110) -->
+  <!-- all-pairs edges (10 edges) -->
+  <line
+     x1="90.75"
+     y1="45.75"
+     x2="150.75"
+     y2="100.75"
+     stroke="#e07070"
+     stroke-width="1.2"
+     id="line14" />
+  <line
+     x1="90.75"
+     y1="45.75"
+     x2="128.75"
+     y2="165.75"
+     stroke="#e07070"
+     stroke-width="1.2"
+     id="line16" />
+  <line
+     x1="90.75"
+     y1="45.75"
+     x2="52.75"
+     y2="165.75"
+     stroke="#e07070"
+     stroke-width="1.2"
+     id="line18" />
+  <line
+     x1="90.75"
+     y1="45.75"
+     x2="30.75"
+     y2="100.75"
+     stroke="#e07070"
+     stroke-width="1.2"
+     id="line20" />
+  <line
+     x1="150.75"
+     y1="100.75"
+     x2="128.75"
+     y2="165.75"
+     stroke="#e07070"
+     stroke-width="1.2"
+     id="line22" />
+  <line
+     x1="150.75"
+     y1="100.75"
+     x2="52.75"
+     y2="165.75"
+     stroke="#e07070"
+     stroke-width="1.2"
+     id="line24" />
+  <line
+     x1="150.75"
+     y1="100.75"
+     x2="30.75"
+     y2="100.75"
+     stroke="#e07070"
+     stroke-width="1.2"
+     id="line26" />
+  <line
+     x1="128.75"
+     y1="165.75"
+     x2="52.75"
+     y2="165.75"
+     stroke="#e07070"
+     stroke-width="1.2"
+     id="line28" />
+  <line
+     x1="128.75"
+     y1="165.75"
+     x2="30.75"
+     y2="100.75"
+     stroke="#e07070"
+     stroke-width="1.2"
+     id="line30" />
+  <line
+     x1="52.75"
+     y1="165.75"
+     x2="30.75"
+     y2="100.75"
+     stroke="#e07070"
+     stroke-width="1.2"
+     id="line32" />
+  <!-- Agent circles -->
+  <circle
+     cx="90.75"
+     cy="45.75"
+     r="16"
+     fill="#e07070"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle34" />
+  <text
+     x="90.75"
+     y="50.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text36">A1</text>
+  <circle
+     cx="150.75"
+     cy="100.75"
+     r="16"
+     fill="#e07070"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle38" />
+  <text
+     x="150.75"
+     y="105.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text40">A2</text>
+  <circle
+     cx="128.75"
+     cy="165.75"
+     r="16"
+     fill="#e07070"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle42" />
+  <text
+     x="128.75"
+     y="170.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text44">A3</text>
+  <circle
+     cx="52.75"
+     cy="165.75"
+     r="16"
+     fill="#e07070"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle46" />
+  <text
+     x="52.75"
+     y="170.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text48">A4</text>
+  <circle
+     cx="30.75"
+     cy="100.75"
+     r="16"
+     fill="#e07070"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle50" />
+  <text
+     x="30.75"
+     y="105.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text52">A5</text>
+  <!-- coupling label -->
+  <text
+     x="90.75"
+     y="208.75"
+     text-anchor="middle"
+     fill="#c03030"
+     font-size="10px"
+     id="text54">n(n-1)/2 links</text>
+  <text
+     x="90.75"
+     y="223.75"
+     text-anchor="middle"
+     fill="#c03030"
+     font-size="10px"
+     id="text56">tight coupling</text>
+  <text
+     x="90.75"
+     y="243.75"
+     text-anchor="middle"
+     fill="#c03030"
+     font-size="12px"
+     font-weight="bold"
+     id="text58">10 links</text>
+  <!-- ── RIGHT PANEL: blackboard hub ── -->
+  <rect
+     x="210.75"
+     y="0.75"
+     width="190"
+     height="260"
+     rx="8"
+     fill="#f0f5ff"
+     stroke="#1e5aa0"
+     stroke-width="1.5"
+     id="rect60" />
+  <text
+     x="305.75"
+     y="22.75"
+     text-anchor="middle"
+     fill="#1e5aa0"
+     font-size="11px"
+     font-weight="bold"
+     id="text62">With blackboard</text>
+  <!-- Central blackboard -->
+  <rect
+     x="267.75"
+     y="90.75"
+     width="76"
+     height="60"
+     rx="7"
+     fill="#1e5aa0"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="rect64" />
+  <text
+     x="305.75"
+     y="116.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="10px"
+     font-weight="bold"
+     id="text66">Black-</text>
+  <text
+     x="305.75"
+     y="131.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="10px"
+     font-weight="bold"
+     id="text68">board</text>
+  <!-- 5 agents, same pentagon positions shifted right by 220 -->
+  <!-- top(315,55) right(375,110) br(353,190) bl(277,190) left(255,110) -->
+  <!-- Spokes only -->
+  <line
+     x1="305.75"
+     y1="53.75"
+     x2="305.75"
+     y2="90.75"
+     stroke="#1e5aa0"
+     stroke-width="1.5"
+     marker-end="url(#arr-blue)"
+     id="line70" />
+  <line
+     x1="361.75"
+     y1="108.75"
+     x2="343.75"
+     y2="108.75"
+     stroke="#1e5aa0"
+     stroke-width="1.5"
+     marker-end="url(#arr-blue)"
+     id="line72" />
+  <line
+     x1="338.75"
+     y1="172.75"
+     x2="330.75"
+     y2="153.75"
+     stroke="#1e5aa0"
+     stroke-width="1.5"
+     marker-end="url(#arr-blue)"
+     id="line74" />
+  <line
+     x1="272.75"
+     y1="172.75"
+     x2="282.75"
+     y2="153.75"
+     stroke="#1e5aa0"
+     stroke-width="1.5"
+     marker-end="url(#arr-blue)"
+     id="line76" />
+  <line
+     x1="249.75"
+     y1="108.75"
+     x2="267.75"
+     y2="108.75"
+     stroke="#1e5aa0"
+     stroke-width="1.5"
+     marker-end="url(#arr-blue)"
+     id="line78" />
+  <!-- Agent circles (blue) -->
+  <circle
+     cx="305.75"
+     cy="45.75"
+     r="16"
+     fill="#4a90d9"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle80" />
+  <text
+     x="305.75"
+     y="50.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text82">A1</text>
+  <circle
+     cx="365.75"
+     cy="108.75"
+     r="16"
+     fill="#4a90d9"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle84" />
+  <text
+     x="365.75"
+     y="113.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text86">A2</text>
+  <circle
+     cx="343.75"
+     cy="180.75"
+     r="16"
+     fill="#4a90d9"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle88" />
+  <text
+     x="343.75"
+     y="185.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text90">A3</text>
+  <circle
+     cx="267.75"
+     cy="180.75"
+     r="16"
+     fill="#4a90d9"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle92" />
+  <text
+     x="267.75"
+     y="185.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text94">A4</text>
+  <circle
+     cx="245.75"
+     cy="108.75"
+     r="16"
+     fill="#4a90d9"
+     stroke="#ffffff"
+     stroke-width="2"
+     id="circle96" />
+  <text
+     x="245.75"
+     y="113.75"
+     text-anchor="middle"
+     fill="#ffffff"
+     font-size="11px"
+     font-weight="bold"
+     id="text98">A5</text>
+  <!-- coupling label -->
+  <text
+     x="305.75"
+     y="218.75"
+     text-anchor="middle"
+     fill="#1e5aa0"
+     font-size="10px"
+     id="text100">n links only</text>
+  <text
+     x="305.75"
+     y="233.75"
+     text-anchor="middle"
+     fill="#1e5aa0"
+     font-size="10px"
+     id="text102">loose coupling</text>
+  <text
+     x="305.75"
+     y="250.75"
+     text-anchor="middle"
+     fill="#1e5aa0"
+     font-size="12px"
+     font-weight="bold"
+     id="text104">5 links</text>
+</svg>

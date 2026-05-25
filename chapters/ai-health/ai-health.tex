@@ -1,0 +1,176 @@
+\begin{graphicspathcontext}{{./chapters/ai-health/imgs/},{./chapters/ai-health/imgs/auto/},{./chapters/ai/imgs/},{./chapters/ai/imgs/auto/},\old}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{AI in healthcare:} A rich history}
+	\begin{stabularx}{X|X}
+	\tabularhead{Period}{Major advances} \\
+	1970s & \textbf{MYCIN}: first expert system for medical diagnosis (Stanford) \\
+	\hline
+	1990s & Computer-aided diagnosis (CAD) systems for imaging \\
+	\hline
+	2012--2016 & \textit{Deep learning}: diabetic retinopathy detection (Google DeepMind) \\
+	\hline
+	2017--2020 & First FDA approvals for radiological diagnostic AI \\
+	\hline
+	2022 & \textbf{AlphaFold 2}: prediction of the structure of all known proteins \\
+	\hline
+	2023--2025 & LLMs and conversational agents for clinical support \\
+	\end{stabularx}
+\end{frame}
+
+% -----------------------------------------------------------------------
+\figureslide{{AI in healthcare:} Overview of applications}{ai_health_applications}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{AI in healthcare:} New perspectives}
+	\alertbox{The rise of generative AI and LLMs is opening new avenues today}
+	\vspace{.25cm}
+	\begin{rightarrowsequence}
+	\arrow{Diagnosis assistance}
+	\arrow[bg=CIADlightgray,fg=black]{Medical image analysis, clinical decision support, exam interpretation}
+	\end{rightarrowsequence}
+	\vspace{.2cm}
+	\begin{rightarrowsequence}
+	\arrow{Therapeutic support}
+	\arrow[bg=CIADlightgray,fg=black]{Conversational agents for patient monitoring and adherence}
+	\end{rightarrowsequence}
+	\vspace{.2cm}
+	\begin{rightarrowsequence}
+	\arrow{Organizational optimization}
+	\arrow[bg=CIADlightgray,fg=black]{Scheduling, patient flow management, medical logistics}
+	\end{rightarrowsequence}
+	\vspace{.2cm}
+	\begin{rightarrowsequence}
+	\arrow{Biomedical research}
+	\arrow[bg=CIADlightgray,fg=black]{Drug discovery, precision medicine, genomics}
+	\end{rightarrowsequence}
+\end{frame}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{AI in healthcare:} Diagnosis assistance}
+	\footnotesize
+	\alertbox*{Over 500 AI tools approved by the FDA for radiology (2024)}
+	\begin{columns}
+		\begin{column}{.48\linewidth}
+			\begin{rightanchorblock}{Medical imaging}{1}
+			Radiology, MRI, CT: detection of tumors, fractures, pulmonary pathologies
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Pathology}{2}
+			Analysis of digitized slides for cancer cell detection
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Cardiology}{3}
+			Automatic ECG interpretation, detection of atrial fibrillation
+			\end{rightanchorblock}
+		\end{column}
+		\begin{column}{.52\linewidth}
+			\vspace{.1cm}
+			\begin{rightarrowsequence}
+			\arrow{Dermatology}
+			\arrow[bg=CIADlightgray,fg=black]{Melanoma detection from skin photos (Google DermAssist)}
+			\end{rightarrowsequence}
+			\vspace{.2cm}
+			\begin{rightarrowsequence}
+			\arrow{Ophthalmology}
+			\arrow[bg=CIADlightgray,fg=black]{Diabetic retinopathy screening — performance comparable to experts}
+			\end{rightarrowsequence}
+		\end{column}
+	\end{columns}
+	\normalsize
+\end{frame}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{AI in healthcare:} Therapeutic use of LLMs}
+	\footnotesize
+	\begin{columns}
+		\begin{column}{.55\linewidth}
+			\begin{rightanchorblock}{Smoking cessation}{1}
+			Study (2024): AI conversational agents improve 3-month abstinence rates vs. standard interventions, with 24/7 availability
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Mental health}{2}
+			\textit{Woebot}, \textit{Wysa}: monitoring of anxiety and depression, digital CBT, detection of crisis signals
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Treatment adherence}{3}
+			Personalized reminders, treatment explanation, side-effect monitoring, therapeutic education
+			\end{rightanchorblock}
+		\end{column}
+		\begin{column}{.45\linewidth}
+			\alertbox{Conversational agents \Emph{complement} care — they do not replace the physician}
+			\vspace{.3cm}
+			\alertbox*{Key challenge: clinical validation and regulatory framework (software as a medical device)}
+		\end{column}
+	\end{columns}
+	\normalsize
+\end{frame}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{AI in healthcare:} Optimization and scheduling}
+	\begin{stabularx}{X|X|X}
+	\tabularhead{Area}{Problem}{AI contribution} \\
+	Staff scheduling & Multi-constrained nurse schedules & Combinatorial optimization, natural language input \\
+	\hline
+	Operating rooms & Surgery sequencing & Minimization of cancellations, duration prediction \\
+	\hline
+	Patient flow & Emergency department admission forecasting & Predictive models for activity peaks \\
+	\hline
+	Medical logistics & Drug supply & Inventory forecasting, shortage reduction \\
+	\end{stabularx}
+\end{frame}
+
+
+% -----------------------------------------------------------------------
+\figureslide{{AI in healthcare:} Challenges to address}{ai_health_challenges}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{AI in healthcare:} Health data and privacy}
+	\footnotesize
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\alertbox*{Health data are among the most sensitive}
+			\vspace{.2cm}
+			\begin{rightanchorblock}{GDPR (art. 9)}{1}
+				Health data = special category. Processing subject to strict conditions and explicit consent
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{HDS certification}{2}
+				Health Data Hosting: mandatory certification in France for any hosting of patient data
+			\end{rightanchorblock}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{rightanchorblock}{Digital sovereignty}{3}
+				Where are the data hosted? The US CLOUD Act allows access to data even when hosted in Europe
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Limits of anonymization}{4}
+				Re-identification remains possible even on "anonymized" data — de-anonymization problem
+			\end{rightanchorblock}
+		\end{column}
+	\end{columns}
+	\normalsize
+\end{frame}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{AI in healthcare:} The EU AI Act and the medical sector}
+	\begin{columns}
+		\begin{column}{.45\linewidth}
+			\alertbox{The majority of medical AIs are classified as \Emph{High Risk} by the EU AI Act}
+			\vspace{.3cm}
+			\begin{rightanchorblock}{Requirements}{1}
+			Conformity assessment, logging, human oversight, transparency on training data
+			\end{rightanchorblock}
+		\end{column}
+		\begin{column}{.55\linewidth}
+			\begin{stabularx}{X|X}
+			\tabularhead{AI Category}{Examples in healthcare} \\
+			\textbf{Prohibited} & Psychiatric recidivism risk assessment \\
+			\hline
+			\textbf{High Risk} & Assisted diagnosis, emergency triage \\
+			\hline
+			\textbf{Limited Risk} & General health chatbots, patient information \\
+			\hline
+			\textbf{Minimal Risk} & Medication reminders, BMI calculation \\
+			\end{stabularx}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput

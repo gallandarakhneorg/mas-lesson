@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="332.52243"
+   height="187.43864"
+   viewBox="0 0 332.52243 187.43864"
+   version="1.1"
+   id="svg43"
+   sodipodi:docname="artifact_workspace.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview45"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.526087"
+     inkscape:cx="166.47349"
+     inkscape:cy="101.67078"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg43" />
+  <!-- Workspace border -->
+  <rect
+     x="1.2337372"
+     y="1.21764"
+     width="330.06479"
+     height="184.99794"
+     rx="12.002357"
+     fill="#f0f8ff"
+     stroke="#336699"
+     stroke-width="2.43528"
+     stroke-dasharray="8, 4"
+     id="rect4" />
+  <text
+     x="166.26614"
+     y="22.249962"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#336699"
+     id="text6">Workspace &quot;lab&quot;</text>
+  <!-- Artifact 1 -->
+  <rect
+     x="21.266138"
+     y="46.249962"
+     width="90"
+     height="60"
+     rx="7"
+     fill="#fff0cc"
+     stroke="#cc6600"
+     stroke-width="2"
+     id="rect8" />
+  <text
+     x="66.266136"
+     y="70.249962"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#993300"
+     id="text10">Counter</text>
+  <text
+     x="66.266136"
+     y="85.249962"
+     text-anchor="middle"
+     font-family="monospace"
+     font-size="9px"
+     fill="#555555"
+     id="text12">count(3)</text>
+  <!-- Artifact 2 -->
+  <rect
+     x="131.26614"
+     y="46.249962"
+     width="90"
+     height="60"
+     rx="7"
+     fill="#fff0cc"
+     stroke="#cc6600"
+     stroke-width="2"
+     id="rect14" />
+  <text
+     x="176.26614"
+     y="70.249962"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#993300"
+     id="text16">Queue</text>
+  <text
+     x="176.26614"
+     y="85.249962"
+     text-anchor="middle"
+     font-family="monospace"
+     font-size="9px"
+     fill="#555555"
+     id="text18">size(2)</text>
+  <!-- Artifact 3 -->
+  <rect
+     x="241.26614"
+     y="46.249962"
+     width="75"
+     height="60"
+     rx="7"
+     fill="#fff0cc"
+     stroke="#cc6600"
+     stroke-width="2"
+     id="rect20" />
+  <text
+     x="278.26614"
+     y="70.249962"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#993300"
+     id="text22">Lock</text>
+  <text
+     x="278.26614"
+     y="85.249962"
+     text-anchor="middle"
+     font-family="monospace"
+     font-size="9px"
+     fill="#555555"
+     id="text24">locked(F)</text>
+  <!-- Agent A -->
+  <!-- Agent B -->
+  <ellipse
+     cx="206.26614"
+     cy="154.24995"
+     rx="40"
+     ry="22"
+     fill="#d0e8ff"
+     stroke="#2255aa"
+     stroke-width="1.5"
+     id="ellipse30" />
+  <text
+     x="206.26614"
+     y="158.24995"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#1a3366"
+     id="text32">Agent B</text>
+  <!-- Agent arrows -->
+  <line
+     x1="70.044388"
+     y1="135.92908"
+     x2="66.039757"
+     y2="110.23934"
+     stroke="#0055cc"
+     stroke-width="1.5"
+     marker-end="url(#wa)"
+     id="line34" />
+  <line
+     x1="185.66464"
+     y1="135.56946"
+     x2="176.96086"
+     y2="108.87486"
+     stroke="#0055cc"
+     stroke-width="1.06985"
+     marker-end="url(#wa)"
+     id="line36" />
+  <defs
+     id="defs41">
+    <marker
+       id="wa"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#0055cc"
+         id="path38" />
+    </marker>
+  </defs>
+  <ellipse
+     cx="76.266136"
+     cy="154.24995"
+     rx="40"
+     ry="22"
+     fill="#d0e8ff"
+     stroke="#2255aa"
+     stroke-width="1.5"
+     id="ellipse26" />
+  <text
+     x="76.266136"
+     y="158.24995"
+     text-anchor="middle"
+     font-family="sans-serif"
+     font-size="11px"
+     fill="#1a3366"
+     id="text28">Agent A</text>
+</svg>

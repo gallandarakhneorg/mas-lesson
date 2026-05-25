@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 743.79657 428"
+   width="743.79657"
+   height="428"
+   font-family="'Segoe UI', Arial, sans-serif"
+   version="1.1"
+   id="svg124"
+   sodipodi:docname="simulation_lifecycle.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview126"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.6997651"
+     inkscape:cx="496.51801"
+     inkscape:cy="351.77909"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg124" />
+  <path
+     d="M 82.796542,262.14658 V 167.26509"
+     stroke="#555e75"
+     stroke-width="1.59065"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path90" />
+  <path
+     d="m 662.79654,166.62235 v 96.12246"
+     stroke="#555e75"
+     stroke-width="1.60102"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path84" />
+  <!-- Background -->
+  <!-- Title -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- Phase boxes: arranged in a cycle (hexagonal ring)  -->
+  <!-- We use 6 boxes placed in a circular layout         -->
+  <!-- Center: (550, 340), radius ~220                    -->
+  <!-- ═════════════════════════════════════��═════════════ -->
+  <!-- Phase angles (degrees): 270, 330, 30, 90, 150, 210 -->
+  <!-- = top, top-right, bot-right, bottom, bot-left, top-left -->
+  <!-- Colors per phase -->
+  <!-- 1 Problem Formulation  #4a90d9 (blue)   -->
+  <!-- 2 Model Design         #5bb86a (green)  -->
+  <!-- 3 Implementation       #e08c3b (orange) -->
+  <!-- 4 Verification         #9b5fc0 (violet) -->
+  <!-- 5 Validation           #d94f5c (red)    -->
+  <!-- 6 Experimentation      #3bb8b0 (teal)   -->
+  <!-- ── BOX HELPER: each box ~160×80, centered on cx,cy ── -->
+  <!-- 1. Problem Formulation  – top (270°) → cx=550, cy=120 -->
+  <g
+     id="phase1"
+     transform="translate(-177.20346,-79)">
+    <rect
+       x="470"
+       y="80"
+       width="160"
+       height="80"
+       rx="10"
+       fill="#4a90d9"
+       opacity="0.92"
+       id="rect8" />
+    <rect
+       x="470"
+       y="80"
+       width="160"
+       height="80"
+       rx="10"
+       fill="none"
+       stroke="#2c6fad"
+       stroke-width="2"
+       id="rect10" />
+    <text
+       x="550"
+       y="113"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text12">1. Problem</text>
+    <text
+       x="550"
+       y="131"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text14">Formulation</text>
+    <text
+       x="550"
+       y="151"
+       text-anchor="middle"
+       font-size="10.5px"
+       fill="#d8eaf9"
+       id="text16">Define objectives &amp; scope</text>
+  </g>
+  <!-- 2. Model Design – top-right (330°) → cx=840, cy=205 -->
+  <g
+     id="phase2"
+     transform="translate(-177.20346,-79)">
+    <rect
+       x="760"
+       y="165"
+       width="160"
+       height="80"
+       rx="10"
+       fill="#5bb86a"
+       opacity="0.92"
+       id="rect19" />
+    <rect
+       x="760"
+       y="165"
+       width="160"
+       height="80"
+       rx="10"
+       fill="none"
+       stroke="#3a8f48"
+       stroke-width="2"
+       id="rect21" />
+    <text
+       x="840"
+       y="198"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text23">2. Model</text>
+    <text
+       x="840"
+       y="216"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text25">Design</text>
+    <text
+       x="840"
+       y="236"
+       text-anchor="middle"
+       font-size="10.5px"
+       fill="#d5f0da"
+       id="text27">Conceptual &amp; mathematical model</text>
+  </g>
+  <!-- 3. Implementation – bottom-right (30°) → cx=840, cy=435 -->
+  <g
+     id="phase3"
+     transform="translate(-177.20346,-133)">
+    <rect
+       x="760"
+       y="395"
+       width="160"
+       height="80"
+       rx="10"
+       fill="#e08c3b"
+       opacity="0.92"
+       id="rect30" />
+    <rect
+       x="760"
+       y="395"
+       width="160"
+       height="80"
+       rx="10"
+       fill="none"
+       stroke="#b86718"
+       stroke-width="2"
+       id="rect32" />
+    <text
+       x="840"
+       y="428"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text34">3. Implementation</text>
+    <text
+       x="840"
+       y="448"
+       text-anchor="middle"
+       font-size="10.5px"
+       fill="#fde8cc"
+       id="text36">Code the simulation program</text>
+    <text
+       x="840"
+       y="464"
+       text-anchor="middle"
+       font-size="10.5px"
+       fill="#fde8cc"
+       id="text38">Select tools &amp; platform</text>
+  </g>
+  <!-- 4. Verification – bottom (90°) → cx=550, cy=520 -->
+  <g
+     id="phase4"
+     transform="translate(-177.20346,-133)">
+    <rect
+       x="470"
+       y="480"
+       width="160"
+       height="80"
+       rx="10"
+       fill="#9b5fc0"
+       opacity="0.92"
+       id="rect41" />
+    <rect
+       x="470"
+       y="480"
+       width="160"
+       height="80"
+       rx="10"
+       fill="none"
+       stroke="#6e3a92"
+       stroke-width="2"
+       id="rect43" />
+    <text
+       x="550"
+       y="513"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text45">4. Verification</text>
+    <text
+       x="550"
+       y="533"
+       text-anchor="middle"
+       font-size="10.5px"
+       fill="#ead6f7"
+       id="text47">Does the program match</text>
+    <text
+       x="550"
+       y="549"
+       text-anchor="middle"
+       font-size="10.5px"
+       fill="#ead6f7"
+       id="text49">the model design?</text>
+  </g>
+  <!-- 5. Validation – bottom-left (150°) → cx=260, cy=435 -->
+  <g
+     id="phase5"
+     transform="translate(-177.20346,-133)">
+    <rect
+       x="180"
+       y="395"
+       width="160"
+       height="80"
+       rx="10"
+       fill="#d94f5c"
+       opacity="0.92"
+       id="rect52" />
+    <rect
+       x="180"
+       y="395"
+       width="160"
+       height="80"
+       rx="10"
+       fill="none"
+       stroke="#a82b38"
+       stroke-width="2"
+       id="rect54" />
+    <text
+       x="260"
+       y="428"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text56">5. Validation</text>
+    <text
+       x="260"
+       y="448"
+       text-anchor="middle"
+       font-size="10.5px"
+       fill="#fad8db"
+       id="text58">Does the model match</text>
+    <text
+       x="260"
+       y="464"
+       text-anchor="middle"
+       font-size="10.5px"
+       fill="#fad8db"
+       id="text60">the real system?</text>
+  </g>
+  <!-- 6. Experimentation – top-left (210°) → cx=260, cy=205 -->
+  <g
+     id="phase6"
+     transform="translate(-177.20346,-79)">
+    <rect
+       x="180"
+       y="165"
+       width="160"
+       height="80"
+       rx="10"
+       fill="#3bb8b0"
+       opacity="0.92"
+       id="rect63" />
+    <rect
+       x="180"
+       y="165"
+       width="160"
+       height="80"
+       rx="10"
+       fill="none"
+       stroke="#1e8880"
+       stroke-width="2"
+       id="rect65" />
+    <text
+       x="260"
+       y="198"
+       text-anchor="middle"
+       font-size="13px"
+       font-weight="bold"
+       fill="#ffffff"
+       id="text67">6. Experimentation</text>
+    <text
+       x="260"
+       y="218"
+       text-anchor="middle"
+       font-size="10.5px"
+       fill="#caf2f0"
+       id="text69">&amp; Analysis</text>
+    <text
+       x="260"
+       y="236"
+       text-anchor="middle"
+       font-size="10.5px"
+       fill="#caf2f0"
+       id="text71">Run scenarios, collect results</text>
+  </g>
+  <!-- ═══════════════════════════════════ -->
+  <!--  ARROWS connecting phases (cycle)  -->
+  <!-- ═══════════════════════════════════ -->
+  <defs
+     id="defs80">
+    <marker
+       id="arrow"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="10,3.5 0,7 0,0 "
+         fill="#555e75"
+         id="polygon74" />
+    </marker>
+    <marker
+       id="arrow-back"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0,7 0,0 10,3.5 "
+         fill="#bbbbbb"
+         id="polygon77" />
+    </marker>
+  </defs>
+  <!-- Arrow style: solid forward, dashed feedback -->
+  <!-- 1→2: top → top-right  (from right of box1 to left of box2) -->
+  <path
+     d="m 452.74649,35.91923 q 79.12203,0 128.5733,74.13909"
+     stroke="#555e75"
+     stroke-width="1.85758"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path82" />
+  <!-- 2→3: top-right → bottom-right (from bottom of box2 to top of box3) -->
+  <!-- 3→4: bottom-right → bottom (from left of box3 to right of box4) -->
+  <path
+     d="m 582.79654,302 q -60,55 -130,75"
+     stroke="#555e75"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path86" />
+  <!-- 4→5: bottom → bottom-left (from left of box4 to right of box5) -->
+  <path
+     d="m 292.79654,387 q -70,0 -130,-70"
+     stroke="#555e75"
+     stroke-width="2"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path88" />
+  <!-- 5→6: bottom-left → top-left (from top of box5 to bottom of box6) -->
+  <!-- 6→1: top-left → top (from right of box6 to left of box1) -->
+  <path
+     d="M 160.86231,91.012782 Q 242.16425,44.968967 292.97796,33.786906"
+     stroke="#555e75"
+     stroke-width="1.6352"
+     fill="none"
+     marker-end="url(#arrow)"
+     id="path92" />
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- Feedback arrows (dashed): back to redesign -->
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- Verification failure → back to Implementation (3) -->
+  <path
+     d="m 372.95227,347.02873 q 69.10834,-75.23599 207.325,-50.15733"
+     stroke="#9b5fc0"
+     stroke-width="1.78022"
+     fill="none"
+     stroke-dasharray="6, 4"
+     marker-end="url(#arrow-back)"
+     opacity="0.75"
+     id="path94" />
+  <text
+     x="510.79654"
+     y="285"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#9b5fc0"
+     opacity="0.9"
+     font-style="italic"
+     id="text96">fix code</text>
+  <!-- Validation failure → back to Model Design (2) -->
+  <path
+     d="M 7.2154819,262.26137 Q -15.674208,214.57127 37.735062,166.88116"
+     stroke="#d94f5c"
+     stroke-width="0.700191"
+     fill="none"
+     stroke-dasharray="6, 4"
+     marker-end="url(#arrow-back)"
+     opacity="0.75"
+     id="path98" />
+  <text
+     x="-146.20016"
+     y="145.11346"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#d94f5c"
+     opacity="0.9"
+     font-style="italic"
+     transform="rotate(-54.536509)"
+     id="text100">revise model</text>
+  <!-- ════════════════════ -->
+  <!--  Central Label      -->
+  <!-- ════════════════════ -->
+  <ellipse
+     cx="372.79654"
+     cy="202"
+     rx="85"
+     ry="60"
+     fill="#ffffff"
+     stroke="#c0c8d8"
+     stroke-width="1.5"
+     opacity="0.9"
+     id="ellipse102" />
+  <text
+     x="372.79654"
+     y="189"
+     text-anchor="middle"
+     font-size="12px"
+     font-weight="bold"
+     fill="#1a2340"
+     id="text104">Simulation</text>
+  <text
+     x="372.79654"
+     y="207"
+     text-anchor="middle"
+     font-size="12px"
+     font-weight="bold"
+     fill="#1a2340"
+     id="text106">Lifecycle</text>
+  <text
+     x="372.79654"
+     y="226"
+     text-anchor="middle"
+     font-size="10px"
+     fill="#555e75"
+     id="text108">Iterative process</text>
+  <!-- ═══════════════════════════════════ -->
+  <!--  Legend for feedback arrows        -->
+  <!-- ═══════════════════════════════════ -->
+  <g
+     id="g1050"
+     transform="translate(-99.848656,-150.87056)">
+    <rect
+       x="102.16025"
+       y="530.18561"
+       width="205.59647"
+       height="48.169907"
+       rx="5.1399117"
+       fill="#ffffff"
+       stroke="#c0c8d8"
+       stroke-width="1.0301"
+       id="rect110" />
+    <line
+       x1="114.2452"
+       y1="547.27057"
+       x2="150.24521"
+       y2="547.27057"
+       stroke="#555e75"
+       stroke-width="2"
+       id="line112" />
+    <polygon
+       points="68,575.5 68,568.5 78,572 "
+       fill="#555e75"
+       id="polygon114"
+       transform="translate(82.245203,-24.729404)" />
+    <text
+       x="166.24521"
+       y="551.27057"
+       font-size="11px"
+       fill="#333333"
+       id="text116">Normal progression</text>
+    <line
+       x1="114.2452"
+       y1="567.27057"
+       x2="150.24521"
+       y2="567.27057"
+       stroke="#888888"
+       stroke-width="1.6"
+       stroke-dasharray="5, 3"
+       id="line118" />
+    <polygon
+       points="68,595.5 68,588.5 78,592 "
+       fill="#bbbbbb"
+       id="polygon120"
+       transform="translate(82.245203,-24.729404)" />
+    <text
+       x="166.24521"
+       y="571.27057"
+       font-size="11px"
+       fill="#333333"
+       id="text122">Feedback / correction loop</text>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+\begin{graphicspathcontext}{{./chapters/hmas/imgs/},{./chapters/hmas/imgs/auto/},\old}
+
+\begin{frame}{{Holonic MAS:} Definition}
+	\smaller
+	\begin{definitionblock}{Holonic Multiagent System \cite{Gerber.99}}
+		A \Emph{Holonic Multiagent System} (HMAS) is a multiagent system in which each agent is a holon: it can simultaneously act as an \Emph{autonomous agent} (with its own goals, beliefs, and actions) and as a \Emph{super-agent} containing other agents in an inner context
+	\end{definitionblock}
+	\vspace{.25cm}
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Key new concepts}
+				\begin{description}
+				\item[Holonic agent] the basic entity
+				\item[Super-holon] a holon that \emph{contains} members
+				\item[Part-holon] a member of a super-holon
+				\item[Inner context] the MAS formed by the members
+				\item[Outer context] the MAS in which the super-holon
+				participates.
+				\end{description}
+			\end{block}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{alertblock}{Central challenge}
+				The same entity must manage two distinct interaction spaces at the same time:
+				\begin{enumerate}
+				\item Interactions with \emph{peers} in the outer context
+				\item Coordination with \emph{members} in the inner context
+				\end{enumerate}
+			\end{alertblock}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{{HMAS:} Main Advantages}
+	\smaller
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Why use HMAS?}
+				\begin{description}
+				\item[Multi-level abstraction] model a system at the level that is appropriate for each concern
+				\item[Dynamic granularity] merge or split holons at runtime
+				\item[Scalability] manage large populations through hierarchical decomposition
+				\item[Reuse] the same holonic structure can be composed into larger systems
+				\item[Faithful to reality] natural and social systems \emph{are holarchic}
+				\end{description}
+			\end{block}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Application domains}
+				\begin{itemize}
+				\item Manufacturing systems (PROSA~\cite{brussel98reference})
+				\item Transport \& logistics
+				\item Robotic teams
+				\item Healthcare workflows
+				\item Large-scale simulation
+				\item Distributed computing
+				\end{itemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{{HMAS:} Open Challenges}
+	\begin{enumerate}
+	\item[Dual identity] How can an entity be an agent \emph{and} a group simultaneously?  What semantics does this imply?
+	\item[Cross-level communication] How is information transformed and routed between abstraction levels?
+	\item[Decision making] Who decides --- the super-holon or its members?  When does the super-holon act as a whole?
+	\item[Membership dynamics] How are new members integrated? How does leaving affect the super-holon?
+	\item[Emergence] How to observe, predict and control emergent behaviour across levels?
+	\item[Formal specification] How to model and verify properties of holarchies?
+	\end{enumerate}
+\end{frame}
+
+\sidecite{SebastianThesis}
+\figureslide{{Holonic MAS} vs.\ Agent Environment}{holons-environment-relationships}
+
+\end{graphicspathcontext}
+
+\endinput
+

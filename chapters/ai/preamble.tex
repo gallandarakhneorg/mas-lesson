@@ -1,0 +1,70 @@
+\begin{graphicspathcontext}{{./chapters/ai/imgs/},{./chapters/ai/imgs/auto/},\old}
+
+\resolvepicturename{ia-data}
+\addfancyboxpicture{data-based-ai}{\resolvedfilename}
+
+\resolvepicturename{ia-knowledge}
+\addfancyboxpicture{knowledge-based-ai}{\resolvedfilename}
+
+\resolvepicturename{ia-expert}
+\addfancyboxpicture{model-based-ai}{\resolvedfilename}
+
+\resolvepicturename{intelligences_cognitive}
+\addiconboxpicture{intelligences-cognitive}{\resolvedfilename}
+
+\resolvepicturename{intelligences_collective}
+\addiconboxpicture{intelligences-collective}{\resolvedfilename}
+
+\resolvepicturename{intelligences_social}
+\addiconboxpicture{intelligences-social}{\resolvedfilename}
+
+\resolvepicturename{intelligences_emotional}
+\addiconboxpicture{intelligences-emotional}{\resolvedfilename}
+
+\end{graphicspathcontext}
+
+% Define flags for adaptive slides
+\newif\ifMinskyAI\MinskyAItrue %AI definition from Minsky 1961
+\newif\ifOECDAI\OECDAItrue %AI Definition of OECD 2024
+\newif\ifEUAIAct\EUAIActtrue %AI Definition of EU AI Act 2024
+\gdef\adaptAIdefinitioncontent{%
+	\global\let\talkadaptivesize\relax%
+	\global\let\talkadaptivevspacea\relax%
+	\global\let\talkadaptivevspacea\relax%
+	\global\let\talkadaptivevspaceb\relax%
+	\ifMinskyAI%
+		\ifOECDAI%
+			\ifEUAIAct%
+				\global\let\talkadaptivesize\smaller%
+				\gdef\talkadaptivevspacea{\vspace{.25cm}}%
+				\gdef\talkadaptivevspaceb{\vspace{.25cm}}%
+				\gdef\talkadaptivesidecite{\sidecite{minsky_ai_1961,oecd_explanatory_memorandum_2024,eu_ai_act_art3}}%
+			\else%
+				\gdef\talkadaptivevspacea{\vspace{.25cm}}%
+				\gdef\talkadaptivesidecite{\sidecite{minsky_ai_1961,oecd_explanatory_memorandum_2024}}%
+			\fi%
+		\else%
+			\gdef\talkadaptivevspacea{\vspace{.25cm}}%
+			\ifEUAIAct%
+				\gdef\talkadaptivesidecite{\sidecite{minsky_ai_1961,eu_ai_act_art3}}%
+			\else%
+				\gdef\talkadaptivesidecite{\sidecite{minsky_ai_1961}}%
+			\fi%
+		\fi%
+	\else%
+		\ifOECDAI%
+			\ifEUAIAct%
+				\gdef\talkadaptivevspaceb{\vspace{.25cm}}%
+				\gdef\talkadaptivesidecite{\sidecite{oecd_explanatory_memorandum_2024,eu_ai_act_art3}}%
+			\else%
+				\gdef\talkadaptivesidecite{\sidecite{oecd_explanatory_memorandum_2024}}%
+			\fi%
+		\else%
+			\ifEUAIAct%
+				\gdef\talkadaptivesidecite{\sidecite{eu_ai_act_art3}}%
+			\fi%
+		\fi%
+	\fi%
+}
+
+\endinput

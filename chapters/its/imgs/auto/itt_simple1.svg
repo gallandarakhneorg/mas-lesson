@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1630.3813"
+   height="855.58221"
+   id="svg2"
+   version="1.1"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="itt_simple1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3793">
+      <stop
+         style="stop-color:#cfcfcf;stop-opacity:1;"
+         offset="0"
+         id="stop3795" />
+      <stop
+         style="stop-color:#808080;stop-opacity:1;"
+         offset="1"
+         id="stop3797" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3793"
+       id="radialGradient3799"
+       cx="20.000002"
+       cy="656.03058"
+       fx="20.000002"
+       fy="656.03058"
+       r="75.35714"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient3793-0">
+      <stop
+         style="stop-color:#cfcfcf;stop-opacity:1;"
+         offset="0"
+         id="stop3795-8" />
+      <stop
+         style="stop-color:#a20d59;stop-opacity:1;"
+         offset="1"
+         id="stop3797-9" />
+    </linearGradient>
+    <radialGradient
+       r="75.35714"
+       fy="656.03058"
+       fx="20.000002"
+       cy="656.03058"
+       cx="20.000002"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient3816"
+       xlink:href="#linearGradient3793-0"
+       inkscape:collect="always" />
+    <linearGradient
+       id="linearGradient3793-7">
+      <stop
+         style="stop-color:#cfcfcf;stop-opacity:1;"
+         offset="0"
+         id="stop3795-2" />
+      <stop
+         style="stop-color:#37d8e8;stop-opacity:1;"
+         offset="1"
+         id="stop3797-90" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3793-8">
+      <stop
+         style="stop-color:#cfcfcf;stop-opacity:1;"
+         offset="0"
+         id="stop3795-1" />
+      <stop
+         style="stop-color:#00527c;stop-opacity:1;"
+         offset="1"
+         id="stop3797-3" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3793-72">
+      <stop
+         style="stop-color:#cfcfcf;stop-opacity:1;"
+         offset="0"
+         id="stop3795-3" />
+      <stop
+         style="stop-color:#cfcd2e;stop-opacity:1;"
+         offset="1"
+         id="stop3797-0" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3793-2">
+      <stop
+         style="stop-color:#cfcf8d;stop-opacity:1;"
+         offset="0"
+         id="stop3795-6" />
+      <stop
+         style="stop-color:#808050;stop-opacity:1;"
+         offset="1"
+         id="stop3797-02" />
+    </linearGradient>
+    <radialGradient
+       r="75.35714"
+       fy="656.03058"
+       fx="20.000002"
+       cy="656.03058"
+       cx="20.000002"
+       gradientUnits="userSpaceOnUse"
+       id="radialGradient3901"
+       xlink:href="#linearGradient3793-2"
+       inkscape:collect="always" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3793-7"
+       id="radialGradient3351"
+       gradientUnits="userSpaceOnUse"
+       cx="20.000002"
+       cy="656.03058"
+       fx="20.000002"
+       fy="656.03058"
+       r="75.35714" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3793-8"
+       id="radialGradient4139"
+       gradientUnits="userSpaceOnUse"
+       cx="20.000002"
+       cy="656.03058"
+       fx="20.000002"
+       fy="656.03058"
+       r="75.35714" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3793-72"
+       id="radialGradient4159"
+       gradientUnits="userSpaceOnUse"
+       cx="20.000002"
+       cy="656.03058"
+       fx="20.000002"
+       fy="656.03058"
+       r="75.35714" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3793"
+       id="radialGradient4231"
+       gradientUnits="userSpaceOnUse"
+       cx="20.000002"
+       cy="656.03058"
+       fx="20.000002"
+       fy="656.03058"
+       r="75.35714" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3793-0"
+       id="radialGradient4233"
+       gradientUnits="userSpaceOnUse"
+       cx="20.000002"
+       cy="656.03058"
+       fx="20.000002"
+       fy="656.03058"
+       r="75.35714" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3793-7"
+       id="radialGradient4235"
+       gradientUnits="userSpaceOnUse"
+       cx="20.000002"
+       cy="656.03058"
+       fx="20.000002"
+       fy="656.03058"
+       r="75.35714" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3793-72"
+       id="radialGradient4237"
+       gradientUnits="userSpaceOnUse"
+       cx="20.000002"
+       cy="656.03058"
+       fx="20.000002"
+       fy="656.03058"
+       r="75.35714" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3793-8"
+       id="radialGradient4239"
+       gradientUnits="userSpaceOnUse"
+       cx="20.000002"
+       cy="656.03058"
+       fx="20.000002"
+       fy="656.03058"
+       r="75.35714" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="824.28447"
+     inkscape:cy="184.85791"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3066"
+     showgrid="false"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Base &lt;1-&gt;"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(986.62183,209.40195)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <circle
+       style="display:inline;fill:#ededed;fill-opacity:1;stroke:#ededed;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3920-9"
+       transform="translate(-614.73423,-356.47189)"
+       cx="398.57144"
+       cy="554.60205"
+       r="160" />
+    <circle
+       style="fill:#cccccc;fill-opacity:1;stroke:#cccccc;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3920"
+       transform="translate(-559.01993,-350.75758)"
+       cx="398.57144"
+       cy="554.60205"
+       r="77.14286" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="-504.28571"
+       y="279.51935"
+       id="text4032"
+       transform="translate(72.4552,263.38198)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M -431.87528,-83.296618 -129.02172,192.4141"
+       id="path3940"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3953"
+       d="M -10.446713,-61.868046 -129.02172,192.4141"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 48.124715,349.56053 -129.02172,192.4141"
+       id="path3955"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3957"
+       d="M -276.161,532.41767 -129.02172,192.4141"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -584.73243,250.9891 455.71071,-58.575"
+       id="path3959"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <circle
+       style="display:inline;fill:url(#radialGradient3901);fill-opacity:1;stroke:#808080;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3015-6"
+       transform="matrix(0.45023695,0,0,0.45023695,-143.67126,-109.74412)"
+       cx="35.714287"
+       cy="677.45917"
+       r="72.85714" />
+  </g>
+  <g
+     style="display:inline"
+     transform="translate(986.62183,209.40195)"
+     id="g3066"
+     inkscape:groupmode="layer"
+     inkscape:label="Wireless &lt;1,3-&gt;"
+     sodipodi:insensitive="true">
+    <text
+       transform="translate(72.4552,263.38198)"
+       id="text3072"
+       y="279.51935"
+       x="-504.28571"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve" />
+    <circle
+       transform="translate(-470.4485,-759.32902)"
+       id="path3090"
+       style="fill:url(#radialGradient4231);fill-opacity:1;stroke:#808080;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       cx="35.714287"
+       cy="677.45917"
+       r="72.85714" />
+    <text
+       id="text3098"
+       y="-176.15555"
+       x="-547.60474"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="-176.15555"
+         x="-547.60474"
+         id="tspan3100"
+         sodipodi:role="line">Wireless</tspan><tspan
+         id="tspan3102"
+         y="-131.15555"
+         x="-547.60474"
+         sodipodi:role="line">Communications</tspan></text>
+  </g>
+  <g
+     inkscape:label="Big Wireless &lt;2&gt;"
+     inkscape:groupmode="layer"
+     id="g4161"
+     transform="translate(986.62183,209.40195)"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="-504.28571"
+       y="279.51935"
+       id="text4163"
+       transform="translate(72.4552,263.38198)" />
+    <circle
+       style="fill:url(#radialGradient3799);fill-opacity:1;stroke:#808080;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4167"
+       transform="translate(-470.4485,-759.32902)"
+       cx="35.714287"
+       cy="677.45917"
+       r="117.30385" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
+       x="-547.60474"
+       y="-176.15555"
+       id="text4169"><tspan
+         sodipodi:role="line"
+         id="tspan4171"
+         x="-547.60474"
+         y="-176.15555"
+         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans Bold'">Wireless</tspan><tspan
+         sodipodi:role="line"
+         x="-547.60474"
+         y="-131.15555"
+         id="tspan4173"
+         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans Bold'">Communications</tspan></text>
+  </g>
+  <g
+     inkscape:label="comptech &lt;1-2,4-&gt;"
+     inkscape:groupmode="layer"
+     id="g3188"
+     transform="translate(986.62183,209.40195)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="-504.28571"
+       y="279.51935"
+       id="text3190"
+       transform="translate(72.4552,263.38198)" />
+    <circle
+       style="display:inline;fill:url(#radialGradient4233);fill-opacity:1;stroke:#a20d59;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path3194"
+       transform="translate(-623.30565,-429.329)"
+       cx="35.714287"
+       cy="677.45917"
+       r="72.85714" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="-684.93823"
+       y="361.9082"
+       id="text3210"><tspan
+         sodipodi:role="line"
+         x="-684.93823"
+         y="361.9082"
+         id="tspan3212">Computational</tspan><tspan
+         sodipodi:role="line"
+         x="-684.93823"
+         y="406.9082"
+         id="tspan3214">Technologies</tspan></text>
+  </g>
+  <g
+     style="display:none"
+     transform="translate(986.62183,209.40195)"
+     id="g4175"
+     inkscape:groupmode="layer"
+     inkscape:label="Big comptech &lt;3&gt;"
+     sodipodi:insensitive="true">
+    <text
+       transform="translate(72.4552,263.38198)"
+       id="text4177"
+       y="279.51935"
+       x="-504.28571"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve" />
+    <circle
+       transform="translate(-623.30565,-429.329)"
+       id="path4181"
+       style="display:inline;fill:url(#radialGradient3816);fill-opacity:1;stroke:#a20d59;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       cx="35.714287"
+       cy="677.45917"
+       r="123.36477" />
+    <text
+       id="text4183"
+       y="361.9082"
+       x="-684.93823"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan4185"
+         y="361.9082"
+         x="-684.93823"
+         sodipodi:role="line"
+         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans Bold'">Computational</tspan><tspan
+         id="tspan4187"
+         y="406.9082"
+         x="-684.93823"
+         sodipodi:role="line"
+         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans Bold'">Technologies</tspan></text>
+  </g>
+  <g
+     style="display:inline"
+     transform="translate(986.62183,209.40195)"
+     id="g3329"
+     inkscape:groupmode="layer"
+     inkscape:label="data &lt;1-3,5-&gt;"
+     sodipodi:insensitive="true">
+    <text
+       transform="translate(72.4552,263.38198)"
+       id="text3331"
+       y="279.51935"
+       x="-504.28571"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve" />
+    <circle
+       transform="translate(-303.59237,-172.24517)"
+       id="path3335"
+       style="display:inline;fill:url(#radialGradient4235);fill-opacity:1;stroke:#2aa3af;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       cx="35.714287"
+       cy="677.45917"
+       r="72.85714" />
+    <text
+       id="text3337"
+       y="549.79657"
+       x="-464.72498"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan3341"
+         y="549.79657"
+         x="-464.72498"
+         sodipodi:role="line">Floating </tspan><tspan
+         y="594.79657"
+         x="-464.72498"
+         sodipodi:role="line"
+         id="tspan3345">Car/Cellular Data</tspan></text>
+  </g>
+  <g
+     inkscape:label="Big data &lt;4&gt;"
+     inkscape:groupmode="layer"
+     id="g4189"
+     transform="translate(986.62183,209.40195)"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="-504.28571"
+       y="279.51935"
+       id="text4191"
+       transform="translate(72.4552,263.38198)" />
+    <circle
+       style="display:inline;fill:url(#radialGradient3351);fill-opacity:1;stroke:#2aa3af;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4195"
+       transform="translate(-303.59237,-172.24517)"
+       cx="35.714287"
+       cy="677.45917"
+       r="133.46629" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="-464.72498"
+       y="549.79657"
+       id="text4197"><tspan
+         sodipodi:role="line"
+         x="-464.72498"
+         y="549.79657"
+         id="tspan4199"
+         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans Bold'">Floating </tspan><tspan
+         id="tspan4201"
+         sodipodi:role="line"
+         x="-464.72498"
+         y="594.79657"
+         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans Bold'">Car/Cellular Data</tspan></text>
+  </g>
+  <g
+     style="display:inline"
+     transform="translate(986.62183,209.40195)"
+     id="g4141"
+     inkscape:groupmode="layer"
+     inkscape:label="inductiveloop &lt;1-4,7-&gt;"
+     sodipodi:insensitive="true">
+    <text
+       transform="translate(72.4552,263.38198)"
+       id="text4143"
+       y="279.51935"
+       x="-504.28571"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve" />
+    <circle
+       transform="translate(-42.973015,-755.10319)"
+       id="path4147"
+       style="display:inline;fill:url(#radialGradient4237);fill-opacity:1;stroke:#cdcb2d;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       cx="35.714287"
+       cy="677.45917"
+       r="72.85714" />
+    <text
+       id="text4149"
+       y="12.395415"
+       x="131.63068"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         id="tspan4153"
+         y="12.395415"
+         x="131.63068"
+         sodipodi:role="line">Inductive Loop Detection</tspan><tspan
+         y="57.395416"
+         x="131.63068"
+         sodipodi:role="line"
+         id="tspan4157">Sensing Technologies</tspan></text>
+  </g>
+  <g
+     inkscape:label="Big inductiveloop &lt;5-6&gt;"
+     inkscape:groupmode="layer"
+     id="g4203"
+     transform="translate(986.62183,209.40195)"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="-504.28571"
+       y="279.51935"
+       id="text4205"
+       transform="translate(72.4552,263.38198)" />
+    <circle
+       style="display:inline;fill:url(#radialGradient4159);fill-opacity:1;stroke:#cdcb2d;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4209"
+       transform="translate(-42.973015,-755.10319)"
+       cx="35.714287"
+       cy="677.45917"
+       r="123.36477" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="131.63068"
+       y="12.395415"
+       id="text4211"><tspan
+         sodipodi:role="line"
+         x="131.63068"
+         y="12.395415"
+         id="tspan4213"
+         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans Bold'">Inductive Loop Detection</tspan><tspan
+         id="tspan4215"
+         sodipodi:role="line"
+         x="131.63068"
+         y="57.395416"
+         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans Bold'">Sensing Technologies</tspan></text>
+  </g>
+  <g
+     inkscape:label="video &lt;1-4,5-6&gt;"
+     inkscape:groupmode="layer"
+     id="g4121"
+     transform="translate(986.62183,209.40195)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       x="-504.28571"
+       y="279.51935"
+       id="text4123"
+       transform="translate(72.4552,263.38198)" />
+    <circle
+       style="display:inline;fill:url(#radialGradient4239);fill-opacity:1;stroke:#00527c;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4127"
+       transform="translate(15.615832,-328.81882)"
+       cx="35.714287"
+       cy="677.45917"
+       r="72.85714" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       x="181.12814"
+       y="474.03513"
+       id="text4129"><tspan
+         id="tspan4133"
+         sodipodi:role="line"
+         x="181.12814"
+         y="474.03513">Video Vehicle</tspan><tspan
+         sodipodi:role="line"
+         x="181.12814"
+         y="519.03516"
+         id="tspan4137">Detection</tspan></text>
+  </g>
+  <g
+     style="display:none"
+     transform="translate(986.62183,209.40195)"
+     id="g4217"
+     inkscape:groupmode="layer"
+     inkscape:label="Big video &lt;7&gt;"
+     sodipodi:insensitive="true">
+    <text
+       transform="translate(72.4552,263.38198)"
+       id="text4219"
+       y="279.51935"
+       x="-504.28571"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve" />
+    <circle
+       transform="translate(15.615832,-328.81882)"
+       id="path4223"
+       style="display:inline;fill:url(#radialGradient4139);fill-opacity:1;stroke:#00527c;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       cx="35.714287"
+       cy="677.45917"
+       r="125.38507" />
+    <text
+       id="text4225"
+       y="474.03513"
+       x="181.12814"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:36px;line-height:125%;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         y="474.03513"
+         x="181.12814"
+         sodipodi:role="line"
+         id="tspan4227"
+         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans Bold'">Video Vehicle</tspan><tspan
+         id="tspan4229"
+         y="519.03516"
+         x="181.12814"
+         sodipodi:role="line"
+         style="font-weight:bold;-inkscape-font-specification:'DejaVu Sans Bold'">Detection</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,176 @@
+\begin{graphicspathcontext}{{./chapters/ai-health/imgs/},{./chapters/ai-health/imgs/auto/},{./chapters/ai/imgs/},{./chapters/ai/imgs/auto/},\old}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{L'IA en santé :} Une histoire riche}
+	\begin{stabularx}{X|X}
+	\tabularhead{Période}{Avancées majeures} \\
+	Années 70 & \textbf{MYCIN} : premier système expert de diagnostic médical (Stanford) \\
+	\hline
+	Années 90 & Systèmes d'aide au diagnostic par imagerie (CAD) \\
+	\hline
+	2012--2016 & \textit{Deep learning} : détection de la rétinopathie diabétique (Google DeepMind) \\
+	\hline
+	2017--2020 & Premières approbations FDA pour des IA de diagnostic radiologique \\
+	\hline
+	2022 & \textbf{AlphaFold 2} : prédiction de la structure de toutes les protéines connues \\
+	\hline
+	2023--2025 & LLMs et agents conversationnels en support clinique \\
+	\end{stabularx}
+\end{frame}
+
+% -----------------------------------------------------------------------
+\figureslide{{L'IA en santé :} Vue d'ensemble des applications}{ai_health_applications}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{L'IA en santé :} De nouvelles perspectives}
+	\alertbox{L'essor de l'IA générative et des LLMs ouvre aujourd'hui de nouvelles voies}
+	\vspace{.25cm}
+	\begin{rightarrowsequence}
+	\arrow{Assistance au diagnostic}
+	\arrow[bg=CIADlightgray,fg=black]{Analyse d'images médicales, aide à la décision clinique, interprétation d'examens}
+	\end{rightarrowsequence}
+	\vspace{.2cm}
+	\begin{rightarrowsequence}
+	\arrow{Support thérapeutique}
+	\arrow[bg=CIADlightgray,fg=black]{Agents conversationnels pour le suivi des patients et l'observance}
+	\end{rightarrowsequence}
+	\vspace{.2cm}
+	\begin{rightarrowsequence}
+	\arrow{Optimisation organisationnelle}
+	\arrow[bg=CIADlightgray,fg=black]{Planification, gestion des flux patients, logistique médicale}
+	\end{rightarrowsequence}
+	\vspace{.2cm}
+	\begin{rightarrowsequence}
+	\arrow{Recherche biomédicale}
+	\arrow[bg=CIADlightgray,fg=black]{Découverte de médicaments, médecine de précision, génomique}
+	\end{rightarrowsequence}
+\end{frame}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{L'IA en santé :} Assistance au diagnostic}
+	\footnotesize
+	\alertbox*{Plus de 500 outils d'IA approuvés par la FDA pour la radiologie (2024)}
+	\begin{columns}
+		\begin{column}{.48\linewidth}
+			\begin{rightanchorblock}{Imagerie médicale}{1}
+			Radiologie, IRM, scanner : détection de tumeurs, fractures, pathologies pulmonaires
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Anatomopathologie}{2}
+			Analyse de lames numérisées pour la détection de cellules cancéreuses
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Cardiologie}{3}
+			Interprétation automatique des ECG, détection de fibrillations atriales
+			\end{rightanchorblock}
+		\end{column}
+		\begin{column}{.52\linewidth}
+			\vspace{.1cm}
+			\begin{rightarrowsequence}
+			\arrow{Dermatologie}
+			\arrow[bg=CIADlightgray,fg=black]{Détection de mélanomes à partir de photos cutanées (Google DermAssist)}
+			\end{rightarrowsequence}
+			\vspace{.2cm}
+			\begin{rightarrowsequence}
+			\arrow{Ophtalmologie}
+			\arrow[bg=CIADlightgray,fg=black]{Dépistage de la rétinopathie diabétique — performances comparables à l'expert}
+			\end{rightarrowsequence}
+		\end{column}
+	\end{columns}
+	\normalsize
+\end{frame}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{L'IA en santé :} Utilisation thérapeutique des LLMs}
+	\footnotesize
+	\begin{columns}
+		\begin{column}{.55\linewidth}
+			\begin{rightanchorblock}{Arrêt du tabac}{1}
+			Étude (2024) : les agents conversationnels IA améliorent les taux d'abstinence à 3 mois vs. interventions classiques, avec une disponibilité 24h/24
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Santé mentale}{2}
+			\textit{Woebot}, \textit{Wysa} : suivi de l'anxiété et de la dépression, TCC numérique, détection de signaux de crise
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Observance thérapeutique}{3}
+			Rappels personnalisés, explication des traitements, suivi des effets indésirables, éducation thérapeutique
+			\end{rightanchorblock}
+		\end{column}
+		\begin{column}{.45\linewidth}
+			\alertbox{Les agents conversationnels \Emph{complètent} la prise en charge --- ils ne remplacent pas le médecin}
+			\vspace{.3cm}
+			\alertbox*{Enjeu clé : validation clinique et encadrement réglementaire (dispositif médical logiciel)}
+		\end{column}
+	\end{columns}
+	\normalsize
+\end{frame}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{L'IA en santé :} Optimisation et planification}
+	\begin{stabularx}{X|X|X}
+	\tabularhead{Domaine}{Problème}{Apport de l'IA} \\
+	Planning du personnel & Plannings infirmiers multi-contraintes & Optimisation combinatoire, saisie en langage naturel \\
+	\hline
+	Blocs opératoires & Ordonnancement des interventions & Minimisation des annulations, prédiction des durées \\
+	\hline
+	Flux patients & Anticipation des admissions aux urgences & Modèles prédictifs pour les pics d'activité \\
+	\hline
+	Logistique médicale & Approvisionnement en médicaments & Prévision des stocks, réduction des ruptures \\
+	\end{stabularx}
+\end{frame}
+
+
+% -----------------------------------------------------------------------
+\figureslide{{L'IA en santé :} Des défis à résoudre}{ai_health_challenges}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{L'IA en santé :} Données de santé et confidentialité}
+	\footnotesize
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\alertbox*{Les données de santé sont parmi les plus sensibles}
+			\vspace{.2cm}
+			\begin{rightanchorblock}{RGPD (art. 9)}{1}
+				Données de santé = catégorie particulière. Traitement soumis à des conditions strictes et au consentement explicite
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Certification HDS}{2}
+				Hébergement des Données de Santé : certification obligatoire en France pour tout hébergement de données patients
+			\end{rightanchorblock}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{rightanchorblock}{Souveraineté numérique}{3}
+				Où les données sont-elles hébergées ? Le CLOUD Act américain permet l'accès aux données même hébergées en Europe
+			\end{rightanchorblock}
+			\begin{rightanchorblock}{Limites de l'anonymisation}{4}
+				La ré-identification reste possible même sur des données « anonymisées » --- problème de désanonymisation
+			\end{rightanchorblock}
+		\end{column}
+	\end{columns}
+	\normalsize
+\end{frame}
+
+% -----------------------------------------------------------------------
+\begin{frame}[t]{{L'IA en santé :} L'EU AI Act et le secteur médical}
+	\begin{columns}
+		\begin{column}{.45\linewidth}
+			\alertbox{La majorité des IA médicales sont classées \Emph{Risque Élevé} par l'EU AI Act}
+			\vspace{.3cm}
+			\begin{rightanchorblock}{Exigences}{1}
+			Évaluation de conformité, journalisation, supervision humaine, transparence sur les données d'entraînement
+			\end{rightanchorblock}
+		\end{column}
+		\begin{column}{.55\linewidth}
+			\begin{stabularx}{X|X}
+			\tabularhead{Catégorie IA}{Exemples en santé} \\
+			\textbf{Interdit} & Évaluation du risque de récidive psychiatrique \\
+			\hline
+			\textbf{Risque Élevé} & Diagnostic assisté, priorisation aux urgences \\
+			\hline
+			\textbf{Risque Limité} & Chatbots de santé généralistes, information patient \\
+			\hline
+			\textbf{Risque Minimal} & Rappels médicaments, calcul d'IMC \\
+			\end{stabularx}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput

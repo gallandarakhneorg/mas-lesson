@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 760 303.70001"
+   width="760"
+   height="303.70001"
+   version="1.1"
+   id="svg108"
+   sodipodi:docname="sarl_capacity_skill_agent.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"><sodipodi:namedview
+   id="namedview110"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="1.3366043"
+   inkscape:cx="362.85983"
+   inkscape:cy="224.0753"
+   inkscape:window-width="1920"
+   inkscape:window-height="1011"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg108" />
+<defs
+   id="defs12">
+  <!-- Arrow marker -->
+  <marker
+     id="arrow"
+     markerWidth="10"
+     markerHeight="7"
+     refX="9"
+     refY="3.5"
+     orient="auto">
+    <polygon
+       points="10,3.5 0,7 0,0 "
+       fill="#005494"
+       id="polygon2" />
+  </marker>
+  <marker
+     id="arrow-orange"
+     markerWidth="10"
+     markerHeight="7"
+     refX="9"
+     refY="3.5"
+     orient="auto">
+    <polygon
+       points="10,3.5 0,7 0,0 "
+       fill="#dc6400"
+       id="polygon5" />
+  </marker>
+  <marker
+     id="arrow-green"
+     markerWidth="10"
+     markerHeight="7"
+     refX="9"
+     refY="3.5"
+     orient="auto">
+    <polygon
+       points="0,0 10,3.5 0,7 "
+       fill="#008c50"
+       id="polygon8" />
+  </marker>
+  <!-- Drop shadow -->
+</defs>
+<!-- ===== Background ===== -->
+<!-- ===================================================
+       CAPACITY box  (left column)
+  ==================================================== -->
+<!-- header band -->
+<rect
+   x="0"
+   y="0"
+   width="220"
+   height="44"
+   rx="12"
+   fill="#005494"
+   id="rect18" />
+<rect
+   x="0"
+   y="30"
+   width="220"
+   height="14"
+   fill="#005494"
+   id="rect20" />
+<text
+   x="110"
+   y="28"
+   text-anchor="middle"
+   font-family="'DejaVu Sans', Arial, sans-serif"
+   font-size="17px"
+   font-weight="bold"
+   fill="#ffffff"
+   id="text22">Capacity</text>
+<!-- stereotype label -->
+<text
+   x="110"
+   y="62"
+   text-anchor="middle"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11px"
+   fill="#005494"
+   id="text24">«interface»</text>
+<!-- action signatures -->
+<line
+   x1="20"
+   y1="74"
+   x2="200"
+   y2="74"
+   stroke="#005494"
+   stroke-width="1"
+   stroke-dasharray="4, 3"
+   id="line26" />
+<text
+   x="25"
+   y="94"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11.5px"
+   fill="#333333"
+   id="text28">def action1()</text>
+<text
+   x="25"
+   y="113"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11.5px"
+   fill="#333333"
+   id="text30">def action2(p : String)</text>
+<text
+   x="25"
+   y="132"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11.5px"
+   fill="#999999"
+   id="text32">// no body</text>
+<!-- description -->
+<foreignObject
+   x="38"
+   y="215"
+   width="204"
+   height="130">
+  <xhtml:div
+     style="font-family:Arial,sans-serif; font-size:12px; color:#223; line-height:1.45"><xhtml:b>Role:</xhtml:b>
+ specifies <xhtml:em>what</xhtml:em>
+ an agent can do.<xhtml:br />
+
+      Contains action <xhtml:b>signatures only</xhtml:b>
+.<xhtml:br />
+
+      No fields, no code body.<xhtml:br />
+<xhtml:br />
+
+      Compiled to a <xhtml:b>Java interface</xhtml:b>
+.
+    </xhtml:div>
+</foreignObject>
+<!-- keyword badge -->
+<rect
+   x="35.286522"
+   y="226.03641"
+   width="150.1234"
+   height="21.927168"
+   rx="5.7739763"
+   fill="#005494"
+   opacity="0.15"
+   stroke="#005494"
+   stroke-width="1.07283"
+   id="rect34" />
+<text
+   x="110"
+   y="241"
+   text-anchor="middle"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="12px"
+   fill="#005494"
+   id="text36">capacity MyCap { … }</text>
+<!-- ===================================================
+       SKILL box  (middle column)
+  ==================================================== -->
+<!-- header band -->
+<rect
+   x="270"
+   y="0"
+   width="220"
+   height="44"
+   rx="12"
+   fill="#008c50"
+   id="rect40" />
+<rect
+   x="270"
+   y="30"
+   width="220"
+   height="14"
+   fill="#008c50"
+   id="rect42" />
+<text
+   x="380"
+   y="28"
+   text-anchor="middle"
+   font-family="'DejaVu Sans', Arial, sans-serif"
+   font-size="17px"
+   font-weight="bold"
+   fill="#ffffff"
+   id="text44">Skill</text>
+<!-- stereotype label -->
+<text
+   x="380"
+   y="62"
+   text-anchor="middle"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11px"
+   fill="#008c50"
+   id="text46">«class»</text>
+<!-- action implementations -->
+<line
+   x1="290"
+   y1="74"
+   x2="470"
+   y2="74"
+   stroke="#008c50"
+   stroke-width="1"
+   stroke-dasharray="4, 3"
+   id="line48" />
+<text
+   x="295"
+   y="94"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11.5px"
+   fill="#333333"
+   id="text50">def action1() {</text>
+<text
+   x="305"
+   y="112"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11.5px"
+   fill="#555555"
+   id="text52">// code body</text>
+<text
+   x="295"
+   y="130"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11.5px"
+   fill="#333333"
+   id="text54">}</text>
+<!-- description -->
+<foreignObject
+   x="308"
+   y="215"
+   width="204"
+   height="130">
+  <xhtml:div
+     style="font-family:Arial,sans-serif; font-size:12px; color:#223; line-height:1.45"><xhtml:b>Role:</xhtml:b>
+ implements <xhtml:em>how</xhtml:em>
+ actions are done.<xhtml:br />
+
+      Declares which capacity it <xhtml:b>implements</xhtml:b>
+.<xhtml:br />
+
+      Has a lifecycle:<xhtml:br />
+<xhtml:tt>install()</xhtml:tt>
+ / <xhtml:tt>uninstall()</xhtml:tt>
+.<xhtml:br />
+
+      Compiled to a <xhtml:b>Java class</xhtml:b>
+.
+    </xhtml:div>
+</foreignObject>
+<!-- keyword badge -->
+<rect
+   x="275.77979"
+   y="226.01678"
+   width="207.55389"
+   height="21.966446"
+   rx="5.3493271"
+   fill="#008c50"
+   opacity="0.15"
+   stroke="#008c50"
+   stroke-width="1.03356"
+   id="rect56" />
+<text
+   x="380"
+   y="241"
+   text-anchor="middle"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="12px"
+   fill="#008c50"
+   id="text58">skill MySki implements MyCap</text>
+<!-- ===================================================
+       AGENT box  (right column)
+  ==================================================== -->
+<!-- header band -->
+<rect
+   x="540"
+   y="0"
+   width="220"
+   height="44"
+   rx="12"
+   fill="#dc6400"
+   id="rect62" />
+<rect
+   x="540"
+   y="30"
+   width="220"
+   height="14"
+   fill="#dc6400"
+   id="rect64" />
+<text
+   x="650"
+   y="28"
+   text-anchor="middle"
+   font-family="'DejaVu Sans', Arial, sans-serif"
+   font-size="17px"
+   font-weight="bold"
+   fill="#ffffff"
+   id="text66">Agent</text>
+<!-- stereotype label -->
+<text
+   x="650"
+   y="62"
+   text-anchor="middle"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11px"
+   fill="#dc6400"
+   id="text68">«autonomous entity»</text>
+<line
+   x1="560"
+   y1="74"
+   x2="740"
+   y2="74"
+   stroke="#dc6400"
+   stroke-width="1"
+   stroke-dasharray="4, 3"
+   id="line70" />
+<text
+   x="565"
+   y="94"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11.5px"
+   fill="#333333"
+   id="text72">uses MyCap</text>
+<text
+   x="565"
+   y="112"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11.5px"
+   fill="#333333"
+   id="text74">on Initialize {</text>
+<text
+   x="575"
+   y="130"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11.5px"
+   fill="#555555"
+   id="text76">setSkill(new MySki)</text>
+<text
+   x="565"
+   y="148"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="11.5px"
+   fill="#333333"
+   id="text78">}</text>
+<!-- description -->
+<foreignObject
+   x="578"
+   y="225"
+   width="204"
+   height="120">
+  <xhtml:div
+     style="font-family:Arial,sans-serif; font-size:12px; color:#223; line-height:1.45"><xhtml:b>Role:</xhtml:b>
+ autonomous entity that acts.<xhtml:br />
+
+      Declares needed capacities with <xhtml:tt>uses</xhtml:tt>
+.<xhtml:br />
+
+      Binds skills with <xhtml:tt>setSkill()</xhtml:tt>
+.<xhtml:br />
+
+      Reacts to events with <xhtml:tt>on</xhtml:tt>
+ handlers.
+    </xhtml:div>
+</foreignObject>
+<!-- keyword badge -->
+<rect
+   x="570"
+   y="226"
+   width="160"
+   height="22"
+   rx="5"
+   fill="#dc6400"
+   opacity="0.15"
+   stroke="#dc6400"
+   stroke-width="1"
+   id="rect80" />
+<text
+   x="650"
+   y="241"
+   text-anchor="middle"
+   font-family="'DejaVu Sans Mono', 'Courier New', monospace"
+   font-size="12px"
+   fill="#dc6400"
+   id="text82">agent MyAgent { … }</text>
+<!-- ===================================================
+       Arrows
+  ==================================================== -->
+<!-- Skill --implements-->
+ Capacity  (solid, green) --&gt;
+  <line
+   x1="270"
+   y1="95"
+   x2="223"
+   y2="95"
+   stroke="#008c50"
+   stroke-width="2.2"
+   marker-end="url(#arrow-green)"
+   id="line84" />
+<text
+   x="245"
+   y="112"
+   text-anchor="middle"
+   font-family="Arial, sans-serif"
+   font-size="10.5px"
+   fill="#008c50"
+   font-style="italic"
+   id="text86">implements</text>
+<!-- Agent --uses-->
+ Capacity  (dashed, blue) --&gt;
+  <line
+   x1="540.56238"
+   y1="179.59412"
+   x2="222.8"
+   y2="179.30672"
+   stroke="#005494"
+   stroke-width="2"
+   stroke-dasharray="6, 4"
+   marker-end="url(#arrow)"
+   id="line88" />
+<text
+   x="386.76788"
+   y="195.22636"
+   text-anchor="middle"
+   font-family="Arial, sans-serif"
+   font-size="10.5px"
+   fill="#005494"
+   font-style="italic"
+   id="text90">uses (declares need)</text>
+<!-- Agent --setSkill-->
+ Skill  (solid, orange) --&gt;
+  <line
+   x1="540"
+   y1="130"
+   x2="493"
+   y2="130"
+   stroke="#dc6400"
+   stroke-width="2.2"
+   marker-end="url(#arrow-orange)"
+   id="line92" />
+<text
+   x="516"
+   y="119"
+   text-anchor="middle"
+   font-family="Arial, sans-serif"
+   font-size="10.5px"
+   fill="#dc6400"
+   font-style="italic"
+   id="text94">setSkill()</text>
+<!-- ===================================================
+       Bottom legend row
+  ==================================================== -->
+<!-- solid green = implements -->
+<line
+   x1="42"
+   y1="296"
+   x2="82"
+   y2="296"
+   stroke="#008c50"
+   stroke-width="2.2"
+   marker-end="url(#arrow-green)"
+   id="line96" />
+<text
+   x="88"
+   y="300"
+   font-family="Arial, sans-serif"
+   font-size="11.5px"
+   fill="#333333"
+   id="text98">Skill implements Capacity</text>
+<!-- dashed blue = uses -->
+<line
+   x1="292"
+   y1="296"
+   x2="332"
+   y2="296"
+   stroke="#005494"
+   stroke-width="2"
+   stroke-dasharray="6, 4"
+   marker-end="url(#arrow)"
+   id="line100" />
+<text
+   x="338"
+   y="300"
+   font-family="Arial, sans-serif"
+   font-size="11.5px"
+   fill="#333333"
+   id="text102">Agent uses Capacity</text>
+<!-- solid orange = setSkill -->
+<line
+   x1="542"
+   y1="296"
+   x2="582"
+   y2="296"
+   stroke="#dc6400"
+   stroke-width="2.2"
+   marker-end="url(#arrow-orange)"
+   id="line104" />
+<text
+   x="588"
+   y="300"
+   font-family="Arial, sans-serif"
+   font-size="11.5px"
+   fill="#333333"
+   id="text106">Agent binds Skill at runtime</text>
+</svg>

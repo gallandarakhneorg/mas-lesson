@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 572 231.75"
+   width="572"
+   height="231.75"
+   version="1.1"
+   id="svg51"
+   sodipodi:docname="sarl_event_hierarchy.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview53"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.25"
+     inkscape:cx="273.6"
+     inkscape:cy="111.6"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg51" />
+  <!-- Event base -->
+  <rect
+     x="196"
+     y="1"
+     width="170"
+     height="50"
+     rx="8"
+     fill="#fffde7"
+     stroke="#f57f17"
+     stroke-width="2"
+     id="rect4" />
+  <text
+     x="281"
+     y="22"
+     font-family="monospace"
+     font-size="13px"
+     font-weight="bold"
+     fill="#e65100"
+     text-anchor="middle"
+     id="text6">Event</text>
+  <text
+     x="281"
+     y="39"
+     font-family="monospace"
+     font-size="10px"
+     fill="#555555"
+     text-anchor="middle"
+     id="text8">source : Address</text>
+  <!-- Built-in events -->
+  <rect
+     x="1"
+     y="111"
+     width="140"
+     height="50"
+     rx="8"
+     fill="#e3f2fd"
+     stroke="#1565c0"
+     stroke-width="2"
+     id="rect10" />
+  <text
+     x="71"
+     y="133"
+     font-family="monospace"
+     font-size="12px"
+     font-weight="bold"
+     fill="#1565c0"
+     text-anchor="middle"
+     id="text12">Initialize</text>
+  <text
+     x="71"
+     y="149"
+     font-family="monospace"
+     font-size="10px"
+     fill="#555555"
+     text-anchor="middle"
+     id="text14">parameters : Object[]</text>
+  <rect
+     x="166"
+     y="111"
+     width="120"
+     height="50"
+     rx="8"
+     fill="#e3f2fd"
+     stroke="#1565c0"
+     stroke-width="2"
+     id="rect16" />
+  <text
+     x="226"
+     y="133"
+     font-family="monospace"
+     font-size="12px"
+     font-weight="bold"
+     fill="#1565c0"
+     text-anchor="middle"
+     id="text18">Destroy</text>
+  <text
+     x="226"
+     y="149"
+     font-family="monospace"
+     font-size="10px"
+     fill="#aaaaaa"
+     text-anchor="middle"
+     id="text20">(no fields)</text>
+  <!-- User event -->
+  <rect
+     x="311"
+     y="111"
+     width="150"
+     height="50"
+     rx="8"
+     fill="#f3e5f5"
+     stroke="#6a1b9a"
+     stroke-width="2"
+     id="rect22" />
+  <text
+     x="386"
+     y="133"
+     font-family="monospace"
+     font-size="12px"
+     font-weight="bold"
+     fill="#6a1b9a"
+     text-anchor="middle"
+     id="text24">MyEvent</text>
+  <text
+     x="386"
+     y="149"
+     font-family="monospace"
+     font-size="10px"
+     fill="#555555"
+     text-anchor="middle"
+     id="text26">message : String</text>
+  <!-- Sub-user event -->
+  <g
+     id="g516"
+     transform="translate(-29,-19)">
+    <rect
+       x="510"
+       y="130"
+       width="90"
+       height="50"
+       rx="8"
+       fill="#fce4ec"
+       stroke="#880e4f"
+       stroke-width="2"
+       id="rect28" />
+    <text
+       x="555"
+       y="152"
+       font-family="monospace"
+       font-size="12px"
+       font-weight="bold"
+       fill="#880e4f"
+       text-anchor="middle"
+       id="text30">BaseEvent</text>
+    <text
+       x="555"
+       y="168"
+       font-family="monospace"
+       font-size="10px"
+       fill="#555555"
+       text-anchor="middle"
+       id="text32">extra : int</text>
+  </g>
+  <!-- Inheritance lines -->
+  <line
+     x1="281"
+     y1="51"
+     x2="71"
+     y2="111"
+     stroke="#888888"
+     stroke-width="1.5"
+     id="line34" />
+  <line
+     x1="281"
+     y1="51"
+     x2="226"
+     y2="111"
+     stroke="#888888"
+     stroke-width="1.5"
+     id="line36" />
+  <line
+     x1="281"
+     y1="51"
+     x2="386"
+     y2="111"
+     stroke="#888888"
+     stroke-width="1.5"
+     id="line38" />
+  <line
+     x1="281.00693"
+     y1="50.388725"
+     x2="493.1524"
+     y2="111.50189"
+     stroke="#888888"
+     stroke-width="2.15182"
+     id="line38-3" />
+  <line
+     x1="524.92639"
+     y1="160.539"
+     x2="524.96423"
+     y2="212.43599"
+     stroke="#888888"
+     stroke-width="0.69975"
+     id="line40" />
+  <!-- SubEvent level 2 -->
+  <g
+     id="g526"
+     transform="translate(-29,-19)">
+    <rect
+       x="510"
+       y="220"
+       width="90"
+       height="30"
+       rx="6"
+       fill="#fce4ec"
+       stroke="#880e4f"
+       stroke-width="1.5"
+       id="rect42" />
+    <text
+       x="555"
+       y="239"
+       font-family="monospace"
+       font-size="10px"
+       font-weight="bold"
+       fill="#880e4f"
+       text-anchor="middle"
+       id="text44">SpecialEvent</text>
+  </g>
+  <!-- Arrow heads (open, inheritance) -->
+  <defs
+     id="defs49" />
+</svg>

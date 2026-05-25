@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 790.68951 403.38941"
+   width="790.68951"
+   height="403.3894"
+   version="1.1"
+   id="svg_ai_health"
+   sodipodi:docname="ai_health_applications.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.8902439"
+     inkscape:cx="101.04516"
+     inkscape:cy="354.71613"
+     inkscape:window-width="1726"
+     inkscape:window-height="1285"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg_ai_health" />
+  <defs
+     id="defs1">
+    <marker
+       id="arrowhead"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#1a3c6e"
+         id="path_arrow" />
+    </marker>
+  </defs>
+  <line
+     x1="181.20116"
+     y1="324.3862"
+     x2="328.20117"
+     y2="217.38618"
+     stroke="#2a7a2a"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c7" />
+  <line
+     x1="183.63347"
+     y1="78.391983"
+     x2="331.63345"
+     y2="183.39198"
+     stroke="#1a3c6e"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c1" />
+  <line
+     x1="495.4664"
+     y1="68.373924"
+     x2="440.80872"
+     y2="158.03181"
+     stroke="#c06000"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c3" />
+  <!-- Central hub -->
+  <ellipse
+     cx="399.93951"
+     cy="200.75"
+     rx="72"
+     ry="52"
+     fill="#1a3c6e"
+     id="hub_bg" />
+  <text
+     x="399.93951"
+     y="192.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="hub_t1">AI in</text>
+  <text
+     x="399.93951"
+     y="208.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="hub_t2">Healthcare</text>
+  <!-- === IMAGERIE MÉDICALE (top-left) === -->
+  <rect
+     x="9.9395103"
+     y="10.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#e8f0fb"
+     stroke="#1a3c6e"
+     stroke-width="1.5"
+     id="r1" />
+  <rect
+     x="9.9395103"
+     y="10.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#1a3c6e"
+     id="r1h" />
+  <rect
+     x="9.9395103"
+     y="24.75"
+     width="175"
+     height="10"
+     fill="#1a3c6e"
+     id="r1h2" />
+  <text
+     x="96.939514"
+     y="27.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t1h">Medical Imaging</text>
+  <text
+     x="96.939514"
+     y="48.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t1a">Radiology, MRI, CT</text>
+  <text
+     x="96.939514"
+     y="62.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t1b">Tumor detection</text>
+  <text
+     x="96.939514"
+     y="76.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t1c">Diabetic retinopathy</text>
+  <text
+     x="96.939514"
+     y="90.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t1d">Skin melanomas</text>
+  <!-- connector -->
+  <!-- === DIAGNOSTIC ASSISTÉ (top-center) === -->
+  <rect
+     x="229.93951"
+     y="0.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#e8f0fb"
+     stroke="#1a3c6e"
+     stroke-width="1.5"
+     id="r2" />
+  <rect
+     x="229.93951"
+     y="0.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#1a3c6e"
+     id="r2h" />
+  <rect
+     x="229.93951"
+     y="14.75"
+     width="175"
+     height="10"
+     fill="#1a3c6e"
+     id="r2h2" />
+  <text
+     x="316.93951"
+     y="17.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t2h">Assisted Diagnosis</text>
+  <text
+     x="316.93951"
+     y="38.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t2a">Clinical decision support</text>
+  <text
+     x="316.93951"
+     y="52.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t2b">ECG interpretation</text>
+  <text
+     x="316.93951"
+     y="66.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t2c">Digital pathology</text>
+  <text
+     x="316.93951"
+     y="80.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t2d">+500 FDA-approved tools</text>
+  <!-- connector -->
+  <line
+     x1="354.93951"
+     y1="90.75"
+     x2="384.93951"
+     y2="148.75"
+     stroke="#1a3c6e"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c2" />
+  <!-- === AGENTS CONVERSATIONNELS (top-right) === -->
+  <rect
+     x="459.93951"
+     y="10.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#fdf0e8"
+     stroke="#c06000"
+     stroke-width="1.5"
+     id="r3" />
+  <rect
+     x="459.93951"
+     y="10.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#c06000"
+     id="r3h" />
+  <rect
+     x="459.93951"
+     y="24.75"
+     width="175"
+     height="10"
+     fill="#c06000"
+     id="r3h2" />
+  <text
+     x="546.93951"
+     y="27.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t3h">Conversational Agents</text>
+  <text
+     x="546.93951"
+     y="48.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t3a">Therapeutic support</text>
+  <text
+     x="546.93951"
+     y="62.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t3b">Smoking cessation, mental health</text>
+  <text
+     x="546.93951"
+     y="76.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t3c">Treatment adherence</text>
+  <text
+     x="546.93951"
+     y="90.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t3d">Available 24/7</text>
+  <!-- connector -->
+  <!-- === DÉCOUVERTE DE MÉDICAMENTS (right) === -->
+  <rect
+     x="614.93951"
+     y="155.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#fdf0e8"
+     stroke="#c06000"
+     stroke-width="1.5"
+     id="r4" />
+  <rect
+     x="614.93951"
+     y="155.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#c06000"
+     id="r4h" />
+  <rect
+     x="614.93951"
+     y="169.75"
+     width="175"
+     height="10"
+     fill="#c06000"
+     id="r4h2" />
+  <text
+     x="701.93951"
+     y="172.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t4h">Drug Discovery</text>
+  <text
+     x="701.93951"
+     y="192.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t4a">Molecular screening (AI)</text>
+  <text
+     x="701.93951"
+     y="206.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t4b">Toxicity prediction</text>
+  <text
+     x="701.93951"
+     y="220.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t4c">Molecule repurposing</text>
+  <text
+     x="701.93951"
+     y="234.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t4d">AlphaFold (DeepMind)</text>
+  <!-- connector -->
+  <line
+     x1="614.93951"
+     y1="200.75"
+     x2="471.93951"
+     y2="200.75"
+     stroke="#c06000"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c4" />
+  <!-- === PLANIFICATION (bottom-right) === -->
+  <rect
+     x="459.93951"
+     y="300.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#eaf5ea"
+     stroke="#2a7a2a"
+     stroke-width="1.5"
+     id="r5" />
+  <rect
+     x="459.93951"
+     y="300.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#2a7a2a"
+     id="r5h" />
+  <rect
+     x="459.93951"
+     y="314.75"
+     width="175"
+     height="10"
+     fill="#2a7a2a"
+     id="r5h2" />
+  <text
+     x="546.93951"
+     y="317.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t5h">Planning</text>
+  <text
+     x="546.93951"
+     y="338.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t5a">Staff scheduling</text>
+  <text
+     x="546.93951"
+     y="352.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t5b">Operating room management</text>
+  <text
+     x="546.93951"
+     y="366.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t5c">Emergency patient flow</text>
+  <text
+     x="546.93951"
+     y="380.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t5d">Natural language input</text>
+  <!-- connector -->
+  <line
+     x1="465.92899"
+     y1="298.02838"
+     x2="435.92899"
+     y2="250.02838"
+     stroke="#2a7a2a"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c5" />
+  <!-- === GÉNOMIQUE / MÉDECINE DE PRÉCISION (bottom-center) === -->
+  <rect
+     x="229.93951"
+     y="310.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#eaf5ea"
+     stroke="#2a7a2a"
+     stroke-width="1.5"
+     id="r6" />
+  <rect
+     x="229.93951"
+     y="310.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#2a7a2a"
+     id="r6h" />
+  <rect
+     x="229.93951"
+     y="324.75"
+     width="175"
+     height="10"
+     fill="#2a7a2a"
+     id="r6h2" />
+  <text
+     x="316.93951"
+     y="327.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t6h">Precision Medicine</text>
+  <text
+     x="316.93951"
+     y="348.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t6a">Genomic analysis</text>
+  <text
+     x="316.93951"
+     y="362.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t6b">Risk prediction</text>
+  <text
+     x="316.93951"
+     y="376.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t6c">Personalized treatment</text>
+  <text
+     x="316.93951"
+     y="390.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t6d">Pharmacogenomics</text>
+  <!-- connector -->
+  <line
+     x1="354.93951"
+     y1="310.75"
+     x2="386.93951"
+     y2="252.75"
+     stroke="#2a7a2a"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c6" />
+  <!-- === SURVEILLANCE / ÉPIDÉMIOLOGIE (bottom-left) === -->
+  <rect
+     x="9.9395103"
+     y="300.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#eaf5ea"
+     stroke="#2a7a2a"
+     stroke-width="1.5"
+     id="r7" />
+  <rect
+     x="9.9395103"
+     y="300.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#2a7a2a"
+     id="r7h" />
+  <rect
+     x="9.9395103"
+     y="314.75"
+     width="175"
+     height="10"
+     fill="#2a7a2a"
+     id="r7h2" />
+  <text
+     x="96.939514"
+     y="317.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t7h">Epidemiology</text>
+  <text
+     x="96.939514"
+     y="338.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t7a">Epidemic surveillance</text>
+  <text
+     x="96.939514"
+     y="352.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t7b">Spread prediction</text>
+  <text
+     x="96.939514"
+     y="366.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t7c">Weak signal analysis</text>
+  <text
+     x="96.939514"
+     y="380.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t7d">COVID-19: SIR-AI models</text>
+  <!-- connector -->
+  <!-- credit -->
+  <text
+     xml:space="preserve"
+     x="59.054688"
+     y="401.70581"
+     text-anchor="middle"
+     style="font-size:8px;font-family:Arial;fill:#888888"
+     id="credit">[Generated byClaude Sonnet 4.6]</text>
+</svg>

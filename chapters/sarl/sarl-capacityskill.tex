@@ -1,0 +1,182 @@
+\begin{graphicspathcontext}{{./chapters/sarl/imgs/},{./chapters/sarl/imgs/auto/},\old}
+
+\begin{frame}{Three Core Concepts at a Glance}
+	\begin{center}
+		\includegraphics[width=.72\linewidth]{sarl_capacity_skill_agent}
+	\end{center}
+	\vspace{.5cm}
+	\begin{itemize}
+	\item A \code{Capacity} defines \emph{what} an agent can do (interface)
+	\item A \code{Skill} defines \emph{how} it is done (implementation)
+	\item An \code{Agent} \emph{uses} capacities, fulfilled by skills at runtime
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Capacity Definition}
+	\begin{block}{What is a Capacity?}
+		A \code{Capacity} is the \emph{specification} of a collection of \emph{actions} (function signatures). \\
+		It says \emph{what} an agent can do, \emph{not} how
+	\end{block}
+	\vspace{.25cm}
+	\begin{itemize}
+	\item Declared with the \code{capacity} keyword
+	\item Contains only \emph{action signatures} -- no fields, no code bodies
+	\item Compiled to a \emph{Java interface} by the SARL compiler
+	\item Can extend zero or more other capacities (\code{extends})
+	\end{itemize}
+	\vspace{.25cm}
+	\begin{sarllisting}
+capacity Logging {
+	// Log an information message
+	def info(text : String)
+	// Log a debugging message
+	def debug(text : String)
+}
+	\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{Capacity Inheritance}
+	\begin{block}{Extending a Capacity}
+		A capacity can \textbf{extend} one or more existing capacities, just like Java interfaces
+	\end{block}
+	\begin{sarllisting}
+capacity ErrorLogging extends Logging {
+	// Add error-level logging
+	def error(text : String)
+}
+	\end{sarllisting}
+	\begin{alertblock}{Key rule}
+		A capacity can extend \Emph{zero-to-many} other capacities (multiple inheritance is allowed)
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}[fragile]{Skill Definition}
+	\begin{block}{What is a Skill?}
+		A \code{Skill} is a \emph{concrete implementation} of one or more capacities. \\
+		It says \emph{how} the actions are actually performed
+	\end{block}
+	\vspace{.15cm}
+	\begin{itemize}
+	\item Declared with the \code{skill} keyword
+	\item Must declare which capacity it \code{implements}
+	\item Compiled to a \emph{Java class} by the SARL compiler
+	\item Has a lifecycle: \code{install()} when attached, \code{uninstall()} when detached
+	\end{itemize}
+	\begin{sarllisting}
+skill StandardLogging implements Logging {
+	def info(text : String) {
+		println("[INFO] " + text)
+	}
+	def debug(text : String) {
+		println("[DEBUG] " + text)
+	}
+}
+	\end{sarllisting}
+\end{frame}
+
+\begin{frame}[fragile]{Skill Inheritance}
+	\begin{block}{Extending a Skill}
+		A skill can \emph{extend} exactly \emph{one} other skill, following the same rules as Java class inheritance
+	\end{block}
+	\vspace{.25cm}
+	\begin{sarllisting}
+skill ExtendedLogging extends StandardLogging {
+	def info(text : String) {
+		super.info("INFO: " + text)
+	}
+}
+	\end{sarllisting}
+	\vspace{-.25cm}
+	\begin{alertblock}{Key rule}
+		A skill can extend \emph{at most one} other skill (single inheritance)
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}[t,fragile]{Giving a Skill to an Agent}
+	\begin{block}{How an agent acquires a skill}
+		Before using a capacity, an agent must \emph{bind} a skill to it. \\
+		This is done at runtime with \code{setSkill(...)}
+	\end{block}
+	\begin{sarllisting}[basicstyle=\scriptsize]
+agent MyAgent {
+	uses Logging
+
+	on Initialize {
+		// 1. Create the skill instance
+		var s = new StandardLogging
+		// 2. Bind it to the capacity
+		setSkill(s)
+		// 3. Now we can call the capacity's actions directly
+		info("Hello from MyAgent!")
+	}
+}
+	\end{sarllisting}
+	\vspace{-1cm}
+	\begin{example}[Result]
+		Call to \code{info(...)} is transparently dispatched to \code{StandardLogging.info(...)}
+	\end{example}
+\end{frame}
+
+\begin{frame}[fragile]{Calling a Capacity via \texttt{uses}}
+	\begin{columns}
+		\begin{column}[t]{.5\linewidth}
+			\begin{block}{Without \texttt{uses}}
+				Must retrieve the skill manually:
+			\end{block}
+			\begin{sarllisting}
+on SomeEvent {
+	var s = getSkill(Logging)
+	s.info("Hello")
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.5\linewidth}
+			\begin{block}{With \texttt{uses} (recommended)}
+				Capacity functions are directly available:
+			\end{block}
+			\begin{sarllisting}
+uses Logging
+
+on SomeEvent {
+	// direct call
+	info("Hello")
+}
+			\end{sarllisting}
+		\end{column}
+	\end{columns}
+	\vspace{-.5cm}
+	\begin{itemize}
+	\item \code{uses} works as an \emph{extension method} import
+	\item SARL compiler transparently routes the call to the bound skill
+	\item Agent \emph{never depends on the concrete skill class} -- only on the capacity interface
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Built-in Capacities}
+	\begin{center}
+		\Emph{SARL Agent has inherently a set of \alert{Built-in} Capacities}
+	\end{center}
+	\smaller
+	\begin{stabularx}{l|X}
+		\tabularhead{Capacity Name}{Services} \\
+		\code{Behaviors} & Manage sub-behaviors \\
+		\hline
+		\code{Lifecycle} & Agent spawning and killing \\
+		\hline
+		\code{Schedules} & Scheduling of tasks \\
+		\hline
+		\code{ExternalContextAccess} & Access to external context \\
+		\hline
+		\code{InnerContextAccess} & Access to inner context \\
+		\hline
+		\code{DefaultContextInteractions} & Access to the default context \\
+		\hline
+		... & \\
+	\end{stabularx}
+	\hiconbox{You don't need to link the skill for those built-in capacities because the SARL runtime environment automatically equips the agent with the associated skill}{info-icon}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput
+

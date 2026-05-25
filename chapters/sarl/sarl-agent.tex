@@ -1,0 +1,176 @@
+\begin{graphicspathcontext}{{./chapters/sarl/imgs/},{./chapters/sarl/imgs/auto/},\old}
+
+\begin{frame}{What is an Agent?}
+	\begin{definitionblock}{Agent (in SARL)}
+		An agent is an autonomous entity having a set of skills to realise the capacities it exhibits
+	\end{definitionblock}
+	\bigskip
+	Three key ideas hidden in this definition:
+	\begin{enumerate}
+	\item \Emph{Autonomy} -- the agent decides by itself what to do and when
+	\item \Emph{Capacities} -- the abstract things an agent \emph{can do}
+	\item \Emph{Skills} -- the concrete implementations of those capacities
+	\end{enumerate}
+	\bigskip
+	\begin{alertblock}{In SARL}
+		An agent is a \Emph{first-class language construct}, declared with the keyword: \code{agent}
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}[fragile]{Declaring an Agent in SARL}
+	\begin{columns}
+		\begin{column}[t]{.5\linewidth}
+			\Emph{Minimal agent:} \\
+			\begin{sarllisting}
+agent MyAgent {
+	// empty: does nothing yet
+}
+			\end{sarllisting}
+			\medskip
+			\Emph{Agent with state (mental state):} \\
+			\begin{sarllisting}
+agent MyAgent {
+	var counter : int = 0
+	val name : String = "Bob"
+}
+			\end{sarllisting}
+			\vspace{-1cm}\smaller
+			\begin{itemize}
+			\item \code{var} -- mutable field
+			\item \code{val} -- immutable field
+			\end{itemize}
+		\end{column}
+		\begin{column}[t]{.5\linewidth}
+			\Emph{Agent with actions:} \\
+			\begin{sarllisting}
+import io.sarl.api.core.Logging
+
+agent MyAgent {
+	uses Logging
+
+	def greet {
+		info("Hello world!")
+	}
+}
+			\end{sarllisting}
+			\vspace{-.05cm}\smaller
+			\begin{itemize}
+			\item \code{def} -- defines an action
+			\item \code{uses} -- imports a capacity
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\figureslide{{Open Architecture} of an Agent}{sarl_agent_architecture}
+
+\begin{frame}[fragile]{Agent Life Cycle}
+	Every agent follows three phases:
+	\bigskip
+	\begin{columns}
+		\begin{column}[t]{.30\linewidth}
+			\centering\textbf{\textcolor{blue!70!black}{1. Initialization}} \\[4pt]
+			\begin{sarllisting}[basicstyle=\tiny]
+	on Initialize {
+		info("Born!")
+	}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.35\linewidth}
+			\centering\textbf{\textcolor{green!50!black}{2. Lifetime}} \\[4pt]
+			\begin{sarllisting}[basicstyle=\tiny]
+	// Reactive
+	on MyEvent {
+		info("Reacting!")
+	}
+
+	// Pro-active
+	on Initialize {
+		every(1.seconds) [
+			info("Tick")
+		]
+	}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.28\linewidth}
+			\centering \textbf{\textcolor{red!70!black}{3. Destruction}} \\[4pt]
+			\begin{sarllisting}[basicstyle=\tiny]
+uses Lifecycle
+
+... killMe ...
+
+on Destroy {
+	info("Bye!")
+}
+			\end{sarllisting}
+		\end{column}
+	\end{columns}
+	\begin{block}{Key point}
+		\texttt{Initialize} and \texttt{Destroy} are \textbf{regular events}: they can be guarded, and multiple handlers can coexist (run in parallel)
+	\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Agent Inheritance}
+	\begin{columns}
+		\begin{column}[t]{.5\linewidth}
+			Agents support \Emph{single inheritance} (like Java classes):
+			\begin{sarllisting}[basicstyle=\footnotesize]
+agent BaseAgent {
+	protected var id : int
+	def logId {
+		// ...
+	}
+}
+
+agent SpecializedAgent
+      extends BaseAgent {
+	uses Logging
+	on Initialize {
+		id = 42
+		info("I am agent #" + id)
+	}
+}
+			\end{sarllisting}
+		\end{column}
+		\begin{column}[t]{.5\linewidth}
+			\begin{itemize}
+			\item \code{extends} -- inherits state, actions and event handlers
+			\item \code{abstract agent} -- cannot be instantiated directly
+			\item \code{final agent} -- cannot be further extended
+			\item Specialized agent inherits from its parent: mental state, actions, behavior unit, constructors
+			\item All event handlers from the parent are \emph{also executed} (in parallel with those of the child)
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Where Does an Agent Live?}
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\smaller
+			\begin{itemize}
+			\item When spawned, an agent joins a \code{Context}
+			\item A \code{Context} gathers a set of \code{Spaces}
+			\item A \code{Space} is the medium for agent interaction (default: \emph{Event Space})
+			\item Every context has a \emph{Default Space} shared by all members
+			\item An agent always belongs to at least one context (\emph{Default Context})
+			\item An agent can join \emph{multiple external contexts}
+			\item Every agent owns its own \emph{Inner Context} \\
+				$\Rightarrow$ enables \emph{holonic} (nested) systems
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\linewidth}
+			\begin{block}{Holonic Principle}
+				An agent can contain other agents (sub-agents) inside its inner context, forming a \Emph{hierarchy}
+			\end{block}
+			\begin{example}[Universe Agent]
+				At the very top of every SARL application sits the \emph{Universe Agent}, whose inner context hosts all top-level agents
+			\end{example}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput
+

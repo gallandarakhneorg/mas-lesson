@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="302"
+   height="101.1438"
+   viewBox="0 0 302 101.1438"
+   version="1.1"
+   id="svg53"
+   sodipodi:docname="artefact_sarl_aa.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview55"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="3.526087"
+     inkscape:cx="148.03946"
+     inkscape:cy="54.876695"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg53" />
+  <!-- SARL agent -->
+  <!-- Capacity / Skill layer -->
+  <!-- CArtAgO artifact -->
+  <!-- Arrows -->
+  <g
+     id="g493"
+     transform="translate(-19.000001,-60.428101)">
+    <g
+       id="g380"
+       transform="translate(0,21.428098)">
+      <rect
+         x="19.843946"
+         y="39.843948"
+         width="120.3121"
+         height="99.45591"
+         rx="10.026009"
+         fill="#d0e8ff"
+         stroke="#2255aa"
+         stroke-width="1.68789"
+         id="rect4" />
+      <text
+         x="80"
+         y="62"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="12px"
+         font-weight="bold"
+         fill="#1a3366"
+         id="text6">SARL Agent</text>
+      <text
+         x="65.479004"
+         y="80"
+         text-anchor="middle"
+         font-family="monospace"
+         font-size="9px"
+         fill="#333333"
+         id="text8">agent Foo {</text>
+      <text
+         x="80"
+         y="95"
+         text-anchor="middle"
+         font-family="monospace"
+         font-size="9px"
+         fill="#003399"
+         id="text10">uses Capacity</text>
+      <text
+         x="77.545654"
+         y="110"
+         text-anchor="middle"
+         font-family="monospace"
+         font-size="9px"
+         fill="#003399"
+         id="text12">on Event { }</text>
+      <text
+         x="38"
+         y="125"
+         text-anchor="middle"
+         font-family="monospace"
+         font-size="9px"
+         fill="#333333"
+         id="text14">}</text>
+    </g>
+    <g
+       id="g404"
+       transform="translate(-2.5000026,-1.50039)">
+      <rect
+         x="155"
+         y="80"
+         width="90"
+         height="65"
+         rx="8"
+         fill="#e8f0ff"
+         stroke="#445599"
+         stroke-width="1.5"
+         stroke-dasharray="5, 3"
+         id="rect16" />
+      <text
+         x="200"
+         y="102"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="10px"
+         font-weight="bold"
+         fill="#223377"
+         id="text18">Capacity</text>
+      <text
+         x="200"
+         y="116.613"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="9px"
+         fill="#333333"
+         id="text20">/</text>
+      <text
+         x="200"
+         y="130"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="10px"
+         font-weight="bold"
+         fill="#223377"
+         id="text22">Skill</text>
+    </g>
+    <g
+       id="g429"
+       transform="translate(0,6.0000012)">
+      <rect
+         x="260"
+         y="60"
+         width="60"
+         height="90"
+         rx="8"
+         fill="#fff0cc"
+         stroke="#cc6600"
+         stroke-width="2"
+         id="rect24" />
+      <text
+         x="290"
+         y="82"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="10px"
+         font-weight="bold"
+         fill="#993300"
+         id="text26">CArtAgO</text>
+      <text
+         x="290"
+         y="97"
+         text-anchor="middle"
+         font-family="sans-serif"
+         font-size="9px"
+         fill="#993300"
+         id="text28">Artifact</text>
+      <text
+         x="290"
+         y="116"
+         text-anchor="middle"
+         font-family="monospace"
+         font-size="8px"
+         fill="#555555"
+         id="text30">ops()</text>
+      <text
+         x="290"
+         y="130"
+         text-anchor="middle"
+         font-family="monospace"
+         font-size="8px"
+         fill="#336633"
+         id="text32">prop(v)</text>
+    </g>
+    <line
+       x1="139.375"
+       y1="111"
+       x2="150.375"
+       y2="111"
+       stroke="#0055cc"
+       stroke-width="1.5"
+       marker-end="url(#sa)"
+       id="line34" />
+    <g
+       id="g451"
+       transform="translate(-2.3750013,-3.9999988)">
+      <line
+         x1="247"
+         y1="105"
+         x2="260"
+         y2="105"
+         stroke="#cc6600"
+         stroke-width="1.5"
+         marker-end="url(#sa2)"
+         id="line36" />
+      <line
+         x1="260"
+         y1="125"
+         x2="247"
+         y2="125"
+         stroke="#009944"
+         stroke-width="1.5"
+         marker-end="url(#sa3)"
+         id="line38" />
+    </g>
+  </g>
+  <defs
+     id="defs51">
+    <marker
+       id="sa"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#0055cc"
+         id="path42" />
+    </marker>
+    <marker
+       id="sa2"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#cc6600"
+         id="path45" />
+    </marker>
+    <marker
+       id="sa3"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#009944"
+         id="path48" />
+    </marker>
+  </defs>
+</svg>

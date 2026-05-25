@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 792.052 404.3537"
+   width="792.052"
+   height="404.3537"
+   version="1.1"
+   id="svg_ai_health"
+   sodipodi:docname="ai_health_applications_fr.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.8902439"
+     inkscape:cx="401.53548"
+     inkscape:cy="201.82581"
+     inkscape:window-width="3840"
+     inkscape:window-height="2123"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg_ai_health" />
+  <defs
+     id="defs1">
+    <marker
+       id="arrowhead"
+       markerWidth="8"
+       markerHeight="8"
+       refX="6"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 V 6 L 8,3 Z"
+         fill="#1a3c6e"
+         id="path_arrow" />
+    </marker>
+  </defs>
+  <line
+     x1="182.56364"
+     y1="324.3862"
+     x2="329.56366"
+     y2="217.38618"
+     stroke="#2a7a2a"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c7" />
+  <line
+     x1="184.99596"
+     y1="78.391983"
+     x2="332.99594"
+     y2="183.39198"
+     stroke="#1a3c6e"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c1" />
+  <line
+     x1="496.82889"
+     y1="68.373924"
+     x2="442.1712"
+     y2="158.03181"
+     stroke="#c06000"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c3" />
+  <!-- Central hub -->
+  <ellipse
+     cx="401.302"
+     cy="200.75"
+     rx="72"
+     ry="52"
+     fill="#1a3c6e"
+     id="hub_bg" />
+  <text
+     x="401.302"
+     y="192.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="hub_t1">IA en</text>
+  <text
+     x="401.302"
+     y="208.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="13px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="hub_t2">Santé</text>
+  <!-- === IMAGERIE MÉDICALE (top-left) === -->
+  <rect
+     x="11.302002"
+     y="10.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#e8f0fb"
+     stroke="#1a3c6e"
+     stroke-width="1.5"
+     id="r1" />
+  <rect
+     x="11.302002"
+     y="10.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#1a3c6e"
+     id="r1h" />
+  <rect
+     x="11.302002"
+     y="24.75"
+     width="175"
+     height="10"
+     fill="#1a3c6e"
+     id="r1h2" />
+  <text
+     x="98.302002"
+     y="27.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t1h">Imagerie Médicale</text>
+  <text
+     x="98.302002"
+     y="48.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t1a">Radiologie, IRM, scanner</text>
+  <text
+     x="98.302002"
+     y="62.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t1b">Détection de tumeurs</text>
+  <text
+     x="98.302002"
+     y="76.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t1c">Rétinopathie diabétique</text>
+  <text
+     x="98.302002"
+     y="90.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t1d">Mélanomes cutanés</text>
+  <!-- connector -->
+  <!-- === DIAGNOSTIC ASSISTÉ (top-center) === -->
+  <rect
+     x="231.302"
+     y="0.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#e8f0fb"
+     stroke="#1a3c6e"
+     stroke-width="1.5"
+     id="r2" />
+  <rect
+     x="231.302"
+     y="0.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#1a3c6e"
+     id="r2h" />
+  <rect
+     x="231.302"
+     y="14.75"
+     width="175"
+     height="10"
+     fill="#1a3c6e"
+     id="r2h2" />
+  <text
+     x="318.302"
+     y="17.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t2h">Diagnostic Assisté</text>
+  <text
+     x="318.302"
+     y="38.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t2a">Aide à la décision clinique</text>
+  <text
+     x="318.302"
+     y="52.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t2b">Interprétation ECG</text>
+  <text
+     x="318.302"
+     y="66.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t2c">Anatomopathologie numérique</text>
+  <text
+     x="318.302"
+     y="80.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a3c6e"
+     id="t2d">+500 outils approuvés FDA</text>
+  <!-- connector -->
+  <line
+     x1="356.302"
+     y1="90.75"
+     x2="386.302"
+     y2="148.75"
+     stroke="#1a3c6e"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c2" />
+  <!-- === AGENTS CONVERSATIONNELS (top-right) === -->
+  <rect
+     x="461.302"
+     y="10.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#fdf0e8"
+     stroke="#c06000"
+     stroke-width="1.5"
+     id="r3" />
+  <rect
+     x="461.302"
+     y="10.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#c06000"
+     id="r3h" />
+  <rect
+     x="461.302"
+     y="24.75"
+     width="175"
+     height="10"
+     fill="#c06000"
+     id="r3h2" />
+  <text
+     x="548.302"
+     y="27.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t3h">Agents Conversationnels</text>
+  <text
+     x="548.302"
+     y="48.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t3a">Support thérapeutique</text>
+  <text
+     x="548.302"
+     y="62.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t3b">Arrêt du tabac, santé mentale</text>
+  <text
+     x="548.302"
+     y="76.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t3c">Observance thérapeutique</text>
+  <text
+     x="548.302"
+     y="90.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t3d">Disponible 24h/24</text>
+  <!-- connector -->
+  <!-- === DÉCOUVERTE DE MÉDICAMENTS (right) === -->
+  <rect
+     x="616.302"
+     y="155.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#fdf0e8"
+     stroke="#c06000"
+     stroke-width="1.5"
+     id="r4" />
+  <rect
+     x="616.302"
+     y="155.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#c06000"
+     id="r4h" />
+  <rect
+     x="616.302"
+     y="169.75"
+     width="175"
+     height="10"
+     fill="#c06000"
+     id="r4h2" />
+  <text
+     x="703.302"
+     y="172.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t4h">Découverte de Méd.</text>
+  <text
+     x="703.302"
+     y="192.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t4a">Criblage moléculaire (IA)</text>
+  <text
+     x="703.302"
+     y="206.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t4b">Prédiction de toxicité</text>
+  <text
+     x="703.302"
+     y="220.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t4c">Repurposing de molécules</text>
+  <text
+     x="703.302"
+     y="234.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#7a3800"
+     id="t4d">AlphaFold (DeepMind)</text>
+  <!-- connector -->
+  <line
+     x1="616.302"
+     y1="200.75"
+     x2="473.302"
+     y2="200.75"
+     stroke="#c06000"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c4" />
+  <!-- === PLANIFICATION (bottom-right) === -->
+  <rect
+     x="461.302"
+     y="300.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#eaf5ea"
+     stroke="#2a7a2a"
+     stroke-width="1.5"
+     id="r5" />
+  <rect
+     x="461.302"
+     y="300.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#2a7a2a"
+     id="r5h" />
+  <rect
+     x="461.302"
+     y="314.75"
+     width="175"
+     height="10"
+     fill="#2a7a2a"
+     id="r5h2" />
+  <text
+     x="548.302"
+     y="317.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t5h">Planification</text>
+  <text
+     x="548.302"
+     y="338.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t5a">Planning du personnel</text>
+  <text
+     x="548.302"
+     y="352.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t5b">Gestion des blocs opératoires</text>
+  <text
+     x="548.302"
+     y="366.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t5c">Flux patients aux urgences</text>
+  <text
+     x="548.302"
+     y="380.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t5d">Saisie en langage naturel</text>
+  <!-- connector -->
+  <line
+     x1="467.29147"
+     y1="298.02838"
+     x2="437.29147"
+     y2="250.02838"
+     stroke="#2a7a2a"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c5" />
+  <!-- === GÉNOMIQUE / MÉDECINE DE PRÉCISION (bottom-center) === -->
+  <rect
+     x="231.302"
+     y="310.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#eaf5ea"
+     stroke="#2a7a2a"
+     stroke-width="1.5"
+     id="r6" />
+  <rect
+     x="231.302"
+     y="310.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#2a7a2a"
+     id="r6h" />
+  <rect
+     x="231.302"
+     y="324.75"
+     width="175"
+     height="10"
+     fill="#2a7a2a"
+     id="r6h2" />
+  <text
+     x="318.302"
+     y="327.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t6h">Médecine de Précision</text>
+  <text
+     x="318.302"
+     y="348.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t6a">Analyse génomique</text>
+  <text
+     x="318.302"
+     y="362.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t6b">Prédiction de risques</text>
+  <text
+     x="318.302"
+     y="376.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t6c">Traitement personnalisé</text>
+  <text
+     x="318.302"
+     y="390.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t6d">Pharmacogénomique</text>
+  <!-- connector -->
+  <line
+     x1="356.302"
+     y1="310.75"
+     x2="388.302"
+     y2="252.75"
+     stroke="#2a7a2a"
+     stroke-width="1.2"
+     marker-end="url(#arrowhead)"
+     opacity="0.5"
+     id="c6" />
+  <!-- === SURVEILLANCE / ÉPIDÉMIOLOGIE (bottom-left) === -->
+  <rect
+     x="11.302002"
+     y="300.75"
+     width="175"
+     height="90"
+     rx="10"
+     fill="#eaf5ea"
+     stroke="#2a7a2a"
+     stroke-width="1.5"
+     id="r7" />
+  <rect
+     x="11.302002"
+     y="300.75"
+     width="175"
+     height="24"
+     rx="10"
+     fill="#2a7a2a"
+     id="r7h" />
+  <rect
+     x="11.302002"
+     y="314.75"
+     width="175"
+     height="10"
+     fill="#2a7a2a"
+     id="r7h2" />
+  <text
+     x="98.302002"
+     y="317.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="11px"
+     font-weight="bold"
+     fill="#ffffff"
+     id="t7h">Épidémiologie</text>
+  <text
+     x="98.302002"
+     y="338.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t7a">Surveillance des épidémies</text>
+  <text
+     x="98.302002"
+     y="352.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t7b">Prédiction de propagation</text>
+  <text
+     x="98.302002"
+     y="366.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t7c">Analyse des signaux faibles</text>
+  <text
+     x="98.302002"
+     y="380.75"
+     text-anchor="middle"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#1a4f1a"
+     id="t7d">COVID-19 : modèles SIR+IA</text>
+  <!-- connector -->
+  <!-- credit -->
+  <text
+     xml:space="preserve"
+     x="58.830078"
+     y="402.76385"
+     text-anchor="middle"
+     style="font-size:8px;font-family:Arial;fill:#888888"
+     id="credit">[Généré avec Claude Sonnet 4.6]</text>
+</svg>
