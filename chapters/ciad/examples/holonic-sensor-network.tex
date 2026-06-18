@@ -1,0 +1,75 @@
+\begin{graphicspathcontext}{{./chapters/ciad/examples/imgs/},{./chapters/ciad/examples/imgs/auto/},\old}
+
+\sidecite{Dani2024}
+\begin{frame}[t]{Goals of the Sensor Network}
+	\begin{center}
+		\titlebox*[.3\linewidth]{Multi-sensor}{How to integrate multiple sensors and multi-types of sensors in the system?}
+		\titlebox*[.3\linewidth]{Multi-method}{How to support different types of image analysis methods in the system?}
+		\titlebox*[.3\linewidth]{Scalability}{Holonic multi-agent - design scalable multi-method, multi-camera processing and learning system} \\[.25cm]
+		\includegraphics[width=.7\linewidth]{hsn-sn1} \\
+		{\tiny Manjah, D. (2024). Stream Based Active Distillation and Holonic Architecture for Scalable Camera Systems. PhD thesis, UCLouvain, Belgium}
+	\end{center}
+\end{frame}
+
+\sidecite{Dani2024}
+\begin{frame}[t]{Organizations in the Sensor Network}
+	\vspace{-.17cm}
+	\begin{columns}
+		\begin{column}{.4\linewidth}
+			\smaller
+			\begin{block}{Cyber-Physical Platform - CPP}
+				\emph{Provide perceptions and manage quality and resources}
+				\begin{description}
+					\item[Observer] deliver perceptions thanks to the data from Sensor
+					\item[Sensor] camera or inner cyber-physical system
+					\item[Resource Provider] fair distribution of the resources
+				\end{description}
+			\end{block}
+			\begin{block}{Learning}
+				\emph{Enhance sensor behvior with learning active distillation}
+				\begin{description}
+					\item[Student] sensor learning algorithm for specific area or method
+					\item[Teacher] general learning model for supervising students
+				\end{description}
+			\end{block}
+		\end{column}
+		\begin{column}{.6\linewidth}
+			\raggedleft
+			\includegraphics[width=\linewidth]{hsn-sn2} \\[.5cm]
+			\includegraphics[width=.9\linewidth]{hsn-sn3}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidecite{Dani2024}
+\figureslide{Mixing Service and Learning Organizations in Holarchy}{hsn-sn4}
+
+\sidecite{Dani2024}
+\begin{frame}{Experimental Results}
+	\begin{block}{Experiments}
+		\begin{description}
+			\item 40 cameras
+			\item[Mono-method] YOLO v4 trained on MIO-TCD dataset
+			\item[Multi-method] YOLO v4 + background substraction
+		\end{description}
+	\end{block}
+	\vspace{.5cm}
+	\begin{tabularx}{\linewidth}{X|X|X|X|X}
+		\hline
+		\textbf{Method} & \textbf{HOTA} & \textbf{Method (s)} & \textbf{Agent (s)} & \textbf{Total (s)} \\
+		\hline\hline
+		DNN only & $0.36$ & $2327 \pm 21$ & $10 \pm 1$ & $2337$ \\
+		\hline
+		Multi-method & $0.36$ & $2169 \pm 31$ & $12 \pm 1$ & $2182$ \\
+		\hline\hline
+		Difference & $0$ & $-158$ & $2$ & $-155$ \\
+		\hline
+	\end{tabularx}
+	\begin{center}
+		{\small 10 simulations, Intel(R) Core(TM) i7-8700K CPU 3.70GHz, GPU NVIDIA GeForce GTX 1080}
+	\end{center}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput

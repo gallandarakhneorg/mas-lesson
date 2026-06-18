@@ -1,0 +1,121 @@
+\localized\input{./chapters/ciad/sgalland}
+\localized\input{./chapters/ciad/brief}
+
+\begin{bibliographysection}
+\begin{graphicspathcontext}{{./talks/faim-26/imgs/auto/},{./talks/faim-26/imgs/},\old}
+
+\begin{righttitleframe}{Problem Statement}{How to model, simulate complex systems and deploy the smart components?}
+	{\larger Complex System, e.g. Smart City or Smart Building}
+	\begin{itemize}
+		\item Heterogeneous human behaviors (operators, drivers...)
+		\item Behaviors of smart infrastructure (production, logistic, energy...)
+		\item Interaction among the components (V2x...)
+		\item Integrating environment conditions
+		\item Autonomous entity validation: reproducing the physical behavior of the components
+	\end{itemize}
+\end{righttitleframe}
+
+\tableofcontentslide[onlyparts]
+
+\part{From Artificial Intelligence to Multiagent Systems}
+
+\section{What is AI?}
+\localized\input{./chapters/ai/intro-definitions}
+
+\section{AI Domains}
+\localized\input{./chapters/ai/ai-scientific-domains}
+
+\section{AI Approaches}
+\localized\input{./chapters/ai/ai-approaches}
+\localized\input{./chapters/ai/mas-intro}
+
+\part{Multiagent Systems for Modeling and Running Complex Systems}
+
+\section{Agent Properties}
+\sidecite{Wooldridge09,rodriguez_sarl:_2014}
+\begin{frame}[t]{{Possible Solution} to Complex System Modeling}
+		\begin{leftanchorblock}{Agent-oriented paradigm}{1}
+			Autonomy, distribution, decentralization, proactive, reactive interaction
+		\end{leftanchorblock}
+\end{frame}
+
+\localized\input{./chapters/mas/agent-properties}
+
+\section{Hierarchy and Separation of Concern}
+\sidecite{CossentinoGaudHilaireGallandKoukam2010_1,rodriguez_sarl:_2014}
+\begin{frame}[t]{{Possible Solution} to Complex System Modeling}
+	\begin{leftanchorblock}{Agent-oriented paradigm}{1}
+		Autonomy, distribution, decentralization, proactive, reactive interaction
+	\end{leftanchorblock}
+	\begin{leftanchorblock}{Holonic multi-agent systems}{2}
+		Dynamic hierarchies of agents \cite{CossentinoGaudHilaireGallandKoukam2010_1}
+	\end{leftanchorblock}
+	\only<1>{
+			\begin{columns}
+				\begin{column}{.45\linewidth}
+					\begin{block}{Complex System \cite{Simon.96}}
+						System that has characteristics:
+						\begin{itemize}
+							\item Hierarchical organization: components are complex systems
+							\item Different levels of abstraction
+							\item Emergent behavior
+							\item Local and nonlinear interactions
+						\end{itemize}
+					\end{block}
+				\end{column}
+				\begin{column}{.05\linewidth}
+					\centering$\Rightarrow$
+				\end{column}
+				\begin{column}{.45\linewidth}
+					\begin{block}{Holonic Multiagent System \cite{Gerber.99, CossentinoGaudHilaireGallandKoukam2010_1}}
+						A multiagent system in which agents may be \Emph{composed of agents} in separated contexts
+					\end{block}
+				\end{column}
+			\end{columns}
+		}
+		\only<2->{
+			\begin{leftanchorblock}{Environment model}{3}
+				Infrastructure model, agent perception and action mechanisms \cite{LombardMuallaGallandBuisson2019_1098, BuissonMuallaLombardGalland2019_1100, Michel.07}
+			\end{leftanchorblock}
+			\begin{leftanchorblock}{Separate Physical component - Decision process}{4}
+				Separated models of the cars and of the driving behaviors \cite{saunier2015agent}
+			\end{leftanchorblock}
+		}
+\end{frame}
+
+\section{Methodology for Creation Multiagent Systems}
+\localized\input{./chapters/hmas/aspecs}
+
+\part{Examples of Achievements}
+
+\section{Sensor Networks}
+\localized\input{./chapters/ciad/examples/holonic-sensor-network}
+
+\section{Robotics and AI}
+\localized\input{./chapters/ciad/examples/robot88}
+\localized\input{./chapters/ciad/examples/utac-2025}
+
+\section{Simulation}
+\localized\input{./chapters/ciad/examples/zayed-fogsimu}
+\localized\input{./chapters/ciad/examples/simulation-to-deployment}
+
+\section{Biological Twins}
+\localized\input{./chapters/ciad/examples/aidd4h-agents}
+
+\part{Take Away Message}
+
+\localized\input{./chapters/conclusions/science}
+
+\appendix
+
+\localized\input{./chapters/ai/ai-approaches-data}
+	%\localized\input{./chapters/ai/ai-approaches-data-langm}
+	%\localized\input{./chapters/ai/ai-approaches-data-nn}
+	%\localized\input{./chapters/ai/ai-approaches-data-nntypes}
+\localized\input{./chapters/ai/ai-approaches-knowledge}
+\localized\input{./chapters/ai/ai-approaches-model}
+
+\end{graphicspathcontext}
+\end{bibliographysection}
+
+\endinput

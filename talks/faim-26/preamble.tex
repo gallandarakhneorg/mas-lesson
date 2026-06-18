@@ -1,0 +1,33 @@
+\addauthor*[S.~Galland]{Prof.\;dr. Stéphane~GALLAND}
+
+\event[FAIM-2026]{Keynote FAIM-2026 - June 24, 2026}
+
+\date{June 24, 2026}
+
+\title{From Artificial Intelligence to Multiagent systems}
+\subtitle{Applications to Digital Simulation and Twins}
+
+\setpredefinedtitlepagebackground8
+
+\usefootlinewithsections
+%\usefootlinefortitlepage
+
+\begin{graphicspathcontext}{{./talks/faim-26/imgs/auto/},{./talks/faim-26/imgs/},\old}
+	\partnerlogo{faim2026}
+
+	\resolvepicturename{faim2026}
+	\pgfdeclareimage[width=5cm]{faim26logo}{\resolvedfilename}
+	\settitlepagerightfigure(250,-30){faim26logo}
+
+	\resolvepicturename{faimbg}
+	\pgfdeclareimage[height=\paperheight]{faimbg}{\resolvedfilename}
+	\settitlepageuserbackground{faimbg}
+
+\end{graphicspathcontext}
+
+% Preambles of sections
+\input{./chapters/ciad/preamble}
+\input{./chapters/ai/preamble}
+\input{./chapters/mas/preamble}
+
+\endinput

@@ -1,0 +1,34 @@
+\begin{graphicspathcontext}{{./chapters/ciad/examples/imgs/},{./chapters/ciad/examples/imgs/auto/},\old}
+
+\sidecite{Hao2014v2i, Hao2017}
+\begin{frame}[t]{RT-CVC: Reaction Time-based Collaborative Velocity Control}
+	\begin{columns}[c]
+		\begin{column}{.7\linewidth}
+			\begin{block}{Longitudinal control algorithm that ensure safety for the vehicle}
+				Consider implicit delays in the low-level control command
+			\end{block}
+			\smaller
+			\[
+			a_r = \dfrac{b_f \tau - 2 v_f \pm 2 b_f \sqrt{\dfrac{b_f b_l \tau^2 + 4 b_l v_f \tau + 4 v_l^2 - 8 b_l s}{4 b_f b_l}}}{2\tau}
+			\]
+			\smaller
+			\begin{itemize}
+				\item $s$: distance between the two successive vehicles
+				\item $v_f$, $v_l$: current velocities of the follower and leader
+				\item $b_f$, $b_l$: maximum decelerations for the follower and leader
+				\item $\tau$: driver reaction time
+			\end{itemize}
+		\end{column}
+		\begin{column}{.3\linewidth}
+			\includegraphics[width=\linewidth]{mobilitech.jpg}
+		\end{column}
+	\end{columns}
+	\vspace{.5cm}
+	\begin{center}
+		\tiny Hao, X. (2017). Contribution to cooperative intersection: longitudinal and lateral control of autonomous vehicle. PhD thesis, Université de Technologie de Belfort-Montbéliard, Belfort, France.
+	\end{center}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput

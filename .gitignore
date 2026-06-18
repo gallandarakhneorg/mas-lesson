@@ -10,68 +10,10 @@
 *.synctex.gz
 .autolatex_stamp
 TALK.pdf
+
 **/imgs/auto/**/*.pdf
 **/imgs/auto/**/*.pdftex_t
 local_videos/**/*
 videos/**/*
 
-# Downloaded ciadslides files (auto-generated)
-LICENSE.LGPLv3
-LICENSE.logos
-RELEASE_DATE
-beamerbasethemeCIAD.sty
-beamercolorthemeCIAD.sty
-beamercptpthemeCIAD.sty
-beamerfontthemeCIAD.sty
-beamerhandoutthemeCIAD.sty
-beamerinnerthemeCIAD.sty
-beamerodtpthemeCIAD.sty
-beamerouterthemeCIAD.sty
-beamerthemeCIAD.sty
-ciad-background-none.pdf
-ciad-background1.pdf
-ciad-background10.png
-ciad-background2.pdf
-ciad-background2.svg
-ciad-background3.pdf
-ciad-background3.svg
-ciad-background4.jpg
-ciad-background5.jpg
-ciad-background6.png
-ciad-background7.png
-ciad-background8.png
-ciad-background9.png
-ciad-carnotgraylogo.pdf
-ciad-carnotlogo.pdf
-ciad-ciadlogo.pdf
-ciad-frenchrepublic.pdf
-ciad-logointitle.pdf
-ciad-logoontitleslide.pdf
-ciad-part-background.pdf
-ciad-title-background-left1.png
-ciad-title-background-left2.png
-ciad-title-background-left3.png
-ciad-title-background-left4.png
-ciad-title-background-left5.png
-ciad-title-background-left6.png
-ciad-title-background-left7.png
-ciad-title-background-left8.png
-ciad-title-background-left9.jpg
-ciad-title-background-right.pdf
-ciad-title-background.pdf
-ciad-title-hands.png
-ciad-ubegraylogo.pdf
-ciad-ubelogo.pdf
-ciad-ubelogointitle.pdf
-ciad-utbmgraylogo.pdf
-ciad-utbmlogo.pdf
-ciad.bst
-ciadbeamer-documentation.pdf
-ciadbeamer-nologo.pdf
-ciadbeamer.cls
-# End of auto-generated section
 
-# Downloaded ciadslides files and extra sty files (auto-generated)
-autolatex-beamer.sty
-autolatex.sty
-# End of auto-generated section
