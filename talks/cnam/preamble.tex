@@ -1,0 +1,29 @@
+\addauthor*[S.~Galland]{Prof.Dr. St\'ephane~GALLAND}
+
+\event[USSI8V - CNAM - 2026]{Master Data\&IA - USSI8V- CNAM - 2026}
+
+\title{Introduction to Multiagent Systems}
+
+%\setpredefinedtitlepagebackground7
+
+\begin{graphicspathcontext}{{./talks/cnam/imgs/},{./talks/cnam/imgs/auto/},\old}
+	\resolvepicturename{cps_ai_titlepage}
+	\pgfdeclareimage[height=\paperheight]{cps-ai-titlepage}{\resolvedfilename}
+	\settitlepageuserbackground{cps-ai-titlepage}
+	
+	\resolvepicturename{frontright_titlepage}
+	\pgfdeclareimage[width=6cm]{frontright-titlepage}{\resolvedfilename}
+	\settitlepagerightfigure(230,-70){frontright-titlepage}
+
+	\partnerlogo{cnamlogo_gray}
+\end{graphicspathcontext}
+
+\usefootlinewithsections
+
+% Preambles of sections
+\input{./chapters/ciad/preamble}
+\input{./chapters/ai/preamble}
+\input{./chapters/mas/preamble}
+\input{./chapters/simulation/preamble}
+
+\endinput
