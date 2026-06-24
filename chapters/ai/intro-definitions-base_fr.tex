@@ -1,46 +1,8 @@
 \begin{graphicspathcontext}{{./chapters/ai/imgs/},{./chapters/ai/imgs/auto/},\old}
 
-\adaptAIdefinitioncontent
-\talkadaptivesidecite
-\begin{frame}[c]{Qu'est-ce que l'IA ?}
-	\talkadaptivesize
-	\ifMinskyAI{
-		\begin{definition}[Minsky 1961]
-			l'IA est la science de \emph{faire faire aux machines des choses} qui \emph{exigeraient de l'intelligence si elles étaient faites par des humains}
-		\end{definition}
-	}\fi
-	\talkadaptivevspacea
-	\ifOECDAI{
-		\begin{definition}[OCDE 2024]
-			Une IA est un système fondé sur des machines qui, pour des \emph{objectifs explicites ou implicites}, déduit à partir des \emph{entrées} qu'il reçoit comment générer des résultats tels que des \emph{prévisions, du contenu, des recommandations ou des décisions} susceptibles d'influencer les environnements physiques ou virtuels. Les \emph{différents systèmes d'IA} varient dans leurs niveaux d'autonomie et d'adaptabilité une fois déployés
-		\end{definition}
-	}\fi
-	\talkadaptivevspaceb
-	\ifEUAIAct{
-		\begin{definition}[EU IA Act 2024]
-			Un \emph{système d'IA} est un système à base machine qui est conçu pour fonctionner avec différents niveaux d'\emph{autonomie} et qui peut faire preuve d'\emph{adaptabilité} après son déploiement, et qui, pour des \emph{objectifs explicites ou implicites}, déduit, à partir des \emph{entrées} qu'il reçoit, la manière de générer des résultats tels que des \emph{prédictions, du contenu, des recommandations ou des décisions} pouvant influencer les environnements physiques ou virtuels
-		\end{definition}
-	}\fi
-\end{frame}
+\localized\input{chapters/ai/intro-ai-classic-definitions}
 
-\sidecite{ElFallahSeghrouchni18}
-\begin{frame}[c]{Vision holistique de l'intelligence (humaine ou artificielle)}
-	\begin{columns}
-		\begin{column}{.5\linewidth}
-			\begin{definitionblock}{Intelligence \cite{piaget1947psychologie}}
-				L'intelligence, c'est ce qu'on utilise quand on ne sait pas quoi faire : quand ni l'inné ni l'apprentissage ne nous a préparé à la situation particulière
-			\end{definitionblock}
-		\end{column}
-		\begin{column}{.5\linewidth}
-			\viconbox*[.49\linewidth]{Intelligence cognitive}{intelligences-cognitive}
-			\hfill
-			\viconbox*[.49\linewidth]{Intelligence collective}{intelligences-collective} \\[.5cm]
-			\viconbox*[.49\linewidth]{Intelligence\\sociale}{intelligences-social}
-			\hfill
-			\viconbox*[.49\linewidth]{Intelligence émotionnelle}{intelligences-emotional}
-		\end{column}
-	\end{columns}
-\end{frame}
+\localized\input{chapters/ai/intro-definitions-intelligence}
 
 \sidecite{ElFallahSeghrouchni18}
 \figureslide{{Différentes approches} pour l'IA}{ai_approaches}

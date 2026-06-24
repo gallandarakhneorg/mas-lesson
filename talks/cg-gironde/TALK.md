@@ -1,7 +1,4 @@
-%-----------------------------------------------------------------------
-% DOCUMENT TEMPLATE: https://github.com/gallandarakhneorg/tex-templates
-%-----------------------------------------------------------------------
-
+```latex
 \documentclass[french,sectioncirclenumberstyle,nocarnotlogo,noubelogo,repeattitleslide]{ciadbeamer}
 
 \usepackage[nosectionoutline]{localconfiguration}
@@ -13,3 +10,4 @@
 \input{talks/cg-gironde/main}
 
 \end{document}
+```

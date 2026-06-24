@@ -1,0 +1,68 @@
+\begin{graphicspathcontext}{{./chapters/ciad/examples/imgs/},{./chapters/ciad/examples/imgs/auto/},\old}
+
+\begin{frame}[t]{{Préparation de données complexes} de centrale énergétique}
+	\smaller\smaller
+	\begin{columns}
+		\begin{column}[t]{.33\linewidth}
+			\vspace{-.5cm}
+			\begin{center}
+				\includegraphics[width=.8\linewidth]{xplanresearch_dataset1}
+			\end{center}
+			\vspace{-.25cm}
+			\begin{compactitemize}
+			\item Décomposition du layout des pages avec YOLO
+			\item Traitement des pages simples par PyMuPDF
+			\item Traitement des pages complexes avec DotsOCR
+			\item Traitement des images avec Mistral
+			\item Production d'une description textuelle de l'image 
+			\end{compactitemize}
+		\end{column}
+		\begin{column}[t]{.33\linewidth}
+			\vspace{-.5cm}
+			\begin{center}
+				\includegraphics[width=.8\linewidth]{xplanresearch_dataset2}
+			\end{center}
+			\vspace{-.25cm}
+			\begin{compactitemize}
+			\item Plans et schémas fluides
+			\item Traitement des textes OCR
+			\item Traitement des traits pour pièces, murs...
+			\item Reconnaissance des éléments
+			\item Lecture des cartouches
+			\end{compactitemize}
+		\end{column}
+		\begin{column}[t]{.33\linewidth}
+			\vspace{-.5cm}
+			\begin{center}
+				\includegraphics[width=.8\linewidth]{xplanresearch_dataset3}
+			\end{center}
+			\vspace{-.25cm}
+			\begin{compactitemize}
+			\item Création du graph de connaissance par document: \\
+			Rapport de sûreté, notices de fonctionnement, notices techniques
+			\end{compactitemize}
+		\end{column}
+	\end{columns}
+	\putat(190,-8){
+		\includegraphics[height=.5cm]{ciad-ciadlogo}
+		\includegraphics[height=.5cm]{ciad-utbmlogo}
+		\includegraphics[height=.5cm]{xplanresearch}
+		\includegraphics[height=.5cm]{rbfclogo}
+		\includegraphics[height=.5cm]{bpifrancelogo}
+	}
+\end{frame}
+
+\addprojectlogos{ciad,utbm,xplanresearch,rbfc,bpifrance}
+\begin{textvideoframe}{Chatbot pour l'expertise nucléaire}{./videos/ciad/xplanresearch_rag.mp4}{xplanresearch_chat}
+	\hiconbox{Interroger la base de connaissances d'une centrale nucléaire}{prj-section-goal}
+	\hiconbox{%
+		$\rightarrow$ Base de connaissances \newline
+		$\rightarrow$ Base documentaire}{prj-section-inputs}
+	\hiconbox{%
+		$\rightarrow$ Graphe de connaissance \newline
+		$\rightarrow$ RAG (pour les documents)}{prj-section-tools}
+\end{textvideoframe}
+
+\end{graphicspathcontext}
+
+\endinput

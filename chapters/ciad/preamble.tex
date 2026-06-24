@@ -27,7 +27,15 @@
 \resolvepicturename{opmlogo}
 \pgfdeclareimage[height=0.5cm]{prj-logo-opm}{\resolvedfilename}
 
-\makeatletter
+\resolvepicturename{xplanresearch}
+\pgfdeclareimage[height=0.5cm]{prj-logo-xplanresearch}{\resolvedfilename}
+
+\makeatletter\resolvepicturename{rbfclogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-rbfc}{\resolvedfilename}
+
+\makeatletter\resolvepicturename{bpifrancelogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-bpifrance}{\resolvedfilename}
+
 \gdef\addprojectlogos#1{%
 	\gdef\@projectslide@list{}%
 	\beamer@theme@ciad@foreach,\in#1,\do%
