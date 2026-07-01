@@ -1,0 +1,34 @@
+\begin{graphicspathcontext}{{./chapters/ciad/examples/imgs/},{./chapters/ciad/examples/imgs/auto/},\old}
+
+\sidecite{Hao2014v2i, Hao2017}
+\begin{frame}[t]{{RT-CVC :} Contrôle collaboratif de la vitesse basé sur le temps de réaction}
+	\begin{columns}[c]
+		\begin{column}{.7\linewidth}
+			\begin{block}{Algorithme de contrôle longitudinal garantissant la sécurité du véhicule}
+				Prend en compte les retards implicites dans la commande de contrôle bas niveau
+			\end{block}
+			\smaller
+			\[
+			a_r = \dfrac{b_f \tau - 2 v_f \pm 2 b_f \sqrt{\dfrac{b_f b_l \tau^2 + 4 b_l v_f \tau + 4 v_l^2 - 8 b_l s}{4 b_f b_l}}}{2\tau}
+			\]
+			\smaller
+			\begin{itemize}
+				\item $s$ : distance entre les deux véhicules successifs
+				\item $v_f$, $v_l$ : vitesses actuelles du suiveur et du leader
+				\item $b_f$, $b_l$ : décélérations maximales du suiveur et du leader
+				\item $\tau$ : temps de réaction du conducteur
+			\end{itemize}
+		\end{column}
+		\begin{column}{.3\linewidth}
+			\includegraphics[width=\linewidth]{mobilitech.jpg}
+		\end{column}
+	\end{columns}
+	\vspace{.5cm}
+	\begin{center}
+		\tiny Hao, X. (2017). Contribution to cooperative intersection: longitudinal and lateral control of autonomous vehicle. PhD thesis, Université de Technologie de Belfort-Montbéliard, Belfort, France.
+	\end{center}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput

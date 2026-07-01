@@ -12,6 +12,9 @@
 \resolvepicturename{anrlogo}
 \pgfdeclareimage[height=0.5cm]{prj-logo-anr}{\resolvedfilename}
 
+\resolvepicturename{france2030logo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-france2030}{\resolvedfilename}
+
 \resolvepicturename{sayenslogo}
 \pgfdeclareimage[height=0.5cm]{prj-logo-sayens}{\resolvedfilename}
 
@@ -35,6 +38,41 @@
 
 \makeatletter\resolvepicturename{bpifrancelogo}
 \pgfdeclareimage[height=0.5cm]{prj-logo-bpifrance}{\resolvedfilename}
+
+\resolvepicturename{xhublogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-xhub}{\resolvedfilename}
+
+\resolvepicturename{dhllogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-dhl}{\resolvedfilename}
+
+\resolvepicturename{outsightlogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-outsight}{\resolvedfilename}
+
+\resolvepicturename{orangelogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-orange}{\resolvedfilename}
+
+\resolvepicturename{neotrucklogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-neotruck}{\resolvedfilename}
+
+\resolvepicturename{imtalbilogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-imtalbi}{\resolvedfilename}
+
+\resolvepicturename{elonroadlogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-elonroad}{\resolvedfilename}
+
+\resolvepicturename{ex9logo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-ex9}{\resolvedfilename}
+
+\resolvepicturename{avairxlogo}
+\pgfdeclareimage[height=0.5cm]{prj-logo-avairx}{\resolvedfilename}
+
+\gdef\addprojecttoplogos#1{%
+	\gdef\@projectslide@top@list{}%
+	\beamer@theme@ciad@foreach,\in#1,\do%
+		{\protected@xdef\@projectslide@top@list{\@projectslide@top@list\protect\pgfuseimage{prj-logo-\beamer@theme@ciad@foreach@term}\protect\;}}\and%
+		{\protected@xdef\@projectslide@top@list{\@projectslide@top@list\protect\pgfuseimage{prj-logo-\beamer@theme@ciad@foreach@term}}}%
+	\settextvideoheader{\@projectslide@top@list}%
+}
 
 \gdef\addprojectlogos#1{%
 	\gdef\@projectslide@list{}%

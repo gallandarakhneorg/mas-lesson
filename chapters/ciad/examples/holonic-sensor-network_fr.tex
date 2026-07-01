@@ -1,0 +1,75 @@
+\begin{graphicspathcontext}{{./chapters/ciad/examples/imgs/},{./chapters/ciad/examples/imgs/auto/},\old}
+
+\sidecite{Dani2024}
+\begin{frame}[t]{Objectifs du réseau de capteurs}
+	\begin{center}
+		\titlebox*[.3\linewidth]{Multi-capteurs}{Comment intégrer plusieurs capteurs et plusieurs types de capteurs dans le système ?}
+		\titlebox*[.3\linewidth]{Multi-méthodes}{Comment prendre en charge différents types de méthodes d'analyse d'images dans le système ?}
+		\titlebox*[.3\linewidth]{Passage à l'échelle}{Holonique multi-agents, conception d'un système scalable de traitement et d'apprentissage multi-méthodes et multi-caméras} \\[.25cm]
+		\includegraphics[width=.7\linewidth]{hsn-sn1} \\
+		{\tiny Manjah, D. (2024). Stream Based Active Distillation and Holonic Architecture for Scalable Camera Systems. PhD thesis, UCLouvain, Belgium}
+	\end{center}
+\end{frame}
+
+\sidecite{Dani2024}
+\begin{frame}[t]{Organisations dans le réseau de capteurs}
+	\vspace{-.17cm}
+	\begin{columns}
+		\begin{column}{.4\linewidth}
+			\smaller\smaller
+			\begin{block}{Plateforme cyber-physique - CPP}
+				\emph{Fournir des perceptions et gérer la qualité et les ressources}
+				\begin{description}
+					\item[Observateur] délivrer des perceptions grâce aux données du capteur
+					\item[Capteur] caméra ou système cyber-physique interne
+					\item[Fournisseur de ressources] répartition équitable des ressources
+				\end{description}
+			\end{block}
+			\begin{block}{Apprentissage}
+				\emph{Améliorer le comportement du capteur avec l'apprentissage par distillation active}
+				\begin{description}
+					\item[Étudiant] algorithme du capteur pour une zone ou méthode spécifique
+					\item[Enseignant] modèle général pour superviser les étudiants
+				\end{description}
+			\end{block}
+		\end{column}
+		\begin{column}{.6\linewidth}
+			\raggedleft
+			\includegraphics[width=\linewidth]{hsn-sn2} \\[.5cm]
+			\includegraphics[width=.9\linewidth]{hsn-sn3}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\sidecite{Dani2024}
+\figureslide{Mélange des organisations de service et d'apprentissage dans l'holarchie}{hsn-sn4}
+
+\sidecite{Dani2024}
+\begin{frame}{Résultats expérimentaux}
+	\begin{block}{Expériences}
+		\begin{description}
+			\item 40 caméras (jeu de données AI-City Tracking Challenge)
+			\item[Mono-méthode] YOLO v4 entraîné sur le jeu de données MIO-TCD
+			\item[Multi-méthode] YOLO v4 + soustraction de fond
+		\end{description}
+	\end{block}
+	\vspace{.5cm}
+	\begin{tabularx}{\linewidth}{X|X|X|X|X}
+		\hline
+		\textbf{Méthode} & \textbf{HOTA} & \textbf{Méthode (sec)} & \textbf{Agent (sec)} & \textbf{Total (sec)} \\
+		\hline\hline
+		DNN uniquement & $0.36$ & $2327 \pm 21$ & $10 \pm 1$ & $2337$ \\
+		\hline
+		Multi-méthode & $0.36$ & $2169 \pm 31$ & $12 \pm 1$ & $2182$ \\
+		\hline\hline
+		Différence & $0$ & $-158$ & $2$ & $-155$ \\
+		\hline
+	\end{tabularx}
+	\begin{center}
+		{\small 10 simulations, Intel(R) Core(TM) i7-8700K CPU 3.70GHz, GPU NVIDIA GeForce GTX 1080}
+	\end{center}
+\end{frame}
+
+\end{graphicspathcontext}
+
+\endinput

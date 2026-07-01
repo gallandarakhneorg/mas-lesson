@@ -3,11 +3,11 @@
 
 \usepackage{localconfiguration}
 
-\input{talks/ia-sante/preamble}%
+\input{talks/ai-health/preamble}%
 
 \begin{document}
  
-\input{talks/ia-sante/main}%
+\input{talks/ai-health/main}%
 
 \end{document}
 ```

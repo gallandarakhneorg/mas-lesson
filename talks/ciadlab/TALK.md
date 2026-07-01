@@ -1,3 +1,4 @@
+```latex
 \documentclass[french,sectioncirclenumberstyle,nocarnotlogo,noubelogo,repeattitleslide]{ciadbeamer}
 
 \usepackage[nosectionoutline]{localconfiguration}
@@ -9,3 +10,4 @@
 \input{talks/ciadlab/main}
 
 \end{document}
+```
