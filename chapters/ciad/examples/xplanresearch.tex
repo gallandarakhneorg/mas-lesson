@@ -1,0 +1,68 @@
+\begin{graphicspathcontext}{{./chapters/ciad/examples/imgs/},{./chapters/ciad/examples/imgs/auto/},\old}
+
+\begin{frame}[t]{{Complex data preparation} for a power plant}
+	\smaller\smaller
+	\begin{columns}
+		\begin{column}[t]{.33\linewidth}
+			\vspace{-.5cm}
+			\begin{center}
+				\includegraphics[width=.8\linewidth]{xplanresearch_dataset1}
+			\end{center}
+			\vspace{-.25cm}
+			\begin{compactitemize}
+			\item Page layout decomposition with YOLO
+			\item Processing of simple pages with PyMuPDF
+			\item Processing of complex pages with DotsOCR
+			\item Image processing with Mistral
+			\item Production of a textual description of the image
+			\end{compactitemize}
+		\end{column}
+		\begin{column}[t]{.33\linewidth}
+			\vspace{-.5cm}
+			\begin{center}
+				\includegraphics[width=.8\linewidth]{xplanresearch_dataset2}
+			\end{center}
+			\vspace{-.25cm}
+			\begin{compactitemize}
+			\item Fluid system plans and diagrams
+			\item OCR text processing
+			\item Line processing for parts, walls, etc.
+			\item Element recognition
+			\item Reading of title blocks
+			\end{compactitemize}
+		\end{column}
+		\begin{column}[t]{.33\linewidth}
+			\vspace{-.5cm}
+			\begin{center}
+				\includegraphics[width=.8\linewidth]{xplanresearch_dataset3}
+			\end{center}
+			\vspace{-.25cm}
+			\begin{compactitemize}
+			\item Creation of a knowledge graph per document: \\
+			Safety report, operating instructions, technical manuals
+			\end{compactitemize}
+		\end{column}
+	\end{columns}
+	\putat(190,-8){
+		\includegraphics[height=.5cm]{ciad-ciadlogo}
+		\includegraphics[height=.5cm]{ciad-utbmlogo}
+		\includegraphics[height=.5cm]{xplanresearch}
+		\includegraphics[height=.5cm]{rbfclogo}
+		\includegraphics[height=.5cm]{bpifrancelogo}
+	}
+\end{frame}
+
+\addprojectlogos{ciad,utbm,xplanresearch,rbfc,bpifrance}
+\begin{textvideoframe}{Chatbot for nuclear expertise}{./videos/ciad/xplanresearch_rag.mp4}{xplanresearch_chat}
+	\hiconbox{Querying the knowledge base of a nuclear power plant}{prj-section-goal}
+	\hiconbox{%
+		$\rightarrow$ Knowledge base \newline
+		$\rightarrow$ Document repository}{prj-section-inputs}
+	\hiconbox{%
+		$\rightarrow$ Knowledge graph \newline
+		$\rightarrow$ RAG (for documents)}{prj-section-tools}
+\end{textvideoframe}
+
+\end{graphicspathcontext}
+
+\endinput
