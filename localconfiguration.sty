@@ -72,14 +72,14 @@
 \def\insertsubsubsectionnumber{\arabic{subsubsection}}
 
 \iflocalconfiguration@sectionoutline
-	\AtBeginSection{
-	  	\tableofcontentslide[currentsection,hideothersubsections]
+	\AtBeginSection{%
+	  	\sectiontableofcontentslide%
 	}
-	\AtBeginSubsection{
-	  	\tableofcontentslide[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/hide/hide]
+	\AtBeginSubsection{%
+	  	\subsectiontableofcontentslide%
 	}
-	\AtBeginSubsubsection{
-	  	\tableofcontentslide[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+	\AtBeginSubsubsection{%
+	  	\subsubsectiontableofcontentslide%
 	}
 \fi
 

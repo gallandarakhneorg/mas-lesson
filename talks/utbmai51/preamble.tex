@@ -1,0 +1,37 @@
+\addauthor*[N.~Gaud]{Prof.Dr. Nicolas~GAUD}
+\addauthor[S.~Galland]{Prof.Dr. St\'ephane~GALLAND}
+
+\event{AI51 - UTBM - 2026}
+
+\title{Multiagent Systems and Simulation}
+
+\setpredefinedtitlepagebackground8
+
+\begin{graphicspathcontext}{{./talks/utbmai51/imgs/},{./talks/utbmai51/imgs/auto/},\old}
+%	\resolvepicturename{cps_ai_titlepage}
+%	\pgfdeclareimage[height=\paperheight]{cps-ai-titlepage}{\resolvedfilename}
+%	\settitlepageuserbackground{cps-ai-titlepage}
+	
+%	\resolvepicturename{utbmai51logo_titlepage}
+%	\pgfdeclareimage[width=5cm]{utbmai51logo-titlepage}{\resolvedfilename}
+%	\settitlepageleftfigure(0,-30){utbmai51logo-titlepage}
+
+	\resolvepicturename{frontright_titlepage}
+	\pgfdeclareimage[width=6cm]{frontright-titlepage}{\resolvedfilename}
+	\settitlepagerightfigure(230,-70){frontright-titlepage}
+
+	\def\MODULEICON{utbmai51logo}
+	\useheaderlinewithuserlogo[width=1.2cm,y=-15]{\MODULEICON}
+
+\end{graphicspathcontext}
+
+\usefootlinewithsections
+
+% Preambles of sections
+\input{./chapters/ciad/preamble}
+\input{./chapters/cps/preamble}
+\input{./chapters/ai/preamble}
+\input{./chapters/mas/preamble}
+\input{./chapters/simulation/preamble}
+
+\endinput

@@ -1,11 +1,13 @@
+```latex
 \documentclass[english,partsectioncirclenumberstyle,nocarnotlogo,noubelogo]{ciadbeamer}
 
 \usepackage{localconfiguration}
 
-\input{talks/utbmai51/preamble}%
+\input{talks/utbm_ai51/preamble}%
 
 \begin{document}
  
-\input{talks/utbmai51/main}%
+\input{talks/utbm_ai51/main}%
 
 \end{document}
+```

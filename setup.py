@@ -103,7 +103,7 @@ def install_talk(talk_id):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Manage LaTeX/Beamer talks. Lists available talks by default."
+        description="Manage LaTeX/Beamer talks. Bdy default, lists available talks."
     )
     parser.add_argument(
         "--install",
