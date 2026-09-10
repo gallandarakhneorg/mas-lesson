@@ -3,11 +3,11 @@
 
 \usepackage{localconfiguration}
 
-\input{talks/utbm_ai51/preamble}%
+\input{talks/utbmai51/preamble}%
 
 \begin{document}
  
-\input{talks/utbm_ai51/main}%
+\input{talks/utbmai51/main}%
 
 \end{document}
 ```

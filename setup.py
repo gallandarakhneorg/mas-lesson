@@ -69,12 +69,52 @@ def extract_latex_content(md_path):
     # Join lines and strip trailing whitespace, but keep internal structure
     return ''.join(content_lines).rstrip('\n')
 
+def read_autolatex_paths(paths_path):
+    """
+    Read the list of paths for AutoLaTeX.
+    Returns the list of paths.
+    """
+    with open(paths_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    content = list()
+    for line in lines:
+        if not line.startswith("#"):
+            content.append(line.replace('\r', '').replace('\n', ''))
+    return content
+
+def update_autolatex_config(autolatex_file, paths):
+    """
+    Read the AutoLaTeX configuration file and update it.
+    """
+    with open(autolatex_file, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    new_lines = list()
+    full_path = ':'.join(paths)
+    for line in lines:
+        if line.startswith('image directory'):
+            new_line = f"image directory = {full_path}\n"
+        else:
+            new_line = line
+        new_lines.append(new_line)
+    with open(autolatex_file, 'w', encoding='utf-8') as f:
+        for line in new_lines:
+            f.write(line)
+
 def install_talk(talk_id):
     """Install the talk with the given ID into TALK.tex."""
     talk_dir = TALKS_DIR / talk_id
     if not talk_dir.exists():
         print(f"Error: Talk directory '{talk_dir}' does not exist.")
         return False
+
+    paths_file = talk_dir / "autolatex.paths"
+    autolatex_file = Path(".autolatex_project.cfg")
+    if paths_file.exists() and autolatex_file.exists():
+        paths = read_autolatex_paths(paths_file)
+        update_autolatex_config(autolatex_file, paths)
+        print(f"Updating AutoLaTeX configuration in {autolatex_file}.")
+    else:
+        print("No AutoLaTeX configuration found in {paths_file}.")
 
     md_file = talk_dir / "TALK.md"
     if not md_file.exists():
