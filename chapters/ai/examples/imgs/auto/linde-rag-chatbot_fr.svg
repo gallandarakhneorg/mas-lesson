@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="222.2545mm"
+   height="109.55907mm"
+   viewBox="0 0 222.2545 109.55907"
+   version="1.1"
+   id="svg1968"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="linde-rag-chatbot_fr.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1970"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.77326038"
+     inkscape:cx="409.95247"
+     inkscape:cy="268.34428"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1965">
+    <filter
+       id="softShadow"
+       x="-7.2171838e-05"
+       y="-0.00035576471"
+       width="1.0001443"
+       height="1.0007115">
+      <feDropShadow
+         dx="0"
+         dy="4"
+         stdDeviation="6"
+         flood-color="#123b64"
+         flood-opacity="0.12" />
+      <feGaussianBlur
+         stdDeviation="0.0252"
+         id="feGaussianBlur5429" />
+    </filter>
+    <marker
+       id="arrowBlue"
+       markerWidth="12"
+       markerHeight="12"
+       refX="10"
+       refY="6"
+       orient="auto">
+      <path
+         d="M 0,0 12,6 0,12 Z"
+         fill="#247eb4"
+         id="path26" />
+    </marker>
+    <linearGradient
+       id="chatbot"
+       x1="248.66754"
+       y1="1185.1639"
+       x2="631.4223"
+       y2="1567.9186"
+       gradientTransform="scale(2.2202279,0.45040422)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#247eb4"
+         id="stop19" />
+      <stop
+         offset="100%"
+         stop-color="#144b83"
+         id="stop21" />
+    </linearGradient>
+    <filter
+       id="filter3323"
+       x="-0.0048775194"
+       y="-0.0071907088"
+       width="1.0049782"
+       height="1.0143814">
+      <feDropShadow
+         dx="0"
+         dy="4"
+         stdDeviation="6"
+         flood-color="#123b64"
+         flood-opacity="0.12" />
+      <feGaussianBlur
+         stdDeviation="0.0087836064"
+         id="feGaussianBlur3325" />
+    </filter>
+    <filter
+       id="filter3357"
+       x="-0.0071622535"
+       y="-0.0071622535"
+       width="1.0143245"
+       height="1.0143245">
+      <feDropShadow
+         dx="0"
+         dy="4"
+         stdDeviation="6"
+         flood-color="#123b64"
+         flood-opacity="0.12" />
+      <feGaussianBlur
+         stdDeviation="0.0071"
+         id="feGaussianBlur3359" />
+    </filter>
+    <filter
+       id="filter3391"
+       x="-0.0064178098"
+       y="-0.007169279"
+       width="1.0065315"
+       height="1.0143386">
+      <feDropShadow
+         dx="0"
+         dy="4"
+         stdDeviation="6"
+         flood-color="#123b64"
+         flood-opacity="0.12" />
+      <feGaussianBlur
+         stdDeviation="0.0075156738"
+         id="feGaussianBlur3393" />
+    </filter>
+    <filter
+       id="filter3425"
+       x="-0.0071622535"
+       y="-0.0071622535"
+       width="1.0143245"
+       height="1.0143245">
+      <feDropShadow
+         dx="0"
+         dy="4"
+         stdDeviation="6"
+         flood-color="#123b64"
+         flood-opacity="0.12" />
+      <feGaussianBlur
+         stdDeviation="0.0071"
+         id="feGaussianBlur3427" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(3.2536844,-78.164009)">
+    <g
+       filter="url(#softShadow)"
+       id="g148"
+       transform="matrix(0.26458333,0,0,0.26458333,-150.6266,1.1758371)"
+       style="filter:url(#filter3323)">
+      <rect
+         x="732"
+         y="292"
+         width="142"
+         height="142"
+         rx="18"
+         fill="#eef5fb"
+         stroke="#bfcee7"
+         stroke-width="2"
+         id="rect136" />
+      <rect
+         x="770"
+         y="325"
+         width="66"
+         height="47"
+         rx="6"
+         fill="#ffffff"
+         stroke="#2764a5"
+         stroke-width="3"
+         id="rect138" />
+      <path
+         d="m 779,337 h 48 m -48,12 h 40 m -40,12 h 30"
+         stroke="#2764a5"
+         stroke-width="3"
+         stroke-linecap="round"
+         id="path140" />
+      <path
+         d="m 763,315 v -8 h 10 m 70,8 v -8 h -10 m -70,75 v 9 h 10 m 70,-9 v 9 h -10"
+         fill="none"
+         stroke="#38a9d4"
+         stroke-width="3"
+         id="path142" />
+      <text
+         x="761"
+         y="420"
+         class="heading"
+         font-size="16"
+         id="text144"
+         style="font-weight:700;font-size:20px;font-family:Arial, Helvetica, sans-serif;fill:#123b64"><tspan
+           sodipodi:role="line"
+           id="tspan566"
+           x="761"
+           y="420">OCR / IA</tspan></text>
+    </g>
+    <g
+       filter="url(#softShadow)"
+       id="g162"
+       transform="matrix(0.26458333,0,0,0.26458333,-150.6266,1.1758371)"
+       style="filter:url(#filter3357)">
+      <rect
+         x="906"
+         y="292"
+         width="142"
+         height="142"
+         rx="18"
+         fill="#f3f8ed"
+         stroke="#c6dfb8"
+         stroke-width="2"
+         id="rect150" />
+      <rect
+         x="939"
+         y="319"
+         width="75"
+         height="60"
+         rx="7"
+         fill="#ffffff"
+         stroke="#5c9a48"
+         stroke-width="3"
+         id="rect152" />
+      <path
+         d="m 951,335 h 50 m -50,13 h 50 m -50,13 h 31"
+         stroke="#5c9a48"
+         stroke-width="3"
+         stroke-linecap="round"
+         id="path154" />
+      <path
+         d="m 976,319 v 60"
+         stroke="#9bc889"
+         stroke-width="2"
+         stroke-dasharray="4, 4"
+         id="path156" />
+      <text
+         x="925"
+         y="412"
+         class="heading"
+         font-size="16"
+         id="text158"
+         style="font-weight:700;font-size:20px;font-family:Arial, Helvetica, sans-serif;fill:#123b64">Découpage</text>
+      <text
+         x="925"
+         y="428"
+         class="small"
+         id="text160"
+         style="font-size:14px;font-family:Arial, Helvetica, sans-serif;fill:#557086">+ métadonnées</text>
+    </g>
+    <g
+       filter="url(#softShadow)"
+       id="g176"
+       transform="matrix(0.26458333,0,0,0.26458333,-150.6266,1.1758371)"
+       style="filter:url(#filter3391)">
+      <rect
+         x="1080"
+         y="292"
+         width="142"
+         height="142"
+         rx="18"
+         fill="#fff4df"
+         stroke="#efd19b"
+         stroke-width="2"
+         id="rect164" />
+      <circle
+         cx="1144"
+         cy="345"
+         r="25"
+         fill="none"
+         stroke="#dd941d"
+         stroke-width="7"
+         id="circle166" />
+      <path
+         d="m 1162,363 20,20"
+         stroke="#dd941d"
+         stroke-width="8"
+         stroke-linecap="round"
+         id="path168" />
+      <circle
+         cx="1144"
+         cy="345"
+         r="8"
+         fill="#fff4df"
+         id="circle170" />
+      <text
+         x="1085"
+         y="412"
+         class="heading"
+         font-size="16"
+         id="text172"
+         style="font-weight:700;font-size:20px;font-family:Arial, Helvetica, sans-serif;fill:#123b64">Elasticsearch</text>
+      <text
+         x="1082"
+         y="428"
+         class="small"
+         id="text174"
+         style="font-size:14px;font-family:Arial, Helvetica, sans-serif;fill:#557086">Recherche pertinente</text>
+    </g>
+    <g
+       filter="url(#softShadow)"
+       id="g194"
+       transform="matrix(0.26458333,0,0,0.26458333,-150.6266,1.1758371)"
+       style="filter:url(#filter3425)">
+      <rect
+         x="1254"
+         y="292"
+         width="142"
+         height="142"
+         rx="18"
+         fill="#f4edfb"
+         stroke="#d7c3ec"
+         stroke-width="2"
+         id="rect178" />
+      <circle
+         cx="1325"
+         cy="345"
+         r="28"
+         fill="#ffffff"
+         stroke="#8253ae"
+         stroke-width="3"
+         id="circle180" />
+      <circle
+         cx="1315"
+         cy="341"
+         r="4"
+         fill="#8253ae"
+         id="circle182" />
+      <circle
+         cx="1335"
+         cy="341"
+         r="4"
+         fill="#8253ae"
+         id="circle184" />
+      <path
+         d="m 1313,355 q 12,10 24,0"
+         fill="none"
+         stroke="#8253ae"
+         stroke-width="3"
+         stroke-linecap="round"
+         id="path186" />
+      <path
+         d="m 1325,309 v -11 m -32,21 -7,-8 m 71,8 7,-8"
+         stroke="#8253ae"
+         stroke-width="3"
+         stroke-linecap="round"
+         id="path188" />
+      <text
+         x="1303"
+         y="418"
+         class="heading"
+         font-size="16"
+         id="text190"
+         style="font-weight:700;font-size:20px;font-family:Arial, Helvetica, sans-serif;fill:#123b64">LLM</text>
+    </g>
+    <path
+       d="m 15.796315,124.47167 c 58.472918,8.99583 137.847915,8.99583 184.149995,0"
+       fill="none"
+       stroke="#38a9d4"
+       stroke-width="0.79375"
+       stroke-dasharray="8, 8"
+       marker-end="url(#arrowBlue)"
+       id="path206" />
+    <text
+       x="63.156734"
+       y="125.79463"
+       class="small"
+       id="text208"
+       style="font-size:5.64444px;font-family:Arial, Helvetica, sans-serif;fill:#557086;stroke-width:0.264583">Contexte pertinent injecté dans le prompt</text>
+    <rect
+       x="558"
+       y="535"
+       width="838"
+       height="170"
+       rx="20"
+       fill="url(#chatbot)"
+       filter="url(#softShadow)"
+       id="rect210"
+       style="fill:url(#chatbot);filter:url(#softShadow)"
+       transform="matrix(0.26458333,0,0,0.26458333,-150.6266,1.1758371)" />
+    <circle
+       cx="15.531734"
+       cy="165.21751"
+       r="11.377083"
+       fill="#ffffff"
+       opacity="0.16"
+       id="circle212"
+       style="stroke-width:0.264583" />
+    <path
+       d="m 8.6525654,162.83625 q 0,-5.55625 6.8791656,-5.55625 h 6.614583 q 5.55625,0 5.55625,5.55625 v 5.82083 q 0,5.55625 -5.55625,5.55625 h -6.614583 l -4.233333,3.175 v -3.175 q -2.6458326,-1.5875 -2.6458326,-5.55625 z"
+       fill="#ffffff"
+       id="path214"
+       style="stroke-width:0.264583" />
+    <circle
+       cx="13.415066"
+       cy="165.74667"
+       r="1.0583333"
+       fill="#247eb4"
+       id="circle216"
+       style="stroke-width:0.264583" />
+    <circle
+       cx="17.648396"
+       cy="165.74667"
+       r="1.0583333"
+       fill="#247eb4"
+       id="circle218"
+       style="stroke-width:0.264583" />
+    <circle
+       cx="21.881733"
+       cy="165.74667"
+       r="1.0583333"
+       fill="#247eb4"
+       id="circle220"
+       style="stroke-width:0.264583" />
+    <text
+       x="34.58173"
+       y="154.89876"
+       class="whiteText"
+       font-size="5.82083px"
+       font-weight="700"
+       id="text222"
+       style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff;stroke-width:0.264583">Chatbot métier</text>
+    <text
+       x="34.58173"
+       y="163.10085"
+       class="whiteText"
+       font-size="4.49792px"
+       opacity="0.9"
+       id="text224"
+       style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff;stroke-width:0.264583">Réponse naturelle, contextualisée et vérifiable</text>
+    <rect
+       x="34.58173"
+       y="169.18626"
+       width="171.97917"
+       height="12.7"
+       rx="3.175"
+       fill="#ffffff"
+       opacity="0.96"
+       id="rect226"
+       style="stroke-width:0.264583" />
+    <text
+       x="40.402561"
+       y="177.12376"
+       font-family="Arial"
+       font-size="4.23333px"
+       fill="#17466e"
+       id="text228"
+       style="stroke-width:0.264583">« Voici la procédure applicable, avec les passages sources utilisés. »</text>
+    <rect
+       x="145.70673"
+       y="146.69667"
+       width="59.53125"
+       height="7.4083333"
+       rx="3.7041667"
+       fill="#ffffff"
+       opacity="0.18"
+       id="rect230"
+       style="stroke-width:0.264583" />
+    <text
+       x="150.9984"
+       y="151.72375"
+       class="whiteText"
+       font-size="3.43958px"
+       font-weight="700"
+       id="text232"
+       style="font-family:Arial, Helvetica, sans-serif;fill:#ffffff;stroke-width:0.264583">✓ Citations et sources</text>
+    <rect
+       x="-2.9891009"
+       y="78.434166"
+       width="37.570831"
+       height="37.570831"
+       rx="4.7624998"
+       fill="#e8f5fa"
+       stroke="#a8d7e6"
+       stroke-width="0.529167"
+       id="rect124" />
+    <rect
+       x="9.4463158"
+       y="84.519585"
+       width="12.435416"
+       height="16.404167"
+       rx="1.3229166"
+       fill="#ffffff"
+       stroke="#247eb4"
+       stroke-width="0.79375"
+       id="rect126" />
+    <path
+       d="m 11.827565,87.959169 h 7.672916 m -7.672916,3.439584 h 7.672916 m -7.672916,3.439583 h 6.085416"
+       stroke="#247eb4"
+       stroke-width="0.79375"
+       stroke-linecap="round"
+       id="path128" />
+    <text
+       x="15.625535"
+       y="107.00916"
+       class="heading"
+       font-size="16"
+       id="text132"
+       style="font-weight:700;font-size:5.29167px;font-family:Arial, Helvetica, sans-serif;text-align:center;text-anchor:middle;fill:#123b64;stroke-width:0.264583"><tspan
+         sodipodi:role="line"
+         id="tspan560"
+         x="15.625535"
+         y="107.00916">Documents</tspan><tspan
+         sodipodi:role="line"
+         id="tspan562"
+         x="15.625535"
+         y="113.62375">métier</tspan></text>
+    <g
+       stroke="#247eb4"
+       stroke-width="4"
+       fill="none"
+       marker-end="url(#arrowBlue)"
+       id="g204"
+       transform="matrix(0.26458333,0,0,0.26458333,-147.98075,1.1758371)">
+      <path
+         d="m 702,363 h 20"
+         id="path196" />
+      <path
+         d="m 876,363 h 20"
+         id="path198" />
+      <path
+         d="m 1050,363 h 20"
+         id="path200" />
+      <path
+         d="m 1224,363 h 20"
+         id="path202" />
+    </g>
+  </g>
+</svg>

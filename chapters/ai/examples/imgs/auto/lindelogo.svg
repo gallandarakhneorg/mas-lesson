@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="40.429375mm"
+   height="10.656423mm"
+   viewBox="0 0 40.429375 10.656423"
+   version="1.1"
+   id="svg604"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="lindelogo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview606"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.77326038"
+     inkscape:cx="275.45702"
+     inkscape:cy="285.15621"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs601" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-32.085287,-73.252091)">
+    <path
+       d="m 33.01133,79.491148 c 1.5875,-5.820833 7.672916,-7.14375 10.847916,-3.704167 -3.175,-1.058333 -5.820833,0.79375 -6.614583,4.497917 -0.79375,2.910416 -2.910417,3.96875 -4.497916,1.852083"
+       fill="none"
+       stroke="#176e9f"
+       stroke-width="1.32292"
+       stroke-linecap="round"
+       id="path46" />
+    <path
+       d="m 40.419663,74.082386 c -2.116667,3.174999 -1.322917,7.408333 3.175,8.995833"
+       fill="none"
+       stroke="#45afd0"
+       stroke-width="1.32292"
+       stroke-linecap="round"
+       id="path48" />
+    <text
+       x="48.886326"
+       y="81.747292"
+       class="title"
+       id="text50"
+       style="font-weight:700;font-size:8.99583px;font-family:Arial, Helvetica, sans-serif;fill:#000000;stroke-width:0.264583">Linde</text>
+  </g>
+</svg>
