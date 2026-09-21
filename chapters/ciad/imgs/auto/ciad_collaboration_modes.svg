@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1055.9054 638.80981"
+   width="1055.9054"
+   height="638.80981"
+   font-family="'Segoe UI', Arial, Helvetica, sans-serif"
+   version="1.1"
+   id="svg252"
+   sodipodi:docname="ciad_collaboration_modes.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:c2pa="http://c2pa.org/manifest">
+  <sodipodi:namedview
+     id="namedview254"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.7125242"
+     inkscape:cx="478.82535"
+     inkscape:cy="409.62925"
+     inkscape:window-width="3840"
+     inkscape:window-height="2091"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="funding-2" />
+  <metadata
+     id="metadata2">
+    <c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo5OGNjZmU0NC0xYTFkLTQ1YjgtYmY1ZS0zNTkyYjgxZDM4N2YAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaIV2Tf/IiI8JLWR354dbnK8AAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDplM2U0MDdkYS1jMzIzLTRjMTEtYmUxMC02NTAzYTE0NjM2ZWJscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoWDFV8VNT0hA1ZNJzFHm7ZgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggFvUx8/RFe35nJbR2JjfkxSQUno/n6s/ceYCS4leIOhqkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaKMpHoyVq6Q9IKhHo6DiU+0AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIGUbJ+x6Is+vRPV4tUA+DBkrwpadWahBUePcPPpF+32PZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GQVQZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjk4Y2NmZTQ0LTFhMWQtNDViOC1iZjVlLTM1OTJiODFkMzg3Zi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmUyNDU0MDY3LTEzYzEtNGNmMy1iNDExLTlhNzkwZGY5MDQ0MXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAW9THz9EV7fmcltHYmN+TFJBSej+fqz9x5gJLiV4g6GqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggw1kUfwYJ1YBE1wYnBj2gpe2YmGDp0a1MyI0XYCOXmmiiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggK1vT9BzW9sU547d1Q7eXdQ+mRF96vEtyc+Gy13GhPMR0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQHkVbdiDhxBeIs6Ch8T7CjIRhsatvzpI8E3m9RIfOwxcIFqUVmXt/+7Vc/DQFMxYi1cs+kqgD6M4bE7OhlpkHIs=</c2pa:manifest>
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Research–partner collaboration modes</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title
+     id="title4">Research–partner collaboration modes</title>
+  <desc
+     id="desc6">TRL and types of work, types of contracts, funding modes and human resources available to the laboratory.</desc>
+  <defs
+     id="defs12">
+    <marker
+       id="arrowG"
+       viewBox="0 0 10 10"
+       refX="9"
+       refY="5"
+       markerWidth="6.5"
+       markerHeight="6.5"
+       orient="auto-start-reverse">
+      <path
+         d="M 0,0 10,5 0,10 Z"
+         fill="#555555"
+         id="path8" />
+    </marker>
+  </defs>
+  <g
+     id="g2672"
+     transform="translate(-98.435598,-67.064249)">
+    <text
+       x="100"
+       y="460"
+       font-size="15.5px"
+       font-weight="700"
+       fill="#111111"
+       id="text159">Funding modes</text>
+    <g
+       id="funding-1">
+      <rect
+         x="100"
+         y="476"
+         width="10"
+         height="100"
+         rx="5"
+         fill="#2e86c1"
+         id="rect163" />
+      <text
+         x="122"
+         y="500"
+         font-size="14px"
+         font-weight="700"
+         fill="#1b5a8a"
+         id="text165">Direct funding</text>
+      <text
+         x="122"
+         y="518"
+         font-size="14px"
+         font-weight="700"
+         fill="#1b5a8a"
+         id="text167">by the partner</text>
+      <text
+         x="122"
+         y="540"
+         font-size="12px"
+         fill="#26445e"
+         id="text175"><tspan
+           x="122"
+           dy="0"
+           id="tspan169">Generally takes the form of a</tspan><tspan
+           x="122"
+           dy="16"
+           id="tspan171">research service contract,</tspan><tspan
+           x="122"
+           dy="16"
+           id="tspan173">with or without IP sharing</tspan></text>
+    </g>
+    <g
+       id="funding-2">
+      <rect
+         x="465"
+         y="476"
+         width="10"
+         height="100"
+         rx="5"
+         fill="#229954"
+         id="rect180" />
+      <text
+         x="487"
+         y="500"
+         font-size="14px"
+         font-weight="700"
+         fill="#186a3b"
+         id="text182">Public funding</text>
+      <text
+         x="487"
+         y="522"
+         font-size="12px"
+         fill="#1e5631"
+         id="text192"><tspan
+           sodipodi:role="line"
+           id="tspan2470"
+           x="487"
+           y="522"><tspan
+             x="487"
+             dy="0"
+             id="tspan184">ANRT, BPI, FRI, FEDER, ANR,</tspan><tspan
+             x="487"
+             dy="16"
+             id="tspan186">ADEME, European Union, …</tspan><tspan
+             x="487"
+             id="tspan188" /></tspan><tspan
+           sodipodi:role="line"
+           id="tspan2472"
+           x="487"
+           y="537"><tspan
+             x="487"
+             id="tspan2474" /></tspan><tspan
+           sodipodi:role="line"
+           x="487"
+           y="552"
+           id="tspan2477"><tspan
+             x="487"
+             id="tspan2479">often backed by a collaborative</tspan><tspan
+             x="487"
+             dy="16"
+             id="tspan190">research project</tspan></tspan></text>
+    </g>
+    <g
+       id="funding-3">
+      <rect
+         x="830"
+         y="476"
+         width="10"
+         height="100"
+         rx="5"
+         fill="#b7950b"
+         id="rect197" />
+      <text
+         x="852"
+         y="500"
+         font-size="14px"
+         font-weight="700"
+         fill="#7d6608"
+         id="text199">Proof of Concept</text>
+      <text
+         x="852"
+         y="518"
+         font-size="14px"
+         font-weight="700"
+         fill="#7d6608"
+         id="text201">subsidized</text>
+      <text
+         x="852"
+         y="540"
+         font-size="12px"
+         fill="#6b5b14"
+         id="text209"><tspan
+           sodipodi:role="line"
+           id="tspan2493"
+           x="852"
+           y="540"><tspan
+             x="852"
+             dy="0"
+             id="tspan203">DEDIHCATED-BFC scheme,</tspan><tspan
+             x="852"
+             dy="16"
+             id="tspan205">allowing a PoC to be funded</tspan><tspan
+             x="852"
+             id="tspan207" /></tspan><tspan
+           sodipodi:role="line"
+           id="tspan2495"
+           x="852"
+           y="555"><tspan
+             x="852"
+             id="tspan2497" /></tspan><tspan
+           sodipodi:role="line"
+           x="852"
+           y="570"
+           id="tspan2499"><tspan
+             x="852"
+             id="tspan2501">at ~50% and up to TRL 8</tspan></tspan></text>
+    </g>
+  </g>
+  <!-- ============ BACKGROUND / FRAME ============ -->
+  <!-- ================================================================= -->
+  <!-- ZONE 1 : TRL LADDER + TYPES DE TRAVAUX -->
+  <!-- ================================================================= -->
+  <!-- work-type bars, staggered on two rows -->
+  <!-- TRL axis -->
+  <!-- PoC bracket -->
+  <!-- ================================================================= -->
+  <!-- ZONE 2 : TYPES DE CONTRATS -->
+  <!-- ================================================================= -->
+  <!-- Contract box 1 -->
+  <!-- Contract box 2 -->
+  <!-- Contract box 3 -->
+  <g
+     id="g2541"
+     transform="translate(-98.435598,-73.566114)">
+    <text
+       x="100"
+       y="290"
+       font-size="15.5px"
+       font-weight="700"
+       fill="#111111"
+       id="text100">Types of collaboration contracts</text>
+    <g
+       id="contract-1">
+      <rect
+         x="100"
+         y="306"
+         width="10"
+         height="118"
+         rx="5"
+         fill="#e67e22"
+         id="rect104" />
+      <text
+         x="122"
+         y="330"
+         font-size="14px"
+         font-weight="700"
+         fill="#b9530a"
+         id="text106">Research service</text>
+      <text
+         x="122"
+         y="348"
+         font-size="12.5px"
+         font-weight="700"
+         fill="#b9530a"
+         id="text108">100% partner IP</text>
+      <text
+         x="122"
+         y="368"
+         font-size="12px"
+         fill="#5c3a1a"
+         id="text118"><tspan
+           x="122"
+           dy="0"
+           id="tspan110">The laboratory carries out a research</tspan><tspan
+           x="122"
+           dy="16"
+           id="tspan112">service; the resulting intellectual</tspan><tspan
+           x="122"
+           dy="16"
+           id="tspan114">property belongs entirely to the</tspan><tspan
+           x="122"
+           dy="16"
+           id="tspan116">partner</tspan></text>
+    </g>
+    <g
+       id="contract-2">
+      <rect
+         x="465"
+         y="306"
+         width="10"
+         height="118"
+         rx="5"
+         fill="#16a085"
+         id="rect123" />
+      <text
+         x="487"
+         y="330"
+         font-size="14px"
+         font-weight="700"
+         fill="#0e6656"
+         id="text125">Research service</text>
+      <text
+         x="487"
+         y="348"
+         font-size="12.5px"
+         font-weight="700"
+         fill="#0e6656"
+         id="text127">Shared IP</text>
+      <text
+         x="487"
+         y="368"
+         font-size="12px"
+         fill="#204f45"
+         id="text137"><tspan
+           x="487"
+           dy="0"
+           id="tspan129">The laboratory carries out a research</tspan><tspan
+           x="487"
+           dy="16"
+           id="tspan131">service; the intellectual property is</tspan><tspan
+           x="487"
+           dy="16"
+           id="tspan133">shared between the laboratory and the</tspan><tspan
+           x="487"
+           dy="16"
+           id="tspan135">partner</tspan></text>
+    </g>
+    <g
+       id="contract-3">
+      <rect
+         x="830"
+         y="306"
+         width="10"
+         height="118"
+         rx="5"
+         fill="#8e44ad"
+         id="rect142" />
+      <text
+         x="852"
+         y="330"
+         font-size="14px"
+         font-weight="700"
+         fill="#6c3483"
+         id="text144">Collaborative research</text>
+      <text
+         x="852"
+         y="348"
+         font-size="12.5px"
+         font-weight="700"
+         fill="#6c3483"
+         id="text146">project</text>
+      <text
+         x="852"
+         y="368"
+         font-size="12px"
+         fill="#432755"
+         id="text156"><tspan
+           x="852"
+           dy="0"
+           id="tspan148">Structured collaboration between the</tspan><tspan
+           x="852"
+           dy="16"
+           id="tspan150">laboratory and the partner, with</tspan><tspan
+           x="852"
+           dy="16"
+           id="tspan152">reciprocal scientific contributions</tspan><tspan
+           x="852"
+           dy="16"
+           id="tspan154">and shared project governance</tspan></text>
+    </g>
+  </g>
+  <!-- ================================================================= -->
+  <!-- ZONE 3 : MODES DE FINANCEMENT -->
+  <!-- ================================================================= -->
+  <!-- Funding box 1 : direct par le partenaire -->
+  <!-- Funding box 2 : financements publics -->
+  <!-- Funding box 3 : PoC subventionnée -->
+  <!-- connectors: direct funding -> prestation contracts -->
+  <path
+     d="m 101.95297,395.28442 c 0,-26 0,-26 10,-52"
+     fill="none"
+     stroke="#2e86c1"
+     stroke-width="1.6"
+     stroke-dasharray="4, 3"
+     marker-end="url(#arrowG)"
+     id="path212" />
+  <path
+     d="m 221.95297,395.28442 c 80,-26 160,-26 220,-52"
+     fill="none"
+     stroke="#2e86c1"
+     stroke-width="1.6"
+     stroke-dasharray="4, 3"
+     marker-end="url(#arrowG)"
+     id="path214" />
+  <!-- connector: public funding -> collaborative project -->
+  <path
+     d="m 681.95297,395.28442 c 70,-26 120,-26 190,-52"
+     fill="none"
+     stroke="#229954"
+     stroke-width="1.6"
+     stroke-dasharray="4, 3"
+     marker-end="url(#arrowG)"
+     id="path216" />
+  <!-- ================================================================= -->
+  <!-- ZONE 4 : RESSOURCES HUMAINES -->
+  <!-- ================================================================= -->
+  <!-- HR box 1 : Stagiaire -->
+  <!-- HR box 2 : Chercheur -->
+  <g
+     id="g2697"
+     transform="translate(-98.047027,-80.715576)">
+    <text
+       x="100"
+       y="632"
+       font-size="15.5px"
+       font-weight="700"
+       fill="#111111"
+       id="text218">Human resources involved</text>
+    <text
+       x="100"
+       y="650"
+       font-size="12px"
+       fill="#666666"
+       id="text220">Cross-cutting dimension, independent of the chosen TRL, contract or funding</text>
+    <g
+       id="hr-1">
+      <circle
+         cx="140"
+         cy="689"
+         r="22"
+         fill="#5d6d7e"
+         id="circle224" />
+      <path
+         d="m 128,682 12,-6 12,6 -12,6 z"
+         fill="#ffffff"
+         id="path226" />
+      <path
+         d="m 128,686 v 8 l 12,6 12,-6 v -8"
+         fill="none"
+         stroke="#ffffff"
+         stroke-width="2"
+         id="path228" />
+      <text
+         x="180"
+         y="678"
+         font-size="14.5px"
+         font-weight="700"
+         fill="#3b4a5a"
+         id="text230">Intern</text>
+      <text
+         x="180"
+         y="698"
+         font-size="12.5px"
+         font-weight="700"
+         fill="#5d6d7e"
+         id="text232">Obligation of means</text>
+      <text
+         x="180"
+         y="717"
+         font-size="12px"
+         fill="#4a5a68"
+         id="text234">Academic supervision, with no contractual guarantee of results.</text>
+    </g>
+    <g
+       id="hr-2">
+      <circle
+         cx="700"
+         cy="689"
+         r="22"
+         fill="#117864"
+         id="circle239" />
+      <path
+         d="m 692,678 h 16 v 6 l -4,4 v 8 h -8 v -8 l -4,-4 z"
+         fill="#ffffff"
+         id="path241" />
+      <text
+         x="740"
+         y="678"
+         font-size="14.5px"
+         font-weight="700"
+         fill="#0b4a3e"
+         id="text243">Researcher</text>
+      <text
+         x="740"
+         y="698"
+         font-size="12.5px"
+         font-weight="700"
+         fill="#117864"
+         id="text245">Obligation of results</text>
+      <text
+         x="740"
+         y="717"
+         font-size="12px"
+         fill="#0f5a4c"
+         id="text247">Contractual commitment to deliver the expected results.</text>
+    </g>
+  </g>
+  <!-- ================================================================= -->
+  <!-- FOOTER NOTE -->
+  <!-- ================================================================= -->
+  <g
+     id="g2588"
+     transform="translate(-100.33301,-80.715576)">
+    <rect
+       style="opacity:0.4;fill:#8e44ad;fill-opacity:0.607843;stroke-width:0.849226;stroke-linejoin:bevel;stroke-dashoffset:3.2;paint-order:markers fill stroke;stop-color:#000000"
+       id="rect969"
+       width="211.40855"
+       height="81.881706"
+       x="139.13226"
+       y="110.40388"
+       rx="0"
+       ry="0" />
+    <rect
+       style="opacity:0.4;fill:#8e44ad;fill-opacity:0.607843;stroke-width:0.976907;stroke-linejoin:bevel;stroke-dashoffset:3.2;paint-order:markers fill stroke;stop-color:#000000"
+       id="rect969-5"
+       width="279.75787"
+       height="81.881706"
+       x="354.87274"
+       y="109.83641"
+       rx="0"
+       ry="0" />
+    <rect
+       style="opacity:0.4;fill:#8e44ad;fill-opacity:0.607843;stroke-width:0.976907;stroke-linejoin:bevel;stroke-dashoffset:3.2;paint-order:markers fill stroke;stop-color:#000000"
+       id="rect969-5-3"
+       width="279.75787"
+       height="81.881706"
+       x="638.96252"
+       y="110.32135"
+       rx="0"
+       ry="0" />
+    <rect
+       style="opacity:0.4;fill:#8e44ad;fill-opacity:0.607843;stroke-width:0.860837;stroke-linejoin:bevel;stroke-dashoffset:3.2;paint-order:markers fill stroke;stop-color:#000000"
+       id="rect969-5-3-5"
+       width="217.22914"
+       height="81.881706"
+       x="923.05231"
+       y="110.16582"
+       rx="0"
+       ry="0" />
+    <text
+       x="100"
+       y="92"
+       font-size="15.5px"
+       font-weight="700"
+       fill="#111111"
+       id="text22">Technology readiness level (TRL) and types of work</text>
+    <g
+       id="g909"
+       transform="translate(33.644915,14.035404)">
+      <g
+         id="g664">
+        <text
+           x="205"
+           y="121"
+           text-anchor="middle"
+           fill="#0b3c57"
+           font-size="10.5px"
+           id="text26"
+           style="font-weight:600">Scientific</text>
+        <text
+           x="205"
+           y="134"
+           text-anchor="middle"
+           fill="#0b3c57"
+           font-size="10.5px"
+           id="text28"
+           style="font-weight:600">positioning</text>
+      </g>
+      <text
+         x="211"
+         y="161"
+         text-anchor="middle"
+         fill="#08334a"
+         font-size="11.5px"
+         id="text32"
+         style="font-weight:600">Fundamental research</text>
+    </g>
+    <text
+       x="494.5434"
+       y="154.09453"
+       text-anchor="middle"
+       fill="#062a3d"
+       id="text36"
+       style="font-weight:600;font-size:12.5px">Applied research</text>
+    <line
+       x1="140"
+       y1="192"
+       x2="1140"
+       y2="192"
+       stroke="#333333"
+       stroke-width="2"
+       id="line52" />
+    <g
+       stroke="#333333"
+       stroke-width="2"
+       id="g70">
+      <line
+         x1="140"
+         y1="186"
+         x2="140"
+         y2="198"
+         id="line54" />
+      <line
+         x1="282.89999"
+         y1="186"
+         x2="282.89999"
+         y2="198"
+         id="line56" />
+      <line
+         x1="425.70001"
+         y1="186"
+         x2="425.70001"
+         y2="198"
+         id="line58" />
+      <line
+         x1="568.59998"
+         y1="186"
+         x2="568.59998"
+         y2="198"
+         id="line60" />
+      <line
+         x1="711.40002"
+         y1="186"
+         x2="711.40002"
+         y2="198"
+         id="line62" />
+      <line
+         x1="854.29999"
+         y1="186"
+         x2="854.29999"
+         y2="198"
+         id="line64" />
+      <line
+         x1="997.09998"
+         y1="186"
+         x2="997.09998"
+         y2="198"
+         id="line66" />
+      <line
+         x1="1140"
+         y1="186"
+         x2="1140"
+         y2="198"
+         id="line68" />
+    </g>
+    <g
+       font-size="12.5px"
+       fill="#111111"
+       text-anchor="middle"
+       id="g88">
+      <text
+         x="140"
+         y="214"
+         id="text72">TRL 1</text>
+      <text
+         x="282.89999"
+         y="214"
+         id="text74">TRL 2</text>
+      <text
+         x="425.70001"
+         y="214"
+         id="text76">TRL 3</text>
+      <text
+         x="568.59998"
+         y="214"
+         id="text78">TRL 4</text>
+      <text
+         x="711.40002"
+         y="214"
+         id="text80">TRL 5</text>
+      <text
+         x="854.29999"
+         y="214"
+         id="text82">TRL 6</text>
+      <text
+         x="997.09998"
+         y="214"
+         id="text84">TRL 7</text>
+      <text
+         x="1140"
+         y="214"
+         id="text86">TRL 8</text>
+    </g>
+    <g
+       stroke="#8e44ad"
+       stroke-width="2"
+       fill="none"
+       id="g96">
+      <line
+         x1="140"
+         y1="230"
+         x2="1140"
+         y2="230"
+         id="line90" />
+      <line
+         x1="140"
+         y1="230"
+         x2="140"
+         y2="238"
+         id="line92" />
+      <line
+         x1="1140"
+         y1="230"
+         x2="1140"
+         y2="238"
+         id="line94" />
+    </g>
+    <text
+       x="640"
+       y="253"
+       font-size="13.5px"
+       font-weight="700"
+       fill="#8e44ad"
+       text-anchor="middle"
+       id="text98">Proof of Concept (PoC) achievable up to TRL 8</text>
+    <text
+       x="778.63318"
+       y="154.57947"
+       text-anchor="middle"
+       fill="#062a3d"
+       id="text36-3"
+       style="font-weight:600;font-size:12.5px">Experimental research</text>
+    <g
+       id="g897"
+       transform="translate(29.903206,-5.7856636)">
+      <text
+         x="1001.7515"
+         y="150.18808"
+         text-anchor="middle"
+         fill="#062a3d"
+         id="text36-6"
+         style="font-weight:600;font-size:12.5px">Demonstration or</text>
+      <text
+         x="1001.7606"
+         y="170.23111"
+         text-anchor="middle"
+         fill="#062a3d"
+         id="text36-6-7"
+         style="font-weight:600;font-size:12.5px">pre-industrialization</text>
+    </g>
+  </g>
+</svg>
