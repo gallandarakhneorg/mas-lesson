@@ -1,0 +1,33 @@
+\begin{graphicspathcontext}{{./chapters/ai/imgs/},{./chapters/ai/imgs/auto/},\old}
+
+\begin{frame}[t]{{Retrieval-Augmented Generation (RAG) :} LLM ancrés dans vos propres données}
+	\vspace{-.25cm}
+	\begin{center}
+		\includegraphics[width=.95\linewidth]{rag_principle_fr}
+	\end{center}
+	\vspace{-.25cm}\smaller\smaller
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Avantages}
+				\begin{compactitemize}
+				\item Connaissances à jour et spécifiques au domaine, sans réentraînement
+				\item Moins d'hallucinations ; réponses traçables jusqu'aux sources
+				\item Données sensibles conservées sur site, avec contrôle d'accès
+				\item Maintenance moins coûteuse et plus rapide que le fine-tuning
+				\end{compactitemize}
+			\end{block}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Limites}
+				\begin{compactitemize}
+				\item Qualité limitée par la recherche (découpage, plongements)
+				\item Latence et infrastructure supplémentaires (base vectorielle, pipeline)
+				\item Peu adapté au raisonnement global sur de nombreux documents
+				\item Exige des données propres et maintenues ; évaluation difficile
+				\end{compactitemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{graphicspathcontext}

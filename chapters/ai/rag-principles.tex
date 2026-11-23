@@ -1,0 +1,32 @@
+\begin{graphicspathcontext}{{./chapters/ai/imgs/},{./chapters/ai/imgs/auto/},\old}
+
+\begin{frame}[t]{{Retrieval-Augmented Generation (RAG):} LLMs grounded in your own data}
+	\begin{center}
+		\includegraphics[width=\linewidth]{rag_principle}
+	\end{center}
+	\vspace{-.5cm}\smaller\smaller
+	\begin{columns}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Advantages}
+				\begin{compactitemize}
+				\item Up-to-date, domain-specific knowledge without retraining
+				\item Fewer hallucinations; answers traceable to sources
+				\item Sensitive data stays on-premise, with access control
+				\item Cheaper and faster to maintain than fine-tuning
+				\end{compactitemize}
+			\end{block}
+		\end{column}
+		\begin{column}{.5\linewidth}
+			\begin{block}{Drawbacks}
+				\begin{compactitemize}
+				\item Quality bounded by retrieval (chunking, embeddings)
+				\item Extra latency and infrastructure (vector DB, pipeline)
+				\item Weak at global reasoning across many documents
+				\item Needs clean, maintained data; hard to evaluate
+				\end{compactitemize}
+			\end{block}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\end{graphicspathcontext}
