@@ -1,0 +1,13 @@
+```latex
+\documentclass[english,sectioncirclenumberstyle,repeattitleslide]{ciadbeamer}
+
+\usepackage[nosectionoutline]{localconfiguration}
+
+\input{talks/ciadlab-en/preamble}
+
+\begin{document}
+ 
+\input{talks/ciadlab-en/main}
+
+\end{document}
+```

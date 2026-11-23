@@ -3,11 +3,11 @@
 
 \usepackage[nosectionoutline]{localconfiguration}
 
-\input{talks/ciadlab/preamble}
+\input{talks/ciadlab-fr/preamble}
 
 \begin{document}
  
-\input{talks/ciadlab/main}
+\input{talks/ciadlab-fr/main}
 
 \end{document}
 ```
