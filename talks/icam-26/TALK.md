@@ -1,0 +1,13 @@
+```latex
+\documentclass[english,sectioncirclenumberstyle]{ciadbeamer}
+
+\usepackage[nosectionoutline]{localconfiguration}
+
+\input{talks/icam-26/preamble}%
+
+\begin{document}
+ 
+\input{talks/icam-26/main}%
+
+\end{document}
+```

@@ -1,0 +1,40 @@
+\addauthor*[S.~Galland]{Prof.\;dr. Stéphane~GALLAND}
+
+\event[FAIM-2026]{ICAM Seminar - November 26, 2026}
+
+\date{November 26, 2026}
+
+\title{The Whole is Greater: modeling and running complex systems with multiagent systems}
+
+
+\setpredefinedtitlepagebackground8
+
+\usefootlinewithsections
+%\usefootlinefortitlepage
+
+\begin{graphicspathcontext}{{./talks/icam-26/imgs/auto/},{./talks/icam-26/imgs/},\old}
+	\partnerlogo{icamlogogray}
+
+	\resolvepicturename{icamlogo}
+	\pgfdeclareimage[width=5cm]{icamlogo}{\resolvedfilename}
+	\settitlepagerightfigure(250,-30){icamlogo}
+
+	\resolvepicturename{icambg}
+	\pgfdeclareimage[height=\paperheight]{icambg}{\resolvedfilename}
+	\settitlepageuserbackground{icambg}
+\end{graphicspathcontext}
+
+% Preambles of sections
+\input{./chapters/ciad/preamble}
+\input{./chapters/ai/preamble}
+\input{./chapters/mas/preamble}
+
+\OECDAItrue
+\EUAIActfalse
+
+\AtBeginSection{%
+	\sectiontableofcontentslide%
+}
+
+\endinput
+

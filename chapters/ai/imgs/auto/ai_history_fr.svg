@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="20 70 878.18001 370.20671"
+   width="1317.27"
+   height="555.31006"
+   role="img"
+   aria-labelledby="t d"
+   version="1.1"
+   id="svg67"
+   sodipodi:docname="ai_history_fr.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:c2pa="http://c2pa.org/manifest">
+  <defs
+     id="defs67" />
+  <sodipodi:namedview
+     id="namedview67"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2790698"
+     inkscape:cx="655.94545"
+     inkscape:cy="274.02727"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg67" />
+  <title
+     id="t">Historique de l’IA : quatre branches parallèles</title>
+  <desc
+     id="d">Frise chronologique : IA symbolique, apprentissage, IA générative et systèmes multiagents.</desc>
+  <style
+     id="style1">
+    text { text-anchor: middle; }
+    .year { font: 700 14px &quot;Grandview Display&quot;, Inter, &quot;Segoe UI&quot;, Arial, sans-serif; }
+    .desc { font: 400 11px Calibri, Carlito, &quot;Segoe UI&quot;, Arial, sans-serif; }
+    .pill { font: 700 13px Calibri, Carlito, &quot;Segoe UI&quot;, Arial, sans-serif; }
+    .side { font: 400 11px Calibri, Carlito, &quot;Segoe UI&quot;, Arial, sans-serif; text-anchor: start; }
+  </style>
+  <g
+     id="liens"
+     transform="translate(-22.700001,-32.453903)">
+    <line
+       x1="658.79999"
+       y1="241.89999"
+       x2="658.79999"
+       y2="326.92999"
+       stroke="#25c8a2"
+       stroke-width="2"
+       stroke-dasharray="6, 4"
+       id="line1" />
+    <line
+       x1="824.40002"
+       y1="326.92999"
+       x2="824.40002"
+       y2="411.97"
+       stroke="#fe733c"
+       stroke-width="2"
+       stroke-dasharray="6, 4"
+       id="line2" />
+  </g>
+  <g
+     id="ia-symbolique"
+     transform="translate(-22.700001,-32.453903)">
+    <rect
+       x="43.200001"
+       y="141.74001"
+       width="176.39999"
+       height="30.24"
+       rx="15.12"
+       fill="#bf8ed1"
+       stroke="#bf8ed1"
+       id="rect2" />
+    <text
+       class="pill"
+       x="131.39999"
+       y="161.46001"
+       fill="#0d1c3b"
+       id="text2"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:13px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">IA symbolique</text>
+    <text
+       class="side"
+       x="43.200001"
+       y="188.86"
+       fill="#5b6579"
+       id="text3"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">L’humain modélise les connaissances</text>
+    <text
+       class="side"
+       x="43.200001"
+       y="202.25999"
+       fill="#5b6579"
+       id="text4"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">et les règles</text>
+    <rect
+       x="277.92001"
+       y="153.62"
+       width="625.67999"
+       height="6.48"
+       fill="#bf8ed1"
+       id="rect4" />
+    <polygon
+       points="920.88,156.86 900.72,165.5 900.72,148.22 "
+       fill="#bf8ed1"
+       id="polygon4" />
+    <circle
+       cx="277.92001"
+       cy="156.86"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#bf8ed1"
+       stroke-width="3"
+       id="circle4" />
+    <text
+       class="year"
+       x="277.92001"
+       y="113.2"
+       fill="#0d1c3b"
+       id="text5"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">1956</text>
+    <text
+       class="desc"
+       x="277.92001"
+       y="127.5"
+       fill="#0d1c3b"
+       id="text6"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Naissance du</text>
+    <text
+       class="desc"
+       x="277.92001"
+       y="140.89999"
+       fill="#0d1c3b"
+       id="text7"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">terme « IA »</text>
+    <circle
+       cx="421.44"
+       cy="156.86"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#bf8ed1"
+       stroke-width="3"
+       id="circle7" />
+    <text
+       class="year"
+       x="421.44"
+       y="113.2"
+       fill="#0d1c3b"
+       id="text8"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">1980s</text>
+    <text
+       class="desc"
+       x="421.44"
+       y="127.5"
+       fill="#0d1c3b"
+       id="text9"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Âge d’or des</text>
+    <text
+       class="desc"
+       x="421.44"
+       y="140.89999"
+       fill="#0d1c3b"
+       id="text10"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">systèmes experts</text>
+    <circle
+       cx="504.23999"
+       cy="156.86"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#bf8ed1"
+       stroke-width="3"
+       id="circle10" />
+    <text
+       class="year"
+       x="504.23999"
+       y="113.2"
+       fill="#0d1c3b"
+       id="text11"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">1997</text>
+    <text
+       class="desc"
+       x="504.23999"
+       y="127.5"
+       fill="#0d1c3b"
+       id="text12"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Deep Blue bat</text>
+    <text
+       class="desc"
+       x="504.23999"
+       y="140.89999"
+       fill="#0d1c3b"
+       id="text13"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Kasparov</text>
+    <circle
+       cx="617.40002"
+       cy="156.86"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#bf8ed1"
+       stroke-width="3"
+       id="circle13" />
+    <text
+       class="year"
+       x="617.40002"
+       y="113.2"
+       fill="#0d1c3b"
+       id="text14"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">2012</text>
+    <text
+       class="desc"
+       x="617.40002"
+       y="127.5"
+       fill="#0d1c3b"
+       id="text15"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Graphes de</text>
+    <text
+       class="desc"
+       x="617.40002"
+       y="140.89999"
+       fill="#0d1c3b"
+       id="text16"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">connaissances</text>
+    <circle
+       cx="865.79999"
+       cy="156.86"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#bf8ed1"
+       stroke-width="3"
+       id="circle16" />
+    <text
+       class="year"
+       x="865.79999"
+       y="113.2"
+       fill="#0d1c3b"
+       id="text17"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">Aujourd’hui</text>
+    <text
+       class="desc"
+       x="865.79999"
+       y="127.5"
+       fill="#0d1c3b"
+       id="text18"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Règles métier,</text>
+    <text
+       class="desc"
+       x="865.79999"
+       y="140.89999"
+       fill="#0d1c3b"
+       id="text19"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">ontologies...</text>
+  </g>
+  <g
+     id="apprentissage"
+     transform="translate(-22.700001,-32.453903)">
+    <rect
+       x="43.200001"
+       y="226.78"
+       width="176.39999"
+       height="30.24"
+       rx="15.12"
+       fill="#1973eb"
+       stroke="#1973eb"
+       id="rect19" />
+    <text
+       class="pill"
+       x="131.39999"
+       y="246.5"
+       fill="#0d1c3b"
+       id="text20"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:13px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Apprentissage</text>
+    <text
+       class="side"
+       x="43.200001"
+       y="273.89999"
+       fill="#5b6579"
+       id="text21"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">La machine apprend à partir</text>
+    <text
+       class="side"
+       x="43.200001"
+       y="287.29999"
+       fill="#5b6579"
+       id="text22"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">d’exemples</text>
+    <rect
+       x="283.44"
+       y="238.66"
+       width="620.15997"
+       height="6.48"
+       fill="#1973eb"
+       id="rect22" />
+    <polygon
+       points="920.88,241.9 900.72,250.54 900.72,233.26 "
+       fill="#1973eb"
+       id="polygon22" />
+    <circle
+       cx="283.44"
+       cy="241.89999"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#1973eb"
+       stroke-width="3"
+       id="circle22" />
+    <text
+       class="year"
+       x="283.44"
+       y="198.24001"
+       fill="#1973eb"
+       id="text23"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">1957</text>
+    <text
+       class="desc"
+       x="283.44"
+       y="212.53999"
+       fill="#0d1c3b"
+       id="text24"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Perceptron, 1er</text>
+    <text
+       class="desc"
+       x="283.44"
+       y="225.94"
+       fill="#0d1c3b"
+       id="text25"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">neurone artificiel</text>
+    <circle
+       cx="443.51999"
+       cy="241.89999"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#1973eb"
+       stroke-width="3"
+       id="circle25" />
+    <text
+       class="year"
+       x="443.51999"
+       y="211.64"
+       fill="#1973eb"
+       id="text26"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">1986</text>
+    <text
+       class="desc"
+       x="443.51999"
+       y="225.94"
+       fill="#0d1c3b"
+       id="text27"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Rétropropagation</text>
+    <circle
+       cx="617.40002"
+       cy="241.89999"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#1973eb"
+       stroke-width="3"
+       id="circle27" />
+    <text
+       class="year"
+       x="617.40002"
+       y="184.84"
+       fill="#1973eb"
+       id="text28"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">2012</text>
+    <text
+       class="desc"
+       x="617.40002"
+       y="199.14"
+       fill="#0d1c3b"
+       id="text29"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Essor de</text>
+    <text
+       class="desc"
+       x="617.40002"
+       y="212.53999"
+       fill="#0d1c3b"
+       id="text30"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">l’apprentissage</text>
+    <text
+       class="desc"
+       x="617.40002"
+       y="225.94"
+       fill="#0d1c3b"
+       id="text31"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">profond</text>
+    <circle
+       cx="700.20001"
+       cy="241.89999"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#1973eb"
+       stroke-width="3"
+       id="circle31" />
+    <text
+       class="year"
+       x="700.20001"
+       y="198.24001"
+       fill="#1973eb"
+       id="text32"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">2016</text>
+    <text
+       class="desc"
+       x="700.20001"
+       y="212.53999"
+       fill="#0d1c3b"
+       id="text33"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">AlphaGo bat Lee</text>
+    <text
+       class="desc"
+       x="700.20001"
+       y="225.94"
+       fill="#0d1c3b"
+       id="text34"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Sedol</text>
+  </g>
+  <g
+     id="ia-generative"
+     transform="translate(-22.700001,-32.453903)">
+    <rect
+       x="43.200001"
+       y="311.81"
+       width="176.39999"
+       height="30.24"
+       rx="15.12"
+       fill="#25c8a2"
+       stroke="#25c8a2"
+       id="rect34" />
+    <text
+       class="pill"
+       x="131.39999"
+       y="331.53"
+       fill="#0d1c3b"
+       id="text35"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:13px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">IA générative</text>
+    <text
+       class="side"
+       x="43.200001"
+       y="358.92999"
+       fill="#5b6579"
+       id="text36"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Issue de l’apprentissage : produit du</text>
+    <text
+       class="side"
+       x="43.200001"
+       y="372.32999"
+       fill="#5b6579"
+       id="text37"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">contenu</text>
+    <rect
+       x="658.79999"
+       y="323.69"
+       width="244.8"
+       height="6.48"
+       fill="#25c8a2"
+       id="rect37" />
+    <polygon
+       points="920.88,326.93 900.72,335.57 900.72,318.29 "
+       fill="#25c8a2"
+       id="polygon37" />
+    <circle
+       cx="658.79999"
+       cy="326.92999"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#25c8a2"
+       stroke-width="3"
+       id="circle37" />
+    <text
+       class="year"
+       x="658.79999"
+       y="352.89001"
+       fill="#25c8a2"
+       id="text38"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">2014</text>
+    <text
+       class="desc"
+       x="658.79999"
+       y="367.19"
+       fill="#0d1c3b"
+       id="text39"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">GAN : premières</text>
+    <text
+       class="desc"
+       x="658.79999"
+       y="380.59"
+       fill="#0d1c3b"
+       id="text40"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">images générées</text>
+    <circle
+       cx="720.90002"
+       cy="326.92999"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#25c8a2"
+       stroke-width="3"
+       id="circle40" />
+    <text
+       class="year"
+       x="720.90002"
+       y="283.26999"
+       fill="#25c8a2"
+       id="text41"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">2017</text>
+    <text
+       class="desc"
+       x="720.90002"
+       y="297.57001"
+       fill="#0d1c3b"
+       id="text42"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Transformer, base</text>
+    <text
+       class="desc"
+       x="720.90002"
+       y="310.97"
+       fill="#0d1c3b"
+       id="text43"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">des LLM</text>
+    <circle
+       cx="824.40002"
+       cy="326.92999"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#25c8a2"
+       stroke-width="3"
+       id="circle43" />
+    <text
+       class="year"
+       x="824.40002"
+       y="283.26999"
+       fill="#25c8a2"
+       id="text44"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">2022</text>
+    <text
+       class="desc"
+       x="824.40002"
+       y="297.57001"
+       fill="#0d1c3b"
+       id="text45"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">ChatGPT : l’IA</text>
+    <text
+       class="desc"
+       x="824.40002"
+       y="310.97"
+       fill="#0d1c3b"
+       id="text46"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">générative pour tous</text>
+    <circle
+       cx="865.79999"
+       cy="326.92999"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#25c8a2"
+       stroke-width="3"
+       id="circle46" />
+    <text
+       class="year"
+       x="865.79999"
+       y="352.89001"
+       fill="#25c8a2"
+       id="text47"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">2024+</text>
+    <text
+       class="desc"
+       x="865.79999"
+       y="367.19"
+       fill="#0d1c3b"
+       id="text48"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Multimodal,</text>
+    <text
+       class="desc"
+       x="865.79999"
+       y="380.59"
+       fill="#0d1c3b"
+       id="text49"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">raisonnement</text>
+  </g>
+  <g
+     id="systemes-multiagents"
+     transform="translate(-22.700001,-32.453903)">
+    <rect
+       x="43.200001"
+       y="396.85001"
+       width="176.39999"
+       height="30.24"
+       rx="15.12"
+       fill="#fe733c"
+       stroke="#fe733c"
+       id="rect49" />
+    <text
+       class="pill"
+       x="131.39999"
+       y="416.57001"
+       fill="#0d1c3b"
+       id="text50"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:13px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Systèmes Multiagents</text>
+    <text
+       class="side"
+       x="43.200001"
+       y="443.97"
+       fill="#5b6579"
+       id="text51"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Issus principalement de l’IA symbolique :</text>
+    <text
+       class="side"
+       x="43.200001"
+       y="457.37"
+       fill="#5b6579"
+       id="text52"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">des entités autonomes qui perçoivent,</text>
+    <text
+       class="side"
+       x="43.200001"
+       y="470.76999"
+       fill="#5b6579"
+       id="text53"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">décident et agissent</text>
+    <rect
+       x="421.44"
+       y="408.73001"
+       width="482.16"
+       height="6.48"
+       fill="#fe733c"
+       id="rect53" />
+    <polygon
+       points="920.88,411.97 900.72,420.61 900.72,403.33 "
+       fill="#fe733c"
+       id="polygon53" />
+    <circle
+       cx="421.44"
+       cy="411.97"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#fe733c"
+       stroke-width="3"
+       id="circle53" />
+    <text
+       class="year"
+       x="421.44"
+       y="354.91"
+       fill="#fe733c"
+       id="text54"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">1980s</text>
+    <text
+       class="desc"
+       x="421.44"
+       y="369.20999"
+       fill="#0d1c3b"
+       id="text55"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">IA distribuée :</text>
+    <text
+       class="desc"
+       x="421.44"
+       y="382.60999"
+       fill="#0d1c3b"
+       id="text56"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">agents qui</text>
+    <text
+       class="desc"
+       x="421.44"
+       y="396.01001"
+       fill="#0d1c3b"
+       id="text57"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">coopèrent</text>
+    <circle
+       cx="492.91"
+       cy="411.97"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#fe733c"
+       stroke-width="3"
+       id="circle57" />
+    <text
+       class="year"
+       x="492.91"
+       y="437.92999"
+       fill="#fe733c"
+       id="text58"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">1995</text>
+    <text
+       class="desc"
+       x="492.91"
+       y="452.23001"
+       fill="#0d1c3b"
+       id="text59"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">Agents intelligents</text>
+    <text
+       class="desc"
+       x="492.91"
+       y="465.63"
+       fill="#0d1c3b"
+       id="text60"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">et SMA</text>
+    <circle
+       cx="564.57001"
+       cy="411.97"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#fe733c"
+       stroke-width="3"
+       id="circle60" />
+    <text
+       class="year"
+       x="564.57001"
+       y="354.91"
+       fill="#fe733c"
+       id="text61"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">2000s</text>
+    <text
+       class="desc"
+       x="564.57001"
+       y="369.20999"
+       fill="#0d1c3b"
+       id="text62"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">SMA : simulation,</text>
+    <text
+       class="desc"
+       x="564.57001"
+       y="382.60999"
+       fill="#0d1c3b"
+       id="text63"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">robotique,</text>
+    <text
+       class="desc"
+       x="564.57001"
+       y="396.01001"
+       fill="#0d1c3b"
+       id="text64"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">logistique</text>
+    <circle
+       cx="824.40002"
+       cy="411.97"
+       r="9.3599997"
+       fill="#ffffff"
+       stroke="#fe733c"
+       stroke-width="3"
+       id="circle64" />
+    <text
+       class="year"
+       x="824.40002"
+       y="437.92999"
+       fill="#fe733c"
+       id="text65"
+       style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:14px;line-height:normal;font-family:'Grandview Display', Inter, 'Segoe UI', Arial, sans-serif">2023+</text>
+    <text
+       class="desc"
+       x="824.40002"
+       y="452.23001"
+       fill="#0d1c3b"
+       id="text66"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">IA agentique : des LLM</text>
+    <text
+       class="desc"
+       x="824.40002"
+       y="465.63"
+       fill="#0d1c3b"
+       id="text67"
+       style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:11px;line-height:normal;font-family:Calibri, Carlito, 'Segoe UI', Arial, sans-serif">qui agissent</text>
+  </g>
+  <metadata
+     id="metadata67">
+    <c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpjODZlMWNjNy1lZmE4LTQ3OTktOWQ2Zi0xZjIxNGNmMThjY2YAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaP6EVuHLSBNwilU2rnw68ukAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDplODkwY2QwOS01MzVkLTQ4NDEtYjkxZi1lOTE1NzY2OTRhNmZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNodGhBHpOAWwtVpz9FHCnQDwAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg4LDLac9pQlEskZOifR8ml3NU+xvhc6zlC61YdAm96sCkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaNcomJ2eQcEbYH7mzjaQek4AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIBHmq9/YWkG3jP3Jrdj0urYIcZeU67fSabbwLkbdp8qnZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSLvZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmM4NmUxY2M3LWVmYTgtNDc5OS05ZDZmLTFmMjE0Y2YxOGNjZi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjdlZTk3ZDZjLTVmODctNDFmNy1iMGE0LTczYTVmNjg1YmU5ZXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDgsMtpz2lCUSyRk6J9HyaXc1T7G+FzrOULrVh0Cb3qwKJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggEQa/fQdM+/ImJ0ANPy7x8V76gFCXl+OOoMycQxcDEVqiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggepCY8uvdf088MDyFjwzNAwvn+fI6WOrnrumSqSi58dN0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQJQ+y3AEDAfzeYXuRsVbOZ6/7Nd/JB8zMgJ/EPsxtA11MTlAOEPaGX2FwKe3yOtkPev0RToujf1iONHcSeYNUK0=</c2pa:manifest>
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Historique de l’IA : quatre branches parallèles</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
